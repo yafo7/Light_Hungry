@@ -9,7 +9,7 @@ namespace LightHungry {
         string directory;
         void Start(){active=Array.IndexOf(Environment.GetCommandLineArgs(),"-labQA")>=0;if(active){directory=Path.GetFullPath(Path.Combine(Application.dataPath,"../../../Verification"));Directory.CreateDirectory(directory);StartCoroutine(Run());}}
         void Check(bool condition,string description){results.Add((condition?"PASS ":"FAIL ")+description);Debug.Log(results[results.Count-1]);}
-        void Teleport(PlayerController p,Vector2 position){p.Body.position=position;p.Body.velocity=Vector2.zero;Physics2D.SyncTransforms();}
+        void Teleport(PlayerController p,Vector2 position){if(p.Body3D)p.SetSpatialPosition(new Vector3(position.x,position.y,0));else{p.Body.position=position;p.Body.velocity=Vector2.zero;Physics2D.SyncTransforms();}}
         void Capture(string file){
             var camera=Camera.main;var target=new RenderTexture(1280,720,24);var previous=RenderTexture.active;camera.targetTexture=target;camera.Render();RenderTexture.active=target;
             var texture=new Texture2D(1280,720,TextureFormat.RGB24,false);texture.ReadPixels(new Rect(0,0,1280,720),0,0);texture.Apply();File.WriteAllBytes(Path.Combine(directory,file),texture.EncodeToPNG());
@@ -17,10 +17,12 @@ namespace LightHungry {
         }
         IEnumerator Run(){
             var session=GetComponent<LabSession>();var p=session.player;p.automationInput=true;
+            // Read reset state before authored lights can legitimately feed the receiver again.
+            float initialGoalProgress=session.goal.Progress;
             yield return new WaitForSeconds(.5f);
             if(afterReset){
                 Check(!p.stored&&p.Mode==PlayerController.AbilityMode.Normal,"Reset restores player light state");
-                Check(session.goal.Progress==0,"Reset restores hungry beast");
+                Check(initialGoalProgress==0,"Reset restores hungry beast before live light resumes feeding");
                 var rail=FindObjectOfType<RailDevice>();Check(rail.Position01<.02f,"Reset restores rail position");
                 yield return new WaitForEndOfFrame();Capture("InteractionLab.png");yield return new WaitForSeconds(.5f);
                 File.WriteAllLines(Path.Combine(directory,"playmode-results.txt"),results);
