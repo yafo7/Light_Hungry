@@ -82,8 +82,11 @@
         "Verification/watercolor-front.png",
         "PNG alpha min/max: (0, 255)",
         "Verification/watercolor-verified-runtime.log: 22 checks passed",
-        "Verification/watercolor-verified-build.log: 27 editor checks and Windows build passed"
-      ]
+        "Verification/watercolor-verified-build.log: 27 editor checks and Windows build passed",
+        "Verification/repaired-motion-frames.png: rendered all 16 frames",
+        "No equal-row slicing for motion sheet"
+      ],
+      "runtimeImport": "motion.lhframes extracts 16 connected silhouettes into individual Unity texture subassets; existing Sprite asset GUIDs retained"
     },
     {
       "id": "wc_interaction",

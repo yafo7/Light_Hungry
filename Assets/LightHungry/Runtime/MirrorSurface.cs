@@ -7,7 +7,7 @@ namespace LightHungry {
         public bool continuousRotation;
         public bool depthRotation;
         public float rotationSpeed=45,rotationAngle=45;
-        public int destinationView;
+        [Tooltip("共享接收镜的优先面；不会代替真实命中与角度判定。0 按所属面自动选择。") ] public int destinationView;
         public Transform opticalPivot;
         public override bool Continuous=>continuousRotation;
         public Vector3 WorldNormal=>continuousRotation?transform.TransformDirection(depthRotation?Quaternion.Euler(0,rotationAngle,0)*Vector3.right:Quaternion.Euler(0,0,rotationAngle)*Vector3.up).normalized:face?face.transform.up.normalized:(Vector3)Normal;
@@ -26,6 +26,6 @@ namespace LightHungry {
                 return;
             }
             if(mirrorArt){mirrorArt.localRotation=Quaternion.Euler(0,0,angles[angleIndex]-45);mirrorArt.localScale=Vector3.one*sizes[sizeIndex];}if(face){face.transform.localRotation=Quaternion.Euler(0,0,angles[angleIndex]);face.transform.localScale=Vector3.one*sizes[sizeIndex];}}
-        void OnDrawGizmosSelected(){Gizmos.color=Color.cyan;Gizmos.DrawLine(transform.position,transform.position+(Vector3)Normal);}
+        void OnDrawGizmosSelected(){Gizmos.color=Color.cyan;var center=opticalPivot?opticalPivot.position:transform.position;Gizmos.DrawLine(center,center+WorldNormal*1.5f);}
     }
 }

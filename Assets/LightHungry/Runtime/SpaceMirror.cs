@@ -6,7 +6,7 @@ namespace LightHungry {
         public Vector3[] normals = { new Vector3(1,0,-1), new Vector3(1,0,1) };
         public int orientation;
         public bool adjustable = true;
-        [Range(0,4), Tooltip("0 follows outgoing direction; 1 front, 2 opposite, 3 left, 4 right.")]
+        [Range(0,4), Tooltip("Shared receiving mirror preference only: 0 uses face membership. Actual reflection must enter that plane.")]
         public int travelView;
         public Transform face;
         public Vector3 Normal => transform.TransformDirection(normals != null && normals.Length > 0 ? normals[Mathf.Clamp(orientation,0,normals.Length-1)].normalized : Vector3.forward);

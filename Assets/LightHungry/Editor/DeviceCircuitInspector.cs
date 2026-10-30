@@ -16,6 +16,6 @@ namespace LightHungry.EditorTools {
     }
     [CustomEditor(typeof(FaceMembership))]
     public sealed class FaceMembershipInspector:Editor {
-        public override void OnInspectorGUI(){serializedObject.Update();var faces=serializedObject.FindProperty("faces");faces.intValue=EditorGUILayout.MaskField("可见面",faces.intValue,new[]{"1 默认面","2 对面","3 左面","4 右面"});if(serializedObject.ApplyModifiedProperties())LevelGraph.Changed(target);}
+        public override void OnInspectorGUI(){serializedObject.Update();var faces=serializedObject.FindProperty("faces");faces.intValue=EditorGUILayout.MaskField("所属面",faces.intValue,new[]{"1 默认面","2 对面","3 左面","4 右面"});EditorGUILayout.HelpBox("同时控制显示与光学交互归属。普通物件选择一个面；勾选多个面表示明确共享。",MessageType.None);if(serializedObject.ApplyModifiedProperties())LevelGraph.Changed(target);}
     }
 }

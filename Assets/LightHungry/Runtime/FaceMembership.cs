@@ -15,11 +15,10 @@ namespace LightHungry {
             var member=item.GetComponentInParent<FaceMembership>();
             return member?member.faces:RoomFaces.Front;
         }
-        public static RoomFaces AfterReflection(Vector3 before,Vector3 after,RoomFaces current,int explicitView=0) {
-            if(explicitView>0)return ForView(explicitView);
-            if(Mathf.Abs(after.z)>.5f&&Mathf.Abs(before.z)<.5f)return after.z>0?RoomFaces.Right:RoomFaces.Left;
-            if(Mathf.Abs(after.x)>.5f&&Mathf.Abs(before.x)<.5f)return RoomFaces.Front;
-            return current;
+        public static RoomFaces OpticalOf(Component item){
+            if(!item)return RoomFaces.None;var player=item.GetComponentInParent<PlayerController>();
+            if(player){var travel=player.GetComponent<LightTravel>();return travel&&travel.IsTravelling?travel.Route.Face:ForView(CameraViewController.Active?CameraViewController.Active.CurrentView:1);}
+            var member=item.GetComponentInParent<FaceMembership>();return member?member.faces:RoomFaces.Front;
         }
     }
 }

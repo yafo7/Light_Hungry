@@ -9,7 +9,7 @@ namespace LightHungry.EditorTools {
     // Explicit migration command. Opening the level editor never rebuilds assets or scenes.
     public static class WatercolorWorkshop {
         const string Root="Assets/LightHungry/",Prefabs=Root+"Prefabs/";
-        public static readonly string[] Palette={"Player","HungryBeast","Platform","Wall","PushableBox","PushCart","PlaneMirror","DepthMirror","PressurePlate","DeviceSwitch","Gate","AutomaticElevator","PulleyRope","Sunlight","Moonlight","Flashlight","Firelight","Glass","Grille","Spikes","Background"};
+        public static readonly string[] Palette={"Player","HungryBeast","Platform","Wall","PushableBox","PushCart","PlaneMirror","DepthMirror","PressurePlate","DeviceSwitch","Gate","AutomaticElevator","PulleyRope","Sunlight","Moonlight","Flashlight","Firelight","Glass","Grille","Spikes","Background","LightBeam"};
         static Sprite S(string n,int i)=>WatercolorAssets.Frame(n,i);
         static Sprite[] Range(string n,int start,int count)=>WatercolorAssets.Frames(n).Skip(start).Take(count).ToArray();
         static GameObject New(string name,int layer=13){var g=new GameObject(name);g.layer=layer;g.AddComponent<FaceMembership>();return g;}

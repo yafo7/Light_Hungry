@@ -87,7 +87,7 @@ namespace LightHungry.EditorTools {
             if(!prefab||!PrefabUtility.IsPartOfPrefabAsset(prefab))throw new ArgumentException("请选择项目中的 prefab");
             Undo.IncrementCurrentGroup();int group=Undo.GetCurrentGroup();Undo.SetCurrentGroupName("Place level object");var placed=(GameObject)PrefabUtility.InstantiatePrefab(prefab,EditorSceneManager.GetActiveScene());Undo.RegisterCreatedObjectUndo(placed,"Place level object");placed.transform.position=point;
             if(!placed.GetComponent<PlayerController>()&&!placed.GetComponent<BeastReceiver>()&&!placed.GetComponent<AbilityPickup>())placed.transform.rotation=Quaternion.Euler(0,CameraViewController.Yaw(face),0)*placed.transform.rotation;
-            var light=placed.GetComponent<LightEmitter>();if(light){Undo.RecordObject(light,"Orient placed light");light.useSpatialDirection=true;light.spatialDirection=Quaternion.Euler(0,CameraViewController.Yaw(face),0)*(Vector3)light.direction;LevelGraph.Changed(light);}
+            var light=placed.GetComponent<LightEmitter>();if(light&&!light.directionFromTransform){Undo.RecordObject(light,"Orient placed light");light.useSpatialDirection=true;light.spatialDirection=Quaternion.Euler(0,CameraViewController.Yaw(face),0)*(Vector3)light.direction;LevelGraph.Changed(light);}
             var landing=placed.GetComponent<LightLanding>();if(landing){Undo.RecordObject(landing,"Set landing face");landing.view=face;LevelGraph.Changed(landing);}
             var member=placed.GetComponent<FaceMembership>();if(!member)member=Undo.AddComponent<FaceMembership>(placed);Undo.RecordObject(member,"Set object face");member.faces=placed.GetComponent<PlayerController>()?RoomFaces.All:FaceMembership.ForView(face);LevelGraph.Changed(member);LevelGraph.Changed(placed.transform);if(prefab.name=="Background")RoomBackgrounds.Assign(placed,face);Undo.CollapseUndoOperations(group);Selection.activeGameObject=placed;return placed;
         }
@@ -143,6 +143,13 @@ namespace LightHungry.EditorTools {
             foreach(var circuit in Object.FindObjectsOfType<DeviceCircuit>()){if(!circuit.output||!LevelGraph.IsTarget(circuit.output))issues.Add(circuit.name+" 输出无效");if(circuit.inputs.Count==0||circuit.inputs.Exists(i=>i==null||!i.source||!LevelGraph.IsSource(i.source)))issues.Add(circuit.name+" 输入缺失或无效");}
             foreach(var member in Object.FindObjectsOfType<FaceMembership>())if(member.faces==RoomFaces.None)issues.Add(member.name+" 未选择可见面");
             foreach(var root in EditorSceneManager.GetActiveScene().GetRootGameObjects())if(root.GetComponentInChildren<Renderer>()&&!root.GetComponent<FaceMembership>()&&!root.GetComponent<SpatialLabWorld>()&&!root.GetComponent<BeamSystem>())issues.Add(root.name+" 未设置面归属（默认仅在默认面显示）");
+            foreach(var source in Object.FindObjectsOfType<LightEmitter>())if(source.active){
+                var route=OpticalRoute.From(source);Vector3 origin=source.transform.position,direction=source.WorldDirection;Component previous=null;float range=source.maxLength;
+                for(int bounce=0;bounce<12&&range>.02f;bounce++){
+                    if(!SpaceOptics.CastPreview(origin,direction,range,previous,route,out var hit)){if(route.inTransit)issues.Add(source.name+"：跨面光缺少接收 DepthMirror，或接收镜角度未转回平面");break;}
+                    range-=hit.distance;if(!route.Reflect(hit.collider,direction,out var next,out _))break;previous=hit.collider;direction=next;origin=hit.point+next*.035f;range-=.035f;
+                }
+            }
             var points=new List<Vector3>();Physics.SyncTransforms();foreach(var pad in Object.FindObjectsOfType<LightLaunchPad>())if(pad.available&&!SpaceOptics.Preview(pad,points,out string problem))issues.Add(pad.name+"：光路 "+problem);foreach(var landing in Object.FindObjectsOfType<LightLanding>())if(!landing.spawn)issues.Add(landing.name+" 缺少实体落点");
             return issues.Count==0?"配置检查通过（仍需 Play 验证路线与手感）":string.Join("\n",issues);
         }

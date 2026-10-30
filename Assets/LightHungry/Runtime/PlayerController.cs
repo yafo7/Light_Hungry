@@ -60,7 +60,7 @@ namespace LightHungry {
                 if(Holding){if(Input.GetKey(KeyCode.E)&&Vector3.Distance(transform.position,Holding.transform.position)<3){Holding.Hold(this,Time.deltaTime);horizontal=0;buffer=0;}else{Holding.Release(this);Holding=null;}}
             }
             grabbed=null;
-            if(Body3D&&Mathf.Abs(horizontal)>.1f&&Physics.SphereCast(transform.position+Vector3.up*.55f,.28f,ViewRight*Mathf.Sign(horizontal),out var pushHit,.53f,groundMask,QueryTriggerInteraction.Ignore))grabbed=pushHit.collider.GetComponentInParent<PushableBox>();
+            if(Body3D&&Mathf.Abs(horizontal)>.1f){float nearest=.54f;foreach(var hit in Physics.SphereCastAll(transform.position+Vector3.up*.55f,.28f,ViewRight*Mathf.Sign(horizontal),.53f,groundMask,QueryTriggerInteraction.Ignore))if(hit.distance<nearest&&(FaceMembership.OpticalOf(hit.collider)&FaceMembership.OpticalOf(this))!=0){nearest=hit.distance;grabbed=hit.collider.GetComponentInParent<PushableBox>();}}
             if(grabbed&&Mode!=AbilityMode.Release)grabbed.Drive(horizontal*speed*.65f);
             if(visual){visual.flipX=facing<0; Animate();}
             arrow.enabled=Mode==AbilityMode.Reflect||Mode==AbilityMode.Release||Mode==AbilityMode.Mouth;
@@ -113,9 +113,10 @@ namespace LightHungry {
                 Vector3 origin=transform.position+Vector3.up*.6f;
                 foreach(var c in Physics.OverlapSphere(origin,best,~0,QueryTriggerInteraction.Collide)){
                     Interactable target=null;foreach(var candidate in c.GetComponentsInParent<Interactable>())if(!(candidate is PushableBox)){target=candidate;break;}if(!target)continue;
+                    if((FaceMembership.OpticalOf(target)&FaceMembership.OpticalOf(this))==0)continue;
                     Vector3 point=c.ClosestPoint(origin);float distance=Vector3.Distance(origin,point);
                     if(distance>=best)continue;
-                    if(distance>.01f&&Physics.Raycast(origin,(point-origin)/distance,out var hit,distance,groundMask,QueryTriggerInteraction.Ignore)&&hit.collider.transform.root!=target.transform.root)continue;
+                    bool blocked=false;if(distance>.01f)foreach(var hit in Physics.RaycastAll(origin,(point-origin)/distance,distance,groundMask,QueryTriggerInteraction.Ignore))if((FaceMembership.OpticalOf(hit.collider)&FaceMembership.OpticalOf(this))!=0&&hit.collider.transform.root!=target.transform.root){blocked=true;break;}if(blocked)continue;
                     result=target;best=distance;
                 }
                 return result;

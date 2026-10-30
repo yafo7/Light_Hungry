@@ -7,7 +7,7 @@ namespace LightHungry.EditorTools {
         public const string Folder="Assets/LightHungry/Art/Watercolor/";
         public static void Import(){
             AssetDatabase.Refresh();
-            Slice("identity",3,new[]{0f,1f});Slice("motion",4,new[]{0f,.25f,.5f,.75f,1f});
+            Slice("identity",3,new[]{0f,1f});MotionFrameRepair.Repair();
             Slice("interaction",4,new[]{0f,.28f,.53f,.77f,1f});
             Slice("props",4,new[]{0f,.29f,.49f,.73f,1f});
             Slice("terrain",4,new[]{0f,.31f,.68f,1f});Slice("beast",4,new[]{0f,.64f,1f});

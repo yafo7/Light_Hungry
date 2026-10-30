@@ -5,6 +5,7 @@ namespace LightHungry {
         public int reflectionLimit=12;
         public Sprite[] photonFrames;
         public bool IsTravelling {get;private set;}
+        public OpticalRoute Route {get;private set;}
         public string LastResult {get;private set;}
         public int Reflections {get;private set;}
         PlayerController player;Vector3 origin,position,direction;int originalView;float distance;
@@ -16,13 +17,15 @@ namespace LightHungry {
         void Awake(){player=GetComponent<PlayerController>();}
         public bool Launch(LightLaunchPad pad){
             if(!pad||!pad.available||IsTravelling||!player.Body3D||!player.Grounded||Vector3.Distance(transform.position,pad.transform.position)>2.5f||CameraViewController.Active.IsRotating||GetComponent<PlayerCarry>().Held)return false;
-            return Begin(pad.Origin,pad.Direction,speed);
+            return Begin(pad.Origin,pad.Direction,speed,OpticalRoute.From(pad));
         }
-        public bool LaunchFromLight(Vector3 start,Vector3 heading,float velocity){
+        public bool LaunchFromLight(Vector3 start,Vector3 heading,float velocity){return LaunchFromLight(start,heading,velocity,new OpticalRoute{view=CameraViewController.Active?CameraViewController.Active.CurrentView:1});}
+        public bool LaunchFromLight(Vector3 start,Vector3 heading,float velocity,OpticalRoute route){
             if(IsTravelling||!player.Body3D||!CameraViewController.Active||CameraViewController.Active.IsRotating||heading.sqrMagnitude<.5f)return false;
-            return Begin(start,heading.normalized,velocity);
+            return Begin(start,heading.normalized,velocity,route);
         }
-        bool Begin(Vector3 start,Vector3 heading,float velocity){
+        bool Begin(Vector3 start,Vector3 heading,float velocity,OpticalRoute route){
+            Route=route;
             origin=player.Body3D.position;originalView=CameraViewController.Active.CurrentView;activeSpeed=velocity;
             player.PrepareViewChange();player.EndRelease();savedInterpolation=player.Body3D.interpolation;player.Body3D.interpolation=RigidbodyInterpolation.None;player.Body3D.isKinematic=true;
             contacts=player.Body3D.GetComponentsInChildren<Collider>();contactStates=new bool[contacts.Length];for(int i=0;i<contacts.Length;i++){contactStates[i]=contacts[i].enabled;contacts[i].enabled=false;}
@@ -45,17 +48,22 @@ namespace LightHungry {
             if(Input.GetKeyDown(KeyCode.Space)&&TryJumpOut())return;
             float step=activeSpeed*Time.deltaTime;
             for(int i=0;i<8&&step>0&&IsTravelling;i++){
-                if(!SpaceOptics.Cast(position,direction,step,previous,player,true,out var hit)){Move(position+direction*step);distance+=step;step=0;}
+                if(!SpaceOptics.Cast(position,direction,step,previous,player,true,Route,out var hit)){Move(position+direction*step);distance+=step;step=0;}
                 else {
                     Move(hit.point);distance+=hit.distance;step-=hit.distance;
                     var landing=hit.collider.GetComponentInParent<LightLanding>();
                     if(landing){Finish(landing.CanMaterialize(player),landing,"Landing blocked");break;}
-                    if(!SpaceOptics.Reflect(hit.collider,direction,out var next,out int view)){StopAtObstacle();break;}
+                    var route=Route;bool wasTransit=route.inTransit;
+                    if(!route.Reflect(hit.collider,direction,out var next,out int view)){StopAtObstacle();break;}
+                    Route=route;
                     if(++Reflections>reflectionLimit){Finish(false,null,"Reflection limit");break;}
-                    bool cross=Mathf.Abs(Vector3.Dot(next,Camera.main.transform.forward))>.5f;
+                    bool cross=wasTransit!=Route.inTransit;
                     direction=next;previous=hit.collider;Move(position+direction*.04f);distance+=.04f;
-                    if(view==0&&cross)view=Mathf.Abs(direction.z)>.5f?(direction.z>0?4:3):Mathf.Abs(direction.x)>.5f?(direction.x>0?1:2):0;
-                    if(view!=0)CameraViewController.Active.FollowTravelView(view);
+                    // Look ahead to a physical receiving mirror; never infer a face from +X/+Z alone.
+                    if(Route.inTransit&&SpaceOptics.Cast(position,direction,maxDistance-distance,previous,player,true,Route,out var receiving)){
+                        var arrival=Route;if(arrival.Reflect(receiving.collider,direction,out _,out int arrivingView)&&!arrival.inTransit)view=arrivingView;
+                    }
+                    if(view>0)CameraViewController.Active.FollowTravelView(view);
                     if(cross&&trail)trail.Clear();
                     if(cross)GetComponent<ScreenBreakEffect>()?.Burst(position);
                 }
@@ -63,7 +71,7 @@ namespace LightHungry {
             }
         }
         void Move(Vector3 p){position=p;player.SetSpatialPosition(p-Vector3.up*.95f);if(orb)orb.transform.position=p;}
-        bool FreeAt(Vector3 feet)=>!Physics.CheckBox(feet+Vector3.up*.72f,new Vector3(.39f,.69f,.34f),Quaternion.identity,player.groundMask,QueryTriggerInteraction.Ignore);
+        bool FreeAt(Vector3 feet){foreach(var collider in Physics.OverlapBox(feet+Vector3.up*.72f,new Vector3(.39f,.69f,.34f),Quaternion.identity,player.groundMask,QueryTriggerInteraction.Ignore))if((FaceMembership.OpticalOf(collider)&Route.Face)!=0)return false;return true;}
         void StopAtObstacle(){
             Vector3 feet=position-Vector3.up*.95f;
             // Return only along the incoming segment far enough to fit the body beside the obstacle.
@@ -72,7 +80,7 @@ namespace LightHungry {
             position-=direction*.05f;Move(position);blockedFlash=.18f;LastResult="No room to materialize";
             direction=-direction;previous=null;
         }
-        int NearestView(){int view=1;float best=360;for(int i=1;i<=4;i++){float d=Mathf.Abs(Mathf.DeltaAngle(CameraViewController.Active.VisualYaw,CameraViewController.Yaw(i)));if(d<best){best=d;view=i;}}return view;}
+        int NearestView(){if(Route.view>0)return Route.view;int view=1;float best=360;for(int i=1;i<=4;i++){float d=Mathf.Abs(Mathf.DeltaAngle(CameraViewController.Active.VisualYaw,CameraViewController.Yaw(i)));if(d<best){best=d;view=i;}}return view;}
         void RestoreAt(Vector3 feet,bool jump,string result){
             IsTravelling=false;player.Body3D.isKinematic=false;player.SetSpatialPosition(feet);player.Body3D.interpolation=savedInterpolation;
             for(int i=0;i<contacts.Length;i++)if(contacts[i])contacts[i].enabled=contactStates[i];
