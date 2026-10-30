@@ -6,6 +6,7 @@ namespace LightHungry {
         public static bool Cast(Vector3 origin,Vector3 direction,float distance,Collider previous,PlayerController player,bool travel,out RaycastHit nearest){
             nearest=default;float best=float.PositiveInfinity;
             foreach(var hit in Physics.RaycastAll(origin,direction,distance,travel?TravelMask:~0,QueryTriggerInteraction.Collide)){
+                if(hit.collider.GetComponentInParent<OpticalPassThrough>())continue;
                 if(hit.collider==previous || (player && hit.collider.GetComponentInParent<PlayerController>()==player))continue;
                 if(hit.collider.isTrigger && !hit.collider.GetComponentInParent<SpaceMirror>() && !hit.collider.GetComponentInParent<MirrorSurface>() && !hit.collider.GetComponentInParent<LightLanding>() && !hit.collider.GetComponentInParent<BeastReceiver>() && !hit.collider.GetComponentInParent<SpaceHazard>())continue;
                 if(hit.distance<best){best=hit.distance;nearest=hit;}
@@ -17,7 +18,7 @@ namespace LightHungry {
             var mirror=c.GetComponentInParent<SpaceMirror>();
             if(mirror){direction=Vector3.Reflect(incoming,mirror.Normal).normalized;view=mirror.travelView;return true;}
             var old=c.GetComponentInParent<MirrorSurface>();
-            if(old){direction=Vector3.Reflect(incoming,old.face.transform.up.normalized).normalized;return true;}
+            if(old){direction=Vector3.Reflect(incoming,old.WorldNormal).normalized;view=old.destinationView;return true;}
             return false;
         }
         public static LightLanding Preview(LightLaunchPad pad,List<Vector3> points,out string problem,int limit=12,float range=80){

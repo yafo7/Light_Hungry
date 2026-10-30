@@ -1,0 +1,54 @@
+{
+  "$schema": "script-game-art-bible/v1",
+  "schemaVersion": "1.0.0",
+  "status": "integrated-awaiting-user-art-review",
+  "style": {
+    "medium": "clean restrained watercolor",
+    "brief": "Clean restrained hand-painted watercolor; large calm translucent pigment washes, simple silhouettes, pale cool gray-blue shadows, chalk white highlights, muted sage and pale stone. No dirty speckles, gold bloom, glitter, dense microtexture, 3D rendering or lettering."
+  },
+  "palette": {
+    "spirit": "translucent pearl white",
+    "shadow": "pale blue gray",
+    "stone": "ivory limestone",
+    "foliage": "muted sage"
+  },
+  "characterRules": {
+    "identity": "wc_identity",
+    "opacity": 0.78
+  },
+  "environmentRules": {
+    "setting": "greenhouse ruins",
+    "perspective": "side elevation"
+  },
+  "compositionRules": {
+    "camera": "orthographic four stable views"
+  },
+  "lightingRules": {
+    "beam": "soft white core and translucent wash"
+  },
+  "uiRules": {
+    "inGameText": false
+  },
+  "motionRules": {
+    "walk": 8,
+    "idle": 4,
+    "jump": 4,
+    "push": 4,
+    "rope": 4,
+    "dissolve": 4,
+    "photon": 4
+  },
+  "accessibilityRules": {
+    "silhouette": "gray contour on white spirit"
+  },
+  "prohibitedDrift": [
+    "dirty speckling",
+    "dense ornament",
+    "glitter",
+    "gold bloom",
+    "embossed oil texture"
+  ],
+  "unresolved": [
+    "Human approval of style and animation consistency"
+  ]
+}

@@ -7,6 +7,7 @@ namespace LightHungry {
         Vector3 start;Rigidbody2D body;Rigidbody spatial;bool seekEnd;float goal;Vector2 step;
         void Awake(){start=transform.position;body=GetComponent<Rigidbody2D>();spatial=SpatialLabWorld.Active?GetComponentInParent<Rigidbody>():null;}
         public void ToggleEnd(){goal=Position01<.5f?1:0;seekEnd=true;}
+        public void Drive(bool value){goal=value?1:0;seekEnd=true;}
         void FixedUpdate(){
             int direction=(rightPlate&&rightPlate.IsPressed?1:0)-(leftPlate&&leftPlate.IsPressed?1:0);
             if((leftPlate&&leftPlate.IsPressed)||(rightPlate&&rightPlate.IsPressed))seekEnd=false;

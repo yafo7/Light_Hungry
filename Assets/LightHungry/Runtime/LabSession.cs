@@ -7,7 +7,7 @@ namespace LightHungry {
         public bool startWithReflection=true,startWithSwallow=true;
         public bool paused;bool restarting;float look;
         void Awake(){Instance=this;Time.timeScale=1;Application.targetFrameRate=60;}
-        void Start(){ExposureJourneySmokeTest.ConfigureLegacy(this);if(player){player.reflectUnlocked=startWithReflection;player.swallowUnlocked=startWithSwallow;}gameObject.AddComponent<LabSmokeTest>();gameObject.AddComponent<CameraViewSmokeTest>();gameObject.AddComponent<LightTravelSmokeTest>();gameObject.AddComponent<ExposureJourneySmokeTest>();}
+        void Start(){ExposureJourneySmokeTest.ConfigureLegacy(this);if(player){player.reflectUnlocked=startWithReflection;player.swallowUnlocked=startWithSwallow;}gameObject.AddComponent<LabSmokeTest>();gameObject.AddComponent<CameraViewSmokeTest>();gameObject.AddComponent<LightTravelSmokeTest>();gameObject.AddComponent<ExposureJourneySmokeTest>();gameObject.AddComponent<FaceIsolationSmokeTest>();gameObject.AddComponent<WatercolorSmokeTest>();}
         void Update(){
             if(Input.GetKeyDown(KeyCode.R))Restart();
             if(GetComponent<LightRouteReview>()&&GetComponent<LightRouteReview>().IsPlaying)return;

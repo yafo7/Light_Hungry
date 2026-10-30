@@ -8,6 +8,7 @@ namespace LightHungry {
     public sealed class SpatialLabWorld : MonoBehaviour {
         public static SpatialLabWorld Active { get; private set; }
         public Material spriteMaterial, actorMaterial, solidMaterial, backdropMaterial;
+        public bool flatArtwork;
         [Range(4, 24)] public float platformDepth = 12;
         readonly List<Renderer> backdrops = new List<Renderer>();
         readonly List<Vector3> backdropNormals = new List<Vector3>();
@@ -44,12 +45,12 @@ namespace LightHungry {
                 if (renderer.gameObject.name == "Background") { renderer.enabled = false; continue; }
                 if (spriteMaterial) renderer.sharedMaterial = spriteMaterial;
                 if (actorMaterial && renderer.GetComponentInParent<PlayerController>()) renderer.sharedMaterial = actorMaterial;
-                renderer.sortingOrder = 0;
-                if (renderer.GetComponentInParent<PlayerController>() || renderer.GetComponentInParent<BeastReceiver>() || renderer.GetComponentInParent<AbilityPickup>()) {
+                if(!flatArtwork)renderer.sortingOrder = 0;
+                if (renderer.GetComponentInParent<PlayerController>() || renderer.GetComponentInParent<BeastReceiver>() || renderer.GetComponentInParent<AbilityPickup>() || renderer.GetComponentInParent<LightEmitter>()) {
                     if (!renderer.GetComponent<ViewFacingSprite>()) renderer.gameObject.AddComponent<ViewFacingSprite>();
                 }
             }
-            MakeBackdrop();
+            if(!flatArtwork)MakeBackdrop();
             foreach(var p in FindObjectsOfType<PlayerController>()){
                 if(!p.GetComponent<PlayerCarry>())p.gameObject.AddComponent<PlayerCarry>();
                 if(!p.GetComponent<LightTravel>())p.gameObject.AddComponent<LightTravel>();
@@ -74,7 +75,7 @@ namespace LightHungry {
                 result = spatial;
                 bool solidArt = !box.isTrigger && !box.GetComponentInParent<PlayerController>() && box.GetComponentInChildren<SpriteRenderer>();
                 bool mirrorFace = box.GetComponentInParent<MirrorSurface>() && box.gameObject.name == "Optical face";
-                if (solidArt || mirrorFace) {
+                if (!flatArtwork&&(solidArt || mirrorFace)) {
                     var color = mirrorFace ? new Color(.60f,.78f,.78f) : box.GetComponent<PushableBox>() ? new Color(.39f,.28f,.18f) : new Color(.29f,.34f,.36f);
                     AddVolume(box.transform, spatial.center, spatial.size, color);
                     if (!mirrorFace) {
@@ -97,7 +98,7 @@ namespace LightHungry {
 
         float DepthFor(BoxCollider2D box) {
             if (box.GetComponentInParent<PlayerController>()) return .68f;
-            if (box.GetComponent<PushableBox>()) return box.size.x;
+            if (box.GetComponent<PushableBox>()) return flatArtwork?.8f:box.size.x;
             if (box.GetComponent<RailDevice>()) return 2.1f;
             if (box.GetComponentInParent<MirrorSurface>()) return .35f;
             if (box.gameObject.layer == 8) return platformDepth;
@@ -162,6 +163,7 @@ namespace LightHungry {
                 var outward = Quaternion.Euler(0, i * 90, 0) * Vector3.forward;
                 var go = GameObject.CreatePrimitive(PrimitiveType.Quad);
                 go.name = "Room backdrop " + i;
+                go.AddComponent<FaceMembership>().faces=RoomFaces.All;
                 go.transform.SetParent(transform, false);
                 go.transform.position = outward * 17;
                 go.transform.rotation = Quaternion.LookRotation(outward);

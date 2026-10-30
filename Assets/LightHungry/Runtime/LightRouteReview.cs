@@ -3,7 +3,7 @@ using UnityEngine;
 namespace LightHungry {
     [DefaultExecutionOrder(900)]
     public sealed class LightRouteReview:MonoBehaviour {
-        public bool automatic=true;
+        public bool automatic=false;
         public float duration=7;
         public bool IsPlaying {get;private set;}
         public bool Played {get;private set;}

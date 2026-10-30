@@ -8,6 +8,7 @@ namespace LightHungry {
         void FixedUpdate(){
             var spatial=SpatialLabWorld.Active?GetComponentInParent<Rigidbody>():null;
             if(spatial){
+                if(spatial.isKinematic)return;
                 var right=CameraViewController.Active?CameraViewController.Active.ViewRight:Vector3.right;
                 spatial.constraints=RigidbodyConstraints.FreezeRotation|(Mathf.Abs(right.x)>.5f?RigidbodyConstraints.FreezePositionZ:RigidbodyConstraints.FreezePositionX);
                 float horizontal=Vector3.Dot(spatial.velocity,right);

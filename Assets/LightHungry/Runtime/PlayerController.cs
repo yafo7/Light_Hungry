@@ -15,6 +15,9 @@ namespace LightHungry {
         [HideInInspector] public bool automationInput; [HideInInspector] public float automationHorizontal;
         [HideInInspector] public bool automationJump;
         public Interactable Nearest {get;private set;}
+        public Interactable Holding {get;private set;}
+        public bool IsPushing=>grabbed;
+        public float LastInteractionTime {get;private set;}=-10;
         public Rigidbody2D Body {get;private set;}
         public Rigidbody Body3D {get;private set;}
         public Vector3 ViewRight=>CameraViewController.Active?CameraViewController.Active.ViewRight:Vector3.right;
@@ -53,10 +56,11 @@ namespace LightHungry {
             if(!automationInput){
                 if(Input.GetKeyDown(KeyCode.E)&&GetComponent<PlayerCarry>()&&GetComponent<PlayerCarry>().Held){GetComponent<PlayerCarry>().Drop();return;}
                 if(Input.GetKeyDown(KeyCode.Q)&&Nearest is MirrorSurface mirror)mirror.Resize();
-                if(Input.GetKeyDown(KeyCode.E)&&Nearest){if(Nearest is PushableBox box)grabbed=box;else Nearest.Interact(this);}
-                if(!Input.GetKey(KeyCode.E))grabbed=null;
+                if(Input.GetKeyDown(KeyCode.E)&&Nearest){LastInteractionTime=Time.time;if(Nearest.Continuous)Holding=Nearest;else if(!(Nearest is PushableBox))Nearest.Interact(this);}
+                if(Holding){if(Input.GetKey(KeyCode.E)&&Vector3.Distance(transform.position,Holding.transform.position)<3){Holding.Hold(this,Time.deltaTime);horizontal=0;buffer=0;}else{Holding.Release(this);Holding=null;}}
             }
-            if(grabbed&&Vector2.Distance(transform.position,grabbed.transform.position)>2.2f)grabbed=null;
+            grabbed=null;
+            if(Body3D&&Mathf.Abs(horizontal)>.1f&&Physics.SphereCast(transform.position+Vector3.up*.55f,.28f,ViewRight*Mathf.Sign(horizontal),out var pushHit,.53f,groundMask,QueryTriggerInteraction.Ignore))grabbed=pushHit.collider.GetComponentInParent<PushableBox>();
             if(grabbed&&Mode!=AbilityMode.Release)grabbed.Drive(horizontal*speed*.65f);
             if(visual){visual.flipX=facing<0; Animate();}
             arrow.enabled=Mode==AbilityMode.Reflect||Mode==AbilityMode.Release||Mode==AbilityMode.Mouth;
@@ -79,7 +83,7 @@ namespace LightHungry {
             if(!immobile&&!grabbed&&buffer>0&&coyote>0){Body.velocity=new Vector2(Body.velocity.x,jumpSpeed);buffer=0;coyote=0;}
             if(!automationInput&&!Input.GetKey(KeyCode.Space)&&Body.velocity.y>0)Body.velocity+=Vector2.down*22*Time.fixedDeltaTime;
         }
-        public void PrepareViewChange(){horizontal=0;buffer=0;coyote=0;grabbed=null;if(Body3D){Body3D.velocity=Vector3.zero;Body3D.angularVelocity=Vector3.zero;}}
+        public void PrepareViewChange(){horizontal=0;buffer=0;coyote=0;grabbed=null;if(Holding)Holding.Release(this);Holding=null;if(Body3D){Body3D.velocity=Vector3.zero;Body3D.angularVelocity=Vector3.zero;}}
         public void SetSpatialPosition(Vector3 position){
             if(!Body3D)return;
             Body3D.transform.position=position;
@@ -108,10 +112,10 @@ namespace LightHungry {
             if(Body3D){
                 Vector3 origin=transform.position+Vector3.up*.6f;
                 foreach(var c in Physics.OverlapSphere(origin,best,~0,QueryTriggerInteraction.Collide)){
-                    var target=c.GetComponentInParent<Interactable>();if(!target)continue;
+                    Interactable target=null;foreach(var candidate in c.GetComponentsInParent<Interactable>())if(!(candidate is PushableBox)){target=candidate;break;}if(!target)continue;
                     Vector3 point=c.ClosestPoint(origin);float distance=Vector3.Distance(origin,point);
                     if(distance>=best)continue;
-                    if(distance>.01f&&Physics.Raycast(origin,(point-origin)/distance,out var hit,distance,groundMask,QueryTriggerInteraction.Ignore)&&hit.collider.GetComponentInParent<Interactable>()!=target)continue;
+                    if(distance>.01f&&Physics.Raycast(origin,(point-origin)/distance,out var hit,distance,groundMask,QueryTriggerInteraction.Ignore)&&hit.collider.transform.root!=target.transform.root)continue;
                     result=target;best=distance;
                 }
                 return result;

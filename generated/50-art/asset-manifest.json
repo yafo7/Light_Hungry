@@ -1,0 +1,282 @@
+{
+  "$schema": "script-game-asset-manifest/v1",
+  "schemaVersion": "1.0.0",
+  "status": "integrated-awaiting-user-art-review",
+  "assets": [
+    {
+      "id": "wc_identity",
+      "kind": "character-identity",
+      "ownerId": "light-hungry",
+      "state": "current",
+      "path": "Assets/LightHungry/Art/Watercolor/identity.png",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "alpha": true,
+      "generationMethod": "built-in image_gen",
+      "referenceAssetIds": [],
+      "promptOrBrief": "Clean restrained hand-painted watercolor; large calm translucent pigment washes, simple silhouettes, pale cool gray-blue shadows, chalk white highlights, muted sage and pale stone. No dirty speckles, gold bloom, glitter, dense microtexture, 3D rendering or lettering. Three poses front/side/back of translucent white flame spirit, charcoal oval eyes, small pale diamond heart, short limbs.",
+      "source": "AI generated: exec-da44819d-4ce1-47e7-9621-716d4619c9ca.png",
+      "author": "OpenAI image generation under user direction",
+      "license": "Generated project asset, no third-party art source in this revision",
+      "attribution": null,
+      "status": "integrated-awaiting-user-art-review",
+      "qaEvidence": [
+        "Unity import",
+        "Verification/watercolor-front.png",
+        "PNG alpha min/max: (0, 254)",
+        "Verification/watercolor-verified-runtime.log: 22 checks passed",
+        "Verification/watercolor-verified-build.log: 27 editor checks and Windows build passed"
+      ]
+    },
+    {
+      "id": "wc_background",
+      "kind": "background",
+      "ownerId": "light-hungry",
+      "state": "current",
+      "path": "Assets/LightHungry/Art/Watercolor/background.png",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "alpha": false,
+      "generationMethod": "built-in image_gen",
+      "referenceAssetIds": [],
+      "promptOrBrief": "Clean restrained hand-painted watercolor; large calm translucent pigment washes, simple silhouettes, pale cool gray-blue shadows, chalk white highlights, muted sage and pale stone. No dirty speckles, gold bloom, glitter, dense microtexture, 3D rendering or lettering. 16:9 quiet greenhouse, pale stone arches, sage ivy, soft blue-gray windows, side elevation.",
+      "source": "AI generated: exec-c31423ad-ba76-48ca-a09e-9183556f2237.png",
+      "author": "OpenAI image generation under user direction",
+      "license": "Generated project asset, no third-party art source in this revision",
+      "attribution": null,
+      "status": "integrated-awaiting-user-art-review",
+      "qaEvidence": [
+        "Unity import",
+        "Verification/watercolor-front.png",
+        "Verification/watercolor-verified-runtime.log: 22 checks passed",
+        "Verification/watercolor-verified-build.log: 27 editor checks and Windows build passed"
+      ]
+    },
+    {
+      "id": "wc_motion",
+      "kind": "sprite-sheet",
+      "ownerId": "light-hungry",
+      "state": "current",
+      "path": "Assets/LightHungry/Art/Watercolor/motion.png",
+      "dimensions": {
+        "width": 1295,
+        "height": 1214
+      },
+      "alpha": true,
+      "generationMethod": "built-in image_gen",
+      "referenceAssetIds": [
+        "wc_identity"
+      ],
+      "promptOrBrief": "Clean restrained hand-painted watercolor; large calm translucent pigment washes, simple silhouettes, pale cool gray-blue shadows, chalk white highlights, muted sage and pale stone. No dirty speckles, gold bloom, glitter, dense microtexture, 3D rendering or lettering. 4x4: four idle, eight right-facing walk, four jump frames.",
+      "source": "AI generated: exec-409bbab7-86e4-41bd-a1c4-a464d7ce6bff.png",
+      "author": "OpenAI image generation under user direction",
+      "license": "Generated project asset, no third-party art source in this revision",
+      "attribution": null,
+      "status": "integrated-awaiting-user-art-review",
+      "qaEvidence": [
+        "Unity import",
+        "Verification/watercolor-front.png",
+        "PNG alpha min/max: (0, 255)",
+        "Verification/watercolor-verified-runtime.log: 22 checks passed",
+        "Verification/watercolor-verified-build.log: 27 editor checks and Windows build passed"
+      ]
+    },
+    {
+      "id": "wc_interaction",
+      "kind": "sprite-sheet",
+      "ownerId": "light-hungry",
+      "state": "current",
+      "path": "Assets/LightHungry/Art/Watercolor/interaction.png",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "alpha": true,
+      "generationMethod": "built-in image_gen",
+      "referenceAssetIds": [
+        "wc_identity"
+      ],
+      "promptOrBrief": "Clean restrained hand-painted watercolor; large calm translucent pigment washes, simple silhouettes, pale cool gray-blue shadows, chalk white highlights, muted sage and pale stone. No dirty speckles, gold bloom, glitter, dense microtexture, 3D rendering or lettering. 4x4: look up/down and interact, four push, four pull rope, four dissolve.",
+      "source": "AI generated: exec-62e608de-1aad-462e-a2a0-fe584b128235.png",
+      "author": "OpenAI image generation under user direction",
+      "license": "Generated project asset, no third-party art source in this revision",
+      "attribution": null,
+      "status": "integrated-awaiting-user-art-review",
+      "qaEvidence": [
+        "Unity import",
+        "Verification/watercolor-front.png",
+        "PNG alpha min/max: (0, 254)",
+        "Verification/watercolor-verified-runtime.log: 22 checks passed",
+        "Verification/watercolor-verified-build.log: 27 editor checks and Windows build passed"
+      ]
+    },
+    {
+      "id": "wc_props",
+      "kind": "sprite-sheet",
+      "ownerId": "light-hungry",
+      "state": "current",
+      "path": "Assets/LightHungry/Art/Watercolor/props.png",
+      "dimensions": {
+        "width": 1300,
+        "height": 1209
+      },
+      "alpha": true,
+      "generationMethod": "built-in image_gen",
+      "referenceAssetIds": [],
+      "promptOrBrief": "Clean restrained hand-painted watercolor; large calm translucent pigment washes, simple silhouettes, pale cool gray-blue shadows, chalk white highlights, muted sage and pale stone. No dirty speckles, gold bloom, glitter, dense microtexture, 3D rendering or lettering. 4x4: crate, cart, mirror, pedestal, button up/down, lever left/right, pulley, elevator, gate, grille, glass, shards, flashlight, brazier.",
+      "source": "AI generated: exec-dc7594db-2274-4859-8de4-0a4542167124.png",
+      "author": "OpenAI image generation under user direction",
+      "license": "Generated project asset, no third-party art source in this revision",
+      "attribution": null,
+      "status": "integrated-awaiting-user-art-review",
+      "qaEvidence": [
+        "Unity import",
+        "Verification/watercolor-front.png",
+        "PNG alpha min/max: (0, 255)",
+        "Verification/watercolor-verified-runtime.log: 22 checks passed",
+        "Verification/watercolor-verified-build.log: 27 editor checks and Windows build passed"
+      ]
+    },
+    {
+      "id": "wc_terrain",
+      "kind": "sprite-sheet",
+      "ownerId": "light-hungry",
+      "state": "current",
+      "path": "Assets/LightHungry/Art/Watercolor/terrain.png",
+      "dimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "alpha": true,
+      "generationMethod": "built-in image_gen",
+      "referenceAssetIds": [],
+      "promptOrBrief": "Clean restrained hand-painted watercolor; large calm translucent pigment washes, simple silhouettes, pale cool gray-blue shadows, chalk white highlights, muted sage and pale stone. No dirty speckles, gold bloom, glitter, dense microtexture, 3D rendering or lettering. 4x3: platform caps/middle/slab, wall/pillar/windows, ivy/rope/orb/heart.",
+      "source": "AI generated: exec-3b5d74d9-c9a7-4b60-9065-71cee107a46d.png",
+      "author": "OpenAI image generation under user direction",
+      "license": "Generated project asset, no third-party art source in this revision",
+      "attribution": null,
+      "status": "integrated-awaiting-user-art-review",
+      "qaEvidence": [
+        "Unity import",
+        "Verification/watercolor-front.png",
+        "PNG alpha min/max: (0, 255)",
+        "Verification/watercolor-verified-runtime.log: 22 checks passed",
+        "Verification/watercolor-verified-build.log: 27 editor checks and Windows build passed"
+      ]
+    },
+    {
+      "id": "wc_beast",
+      "kind": "sprite-sheet",
+      "ownerId": "light-hungry",
+      "state": "current",
+      "path": "Assets/LightHungry/Art/Watercolor/beast.png",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "alpha": true,
+      "generationMethod": "built-in image_gen",
+      "referenceAssetIds": [
+        "wc_identity"
+      ],
+      "promptOrBrief": "Clean restrained hand-painted watercolor; large calm translucent pigment washes, simple silhouettes, pale cool gray-blue shadows, chalk white highlights, muted sage and pale stone. No dirty speckles, gold bloom, glitter, dense microtexture, 3D rendering or lettering. 4x2: hungry/blink/feed/satisfied bound white spirit, four photon clusters.",
+      "source": "AI generated: exec-c58ffdee-f53a-4188-ad8c-ce2e6e8a2dce.png",
+      "author": "OpenAI image generation under user direction",
+      "license": "Generated project asset, no third-party art source in this revision",
+      "attribution": null,
+      "status": "integrated-awaiting-user-art-review",
+      "qaEvidence": [
+        "Unity import",
+        "Verification/watercolor-front.png",
+        "PNG alpha min/max: (0, 254)",
+        "Verification/watercolor-verified-runtime.log: 22 checks passed",
+        "Verification/watercolor-verified-build.log: 27 editor checks and Windows build passed"
+      ]
+    },
+    {
+      "id": "wc_background_back",
+      "kind": "background",
+      "ownerId": "light-hungry",
+      "state": "back",
+      "path": "Assets/LightHungry/Art/Watercolor/background_back.png",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "alpha": false,
+      "generationMethod": "built-in image_gen",
+      "referenceAssetIds": [
+        "wc_background"
+      ],
+      "promptOrBrief": "Matching clean restrained watercolor greenhouse. Entrance wall, central pale double door and arched fanlight. Orthographic elevation, same pale stone and blue-gray floor wash; no characters, platforms, text or muddy texture.",
+      "source": "AI generated with project background style reference",
+      "author": "OpenAI image generation under user direction",
+      "license": "Generated project asset",
+      "attribution": null,
+      "status": "integrated-awaiting-user-art-review",
+      "qaEvidence": [
+        "Unity import",
+        "Four-face template reference checks"
+      ]
+    },
+    {
+      "id": "wc_background_left",
+      "kind": "background",
+      "ownerId": "light-hungry",
+      "state": "left",
+      "path": "Assets/LightHungry/Art/Watercolor/background_left.png",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "alpha": false,
+      "generationMethod": "built-in image_gen",
+      "referenceAssetIds": [
+        "wc_background"
+      ],
+      "promptOrBrief": "Matching clean restrained watercolor greenhouse. Three long greenhouse glass bays and sparse sage ferns. Orthographic elevation, same pale stone and blue-gray floor wash; no characters, platforms, text or muddy texture.",
+      "source": "AI generated with project background style reference",
+      "author": "OpenAI image generation under user direction",
+      "license": "Generated project asset",
+      "attribution": null,
+      "status": "integrated-awaiting-user-art-review",
+      "qaEvidence": [
+        "Unity import",
+        "Four-face template reference checks"
+      ]
+    },
+    {
+      "id": "wc_background_right",
+      "kind": "background",
+      "ownerId": "light-hungry",
+      "state": "right",
+      "path": "Assets/LightHungry/Art/Watercolor/background_right.png",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "alpha": false,
+      "generationMethod": "built-in image_gen",
+      "referenceAssetIds": [
+        "wc_background"
+      ],
+      "promptOrBrief": "Matching clean restrained watercolor greenhouse. Pale stone wall, narrow windows and recessed pot shelves. Orthographic elevation, same pale stone and blue-gray floor wash; no characters, platforms, text or muddy texture.",
+      "source": "AI generated with project background style reference",
+      "author": "OpenAI image generation under user direction",
+      "license": "Generated project asset",
+      "attribution": null,
+      "status": "integrated-awaiting-user-art-review",
+      "qaEvidence": [
+        "Unity import",
+        "Four-face template reference checks"
+      ]
+    }
+  ],
+  "unresolved": [
+    "User final approval of art style and generated animation continuity"
+  ]
+}

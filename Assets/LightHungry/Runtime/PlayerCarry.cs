@@ -26,6 +26,7 @@ namespace LightHungry {
             var check=Physics.OverlapBox(candidate+Vector3.up*.65f,new Vector3(.6f,.57f,.6f),Quaternion.identity,player.groundMask,QueryTriggerInteraction.Ignore);
             foreach(var c in check)if(c.attachedRigidbody!=player.Body3D)return false;
             Held.transform.SetParent(originalParent,true);Held.transform.SetPositionAndRotation(candidate,originalRotation);
+            var face=Held.GetComponent<FaceMembership>();if(!face)face=Held.gameObject.AddComponent<FaceMembership>();face.faces=FaceMembership.ForView(CameraViewController.Active.CurrentView);
             for(int i=0;i<colliders.Length;i++)if(colliders[i])colliders[i].enabled=enabledStates[i];
             if(body){body.isKinematic=wasKinematic;body.useGravity=gravity;body.constraints=RigidbodyConstraints.FreezeRotation|(Mathf.Abs(player.ViewRight.x)>.5f?RigidbodyConstraints.FreezePositionZ:RigidbodyConstraints.FreezePositionX);}
             Held.Held=false;Held=null;Physics.SyncTransforms();return true;

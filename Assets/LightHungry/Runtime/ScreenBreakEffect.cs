@@ -6,8 +6,9 @@ namespace LightHungry {
             Clear();center=point;life=.6f;shards=new Transform[12];
             for(int i=0;i<shards.Length;i++){
                 var g=GameObject.CreatePrimitive(PrimitiveType.Quad);g.name="Light tear shard";Destroy(g.GetComponent<Collider>());shards[i]=g.transform;
+                g.AddComponent<FaceMembership>().faces=RoomFaces.All;
                 g.GetComponent<Renderer>().sharedMaterial=SpatialLabWorld.Active.solidMaterial;
-                var block=new MaterialPropertyBlock();block.SetColor("_Color",i%2==0?new Color(1,.85f,.4f):new Color(.4f,.7f,.75f));g.GetComponent<Renderer>().SetPropertyBlock(block);
+                var block=new MaterialPropertyBlock();block.SetColor("_Color",i%2==0?new Color(.94f,.96f,1f):new Color(.68f,.80f,.86f));g.GetComponent<Renderer>().SetPropertyBlock(block);
             }
         }
         void Update(){if(life<=0||Time.timeScale==0)return;life-=Time.deltaTime;float t=1-life/.6f;

@@ -11,8 +11,8 @@ namespace LightHungry {
             var view = CameraViewController.Active;
             if (!view) return;
             var yaw = Quaternion.Euler(0, view.VisualYaw, 0);
-            transform.localPosition = yaw * offset;
-            transform.localRotation = yaw * rotation;
+            if(transform.parent)transform.localPosition = Quaternion.Inverse(transform.parent.rotation) * yaw * offset;
+            transform.rotation = yaw * rotation;
         }
     }
 }

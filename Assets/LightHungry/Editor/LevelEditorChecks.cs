@@ -5,7 +5,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 namespace LightHungry.EditorTools {
     public static class LevelEditorChecks {
-        public static void VerifyAndBuild(){LevelKit.InstallRoom();Run();BuildInteractionLab.ValidateAndBuild();}
+        public static void VerifyAndBuild(){LevelEditorChecksV2.Run();BuildInteractionLab.ValidateAndBuild();}
         public static void Run(){
             LevelKit.EnsureAssets();string dir="Verification";Directory.CreateDirectory(dir);
             string asset=AssetDatabase.GenerateUniqueAssetPath("Assets/LightHungry/Scenes/EditorCheck.unity");

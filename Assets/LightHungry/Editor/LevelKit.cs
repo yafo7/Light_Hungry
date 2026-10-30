@@ -98,17 +98,21 @@ namespace LightHungry.EditorTools {
         }
         public static void InstallAndBuild(){InstallRoom();BuildInteractionLab.ValidateAndBuild();}
         public static void NewLevel(string path){
+            if(AssetDatabase.LoadAssetAtPath<GameObject>(Root+"Prefabs/Background.prefab")){WatercolorWorkshop.CreateEmpty(path);return;}
             var scene=EditorSceneManager.NewScene(NewSceneSetup.EmptyScene,NewSceneMode.Single);
             var c=new GameObject("Main Camera").AddComponent<Camera>();c.tag="MainCamera";c.orthographic=true;c.orthographicSize=9;c.gameObject.AddComponent<AudioListener>();
             var v=c.gameObject.AddComponent<CameraViewController>();v.targetCamera=c;
+            c.gameObject.AddComponent<FaceVisibility>();
             var world=new GameObject("Spatial Lab").AddComponent<SpatialLabWorld>();
             world.spriteMaterial=AssetDatabase.LoadAssetAtPath<Material>(Root+"Materials/SpatialSprite.mat");world.actorMaterial=AssetDatabase.LoadAssetAtPath<Material>(Root+"Materials/SpatialActor.mat");world.solidMaterial=Mat;world.backdropMaterial=AssetDatabase.LoadAssetAtPath<Material>(Root+"Materials/SpatialBackdrop.mat");
             var p=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>(Root+"Prefabs/Player.prefab"));p.transform.position=new Vector3(-4,.1f,0);v.player=p.GetComponent<PlayerController>();
             var beams=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>(Root+"Prefabs/BeamSystem.prefab"));
             var session=new GameObject("Lab Session").AddComponent<LabSession>();session.player=v.player;session.beams=beams.GetComponent<BeamSystem>();session.startWithReflection=false;session.startWithSwallow=false;
+            session.gameObject.AddComponent<LightRouteReview>();
             var beast=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>(Root+"Prefabs/HungryBeast.prefab"));beast.transform.position=new Vector3(5,2,0);session.goal=beast.GetComponent<BeastReceiver>();
             var sun=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>(Root+"Prefabs/Sunlight.prefab"));sun.transform.position=new Vector3(-6,2,0);
             var floor=Put("Platform3D",new Vector3(0,-.3f,0));floor.transform.localScale=new Vector3(4,1,3);
+            foreach(var item in new[]{p,beast,sun,floor}){var membership=item.AddComponent<FaceMembership>();membership.faces=item==p?RoomFaces.All:RoomFaces.Front;EditorUtility.SetDirty(membership);PrefabUtility.RecordPrefabInstancePropertyModifications(membership);}
             EditorSceneManager.SaveScene(scene,path);
             var entries=new System.Collections.Generic.List<EditorBuildSettingsScene>(EditorBuildSettings.scenes);if(!entries.Exists(e=>e.path==path)){entries.Add(new EditorBuildSettingsScene(path,true));EditorBuildSettings.scenes=entries.ToArray();}
         }
