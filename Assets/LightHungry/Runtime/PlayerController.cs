@@ -35,10 +35,11 @@ namespace LightHungry {
             var aim=new GameObject("Aim indicator");aim.transform.SetParent(transform,false);arrow=aim.AddComponent<LineRenderer>();
             BeamSystem.ConfigureLine(arrow,.035f,new Color(.5f,.85f,1f));arrow.positionCount=2;
         }
+        bool HasGround(){foreach(var hit in Physics.OverlapBox(transform.position+Vector3.up*.035f,new Vector3(.325f,.06f,.26f),Quaternion.identity,groundMask,QueryTriggerInteraction.Ignore))if((FaceMembership.OpticalOf(hit)&FaceMembership.OpticalOf(this))!=0)return true;return false;}
         void Update(){
             if(LabSession.Instance&&LabSession.Instance.GetComponent<LightRouteReview>()&&LabSession.Instance.GetComponent<LightRouteReview>().IsPlaying)return;
             if(GetComponent<LightTravel>()&&GetComponent<LightTravel>().IsTravelling)return;
-            Grounded=Body3D?Physics.CheckBox(transform.position+Vector3.up*.035f,new Vector3(.325f,.06f,.26f),Quaternion.identity,groundMask,QueryTriggerInteraction.Ignore):Physics2D.OverlapBox((Vector2)transform.position+Vector2.up*.035f,new Vector2(.65f,.12f),0,groundMask);
+            Grounded=Body3D?HasGround():Physics2D.OverlapBox((Vector2)transform.position+Vector2.up*.035f,new Vector2(.65f,.12f),0,groundMask);
             if((CameraViewController.Active&&CameraViewController.Active.IsRotating)||(LabSession.Instance&&LabSession.Instance.paused)){horizontal=0;buffer=0;return;}
             if(Grounded)coyote=.10f;else coyote-=Time.deltaTime;
             horizontal=automationInput?automationHorizontal:Input.GetAxisRaw("Horizontal");

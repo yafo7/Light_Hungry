@@ -17,6 +17,10 @@ namespace LightHungry {
         public Vector3 ViewRight => Quaternion.Euler(0, Yaw(CurrentView), 0) * Vector3.right;
         public float VisualYaw => visualYaw;
         public int PendingView => pendingView;
+        public bool followPlayer;
+        public Vector3 followOffset=Vector3.up;
+        [Min(.1f)] public float followSpeed=5;
+        Vector3 cameraCenter;
         float visualYaw, startYaw, targetYaw, elapsed, duration, look;
         int destination = 1, pendingView;
         Vector3 heldPosition;
@@ -30,7 +34,7 @@ namespace LightHungry {
         }
 
         void Awake() {
-            Active = this;
+            Active = this;cameraCenter=observationCenter;
             if (!targetCamera) targetCamera = GetComponent<Camera>();
             if (!targetCamera) targetCamera = Camera.main;
             if (!player) player = FindObjectOfType<PlayerController>();
@@ -64,7 +68,7 @@ namespace LightHungry {
             look = Mathf.Lerp(look, desiredLook, 1 - Mathf.Exp(-4 * Time.unscaledDeltaTime));
         }
 
-        void LateUpdate() { if(!(LabSession.Instance&&LabSession.Instance.GetComponent<LightRouteReview>()&&LabSession.Instance.GetComponent<LightRouteReview>().IsPlaying))ApplyCamera(); }
+        void LateUpdate() { if(followPlayer&&player&&!IsRotating&&Time.timeScale>0)cameraCenter=Vector3.Lerp(cameraCenter,player.transform.position+followOffset,1-Mathf.Exp(-followSpeed*Time.deltaTime));if(!(LabSession.Instance&&LabSession.Instance.GetComponent<LightRouteReview>()&&LabSession.Instance.GetComponent<LightRouteReview>().IsPlaying))ApplyCamera(); }
 
         static int ReadViewKey() {
             if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1)) return 1;
@@ -108,7 +112,7 @@ namespace LightHungry {
         void ApplyCamera() {
             if (!targetCamera) return;
             var rotation = Quaternion.Euler(0, visualYaw, 0);
-            targetCamera.transform.SetPositionAndRotation(observationCenter + Vector3.up * look + rotation * (Vector3.back * orbitDistance), rotation);
+            targetCamera.transform.SetPositionAndRotation((followPlayer?cameraCenter:observationCenter) + Vector3.up * look + rotation * (Vector3.back * orbitDistance), rotation);
         }
 
         void OnDisable() {

@@ -118,7 +118,7 @@ namespace LightHungry.EditorTools {
         void DrawDetails(){
             GUILayout.Label("放置与参数",EditorStyles.boldLabel);GUILayout.Label(selectedPrefab?selectedPrefab.name:"选择左侧道具卡片",EditorStyles.miniLabel);placement=EditorGUILayout.Vector3Field("放置坐标",placement);
             using(new EditorGUI.DisabledScope(!selectedPrefab)){if(GUILayout.Button("按坐标放置"))PlacePrefab(selectedPrefab,placement,view);brush=EditorGUILayout.Toggle("连续点击放置",brush);}
-            GUILayout.Space(10);GUILayout.Label("连接操作",EditorStyles.boldLabel);selectedSource=(MonoBehaviour)EditorGUILayout.ObjectField("输入按钮／开关",selectedSource,typeof(MonoBehaviour),true);selectedTarget=(MonoBehaviour)EditorGUILayout.ObjectField("输出机关",selectedTarget,typeof(MonoBehaviour),true);
+            GUILayout.Space(10);GUILayout.Label("连接操作",EditorStyles.boldLabel);selectedSource=(MonoBehaviour)EditorGUILayout.ObjectField("输入按钮／野兽",selectedSource,typeof(MonoBehaviour),true);selectedTarget=(MonoBehaviour)EditorGUILayout.ObjectField("输出机关",selectedTarget,typeof(MonoBehaviour),true);
             connectionMode=EditorGUILayout.Popup("连接方式",connectionMode,new[]{"组合逻辑（任意／同时）","滑轮左移按钮","滑轮右移按钮","滑轮端点开关"});
             var selected=Selection.activeGameObject;if(selected){var components=selected.GetComponents<MonoBehaviour>();using(new EditorGUILayout.HorizontalScope()){if(GUILayout.Button("选作输入"))selectedSource=components.FirstOrDefault(LevelGraph.IsSource);if(GUILayout.Button("选作输出"))selectedTarget=components.FirstOrDefault(LevelGraph.IsTarget);}}
             if(GUILayout.Button("连接输入与输出"))Connect(selectedSource,selectedTarget);
@@ -138,18 +138,20 @@ namespace LightHungry.EditorTools {
             if(brush)HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));scene.Repaint();
         }
         public static string ValidateLevel(){
-            var issues=new List<string>();if(Object.FindObjectsOfType<PlayerController>().Length!=1)issues.Add("关卡需要且仅需要一个 Player");if(!Object.FindObjectOfType<CameraViewController>())issues.Add("缺少四视角摄像机");if(!Object.FindObjectOfType<FaceVisibility>())issues.Add("缺少逐面显示控制");if(!Object.FindObjectOfType<SpatialLabWorld>())issues.Add("缺少 Spatial Lab");if(!Object.FindObjectOfType<BeastReceiver>())issues.Add("缺少野兽／接光目标");
-            var edges=LevelGraph.Edges();foreach(var node in LevelGraph.Nodes())if(LevelGraph.IsSource(node)&&!edges.Exists(e=>e.source==node))issues.Add(node.name+" 未连接目标");
+            var issues=new List<string>();if(Object.FindObjectsOfType<PlayerController>().Length!=1)issues.Add("关卡需要且仅需要一个 Player");if(!Object.FindObjectOfType<CameraViewController>())issues.Add("缺少四视角摄像机");if(!Object.FindObjectOfType<FaceVisibility>())issues.Add("缺少逐面显示控制");if(!Object.FindObjectOfType<SpatialLabWorld>())issues.Add("缺少 Spatial Lab");if(!Object.FindObjectOfType<BeastReceiver>()&&!Object.FindObjectOfType<LevelExit>())issues.Add("缺少野兽目标或关卡出口");
+            var edges=LevelGraph.Edges();foreach(var node in LevelGraph.Nodes())if(LevelGraph.IsSource(node)&&!(node is BeastReceiver)&&!edges.Exists(e=>e.source==node))issues.Add(node.name+" 未连接目标");
             foreach(var circuit in Object.FindObjectsOfType<DeviceCircuit>()){if(!circuit.output||!LevelGraph.IsTarget(circuit.output))issues.Add(circuit.name+" 输出无效");if(circuit.inputs.Count==0||circuit.inputs.Exists(i=>i==null||!i.source||!LevelGraph.IsSource(i.source)))issues.Add(circuit.name+" 输入缺失或无效");}
             foreach(var member in Object.FindObjectsOfType<FaceMembership>())if(member.faces==RoomFaces.None)issues.Add(member.name+" 未选择可见面");
             foreach(var root in EditorSceneManager.GetActiveScene().GetRootGameObjects())if(root.GetComponentInChildren<Renderer>()&&!root.GetComponent<FaceMembership>()&&!root.GetComponent<SpatialLabWorld>()&&!root.GetComponent<BeamSystem>())issues.Add(root.name+" 未设置面归属（默认仅在默认面显示）");
             foreach(var source in Object.FindObjectsOfType<LightEmitter>())if(source.active){
                 var route=OpticalRoute.From(source);Vector3 origin=source.transform.position,direction=source.WorldDirection;Component previous=null;float range=source.maxLength;
-                for(int bounce=0;bounce<12&&range>.02f;bounce++){
+                for(int bounce=0;bounce<source.segmentLimit&&range>.02f;bounce++){
                     if(!SpaceOptics.CastPreview(origin,direction,range,previous,route,out var hit)){if(route.inTransit)issues.Add(source.name+"：跨面光缺少接收 DepthMirror，或接收镜角度未转回平面");break;}
-                    range-=hit.distance;if(!route.Reflect(hit.collider,direction,out var next,out _))break;previous=hit.collider;direction=next;origin=hit.point+next*.035f;range-=.035f;
+                    range-=hit.distance;var surface=hit.collider.GetComponentInParent<CrossFaceSurface>();if(surface)break;Vector3 next;var lens=hit.collider.GetComponentInParent<LensSurface>();if(lens)next=lens.Refract(direction,route);else if(!route.Reflect(hit.collider,direction,out next,out _))break;previous=hit.collider;direction=next;origin=hit.point+next*.035f;range-=.035f;
                 }
             }
+            foreach(var surface in Object.FindObjectsOfType<CrossFaceSurface>()){var faces=FaceMembership.OpticalOf(surface);if(faces==RoomFaces.None||((int)faces&((int)faces-1))!=0)issues.Add(surface.name+"：跨面接收平面必须只属于一个面");if(!surface.GetComponent<BoxCollider>().isTrigger)issues.Add(surface.name+"：接收平面应为 Trigger");}
+            foreach(var exit in Object.FindObjectsOfType<LevelExit>())if(!string.IsNullOrWhiteSpace(exit.nextScene)&&!EditorBuildSettings.scenes.Any(e=>e.enabled&&System.IO.Path.GetFileNameWithoutExtension(e.path)==exit.nextScene))issues.Add(exit.name+"：下一关未加入构建列表");
             var points=new List<Vector3>();Physics.SyncTransforms();foreach(var pad in Object.FindObjectsOfType<LightLaunchPad>())if(pad.available&&!SpaceOptics.Preview(pad,points,out string problem))issues.Add(pad.name+"：光路 "+problem);foreach(var landing in Object.FindObjectsOfType<LightLanding>())if(!landing.spawn)issues.Add(landing.name+" 缺少实体落点");
             return issues.Count==0?"配置检查通过（仍需 Play 验证路线与手感）":string.Join("\n",issues);
         }

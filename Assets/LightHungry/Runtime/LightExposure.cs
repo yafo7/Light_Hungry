@@ -13,14 +13,14 @@ namespace LightHungry {
         void Awake(){player=GetComponent<PlayerController>();}
         public void BeginFrame(){frameSource=null;}
         public void Receive(LightEmitter emitter,Vector3 incoming,Vector3 point){Receive(emitter,incoming,point,OpticalRoute.From(this));}
-        public void Receive(LightEmitter emitter,Vector3 incoming,Vector3 point,OpticalRoute route){if(!frameSource&&!route.inTransit){frameSource=emitter;frameDirection=incoming;framePoint=point;frameRoute=route;}}
+        public void Receive(LightEmitter emitter,Vector3 incoming,Vector3 point,OpticalRoute route){if(emitter&&!route.inTransit&&(!frameSource||emitter.strength>frameSource.strength+.001f||(Mathf.Abs(emitter.strength-frameSource.strength)<.001f&&emitter.GetInstanceID()<frameSource.GetInstanceID()))){frameSource=emitter;frameDirection=incoming;framePoint=point;frameRoute=route;}}
         public void EndFrame(float dt){
             Illuminated=frameSource;var travel=GetComponent<LightTravel>();
             if(!automatic||!player.Body3D||travel.IsTravelling||Time.time<protectedUntil||(GetComponent<PlayerCarry>()&&GetComponent<PlayerCarry>().Held)||(CameraViewController.Active&&CameraViewController.Active.IsRotating)){Progress=0;source=null;return;}
             if(!frameSource){Progress=0;source=null;return;}
             if(source!=frameSource||Vector3.Dot(Incoming,frameDirection)<.99f)Progress=0;
             source=frameSource;Incoming=frameDirection;Contact=framePoint;Progress+=dt;
-            if(Progress>=secondsRequired&&travel.LaunchFromLight(Contact+Incoming*.04f,Incoming,travelSpeed,frameRoute)){Progress=0;source=null;}
+            if(Progress>=secondsRequired&&travel.LaunchFromLight(Contact+Incoming*.04f,Incoming,travelSpeed,frameRoute,source)){Progress=0;source=null;}
         }
         public void Protect(){Progress=0;source=null;protectedUntil=Time.time+exitProtection;}
         void LateUpdate(){

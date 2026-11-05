@@ -9,7 +9,7 @@ namespace LightHungry.EditorTools {
     // Explicit migration command. Opening the level editor never rebuilds assets or scenes.
     public static class WatercolorWorkshop {
         const string Root="Assets/LightHungry/",Prefabs=Root+"Prefabs/";
-        public static readonly string[] Palette={"Player","HungryBeast","Platform","Wall","PushableBox","PushCart","PlaneMirror","DepthMirror","PressurePlate","DeviceSwitch","Gate","AutomaticElevator","PulleyRope","Sunlight","Moonlight","Flashlight","Firelight","Glass","Grille","Spikes","Background","LightBeam"};
+        public static readonly string[] Palette={"Player","HungryBeast","Platform","Wall","PushableBox","PushCart","PlaneMirror","DepthMirror","PressurePlate","DeviceSwitch","Gate","AutomaticElevator","PulleyRope","Sunlight","Moonlight","Flashlight","Firelight","Glass","Grille","Spikes","Background","LightBeam","CrossFaceSurface","LevelExit"};
         static Sprite S(string n,int i)=>WatercolorAssets.Frame(n,i);
         static Sprite[] Range(string n,int start,int count)=>WatercolorAssets.Frames(n).Skip(start).Take(count).ToArray();
         static GameObject New(string name,int layer=13){var g=new GameObject(name);g.layer=layer;g.AddComponent<FaceMembership>();return g;}
@@ -65,9 +65,9 @@ namespace LightHungry.EditorTools {
             var entries=EditorBuildSettings.scenes.ToList();if(!entries.Any(e=>e.path==path)){entries.Add(new EditorBuildSettingsScene(path,true));EditorBuildSettings.scenes=entries.ToArray();}
         }
         static void Setup(){
-            var camera=new GameObject("Main Camera").AddComponent<Camera>();camera.tag="MainCamera";camera.orthographic=true;camera.orthographicSize=9;camera.clearFlags=CameraClearFlags.SolidColor;camera.backgroundColor=new Color(.79f,.84f,.86f);camera.gameObject.AddComponent<AudioListener>();camera.gameObject.AddComponent<CameraViewController>();camera.gameObject.AddComponent<FaceVisibility>();
+            var camera=new GameObject("Main Camera").AddComponent<Camera>();camera.tag="MainCamera";camera.orthographic=true;camera.orthographicSize=9;camera.clearFlags=CameraClearFlags.SolidColor;camera.backgroundColor=new Color(.79f,.84f,.86f);camera.gameObject.AddComponent<AudioListener>();camera.gameObject.AddComponent<CameraViewController>().followPlayer=true;camera.gameObject.AddComponent<FaceVisibility>();
             var world=new GameObject("Continuous world").AddComponent<SpatialLabWorld>();world.flatArtwork=true;world.platformDepth=.9f;world.spriteMaterial=AssetDatabase.LoadAssetAtPath<Material>(Root+"Materials/SpatialSprite.mat");world.actorMaterial=AssetDatabase.LoadAssetAtPath<Material>(Root+"Materials/SpatialActor.mat");world.solidMaterial=AssetDatabase.LoadAssetAtPath<Material>(Root+"Materials/SpatialSolid.mat");
-            var session=new GameObject("Lab Session").AddComponent<LabSession>();session.startWithReflection=session.startWithSwallow=false;session.beams=session.gameObject.AddComponent<BeamSystem>();session.beams.opticalMask=(1<<8)|(1<<9)|(1<<10)|(1<<11)|(1<<12)|(1<<13);session.gameObject.AddComponent<LightRouteReview>().automatic=false;
+            var session=new GameObject("Lab Session").AddComponent<LabSession>();session.deathHeight=-100;session.startWithReflection=session.startWithSwallow=false;session.beams=session.gameObject.AddComponent<BeamSystem>();session.beams.opticalMask=(1<<8)|(1<<9)|(1<<10)|(1<<11)|(1<<12)|(1<<13);session.gameObject.AddComponent<LightRouteReview>().automatic=false;
             string matPath=Root+"Materials/WatercolorBeam.mat";var mat=AssetDatabase.LoadAssetAtPath<Material>(matPath);if(!mat){mat=new Material(Shader.Find("LightHungry/WatercolorBeam"));AssetDatabase.CreateAsset(mat,matPath);}session.beams.beamStyle=mat;
         }
         [MenuItem("Light Hungry/Migrate approved watercolor workshop")]

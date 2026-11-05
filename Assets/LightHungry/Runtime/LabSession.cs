@@ -7,11 +7,13 @@ namespace LightHungry {
         public PlayerController player;public BeastReceiver goal;public BeamSystem beams;
         public bool startWithReflection=true,startWithSwallow=true;
         public bool paused;bool restarting;float look;
+        public bool useExitCompletion;
+        public float deathHeight=-10;
         public bool Completed {get;private set;}
         public event System.Action LevelCompleted;
         public bool CompletionNoticeVisible=>GetComponent<CompletionNotice>()&&GetComponent<CompletionNotice>().IsVisible;
         void LateUpdate(){
-            if(Completed||restarting)return;
+            if(Completed||restarting||useExitCompletion||FindObjectOfType<LevelExit>())return;
             bool satisfied=false;
             if(goal)satisfied=goal.isGoal&&goal.Satisfied;
             else{
@@ -19,7 +21,10 @@ namespace LightHungry {
                 foreach(var beast in FindObjectsOfType<BeastReceiver>())if(beast.isGoal){targets++;satisfied&=beast.Satisfied;}
                 satisfied&=targets>0;
             }
-            if(!satisfied)return;
+            if(!satisfied)return;CompleteLevel();
+        }
+        public void CompleteLevel(){
+            if(Completed||restarting)return;
             Completed=true;var notice=GetComponent<CompletionNotice>();if(!notice)notice=gameObject.AddComponent<CompletionNotice>();notice.Show();LevelCompleted?.Invoke();
         }
         void Awake(){Instance=this;Time.timeScale=1;Application.targetFrameRate=60;}
@@ -30,7 +35,7 @@ namespace LightHungry {
             if(Input.GetKeyDown(KeyCode.Escape))SetPaused(!paused);
             if(Input.GetKeyDown(KeyCode.F1)){player.reflectUnlocked=!player.reflectUnlocked;if(!player.reflectUnlocked&&player.Mode==PlayerController.AbilityMode.Reflect)player.EndRelease();}
             if(Input.GetKeyDown(KeyCode.F2)){player.swallowUnlocked=!player.swallowUnlocked;if(!player.swallowUnlocked)player.EndRelease();}
-            if(player&&player.transform.position.y< -10)Restart();
+            if(player&&player.transform.position.y<deathHeight)Restart();
             if(Camera.main&&!CameraViewController.Active){float target=Input.GetKey(KeyCode.W)?1.1f:Input.GetKey(KeyCode.S)?-1.1f:0;look=Mathf.Lerp(look,target,Time.unscaledDeltaTime*4);Camera.main.transform.position=new Vector3(0,look,-10);}
         }
         public void SetPaused(bool value){paused=value;Time.timeScale=paused||(CameraViewController.Active&&CameraViewController.Active.IsRotating)?0:1;}

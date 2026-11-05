@@ -3,7 +3,8 @@ using UnityEngine;
 namespace LightHungry {
     [DefaultExecutionOrder(500)]
     public sealed class BeamSystem:MonoBehaviour {
-        public LayerMask opticalMask;public int bounceLimit=12;public float maxDistance=60;
+        public LayerMask opticalMask;public int bounceLimit=64;public float maxDistance=400;
+        public readonly List<BeamPathSegment> PathSegments=new List<BeamPathSegment>();
         readonly List<LineRenderer> lines=new List<LineRenderer>();int used;
         static Material beamMaterial,columnFallback;
         readonly List<BeamColumn> columns=new List<BeamColumn>();int columnsUsed;
@@ -19,7 +20,7 @@ namespace LightHungry {
         }
         void LateUpdate(){
             if(LabSession.Instance&&LabSession.Instance.GetComponent<LightRouteReview>()&&LabSession.Instance.GetComponent<LightRouteReview>().IsPlaying)return;
-            Physics2D.SyncTransforms();used=0;columnsUsed=0;LastPaths.Clear();
+            Physics2D.SyncTransforms();used=0;columnsUsed=0;LastPaths.Clear();PathSegments.Clear();
             ReceivedPaths.Clear();var exposures=FindObjectsOfType<LightExposure>();foreach(var exposure in exposures)exposure.BeginFrame();
             if(SpatialLabWorld.Active)Physics.SyncTransforms();
             var receivers=FindObjectsOfType<BeastReceiver>();foreach(var receiver in receivers)receiver.Lit=false;
@@ -36,12 +37,12 @@ namespace LightHungry {
             Vector3 dir=owner?owner.WorldAim:source.WorldDirection;
             var points=new List<Vector3>{origin};
             var route=OpticalRoute.From(source);
-            Collider previous=null;float remaining=Mathf.Min(maxDistance,source.maxLength),width=source.beamWidth;
-            for(int bounce=0;bounce<bounceLimit&&remaining>.02f;bounce++){
+            Collider previous=null;float remaining=source.maxLength,width=source.beamWidth;
+            for(int bounce=0;bounce<source.segmentLimit&&remaining>.02f;bounce++){
                 RaycastHit chosen=default;bool found=false;float nearest=float.PositiveInfinity;
                 foreach(var hit in Physics.RaycastAll(origin,dir,remaining,opticalMask,QueryTriggerInteraction.Collide)){
-                    if(!route.CanHit(hit.collider,dir)||hit.collider.GetComponentInParent<OpticalPassThrough>())continue;
-                    if(hit.collider.isTrigger&&!hit.collider.GetComponentInParent<PlayerController>()&&!hit.collider.GetComponentInParent<MirrorSurface>()&&!hit.collider.GetComponentInParent<SpaceMirror>()&&!hit.collider.GetComponentInParent<BeastReceiver>()&&!hit.collider.GetComponentInParent<LensSurface>())continue;
+                    if(!route.CanHit(hit.collider,dir)||(hit.collider.GetComponentInParent<OpticalPassThrough>()&&!hit.collider.GetComponentInParent<LensSurface>()))continue;
+                    if(hit.collider.isTrigger&&!hit.collider.GetComponentInParent<PlayerController>()&&!hit.collider.GetComponentInParent<MirrorSurface>()&&!hit.collider.GetComponentInParent<SpaceMirror>()&&!hit.collider.GetComponentInParent<BeastReceiver>()&&!hit.collider.GetComponentInParent<LensSurface>()&&!hit.collider.GetComponentInParent<CrossFaceSurface>())continue;
                     var link=hit.collider.GetComponent<SpatialColliderLink>();
                     if(hit.collider==previous||(source.owner&&link&&link.original==source.owner))continue;
                     if(hit.distance<nearest){nearest=hit.distance;chosen=hit;found=true;}
@@ -56,7 +57,8 @@ namespace LightHungry {
                 else if(chosen.collider.GetComponentInParent<SpaceMirror>()||chosen.collider.GetComponentInParent<MirrorSurface>()){
                     if(!route.Reflect(chosen.collider,dir,out var next,out _))break;dir=next;
                 }
-                else if(chosen.collider.GetComponentInParent<LensSurface>() is LensSurface lens)width=Mathf.Clamp(width*lens.widthMultiplier,.015f,.22f);
+                else if(chosen.collider.GetComponentInParent<LensSurface>() is LensSurface lens){width=Mathf.Clamp(width*lens.widthMultiplier,.05f,4);dir=lens.Refract(dir,route);}
+                else if(chosen.collider.GetComponentInParent<CrossFaceSurface>() is CrossFaceSurface surface){surface.Illuminate(end,dir,source.beamColor,width);break;}
                 else if(chosen.collider.GetComponentInParent<BeastReceiver>() is BeastReceiver receiver){receiver.Lit=true;if(!ReceivedPaths.ContainsKey(receiver))ReceivedPaths[receiver]=new List<Vector3>(points);break;}
                 else break;
                 previous=chosen.collider;origin=end+dir*.035f;remaining-=.035f;
@@ -64,11 +66,11 @@ namespace LightHungry {
         }
         void Trace(LightEmitter source){
             Vector2 origin=source.transform.position,dir=((Vector2)source.WorldDirection).normalized;
-            var route=OpticalRoute.From(source);Collider2D previous=null;float remaining=Mathf.Min(maxDistance,source.maxLength),width=source.beamWidth;
-            for(int bounce=0;bounce<bounceLimit&&remaining>.02f;bounce++){
+            var route=OpticalRoute.From(source);Collider2D previous=null;float remaining=source.maxLength,width=source.beamWidth;
+            for(int bounce=0;bounce<source.segmentLimit&&remaining>.02f;bounce++){
                 RaycastHit2D chosen=default;
                 foreach(var hit in Physics2D.RaycastAll(origin,dir,remaining,opticalMask)){
-                    if(hit.collider==source.owner||hit.collider==previous||!route.CanHit(hit.collider,dir)||hit.collider.GetComponentInParent<OpticalPassThrough>())continue;
+                    if(hit.collider==source.owner||hit.collider==previous||!route.CanHit(hit.collider,dir)||(hit.collider.GetComponentInParent<OpticalPassThrough>()&&!hit.collider.GetComponentInParent<LensSurface>()))continue;
                     chosen=hit;break;
                 }
                 Vector2 end=chosen.collider?chosen.point:origin+dir*remaining;
@@ -78,13 +80,14 @@ namespace LightHungry {
                 var player=chosen.collider.GetComponentInParent<PlayerController>();
                 if(player){if(player.Absorb())break;if(player.Mode==PlayerController.AbilityMode.Reflect)dir=player.Aim;else break;}
                 else if(chosen.collider.GetComponentInParent<MirrorSurface>()){if(!route.Reflect(chosen.collider,dir,out var next,out _)||Mathf.Abs(next.z)>.001f)break;dir=(Vector2)next;}
-                else if(chosen.collider.TryGetComponent<LensSurface>(out var lens))width=Mathf.Clamp(width*lens.widthMultiplier,.015f,.22f);
+                else if(chosen.collider.TryGetComponent<LensSurface>(out var lens)){width=Mathf.Clamp(width*lens.widthMultiplier,.05f,4);dir=lens.Refract(dir,route);}
                 else if(chosen.collider.TryGetComponent<BeastReceiver>(out var receiver)){receiver.Lit=true;break;}
                 else break;
                 previous=chosen.collider;origin=end+dir*.035f;remaining-=.035f;
             }
         }
         void DrawColumn(LightEmitter source,Vector3 start,Vector3 end,float width,OpticalRoute route){
+            PathSegments.Add(new BeamPathSegment{source=source,start=start,end=end,width=width,route=route});
             if(!columnFallback){columnFallback=Resources.Load<Material>("LightColumn");if(!columnFallback)columnFallback=new Material(Shader.Find("LightHungry/LightColumn"));}
             if(columnsUsed>=columns.Count){var go=new GameObject("Beam column");go.transform.SetParent(transform,false);columns.Add(go.AddComponent<BeamColumn>());}
             var column=columns[columnsUsed++];column.gameObject.SetActive(true);column.Set(start,end,Mathf.Max(.01f,width),source.beamColor,source.columnMaterial?source.columnMaterial:columnFallback,route.DisplayFaces);

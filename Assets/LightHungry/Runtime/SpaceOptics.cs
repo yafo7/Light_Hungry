@@ -6,13 +6,13 @@ namespace LightHungry {
         public static bool CastPreview(Vector3 origin,Vector3 direction,float range,Component previous,OpticalRoute route,out PreviewHit nearest){
             nearest=default;float best=range;
             foreach(var hit in Physics.RaycastAll(origin,direction,range,TravelMask,QueryTriggerInteraction.Collide)){
-                if(hit.collider==previous||!route.CanHit(hit.collider,direction)||hit.collider.GetComponentInParent<OpticalPassThrough>())continue;
-                if(hit.collider.isTrigger&&!hit.collider.GetComponentInParent<MirrorSurface>()&&!hit.collider.GetComponentInParent<SpaceMirror>()&&!hit.collider.GetComponentInParent<BeastReceiver>())continue;
+                if(hit.collider==previous||!route.CanHit(hit.collider,direction)||(hit.collider.GetComponentInParent<OpticalPassThrough>()&&!hit.collider.GetComponentInParent<LensSurface>()))continue;
+                if(hit.collider.isTrigger&&!hit.collider.GetComponentInParent<MirrorSurface>()&&!hit.collider.GetComponentInParent<SpaceMirror>()&&!hit.collider.GetComponentInParent<BeastReceiver>()&&!hit.collider.GetComponentInParent<CrossFaceSurface>()&&!hit.collider.GetComponentInParent<LensSurface>())continue;
                 if(hit.distance<best){best=hit.distance;nearest=new PreviewHit{collider=hit.collider,point=hit.point,distance=hit.distance};}
             }
             foreach(var c in Object.FindObjectsOfType<Collider2D>()){
-                if(!c.enabled||c==previous||!route.CanHit(c,direction)||c.GetComponentInParent<OpticalPassThrough>())continue;
-                if(c.isTrigger&&!c.GetComponentInParent<MirrorSurface>()&&!c.GetComponentInParent<BeastReceiver>())continue;
+                if(!c.enabled||c==previous||!route.CanHit(c,direction)||(c.GetComponentInParent<OpticalPassThrough>()&&!c.GetComponentInParent<LensSurface>()))continue;
+                if(c.isTrigger&&!c.GetComponentInParent<MirrorSurface>()&&!c.GetComponentInParent<BeastReceiver>()&&!c.GetComponentInParent<LensSurface>())continue;
                 Vector3 center=c.offset;Vector3 size;
                 if(c is BoxCollider2D box)size=new Vector3(box.size.x,box.size.y,c.GetComponentInParent<MirrorSurface>()?.08f:.9f);
                 else if(c is CircleCollider2D circle)size=new Vector3(circle.radius*2,circle.radius*2,circle.radius*2);else continue;
@@ -30,9 +30,9 @@ namespace LightHungry {
             nearest=default;float best=float.PositiveInfinity;
             foreach(var hit in Physics.RaycastAll(origin,direction,distance,travel?TravelMask:~0,QueryTriggerInteraction.Collide)){
                 if(!route.CanHit(hit.collider,direction))continue;
-                if(hit.collider.GetComponentInParent<OpticalPassThrough>())continue;
+                if((hit.collider.GetComponentInParent<OpticalPassThrough>()&&!hit.collider.GetComponentInParent<LensSurface>()))continue;
                 if(hit.collider==previous || (player && hit.collider.GetComponentInParent<PlayerController>()==player))continue;
-                if(hit.collider.isTrigger && !hit.collider.GetComponentInParent<SpaceMirror>() && !hit.collider.GetComponentInParent<MirrorSurface>() && !hit.collider.GetComponentInParent<LightLanding>() && !hit.collider.GetComponentInParent<BeastReceiver>() && !hit.collider.GetComponentInParent<SpaceHazard>())continue;
+                if(hit.collider.isTrigger && !hit.collider.GetComponentInParent<SpaceMirror>() && !hit.collider.GetComponentInParent<MirrorSurface>() && !hit.collider.GetComponentInParent<LightLanding>() && !hit.collider.GetComponentInParent<BeastReceiver>() && !hit.collider.GetComponentInParent<SpaceHazard>()&&!hit.collider.GetComponentInParent<CrossFaceSurface>()&&!hit.collider.GetComponentInParent<LensSurface>())continue;
                 if(hit.distance<best){best=hit.distance;nearest=hit;}
             }
             return nearest.collider;

@@ -2,6 +2,9 @@ using UnityEngine;
 namespace LightHungry {
     public sealed class LightEmitter:MonoBehaviour {
         public bool active=true;
+        [Min(0)] public float strength=1;
+        [Range(1,128)] public int segmentLimit=64;
+        public void SetActive(bool value){active=value;}
         public Vector2 direction=Vector2.right;
         public bool useSpatialDirection;
         public Vector3 spatialDirection=Vector3.right;

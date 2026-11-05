@@ -15,6 +15,7 @@ namespace LightHungry {
         bool initialized;
         public static bool Read(MonoBehaviour source){
             if(!source||!source.isActiveAndEnabled)return false;
+            if(source is BeastReceiver beast)return beast.Satisfied;
             if(source is DeviceSwitch s)return s.state;
             if(source is DevicePlate p)return p.IsPressed;
             if(source is PressurePlate old)return old.IsPressed;
@@ -29,7 +30,8 @@ namespace LightHungry {
         }
         void LateUpdate(){if(inputs.Count==0||!output)return;bool value=Evaluate();if(!initialized||value!=State){initialized=true;State=value;Apply(value);}}
         void Apply(bool value){
-            if(output is SpaceDevice device)device.SetState(value);
+            if(output is RevealDevice reveal)reveal.SetState(value);
+            else if(output is SpaceDevice device)device.SetState(value);
             else if(output is RailDevice rail)rail.Drive(value);
             else if(output is LightEmitter light)light.active=value;
             else if(output is SpaceMirror mirror){mirror.orientation=value?1:0;mirror.Apply();}

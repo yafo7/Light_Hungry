@@ -244,8 +244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  maxDistance: 80
-  reflectionLimit: 12
+  maxDistance: 400
+  reflectionLimit: 64
   photonFrames:
   - {fileID: 21300000, guid: 8685da6579f5c1a42944e1a99d1ee8f7, type: 2}
   - {fileID: 21300000, guid: 25f1ad8fe5fab6b4b8b3379ecc4c56e0, type: 2}

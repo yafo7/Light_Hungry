@@ -3,6 +3,7 @@ using UnityEngine;
 namespace LightHungry.EditorTools {
  [CustomEditor(typeof(LightEmitter))] public sealed class LightEmitterInspector:Editor {
   public override void OnInspectorGUI(){serializedObject.Update();EditorGUILayout.PropertyField(serializedObject.FindProperty("active"),new GUIContent("发光"));EditorGUILayout.PropertyField(serializedObject.FindProperty("beamWidth"),new GUIContent("光柱直径（米）"));EditorGUILayout.PropertyField(serializedObject.FindProperty("beamColor"),new GUIContent("颜色／透明度"));EditorGUILayout.PropertyField(serializedObject.FindProperty("maxLength"),new GUIContent("最大长度"));
+   EditorGUILayout.PropertyField(serializedObject.FindProperty("strength"),new GUIContent("玩法光强"));EditorGUILayout.PropertyField(serializedObject.FindProperty("segmentLimit"),new GUIContent("光路段数上限"));EditorGUILayout.HelpBox("只有更强的光能在交点接管光团。同强度不接管；强度与颜色、透明度分别设置。",MessageType.None);
    var transformDirection=serializedObject.FindProperty("directionFromTransform");EditorGUILayout.PropertyField(transformDirection,new GUIContent("随物体旋转"));
    if(transformDirection.boolValue)EditorGUILayout.HelpBox("物体本地红色 X 轴为发光方向。使用旋转工具调整；Z 轴控制平面方向，Y 轴控制深度方向。",MessageType.None);
    else{var spatial=serializedObject.FindProperty("useSpatialDirection");EditorGUILayout.PropertyField(spatial,new GUIContent("世界空间方向"));EditorGUILayout.PropertyField(serializedObject.FindProperty(spatial.boolValue?"spatialDirection":"direction"),new GUIContent("发射方向"));}

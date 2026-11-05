@@ -50,6 +50,7 @@ namespace LightHungry {
                     if (!renderer.GetComponent<ViewFacingSprite>()) renderer.gameObject.AddComponent<ViewFacingSprite>();
                 }
             }
+            if(!GetComponent<FaceCollisionIsolation>())gameObject.AddComponent<FaceCollisionIsolation>();
             if(!flatArtwork)MakeBackdrop();
             foreach(var p in FindObjectsOfType<PlayerController>()){
                 if(!p.GetComponent<PlayerCarry>())p.gameObject.AddComponent<PlayerCarry>();

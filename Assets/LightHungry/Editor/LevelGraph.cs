@@ -10,8 +10,8 @@ namespace LightHungry.EditorTools {
             public MonoBehaviour source,target;public DeviceCircuit circuit;public string slot;
             public string Label=>circuit?(circuit.rule==CircuitRule.All?"同时满足":"任意满足"):slot;
         }
-        public static bool IsSource(MonoBehaviour c)=>c is DeviceSwitch||c is DevicePlate||c is PressurePlate||c is RailLever||c is PulleyRope;
-        public static bool IsTarget(MonoBehaviour c)=>c is SpaceDevice||c is RailDevice||c is LightEmitter||c is SpaceMirror||c is MirrorSurface;
+        public static bool IsSource(MonoBehaviour c)=>c is DeviceSwitch||c is DevicePlate||c is PressurePlate||c is RailLever||c is PulleyRope||c is BeastReceiver;
+        public static bool IsTarget(MonoBehaviour c)=>c is SpaceDevice||c is RailDevice||c is LightEmitter||c is SpaceMirror||c is MirrorSurface||c is RevealDevice;
         public static List<MonoBehaviour> Nodes(){
             var result=new List<MonoBehaviour>();foreach(var c in Object.FindObjectsOfType<MonoBehaviour>())if(c.gameObject.scene==EditorSceneManager.GetActiveScene()&&(IsSource(c)||IsTarget(c)))result.Add(c);
             result.Sort((a,b)=>string.Compare(a.name,b.name,System.StringComparison.Ordinal));return result;

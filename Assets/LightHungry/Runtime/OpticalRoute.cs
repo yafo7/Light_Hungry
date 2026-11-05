@@ -15,6 +15,8 @@ namespace LightHungry {
             if(!item)return false;
             var mirror=item.GetComponentInParent<MirrorSurface>();
             if(mirror&&mirror.face){var link=item.GetComponent<SpatialColliderLink>();if(item!=mirror.face&&(!link||link.original!=mirror.face)&&(!mirror.opticalPivot||!item.transform.IsChildOf(mirror.opticalPivot)))return false;}
+            var surface=item.GetComponentInParent<CrossFaceSurface>();
+            if(surface)return surface.CanReceive(this,incoming);
             if(inTransit)return IsDepthMirror(item)&&FaceMembership.OpticalOf(item)!=RoomFaces.None;
             if((FaceMembership.OpticalOf(item)&Face)==0)return false;
             return !mirror||mirror.depthRotation||InPlane(incoming,view);

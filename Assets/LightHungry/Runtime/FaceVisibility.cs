@@ -27,6 +27,11 @@ namespace LightHungry {
                     if((FaceMembership.Of(renderer)&visible)!=0)continue;
                     renderers.Add(renderer);previous.Add(renderer.forceRenderingOff);renderer.forceRenderingOff=true;
                 }
+                // Edit previews are DontSave objects and therefore absent from FindObjectsOfType.
+                foreach(var surface in Object.FindObjectsOfType<CrossFaceSurface>()){
+                    var renderer=surface.SpotRenderer;if(!renderer||renderers.Contains(renderer)||(FaceMembership.Of(renderer)&visible)!=0)continue;
+                    renderers.Add(renderer);previous.Add(renderer.forceRenderingOff);renderer.forceRenderingOff=true;
+                }
             }
             public void Dispose(){for(int i=0;i<renderers.Count;i++)if(renderers[i])renderers[i].forceRenderingOff=previous[i];renderers.Clear();previous.Clear();}
         }
