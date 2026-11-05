@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "imagesLoaded": true,
+    "idleBeforeThreshold": true,
+    "thinkAfterThreshold": true,
+    "pauseStable": true,
+    "actionResetsIdle": true,
+    "manualThinking": true,
+    "allThinkFramesShown": true,
+    "allPhasesShown": true,
+    "dynamicFrameCounts": true,
+    "noMobilePageOverflow": true,
+    "noScriptErrors": true
+  },
+  "transitionClock": "3.01 s",
+  "displayedCounts": {
+    "idle": "16 帧 / 3 秒",
+    "think": "32 帧 / 6 秒"
+  },
+  "errors": []
+}

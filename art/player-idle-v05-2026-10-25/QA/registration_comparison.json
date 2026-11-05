@@ -1,0 +1,106 @@
+{
+  "height": {
+    "think": {
+      "heightRange": {
+        "minimumPx": 378,
+        "maximumPx": 379,
+        "neutralFrameHeightPx": 378
+      },
+      "footWidthRange": [
+        202.0,
+        207.0
+      ],
+      "sourceBoundaryDiffs": [
+        {
+          "fromFrame": 11,
+          "toFrame": 12,
+          "foregroundMeanAbsoluteRgbDifference": 25.736248633677267,
+          "alphaIntersectionOverUnion": 0.9579944970956894
+        },
+        {
+          "fromFrame": 23,
+          "toFrame": 24,
+          "foregroundMeanAbsoluteRgbDifference": 20.66364441660073,
+          "alphaIntersectionOverUnion": 0.9518318068276437
+        }
+      ]
+    },
+    "idle": {
+      "heightRange": {
+        "minimumPx": 378,
+        "maximumPx": 378,
+        "neutralFrameHeightPx": 378
+      },
+      "footWidthRange": [
+        207.0,
+        220.0
+      ],
+      "sourceBoundaryDiffs": [
+        {
+          "fromFrame": 11,
+          "toFrame": 12,
+          "foregroundMeanAbsoluteRgbDifference": 24.296174035297895,
+          "alphaIntersectionOverUnion": 0.9423841698841698
+        },
+        {
+          "fromFrame": 23,
+          "toFrame": 24,
+          "foregroundMeanAbsoluteRgbDifference": 15.33888329700399,
+          "alphaIntersectionOverUnion": 0.9711817533298804
+        }
+      ]
+    }
+  },
+  "foot": {
+    "think": {
+      "heightRange": {
+        "minimumPx": 378,
+        "maximumPx": 390,
+        "neutralFrameHeightPx": 384
+      },
+      "footWidthRange": [
+        206.0,
+        209.0
+      ],
+      "sourceBoundaryDiffs": [
+        {
+          "fromFrame": 23,
+          "toFrame": 24,
+          "foregroundMeanAbsoluteRgbDifference": 30.36973123498447,
+          "alphaIntersectionOverUnion": 0.9193253968253968
+        },
+        {
+          "fromFrame": 11,
+          "toFrame": 12,
+          "foregroundMeanAbsoluteRgbDifference": 26.42218024403838,
+          "alphaIntersectionOverUnion": 0.9568686650851844
+        }
+      ]
+    },
+    "idle": {
+      "heightRange": {
+        "minimumPx": 358,
+        "maximumPx": 380,
+        "neutralFrameHeightPx": 377
+      },
+      "footWidthRange": [
+        207.0,
+        209.0
+      ],
+      "sourceBoundaryDiffs": [
+        {
+          "fromFrame": 11,
+          "toFrame": 12,
+          "foregroundMeanAbsoluteRgbDifference": 39.216521579298465,
+          "alphaIntersectionOverUnion": 0.8636743580273312
+        },
+        {
+          "fromFrame": 23,
+          "toFrame": 24,
+          "foregroundMeanAbsoluteRgbDifference": 30.01331730618494,
+          "alphaIntersectionOverUnion": 0.9272098663501729
+        }
+      ]
+    }
+  }
+}

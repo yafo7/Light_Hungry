@@ -1,0 +1,71 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-10-30",
+  "files": [
+    {
+      "key": "background",
+      "file": "l1-background.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-de7ed3a5-5823-4bed-9c8d-659bc0eff646.png",
+      "transparent": false
+    },
+    {
+      "key": "ground",
+      "file": "l1-ground.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-82feb887-f303-418d-8ad7-8c980f78dbf4.png",
+      "transparent": true
+    },
+    {
+      "key": "spirit",
+      "file": "spirit.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-a39a2a31-a398-402c-bab3-32a6cd66e408.png",
+      "transparent": true
+    },
+    {
+      "key": "reflector",
+      "file": "reflector.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-09f7a1cc-1ed3-4da5-839b-b81f214547c4.png",
+      "transparent": true
+    },
+    {
+      "key": "tail",
+      "file": "tail-rubble.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-21ced775-bcfe-46cd-9a9f-a541a9adf98a.png",
+      "transparent": true
+    },
+    {
+      "key": "pot",
+      "file": "pot.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-2fd70a19-e553-4d21-b1ae-51ad704338a0.png",
+      "transparent": true
+    },
+    {
+      "key": "level2",
+      "file": "l2-background.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-1ac3ec93-acaf-4784-970c-dfa4520f28f5.png",
+      "transparent": false
+    },
+    {
+      "file": "l2-background-clean.png",
+      "key": "l2-clean",
+      "transparent": false,
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-cd52cf6d-b7cc-442b-9bde-b2566442f5a6.png"
+    },
+    {
+      "file": "l2-ground.png",
+      "key": "l2-ground",
+      "transparent": true,
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-0ccde929-3c6f-4527-95b1-84efab8658cc.png"
+    }
+  ],
+  "unity_runtime_created": false,
+  "scope": "Both levels have background, ground and shared character layers; L1 has separate interactive props; L2 optical props remain painted into background.",
+  "generation_records": [
+    "generation-record.json",
+    "scale-refinement-prompts.json",
+    "level2-layer-prompts.json"
+  ],
+  "notes": [
+    "World dimensions are proposed production targets; painted L2 openings are approximate until replaced with measured geometry.",
+    "L1 separate sprites are regenerated elements, not pixel-perfect masks cut from the previous single illustration."
+  ]
+}

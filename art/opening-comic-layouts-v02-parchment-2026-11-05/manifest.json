@@ -1,0 +1,41 @@
+{
+  "status": "static concept previews; animation not produced",
+  "variants": [
+    {
+      "id": "A",
+      "label": "五格斜切",
+      "file": "A-parchment-five-panel.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a1a7d6-1c92-7ea0-bc30-fe064e10a87b/exec-77f7dec8-a125-4570-bd02-7ce782503fdb.png"
+    },
+    {
+      "id": "B",
+      "label": "四格留白",
+      "file": "B-parchment-four-panel.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a1a7d6-1c92-7ea0-bc30-fe064e10a87b/exec-67526364-10f1-46dd-8d09-f4ae60b0e17b.png"
+    },
+    {
+      "id": "C",
+      "label": "横幅揭幕",
+      "file": "C-parchment-level-reveal.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a1a7d6-1c92-7ea0-bc30-fe064e10a87b/exec-95652cee-9f4b-43d7-95d4-02246b6ea43e.png"
+    }
+  ],
+  "review": {
+    "visibleChanges": [
+      "浅暖羊皮纸底",
+      "加宽的分镜间隔与外边距",
+      "横屏不规则斜切",
+      "末格采用第一关侧视构图与主要地标",
+      "末格镜子与鳞片未点亮"
+    ],
+    "limitations": [
+      "布局与美术效果稿，未拆分独立分镜、遮罩或动画。",
+      "建筑细节为概念重绘；制作正式动画时仍需统一门的外观、角色尺度与镜头色温。"
+    ]
+  },
+  "proposedAnimationOrder": {
+    "A": "左上行走→右上发现光→左下园门→下中穿门→右下第一关",
+    "B": "左上行走→右上发现光→左下穿门→右下第一关",
+    "C": "上排从左到右逐格出现→下方第一关大景显现并扩展到全屏"
+  }
+}

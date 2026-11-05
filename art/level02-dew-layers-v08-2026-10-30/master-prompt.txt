@@ -1,0 +1,9 @@
+Use case: precise-object-edit.
+Input image is the EDIT TARGET: the current watercolor Level 02 pot interior, already approved in its arrangement.
+Make ONLY these changes:
+1. Remove the flat silvery rectangular mirror shard from the green leaf entirely. Replace it with ONE naturally resting, rounded transparent dew droplet, about the same small footprint. This is WATER with a curved meniscus, delicate pale sky highlights, subtle magnified green leaf veins visible through it, not a faceted gemstone, glass pyramid, metallic mirror, crystal or glowing magic orb.
+2. The sunlight from the original pot roof hole must ENTER the dew droplet, pass through its body, and EXIT after REFRACTION toward the existing narrow rock slit and landing. Depict distinct entry and exit on the small transparent droplet, not a mirror-bounce spark on a silver surface. Maintain the existing external ray direction toward the same rock seam as closely as possible. Keep the light monochromatic soft honey-gold, no rainbow prism puzzle.
+3. REMOVE the small light-spirit character and its personal glow completely. Restore the same mossy ground beneath it. The actual game uses a separate 3D player, so no character is baked into scene art.
+
+Keep EVERYTHING else tightly registered to the original: same full 1774 by 887 landscape canvas and framing, same overturned pot shell, central drainage hole, dark clay inner wall, roots, left entrance, low leaf and stem position, ground silhouette, rubble pile and REAL narrow empty seam, brick tunnel wall, lower landing and descending steps. Do not change proportions, move the obstacles or change the pot rim. No creature body parts, no gate, no new elements. Same textured hand-painted watercolor and fine ink, unchanged colors and light mood.
+This edited master will be separated into transparent production layers, so maintain all original object screen positions. No text or UI.

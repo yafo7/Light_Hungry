@@ -1,0 +1,44 @@
+[
+  {
+    "asset": "master",
+    "file": "References\\continuous-master.png",
+    "promptPresent": true,
+    "byteIdentity": true,
+    "sha256": "B41EAFA9A1D58221A20802709275E4B4AA427E5C7FE57070E318AD5FF01EDB67"
+  },
+  {
+    "asset": "bg",
+    "file": "Layers\\00-background.png",
+    "promptPresent": true,
+    "byteIdentity": true,
+    "sha256": "A49AA12A664F29326BF44BD4932413445E650422E5FD81CE4794A0579B7189F1"
+  },
+  {
+    "asset": "terrain",
+    "file": "Layers\\10-platforms.png",
+    "promptPresent": true,
+    "byteIdentity": true,
+    "sha256": "994C7A80E219DE8D5C709961F1279AB63ED4446AFA3B4A79DB686540324BFE3E"
+  },
+  {
+    "asset": "water",
+    "file": "Layers\\20-water.png",
+    "promptPresent": true,
+    "byteIdentity": true,
+    "sha256": "11B671F80F667FFF0C88269B93B2B6FB18EFF64E82EC4BCAD773465EEA746A4B"
+  },
+  {
+    "asset": "roots",
+    "file": "Layers\\90-camera-roots.png",
+    "promptPresent": true,
+    "byteIdentity": true,
+    "sha256": "AF8EDBF47307B23CFD158953A5A1BA3D96A3A11349C21C6227E4B01ED8E33487"
+  },
+  {
+    "asset": "atlas",
+    "file": "Props\\props-atlas.png",
+    "promptPresent": true,
+    "byteIdentity": true,
+    "sha256": "705DD05E112DD344AFB7D2F756F4D3F5B4672751431D746C717698B23BAA9BEA"
+  }
+]

@@ -1,0 +1,32 @@
+Use case: precise-object-edit.
+Input image 1 is the EDIT TARGET: this beautiful watercolor pump-house level. Preserve its painting style, pale softly textured backdrop, color balance, exact straight-on orthographic camera, 1536x1024 framing, walls, water, giant distant pipework, source crack at upper left, four mirrors, single light-spirit, pale beast flank and single gray target scale. Do NOT redesign the scene. Make a precise gameplay-geometry and linkage correction.
+
+1. THREE FOLDING JUMP PLATFORMS, mandatory:
+The current three little metal ledges at the right climb monotonically rightward and the lowest is far too high above the large glass shelf. Completely remove those three current ledges and their little brackets, restoring the background behind the old locations. Redraw exactly THREE narrow clean flat metal ledges in a right-left-right upward switchback, at these approximate pixels of the 1536x1024 image:
+- LOW: x1340 to1450, top y660, thickness12. Reachable from the solid right edge of glass shelf A at y750.
+- MIDDLE: x1230 to1350, top y570, thickness12.
+- HIGH: x1340 to1450, top y480, thickness12.
+Then a short jump LEFT leads to existing control shelf C at y385.
+Use worn brass-edged iron brackets behind these ledges. All walkable tops bare and level. Exactly three intermediate ledges, no extra footholds from old ledges, pots or dangling structural ornaments. Do not turn these into a continuous staircase or ladder.
+
+2. CONTROL SHELF C:
+Its current deck begins near x1038. Trim ONLY its LEFT portion so the platform runs x1150 to1340, at its existing y385 height. Remove the extra left deck and its bracket from x1038-1150, restoring soft backdrop; leave the large control handwheel around x1205,y330 on the now narrower stable deck. The outgoing gold beam from the suspended mirror must pass clearly HIGH ABOVE this entire C platform. Keep the full platform standing area far below the light, so a standing character cannot charge here. Do not move the existing suspended mirror or the ray. Keep the existing upper rod connection between the suspended mirror top and C handwheel, but use matte dark bronze/brown rather than luminous gold.
+
+3. THE TWO MECHANICAL CONTROLS MUST BE DISTINCT:
+The wheel INSIDE the middle-left enclosed chamber B currently has an incorrect rod emerging from its right and connecting directly to the BOTTOM of the suspended mirror. Remove this entire incorrect connection outside the chamber, including the bending tube under the mirror. Keep the internal wheel and its short spindle.
+Instead connect B's internal wheel mechanically to the THREE folding ledge hinges via a thin matte dark-brown cable/shaft routed along the BACK wall:
+From the chamber right edge around x582,y508, run a short segment right to x640, turn UP to about y295, then along the background wall to far-right x1470, then down the right edge of the stair area, with discreet short links to the step brackets. Use reasonable small pulley or corner couplings at direction changes. Keep these thin, lower-contrast and unlit; they are not walkable. They can sit behind foreground geometry. Do NOT connect B to any mirror.
+The C handwheel remains the ONLY mechanism linked to the suspended mirror. The D handwheel at the upper right remains linked only to the upper-right mirror.
+
+4. B CHAMBER RIGHT WALL SLIT:
+Keep B's intact top, floor and left wall and its interior seen as an architectural cutaway. At the lower-right side wall cut a tiny HORIZONTAL slit fully THROUGH the thick right frame approximately x565-587, y510-523. A black opening cut through the right side boundary, not merely painted on the inner rear wall. It is much smaller than the spirit's body. Keep B unlit: do NOT add any golden ray to B. No large door or broken-open side.
+
+5. STRICT ONE-BEAM CLEANUP:
+Keep only the existing physically continuous route: upper-left crack -> bottom-left mirror -> mirror on lower-right glass shelf -> suspended central mirror -> upper-right mirror -> dark feeding scale.
+Remove the spurious thin vertical golden luminous streak that currently descends BELOW the lower-right shelf mirror around x1115,y740 all the way to the water. Restore ordinary glass/background/water there. No straight ray continues through this mirror; it reflects ALL the gameplay light upward-left to the suspended mirror. Natural subtle broad diffuse glints on the glass and water are okay, but no distinct extra beam segment or vertical shaft.
+Preserve every correct golden ray segment exactly in its current position and keep its thickness and glow. No beam into the chamber, no second source, no ghost rays.
+
+6. EXIT:
+At the extreme right end of the upper glazed mezzanine, the small hatch should be a readable open dark arched passage toward the next level, with the root curtain curling aside. Keep the same footprint and do not create a new light source there.
+
+Keep the tiny cream flame-head spirit only once, beside the upper-right wheel. Keep the beast body ivory white and the feeding scale dark gray around its warm glowing contact center. Maintain the delicate crisp sepia outlines and restrained warm-white edges of interactive objects against the pale watercolor background. No labels, arrows, numbers, text, panels, map legend or UI.

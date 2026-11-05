@@ -1,0 +1,13 @@
+{
+  "output": "C:/Users/10029/Documents/ChatGPT/食光兽/art/opening-comic-layout-v06-selected-layout-2026-11-05/opening-selected-layout-halfscale-v06.png",
+  "source": "C:/Users/10029/.codex/generated_images/01a1a7d6-1c92-7ea0-bc30-fe064e10a87b/exec-33588fc2-c80b-4fd7-8d94-13a25de4ea83.png",
+  "editTarget": "C:/Users/10029/AppData/Local/Temp/codex-clipboard-d9558606-78b1-48fb-831f-f5eb51db78aa.png",
+  "mode": "built-in image_gen",
+  "status": "静态效果稿",
+  "scope": "保留用户本轮指定的上二下三折线布局，末格角色缩小，保持地面落脚处。",
+  "scaleTarget": "相对本轮附图的角色宽高各50%，生成式近似缩放。",
+  "validation": "目视核对：五格布局沿用附图、末格角色变小、地面位置保持，角色没有悬空。",
+  "promptFiles": [
+    "prompts.json"
+  ]
+}

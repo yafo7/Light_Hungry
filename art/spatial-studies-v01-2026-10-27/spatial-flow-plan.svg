@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1400" viewBox="0 0 2000 1400">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10Z" fill="#bd583d"/></marker>
+<pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M-3 12L12 -3 M3 15L15 3" stroke="#c8cbc5" stroke-width="1"/></pattern>
+<style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#343c3d} .ink{fill:none;stroke:#515b5c;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}.fine{fill:none;stroke:#7a8584;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}.wall{fill:#fbfaf5;stroke:#515b5c;stroke-width:3}.leaf{fill:#e1ead8;stroke:#8a9c7e;stroke-width:1.8}.water{fill:#e2eff2;stroke:#8ca6ae;stroke-width:2}.route{fill:none;stroke:#bd583d;stroke-width:4.4;stroke-linejoin:round;stroke-linecap:round}.badge{fill:#fffaf3;stroke:#bd583d;stroke-width:2.8}.muted{fill:#707a77}.small{fill:#657270}.dash{fill:none;stroke:#8b9590;stroke-width:2;stroke-dasharray:8 7}</style></defs>
+<rect width="2000" height="1400" fill="#f8f7f2"/>
+<rect x="42" y="165" width="1495" height="1140" rx="20" fill="#fffefa" stroke="#d4d7ce"/>
+<rect x="1572" y="165" width="385" height="1140" rx="20" fill="#f0f1e9" stroke="#d4d7ce"/>
+
+<text x="65" y="73" font-size="42" class="" text-anchor="start" font-weight="bold">食光兽｜连续空间流线图</text>
+<text x="67" y="119" font-size="24" class="muted" text-anchor="start" font-weight="normal">从南侧低地进入 → 沿东侧建筑攀升 → 登上北侧高塔 → 下降至中央心庭</text>
+<text x="1930" y="75" font-size="22" class="muted" text-anchor="end" font-weight="normal">空间方案 v01</text>
+<text x="1930" y="112" font-size="20" class="muted" text-anchor="end" font-weight="normal">概念非比例图 · 北在上</text>
+<path d="M250 1178 C415 1198 520 1260 845 1242 C1220 1220 1465 1010 1490 755 C1520 480 1420 280 1215 205 C1025 133 760 151 593 258 C513 309 457 382 466 439 C472 492 529 524 585 497 L678 451 Q700 431 676 412 L610 382 C689 294 916 267 1092 337 C1285 414 1356 604 1308 801 C1264 979 1104 1071 872 1097 C587 1129 428 1067 250 1114 Q204 1137 250 1178Z" class="" fill="#e9e9e1" stroke="#c6c9bf" stroke-width="2" opacity=".76"/>
+<path d="M1110 540 C1115 629 1090 714 1054 797 Q1005 883 882 917 Q822 924 788 904 Q761 887 793 871 L930 834 Q993 785 1000 683" class="" fill="#e7e8df" stroke="#c6c9bf" stroke-width="2" opacity=".75"/>
+<path d="M1140 890 C1037 954 890 982 731 932 Q664 914 638 872 Q619 843 654 831 Q684 826 714 854 Q810 887 916 853" class="" fill="#e7e8df" stroke="#c6c9bf" stroke-width="2" opacity=".75"/>
+<path d="M541 401 Q556 390 569 398" class="ink" />
+<path d="M492 350 Q462 298 492 270 Q526 282 540 315" class="fine" />
+<text x="337" y="325" font-size="21" class="muted" text-anchor="start" font-weight="normal">头部／朝向心庭</text>
+<path d="M470 330 L508 361" class="fine" />
+<text x="1355" y="1025" font-size="20" class="muted" text-anchor="start" font-weight="normal">躯干</text>
+<text x="300" y="1260" font-size="20" class="muted" text-anchor="start" font-weight="normal">尾部／园门低地</text>
+<text x="850" y="965" font-size="20" class="muted" text-anchor="middle" font-weight="normal">前肢环抱中央庭院</text>
+<path d="M1470 270 L1470 208" class="ink" marker-end="url(#arrow)"/>
+<text x="1470" y="196" font-size="19" class="muted" text-anchor="middle" font-weight="normal">北 N</text>
+<path d="M142 1015 L142 1119 M142 1165 L142 1245 M154 1015 L154 1119 M154 1165 L154 1245" class="ink" />
+<path d="M154 1119 L193 1098 M154 1165 L193 1186" class="fine" />
+<text x="90" y="1088" font-size="18" class="small" text-anchor="start" font-weight="normal">门洞</text>
+<path d="M342 1095 Q360 1038 410 1027 Q466 1041 484 1095 M491 1135 L461 1146 L446 1130 L433 1148 L335 1135" class="wall" />
+<path d="M345 1144 Q391 1160 446 1152 M367 1062 Q410 1049 450 1063 M457 1106 L470 1120 L460 1130" class="fine" />
+<g transform="translate(375 1090) rotate(-16)"><path d="M-22 -16 L16 -20 L23 13 L-15 20Z" fill="#e7f0f1" stroke="#4a5559" stroke-width="2.4"/><path d="M-9 -12 L7 8 M0 -14 L13 3" class="fine"/><path d="M0 20 L0 30 M-12 30 L12 30" class="ink"/></g>
+<text x="320" y="995" font-size="19" class="small" text-anchor="start" font-weight="normal">碎镜</text>
+<path d="M357 1001 L373 1063" class="fine" />
+<rect x="494" y="1087" width="514" height="78" rx="0" class="" fill="url(#hatch)" stroke="#959c94" stroke-width="2" stroke-dasharray="8 6"/>
+<path d="M510 1101 L991 1101 M510 1150 L991 1150" class="fine" />
+<text x="690" y="1063" font-size="20" class="small" text-anchor="middle" font-weight="normal">步道下方／埋地排水渠</text>
+<text x="505" y="1188" font-size="18" class="small" text-anchor="start" font-weight="normal">盆底裂缝</text>
+<text x="974" y="1188" font-size="18" class="small" text-anchor="start" font-weight="normal">渠口</text>
+<path d="M1002 1046 Q1030 1015 1091 1022 Q1198 1023 1220 1096 Q1232 1154 1190 1190 Q1092 1225 1027 1180 Q994 1157 1002 1046Z" class="water" />
+<path d="M1025 1065 Q1089 1044 1177 1073 M1042 1157 Q1110 1178 1189 1145" class="fine" />
+<g transform="translate(1123 1022) rotate(35) scale(0.58)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1146 990) rotate(-20) scale(0.58)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1195 1129) rotate(30) scale(0.58)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1190 1080) rotate(-30)"><path d="M-22 -16 L16 -20 L23 13 L-15 20Z" fill="#e7f0f1" stroke="#4a5559" stroke-width="2.4"/><path d="M-9 -12 L7 8 M0 -14 L13 3" class="fine"/><path d="M0 20 L0 30 M-12 30 L12 30" class="ink"/></g>
+<text x="1252" y="1143" font-size="18" class="small" text-anchor="start" font-weight="normal">浮叶／水面</text>
+<path d="M1244 1139 L1204 1121" class="fine" />
+<path d="M1040 822 L1177 822 M1221 822 L1260 822 L1260 972 L1170 972 M1125 972 L1040 972 L1040 822" class="wall" />
+<path d="M1053 835 L1165 835 M1232 835 L1247 835 L1247 958 L1180 958 M1115 958 L1053 958 L1053 835" class="fine" />
+<circle cx="1080" cy="871" r="24" class="ink" />
+<path d="M1080 847 L1080 895 M1056 871 L1104 871 M1098 853 L1118 833" class="fine" />
+<g transform="translate(1224 922) rotate(15)"><path d="M-22 -16 L16 -20 L23 13 L-15 20Z" fill="#e7f0f1" stroke="#4a5559" stroke-width="2.4"/><path d="M-9 -12 L7 8 M0 -14 L13 3" class="fine"/><path d="M0 20 L0 30 M-12 30 L12 30" class="ink"/></g>
+<text x="1027" y="804" font-size="18" class="small" text-anchor="start" font-weight="normal">金属泵轮／可转镜片</text>
+<path d="M1183 822 L1183 770 M1217 822 L1217 770" class="ink" />
+<path d="M1188 790 L1212 790 M1188 802 L1212 802 M1188 814 L1212 814" class="fine" />
+<text x="1060" y="780" font-size="18" class="small" text-anchor="start" font-weight="normal">检修孔＋短梯</text>
+<path d="M1164 778 L1182 790" class="fine" />
+<path d="M1180 470 L1510 470 L1510 770 L1221 770 M1181 770 L1180 470Z" class="wall" />
+<path d="M1193 482 L1497 482 L1497 757 L1234 757 M1168 476 L1168 762" class="fine" />
+<path d="M1180 550 L1510 550 M1180 655 L1510 655" class="dash" />
+<text x="1506" y="451" font-size="18" class="muted" text-anchor="end" font-weight="normal">同一座温室 · 分层观察</text>
+<rect x="1203" y="681" width="50" height="56" rx="0" class="" fill="#edf0e4" stroke="#a5b199" stroke-width="1.5"/>
+<g transform="translate(1215 699) rotate(20) scale(0.3)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1235 716) rotate(20) scale(0.3)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<rect x="1360" y="681" width="50" height="56" rx="0" class="" fill="#edf0e4" stroke="#a5b199" stroke-width="1.5"/>
+<g transform="translate(1372 699) rotate(20) scale(0.3)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1392 716) rotate(20) scale(0.3)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<rect x="1430" y="681" width="50" height="56" rx="0" class="" fill="#edf0e4" stroke="#a5b199" stroke-width="1.5"/>
+<g transform="translate(1442 699) rotate(20) scale(0.3)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1462 716) rotate(20) scale(0.3)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1215 640) rotate(-30) scale(0.9)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1395 645) rotate(35) scale(0.9)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1460 621) rotate(-10) scale(0.9)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<path d="M1210 483 L1210 536" class="fine" />
+<path d="M1255 483 L1255 536" class="fine" />
+<path d="M1355 483 L1355 536" class="fine" />
+<path d="M1400 483 L1400 536" class="fine" />
+<path d="M1450 483 L1450 536" class="fine" />
+<path d="M1274 683 L1274 565 M1305 683 L1305 565" class="fine" />
+<path d="M1274 575 L1305 575" class="fine" />
+<path d="M1274 594 L1305 594" class="fine" />
+<path d="M1274 613 L1305 613" class="fine" />
+<path d="M1274 632 L1305 632" class="fine" />
+<path d="M1274 651 L1305 651" class="fine" />
+<path d="M1274 670 L1305 670" class="fine" />
+<path d="M1274 689 L1305 689" class="fine" />
+<text x="1330" y="574" font-size="18" class="small" text-anchor="start" font-weight="normal">露珠／可倾叶片</text>
+<text x="1328" y="675" font-size="17" class="small" text-anchor="start" font-weight="normal">藤架上行 ↑</text>
+<text x="1330" y="536" font-size="17" class="small" text-anchor="start" font-weight="normal">破玻璃出屋顶 ↑</text>
+<path d="M1437 721 L1446 703 L1461 708 L1468 724 L1452 738Z" fill="#d9e8e9" stroke="#4f6063" stroke-width="2"/>
+<path d="M1446 703 L1452 738 M1437 721 L1461 708 L1452 738" class="fine" />
+<text x="1360" y="753" font-size="18" class="small" text-anchor="start" font-weight="normal">棱镜石</text>
+<path d="M1277 470 L1277 453 L1205 453 L1205 438 M1304 470 L1304 428 L1236 428 L1236 438" class="ink" />
+<text x="1390" y="405" font-size="18" class="small" text-anchor="middle" font-weight="normal">雨槽接阁楼窗</text>
+<path d="M1340 409 L1296 437" class="fine" />
+<path d="M1080 294 L1280 294 L1280 438 L1236 438 M1205 438 L1080 438 L1080 386 M1080 353 L1080 294Z" class="wall" />
+<path d="M1095 306 L1265 306 L1265 426 M1100 310 L1100 426 M1124 310 L1124 426" class="fine" />
+<rect x="1196" y="312" width="55" height="30" rx="0" class="" fill="#e7e7da" stroke="#8d968d" stroke-width="1.4"/>
+<g transform="translate(1242 366) rotate(20)"><path d="M-22 -16 L16 -20 L23 13 L-15 20Z" fill="#e7f0f1" stroke="#4a5559" stroke-width="2.4"/><path d="M-9 -12 L7 8 M0 -14 L13 3" class="fine"/><path d="M0 20 L0 30 M-12 30 L12 30" class="ink"/></g>
+<text x="1120" y="276" font-size="20" class="muted" text-anchor="start" font-weight="normal">阁楼／相邻园丁屋</text>
+<text x="1070" y="464" font-size="18" class="small" text-anchor="start" font-weight="normal">通风口</text>
+<path d="M1080 352 Q1060 348 1040 322 L930 292 M1080 387 Q1046 385 1021 352 L930 341" class="fine" />
+<g transform="translate(1048 372) rotate(-20) scale(0.5)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1027 300) rotate(30) scale(0.5)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(983 346) rotate(-40) scale(0.5)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(949 300) rotate(20) scale(0.5)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<text x="1015" y="238" font-size="19" class="small" text-anchor="middle" font-weight="normal">向西北上坡</text>
+<path d="M710 194 L930 194 L930 294 M930 341 L930 390 L710 390 L710 258 M710 218 L710 194Z" class="wall" />
+<path d="M722 206 L918 206 L918 284 M918 351 L918 378 L722 378 L722 270 M722 208 L722 212" class="fine" />
+<path d="M765 270 L810 270 L810 288 L830 288 L830 306 L850 306" class="fine" />
+<path d="M774 276 L803 276" class="fine" />
+<path d="M774 284 L803 284" class="fine" />
+<path d="M774 292 L803 292" class="fine" />
+<circle cx="867" cy="246" r="26" class="dash" />
+<path d="M850 246 L883 246 M867 229 L867 264" class="fine" />
+<text x="806" y="175" font-size="20" class="muted" text-anchor="middle" font-weight="normal">同一座观测塔</text>
+<text x="740" y="414" font-size="18" class="small" text-anchor="start" font-weight="normal">楼梯上行／塔侧梯下降</text>
+<path d="M706 223 L641 273 L580 355 M716 246 L659 291 L602 369" class="ink" />
+<path d="M687 232 L704 246" class="fine" />
+<path d="M664 258 L681 272" class="fine" />
+<path d="M641 284 L658 298" class="fine" />
+<path d="M618 310 L635 324" class="fine" />
+<path d="M595 336 L612 350" class="fine" />
+<path d="M469 388 L540 388 M580 388 L631 388 L631 473 L581 473 M538 473 L469 473 L469 388" class="wall" />
+<circle cx="486" cy="403" r="5" class="ink" />
+<circle cx="486" cy="456" r="5" class="ink" />
+<circle cx="610" cy="403" r="5" class="ink" />
+<circle cx="610" cy="456" r="5" class="ink" />
+<g transform="translate(491 463) rotate(-15) scale(0.5)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(614 448) rotate(20) scale(0.5)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(507 428) rotate(-25)"><path d="M-22 -16 L16 -20 L23 13 L-15 20Z" fill="#e7f0f1" stroke="#4a5559" stroke-width="2.4"/><path d="M-9 -12 L7 8 M0 -14 L13 3" class="fine"/><path d="M0 20 L0 30 M-12 30 L12 30" class="ink"/></g>
+<text x="405" y="528" font-size="18" class="small" text-anchor="start" font-weight="normal">花廊紧贴面颊</text>
+<path d="M540 473 L540 550 L551 620 M580 473 L580 550 L590 620" class="ink" />
+<path d="M550 488 L550 545 L562 612" class="" fill="none" stroke="#a2bbc0" stroke-width="3"/>
+<text x="601" y="549" font-size="19" class="small" text-anchor="start" font-weight="normal">沿灌溉槽下行 ↓</text>
+<path d="M480 620 L550 620 M591 620 L720 620 L720 675 M720 727 L720 785 L480 785 L480 620" class="wall" />
+<path d="M492 632 L538 632 M603 632 L707 632 L707 664 M707 739 L707 773 L492 773 L492 632" class="fine" />
+<path d="M720 675 L735 682 L715 690 M720 727 L734 719 L718 711" class="ink" />
+<path d="M501 644 Q519 660 514 689 Q501 722 515 748 M681 634 Q657 665 679 685 M661 635 Q640 650 642 675" class="fine" />
+<path d="M646 743 L655 725 L670 730 L677 746 L661 760Z" fill="#d9e8e9" stroke="#4f6063" stroke-width="2"/>
+<path d="M655 725 L661 760 M646 743 L670 730 L661 760" class="fine" />
+<text x="447" y="813" font-size="19" class="small" text-anchor="start" font-weight="normal">半地下 · 保留剖切观察</text>
+<path d="M797 566 Q904 534 1021 578 L1043 837 Q901 885 780 837 L780 728 M780 674 L797 566Z" class="" fill="#f3f5e9" stroke="#909c88" stroke-width="2.5"/>
+<path d="M820 585 Q914 562 997 594 M798 820 Q903 859 1019 820" class="fine" />
+<g transform="translate(811 633) rotate(-20) scale(0.74)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1008 652) rotate(25) scale(0.74)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(820 817) rotate(-35) scale(0.74)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(976 827) rotate(30) scale(0.74)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<path d="M856 656 Q843 624 869 606 Q895 622 900 649 Q906 674 883 688 Q859 680 856 656Z" class="" fill="#e7dcc4" stroke="#9f9680" stroke-width="2"/>
+<path d="M870 620 L882 670" class="fine" />
+<text x="912" y="614" font-size="19" class="small" text-anchor="start" font-weight="normal">胸前光鳞</text>
+<text x="880" y="799" font-size="20" class="muted" text-anchor="middle" font-weight="normal">露天 · 前肢之间</text>
+<text x="739" y="655" font-size="18" class="small" text-anchor="start" font-weight="normal">塌墙出口</text>
+<path id="route-01-02" data-from="01" data-to="02" d="M244 1146 C300 1146 335 1115 385 1105" class="route" marker-end="url(#arrow)"/>
+<path id="route-02-03" data-from="02" data-to="03" d="M435 1107 C480 1110 500 1126 550 1126 L683 1126" class="route" marker-end="url(#arrow)"/>
+<path id="route-03-04" data-from="03" data-to="04" d="M736 1126 L1000 1126 Q1030 1126 1063 1115" class="route" marker-end="url(#arrow)"/>
+<path id="route-04-05" data-from="04" data-to="05" d="M1095 1084 C1114 1030 1140 1020 1145 970 L1148 927" class="route" marker-end="url(#arrow)"/>
+<path id="route-05-06" data-from="05" data-to="06" d="M1168 882 L1200 850 L1200 790 L1200 768 Q1210 740 1263 729" class="route" marker-end="url(#arrow)"/>
+<path id="route-06-07" data-from="06" data-to="07" d="M1290 699 L1290 647" class="route" marker-end="url(#arrow)"/>
+<path id="route-07-08" data-from="07" data-to="08" d="M1290 594 L1290 542" class="route" marker-end="url(#arrow)"/>
+<path id="route-08-09" data-from="08" data-to="09" d="M1290 489 L1290 454 Q1290 440 1252 440 L1220 440 L1220 400 L1196 380" class="route" marker-end="url(#arrow)"/>
+<path id="route-09-10" data-from="09" data-to="10" d="M1144 370 L1080 370 Q1060 370 1048 340 L1024 325" class="route" marker-end="url(#arrow)"/>
+<path id="route-10-11" data-from="10" data-to="11" d="M974 314 L933 314 L877 319" class="route" marker-end="url(#arrow)"/>
+<path id="route-11-12" data-from="11" data-to="12" d="M836 298 L815 265 L805 258" class="route" marker-end="url(#arrow)"/>
+<path id="route-12-13" data-from="12" data-to="13" d="M764 235 L710 235 L650 285 L600 350 L574 400" class="route" marker-end="url(#arrow)"/>
+<path id="route-13-14" data-from="13" data-to="14" d="M560 451 L560 550 L570 620 L573 673" class="route" marker-end="url(#arrow)"/>
+<path id="route-14-15" data-from="14" data-to="15" d="M601 700 L720 700 L780 700 L853 700" class="route" marker-end="url(#arrow)"/>
+<circle cx="220" cy="1150" r="24" class="badge" />
+<text x="220" y="1158" font-size="22" class="" text-anchor="middle" font-weight="bold">01</text>
+<text x="220" y="1207" font-size="23" class="" text-anchor="middle" font-weight="bold">园门</text>
+<circle cx="410" cy="1100" r="24" class="badge" />
+<text x="410" y="1108" font-size="22" class="" text-anchor="middle" font-weight="bold">02</text>
+<text x="410" y="1207" font-size="23" class="" text-anchor="middle" font-weight="bold">倒扣陶盆</text>
+<circle cx="710" cy="1126" r="24" class="badge" />
+<text x="710" y="1134" font-size="22" class="" text-anchor="middle" font-weight="bold">03</text>
+<text x="710" y="1207" font-size="23" class="" text-anchor="middle" font-weight="bold">暗渠</text>
+<circle cx="1090" cy="1110" r="24" class="badge" />
+<text x="1090" y="1118" font-size="22" class="" text-anchor="middle" font-weight="bold">04</text>
+<text x="1090" y="1250" font-size="23" class="" text-anchor="middle" font-weight="bold">浅池</text>
+<circle cx="1150" cy="900" r="24" class="badge" />
+<text x="1150" y="908" font-size="22" class="" text-anchor="middle" font-weight="bold">05</text>
+<text x="1150" y="949" font-size="23" class="" text-anchor="middle" font-weight="bold">泵房</text>
+<circle cx="1290" cy="725" r="24" class="badge" />
+<text x="1290" y="733" font-size="22" class="" text-anchor="middle" font-weight="bold">06</text>
+<text x="1325" y="733" font-size="23" class="" text-anchor="start" font-weight="bold">地面苗床</text>
+<circle cx="1290" cy="620" r="24" class="badge" />
+<text x="1290" y="628" font-size="22" class="" text-anchor="middle" font-weight="bold">07</text>
+<text x="1325" y="627" font-size="23" class="" text-anchor="start" font-weight="bold">上层叶幕</text>
+<circle cx="1290" cy="515" r="24" class="badge" />
+<text x="1290" y="523" font-size="22" class="" text-anchor="middle" font-weight="bold">08</text>
+<text x="1325" y="508" font-size="23" class="" text-anchor="start" font-weight="bold">屋顶雨槽</text>
+<circle cx="1170" cy="370" r="24" class="badge" />
+<text x="1170" y="378" font-size="22" class="" text-anchor="middle" font-weight="bold">09</text>
+<text x="1170" y="418" font-size="23" class="" text-anchor="middle" font-weight="bold">阁楼</text>
+<circle cx="1000" cy="315" r="24" class="badge" />
+<text x="1000" y="323" font-size="22" class="" text-anchor="middle" font-weight="bold">10</text>
+<text x="998" y="395" font-size="23" class="" text-anchor="middle" font-weight="bold">藤坡</text>
+<circle cx="850" cy="320" r="24" class="badge" />
+<text x="850" y="328" font-size="22" class="" text-anchor="middle" font-weight="bold">11</text>
+<text x="832" y="368" font-size="23" class="" text-anchor="middle" font-weight="bold">暗室</text>
+<circle cx="790" cy="235" r="24" class="badge" />
+<text x="790" y="243" font-size="22" class="" text-anchor="middle" font-weight="bold">12</text>
+<text x="740" y="285" font-size="23" class="" text-anchor="start" font-weight="bold">观星台</text>
+<circle cx="560" cy="425" r="24" class="badge" />
+<text x="560" y="433" font-size="22" class="" text-anchor="middle" font-weight="bold">13</text>
+<text x="560" y="509" font-size="23" class="" text-anchor="middle" font-weight="bold">面颊花廊</text>
+<circle cx="575" cy="700" r="24" class="badge" />
+<text x="575" y="708" font-size="22" class="" text-anchor="middle" font-weight="bold">14</text>
+<text x="575" y="759" font-size="23" class="" text-anchor="middle" font-weight="bold">根室</text>
+<circle cx="880" cy="700" r="24" class="badge" />
+<text x="880" y="708" font-size="22" class="" text-anchor="middle" font-weight="bold">15</text>
+<text x="880" y="755" font-size="23" class="" text-anchor="middle" font-weight="bold">中央心庭</text>
+<text x="1600" y="209" font-size="26" class="" text-anchor="start" font-weight="bold">上下叠层说明</text>
+<text x="1600" y="243" font-size="20" class="muted" text-anchor="start" font-weight="normal">温室剖面／单一建筑足迹</text>
+<path d="M1620 465 L1620 326 L1735 278 L1840 326 L1840 465Z" class="wall" />
+<path d="M1620 398 L1840 398 M1620 455 L1840 455 M1630 326 L1830 326" class="fine" />
+<g transform="translate(1650 451) rotate(10) scale(0.45)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1680 451) rotate(10) scale(0.45)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1710 451) rotate(10) scale(0.45)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1685 392) rotate(10) scale(0.75)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<g transform="translate(1760 392) rotate(-25) scale(0.7)"><path d="M0 0 Q-23 -36 0 -60 Q23 -36 0 0Z" class="leaf"/><path d="M0 0 L0 -47" class="fine"/></g>
+<path d="M1804 454 L1804 337 M1819 454 L1819 337" class="fine" />
+<path d="M1804 343 L1819 343" class="fine" />
+<path d="M1804 359 L1819 359" class="fine" />
+<path d="M1804 375 L1819 375" class="fine" />
+<path d="M1804 391 L1819 391" class="fine" />
+<path d="M1804 407 L1819 407" class="fine" />
+<path d="M1804 423 L1819 423" class="fine" />
+<path d="M1804 439 L1819 439" class="fine" />
+<text x="1856" y="452" font-size="20" class="" text-anchor="start" font-weight="bold">06</text>
+<text x="1856" y="393" font-size="20" class="" text-anchor="start" font-weight="bold">07</text>
+<text x="1856" y="320" font-size="20" class="" text-anchor="start" font-weight="bold">08</text>
+<text x="1615" y="499" font-size="20" class="small" text-anchor="start" font-weight="normal">苗床 → 叶幕 → 破顶 → 雨槽</text>
+<text x="1615" y="529" font-size="18" class="muted" text-anchor="start" font-weight="normal">切换视角，仍是同一栋建筑。</text>
+<text x="1600" y="590" font-size="20" class="muted" text-anchor="start" font-weight="normal">观测塔剖面／上下相接</text>
+<rect x="1664" y="637" width="140" height="166" rx="0" class="wall" />
+<path d="M1648 637 L1821 637 M1664 717 L1804 717" class="ink" />
+<path d="M1680 791 L1710 791 L1710 768 L1740 768 L1740 745 L1770 745 L1770 722" class="fine" />
+<path d="M1652 649 L1652 794 M1638 649 L1638 794" class="fine" />
+<path d="M1638 654 L1652 654" class="fine" />
+<path d="M1638 671 L1652 671" class="fine" />
+<path d="M1638 688 L1652 688" class="fine" />
+<path d="M1638 705 L1652 705" class="fine" />
+<path d="M1638 722 L1652 722" class="fine" />
+<path d="M1638 739 L1652 739" class="fine" />
+<path d="M1638 756 L1652 756" class="fine" />
+<path d="M1638 773 L1652 773" class="fine" />
+<path d="M1638 790 L1652 790" class="fine" />
+<text x="1823" y="631" font-size="20" class="" text-anchor="start" font-weight="bold">12</text>
+<text x="1823" y="756" font-size="20" class="" text-anchor="start" font-weight="bold">11</text>
+<text x="1615" y="842" font-size="18" class="small" text-anchor="start" font-weight="normal">暗室楼梯上行；塔侧维护梯下降。</text>
+<path d="M1600 885 L1925 885" class="fine" />
+<text x="1600" y="928" font-size="25" class="" text-anchor="start" font-weight="bold">图例</text>
+<path d="M1610 967 L1684 967" class="route" marker-end="url(#arrow)"/>
+<text x="1702" y="974" font-size="20" class="" text-anchor="start" font-weight="normal">唯一推进方向</text>
+<rect x="1610" y="997" width="72" height="27" rx="0" class="" fill="#e9e9e1" stroke="#c6c9bf" stroke-width="1.5"/>
+<text x="1702" y="1019" font-size="20" class="" text-anchor="start" font-weight="normal">巨兽身体轮廓</text>
+<rect x="1610" y="1043" width="72" height="27" rx="0" class="" fill="#e1ead8" stroke="#8a9c7e" stroke-width="1.5"/>
+<text x="1702" y="1065" font-size="20" class="" text-anchor="start" font-weight="normal">植物／可攀结构</text>
+<rect x="1610" y="1089" width="72" height="27" rx="0" class="water" />
+<text x="1702" y="1111" font-size="20" class="" text-anchor="start" font-weight="normal">池水／灌溉水路</text>
+<path d="M1610 1148 L1684 1148" class="dash" />
+<text x="1702" y="1155" font-size="20" class="" text-anchor="start" font-weight="normal">地下或上层轮廓</text>
+<text x="1600" y="1212" font-size="21" class="" text-anchor="start" font-weight="bold">视角规则</text>
+<text x="1600" y="1245" font-size="18" class="muted" text-anchor="start" font-weight="normal">室内外共享门洞、墙缝与窗。</text>
+<text x="1600" y="1274" font-size="18" class="muted" text-anchor="start" font-weight="normal">转镜头揭示空间，不改变连通。</text>
+<text x="65" y="1350" font-size="21" class="muted" text-anchor="start" font-weight="normal">读图提示：关卡编号只在主图出现一次；橘红箭头逐段从 01 连至 15。所有路线均通过可见的门洞、裂缝、梯或通道。</text>
+</svg>

@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050">
+<defs>
+ <marker id="arrowInk" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#334351"/></marker>
+ <marker id="arrowGold" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#d58a12"/></marker>
+ <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#32856b"/></marker>
+ <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#537da1"/></marker>
+ <marker id="arrowPurple" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="#815da0"/></marker>
+ <style>
+  text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#263744} .title{font-size:32px;font-weight:700} .heading{font-size:24px;font-weight:700} .sub{font-size:18px;fill:#62717a} .body{font-size:20px} .small{font-size:17px} .tiny{font-size:16px} .bold{font-weight:700} .panel{fill:#fff;stroke:#d5dde0;stroke-width:2} .ink{fill:none;stroke:#334351;stroke-width:3;stroke-linecap:round;stroke-linejoin:round} .thin{fill:none;stroke:#778995;stroke-width:1.5} .dim{fill:none;stroke:#334351;stroke-width:1.5;marker-start:url(#arrowInk);marker-end:url(#arrowInk)} .axis{fill:none;stroke:#a5b1b7;stroke-width:1.5;stroke-dasharray:5 5;marker-end:url(#arrowInk)} .ray{fill:none;stroke:#d58a12;stroke-width:4;marker-end:url(#arrowGold)} .goodray{fill:none;stroke:#32856b;stroke-width:4;marker-end:url(#arrowGreen)} .normal{fill:none;stroke:#815da0;stroke-width:2.5;marker-end:url(#arrowPurple)} .mirror{stroke:#427c92;stroke-width:9;stroke-linecap:round} .mirrorCore{stroke:#c2ebef;stroke-width:3;stroke-linecap:round} .target{fill:#edf7f0;stroke:#32856b;stroke-width:2} .camera{fill:none;stroke:#537da1;stroke-width:2.5;stroke-dasharray:6 4;marker-end:url(#arrowBlue)}
+ </style>
+</defs>
+<rect width="1600" height="1050" fill="#f3f6f6"/>
+<text x="30" y="49" class="title">食光兽 · 第 1—3 关交互道具结构基准</text>
+<text x="1570" y="47" text-anchor="end" class="sub">可编辑 SVG / 1600 × 1050 / v01</text>
+<path d="M30 68 H1570" stroke="#c9d4d8" stroke-width="2"/>
+
+<!-- 01: front and side elevations. All heights use the same H=100 px. -->
+<rect x="30" y="90" width="500" height="450" rx="14" class="panel"/>
+<text x="52" y="128" class="heading">01 镜架尺寸与可达性</text>
+<text x="52" y="157" class="sub">人物高 H；镜心 1.8H；旋钮约 0.65H</text>
+<text x="208" y="198" text-anchor="middle" class="body bold">正立面</text>
+<text x="427" y="198" text-anchor="middle" class="body bold">侧立面</text>
+<path d="M61 485 H493" class="ink"/>
+<path d="M208 215 V488 M427 215 V488" stroke="#a3afb4" stroke-width="1.5" stroke-dasharray="6 5"/>
+<rect x="165" y="240" width="86" height="130" rx="6" fill="#e2f1f3" stroke="#427c92" stroke-width="5"/>
+<path d="M173 250 L243 360 M173 360 L243 250" stroke="#cee4e7" stroke-width="1.5"/>
+<circle cx="208" cy="305" r="6" fill="#d58a12"/>
+<path d="M177 305 H239" stroke="#d58a12" stroke-width="1.5" stroke-dasharray="4 3"/>
+<path d="M208 371 V478" stroke="#52636e" stroke-width="9"/>
+<rect x="168" y="477" width="80" height="8" rx="2" fill="#697b83"/>
+<circle cx="208" cy="420" r="12" fill="#e6d6b3" stroke="#7e7057" stroke-width="3"/>
+<path d="M203 414 L213 426" stroke="#7e7057" stroke-width="2"/>
+<text x="227" y="427" class="tiny">可达</text>
+<!-- person, top=385 bottom=485 -->
+<circle cx="143" cy="397" r="12" fill="#e8d7bf" stroke="#334351" stroke-width="2"/>
+<path d="M143 410 V452 M143 420 L163 430 L194 421 M143 421 L126 441 M143 452 L130 483 M143 452 L155 483" class="ink"/>
+<path d="M91 385 V485" class="dim"/>
+<path d="M87 385 H126 M87 485 H126" class="thin"/>
+<text x="76" y="441" text-anchor="end" class="body bold">H</text>
+<path d="M290 305 V485" class="dim"/>
+<path d="M252 305 H298 M252 485 H298" class="thin"/>
+<text x="301" y="390" class="body bold">1.8H</text>
+<text x="301" y="415" class="tiny">镜心高度</text>
+<rect x="422" y="240" width="10" height="130" rx="3" fill="#b6d9e1" stroke="#427c92" stroke-width="3"/>
+<path d="M427 371 V478" stroke="#52636e" stroke-width="8"/>
+<path d="M395 420 H427" class="ink"/>
+<circle cx="392" cy="420" r="10" fill="#e6d6b3" stroke="#7e7057" stroke-width="3"/>
+<rect x="387" y="477" width="80" height="8" rx="2" fill="#697b83"/>
+<path d="M437 305 H478" class="thin"/>
+<text x="449" y="288" class="tiny">竖直镜片</text>
+<text x="449" y="455" class="tiny">无俯仰</text>
+<text x="52" y="518" class="body bold">底座固定 · 只绕竖直 Y 轴左右转动</text>
+
+<!-- 02: true XZ top view; +Z is upwards on paper. -->
+<rect x="550" y="90" width="1020" height="450" rx="14" class="panel"/>
+<text x="574" y="128" class="heading">02 真正 XZ 俯视 · 三种 yaw 角度</text>
+<text x="574" y="158" class="sub">入射 d = (1, 0)，镜面与 +X 的夹角为 θ，反射 r = (cos 2θ, sin 2θ)</text>
+<text x="1538" y="128" text-anchor="end" class="small">⊙ +Y 出纸面</text>
+
+<!-- θ=30 degrees, r=60 degrees -->
+<g transform="translate(720 340)">
+ <path d="M-125 0 H122 M0 76 V-154" class="axis"/>
+ <text x="112" y="-11" class="tiny">+X</text><text x="10" y="-161" class="tiny">+Z</text>
+ <rect x="-20" y="-127" width="40" height="16" rx="4" class="target"/>
+ <text x="0" y="-136" text-anchor="middle" class="tiny">目标</text>
+ <path d="M-112 0 H-4" class="ray"/>
+ <path d="M0 0 L60 -103.923" class="ray"/>
+ <path d="M-47.631 27.5 L47.631 -27.5" class="mirror"/>
+ <path d="M-47.631 27.5 L47.631 -27.5" class="mirrorCore"/>
+ <path d="M0 0 L-34 -58.89" class="normal"/>
+ <text x="-48" y="-64" class="small" fill="#815da0">n</text>
+ <path d="M36 0 A36 36 0 0 0 31.177 -18" fill="none" stroke="#815da0" stroke-width="2"/>
+ <text x="42" y="-7" class="small">θ</text>
+ <text x="-112" y="29" class="tiny">入射 +X</text>
+ <text x="0" y="107" text-anchor="middle" class="body bold">θ = 30° · 反射 60°</text>
+ <text x="0" y="137" text-anchor="middle" class="small">光落在目标右侧</text>
+</g>
+<!-- θ=45 degrees, r=90 degrees -->
+<g transform="translate(1060 340)">
+ <path d="M-125 0 H122 M0 76 V-154" class="axis"/>
+ <text x="112" y="-11" class="tiny">+X</text><text x="10" y="-161" class="tiny">+Z</text>
+ <rect x="-20" y="-127" width="40" height="16" rx="4" fill="#bfe5cf" stroke="#32856b" stroke-width="3"/>
+ <text x="0" y="-136" text-anchor="middle" class="tiny">目标</text>
+ <path d="M-112 0 H-4" class="ray"/>
+ <path d="M0 -4 V-112" class="goodray"/>
+ <path d="M-38.891 38.891 L38.891 -38.891" class="mirror"/>
+ <path d="M-38.891 38.891 L38.891 -38.891" class="mirrorCore"/>
+ <path d="M0 0 L-48.083 -48.083" class="normal"/>
+ <text x="-63" y="-54" class="small">n</text>
+ <path d="M36 0 A36 36 0 0 0 25.456 -25.456" fill="none" stroke="#815da0" stroke-width="2"/>
+ <text x="42" y="-10" class="small">45°</text>
+ <path d="M-29 0 A29 29 0 0 1 -20.506 -20.506" fill="none" stroke="#b6a0c8" stroke-width="1.5"/>
+ <path d="M-20.506 -20.506 A29 29 0 0 1 0 -29" fill="none" stroke="#b6a0c8" stroke-width="1.5"/>
+ <text x="-112" y="29" class="tiny">入射 +X</text>
+ <text x="0" y="107" text-anchor="middle" class="body bold">θ = 45° · 反射 +Z</text>
+ <text x="0" y="137" text-anchor="middle" class="small">n = (−1, 1) / √2</text>
+</g>
+<!-- θ=60 degrees, r=120 degrees -->
+<g transform="translate(1400 340)">
+ <path d="M-125 0 H122 M0 76 V-154" class="axis"/>
+ <text x="112" y="-11" class="tiny">+X</text><text x="10" y="-161" class="tiny">+Z</text>
+ <rect x="-20" y="-127" width="40" height="16" rx="4" class="target"/>
+ <text x="0" y="-136" text-anchor="middle" class="tiny">目标</text>
+ <path d="M-112 0 H-4" class="ray"/>
+ <path d="M0 0 L-60 -103.923" class="ray"/>
+ <path d="M-27.5 47.631 L27.5 -47.631" class="mirror"/>
+ <path d="M-27.5 47.631 L27.5 -47.631" class="mirrorCore"/>
+ <path d="M0 0 L-58.89 -34" class="normal"/>
+ <text x="-75" y="-37" class="small">n</text>
+ <path d="M36 0 A36 36 0 0 0 18 -31.177" fill="none" stroke="#815da0" stroke-width="2"/>
+ <text x="42" y="-12" class="small">θ</text>
+ <text x="-112" y="29" class="tiny">入射 +X</text>
+ <text x="0" y="107" text-anchor="middle" class="body bold">θ = 60° · 反射 120°</text>
+ <text x="0" y="137" text-anchor="middle" class="small">光落在目标左侧</text>
+</g>
+<text x="574" y="518" class="small">正解核对：d − 2(d·n)n = (0, 1)；此图只有水平旋转，镜片没有前后倾倒。</text>
+
+<!-- 03: interaction feedback states -->
+<rect x="30" y="560" width="500" height="450" rx="14" class="panel"/>
+<text x="52" y="599" class="heading">03 操作反馈与可逆调整</text>
+<text x="52" y="630" class="sub">状态反馈随光路即时更新</text>
+<text x="110" y="672" text-anchor="middle" class="body bold">未受光</text>
+<text x="280" y="672" text-anchor="middle" class="body bold">受光</text>
+<text x="450" y="672" text-anchor="middle" class="body bold">反射中</text>
+<path d="M177 665 H205" class="thin" marker-end="url(#arrowInk)"/><path d="M347 665 H375" class="thin" marker-end="url(#arrowInk)"/>
+<g transform="translate(110 770)">
+ <rect x="-13" y="-71" width="26" height="10" rx="3" fill="#edf0f1" stroke="#b0bcc2"/>
+ <path d="M-25 25 L25 -25" stroke="#a7bbc1" stroke-width="9" stroke-linecap="round"/>
+ <path d="M-25 25 L25 -25" stroke="#e8eff0" stroke-width="3"/>
+ <text x="0" y="45" text-anchor="middle" class="tiny">镜面暗</text>
+</g>
+<g transform="translate(280 770)">
+ <rect x="-13" y="-71" width="26" height="10" rx="3" fill="#edf0f1" stroke="#b0bcc2"/>
+ <path d="M-61 0 H-3 M0 0 L35 -60.62" class="ray"/>
+ <path d="M-30.31 17.5 L30.31 -17.5" class="mirror"/>
+ <path d="M-30.31 17.5 L30.31 -17.5" stroke="#ffe4a0" stroke-width="4"/>
+ <text x="0" y="45" text-anchor="middle" class="tiny">亮起，可继续调</text>
+</g>
+<g transform="translate(450 770)">
+ <rect x="-13" y="-71" width="26" height="10" rx="3" class="target"/>
+ <path d="M-61 0 H-3" class="ray"/><path d="M0 -3 V-60" class="goodray"/>
+ <path d="M-25 25 L25 -25" class="mirror"/>
+ <path d="M-25 25 L25 -25" stroke="#ffe4a0" stroke-width="3"/>
+ <text x="0" y="45" text-anchor="middle" class="tiny">光路抵达目标</text>
+</g>
+<path d="M52 839 H508" stroke="#e1e6e8"/>
+<text x="52" y="872" class="body">拖动旋钮：左右连续转向</text>
+<text x="52" y="906" class="body">松手保持角度；再次操作可随时回调</text>
+<text x="52" y="940" class="body">镜架固定，不搬动、不翻倒</text>
+<text x="52" y="980" class="small">受光立即反射，无蓄光或额外启动阶段。</text>
+
+<!-- 04: A/B viewpoints share a single real L-wall geometry. -->
+<rect x="550" y="560" width="600" height="450" rx="14" class="panel"/>
+<text x="574" y="599" class="heading">04 观察框 A / B · 同一真实空间</text>
+<text x="574" y="630" class="sub">切换观察位置；光必须穿过实际门洞</text>
+<rect x="582" y="660" width="178" height="71" rx="8" fill="#eff5fa" stroke="#91adc2" stroke-width="2"/>
+<text x="671" y="690" text-anchor="middle" class="body bold">观察框 A</text>
+<text x="671" y="716" text-anchor="middle" class="small">门洞外侧</text>
+<rect x="934" y="660" width="178" height="71" rx="8" fill="#eff5fa" stroke="#91adc2" stroke-width="2"/>
+<text x="1023" y="690" text-anchor="middle" class="body bold">观察框 B</text>
+<text x="1023" y="716" text-anchor="middle" class="small">门洞内侧</text>
+<path d="M671 735 L809 798" class="camera"/>
+<path d="M1023 735 L849 798" class="camera"/>
+<!-- L shaped wall, with a real 46 px aperture in the vertical segment. -->
+<path d="M820 754 H840 V807 H820 Z M820 853 H840 V910 H1070 V930 H820 Z" fill="#c3cbd0" stroke="#6d7d87" stroke-width="2"/>
+<path d="M824 807 H836 M824 853 H836" stroke="#334351" stroke-width="4"/>
+<rect x="816" y="807" width="28" height="46" fill="none" stroke="#32856b" stroke-width="1.5" stroke-dasharray="4 3"/>
+<path d="M598 830 H1026" class="ray"/>
+<path d="M1051 806 Q1078 830 1051 854 Q1028 830 1051 806 Z" fill="#cbe9d1" stroke="#32856b" stroke-width="2.5"/>
+<text x="608" y="813" class="small">实际水平光路</text>
+<text x="1051" y="881" text-anchor="middle" class="small">光鳞</text>
+<path d="M830 860 V887 H744" class="thin"/>
+<text x="589" y="890" class="small">真门洞：有宽度、厚度</text>
+<text x="930" y="954" text-anchor="middle" class="small">同一面 L 形墙（XZ 俯视）</text>
+<text x="574" y="983" class="small">墙仍遮光；切视角不旋转墙、不重置道具。</text>
+
+<!-- 05: one-shot completion latch -->
+<rect x="1170" y="560" width="400" height="450" rx="14" class="panel"/>
+<text x="1192" y="599" class="heading">05 光鳞与出口状态</text>
+<path d="M1192 700 H1221" class="ray"/>
+<path d="M1242 667 Q1274 700 1242 733 Q1210 700 1242 667 Z" fill="#e6ddb1" stroke="#b88d32" stroke-width="3"/>
+<path d="M1242 680 V720 M1228 700 H1256" stroke="#f8efce" stroke-width="3"/>
+<text x="1290" y="695" class="body bold">光鳞受光</text>
+<text x="1290" y="724" class="small">记录本关完成</text>
+<path d="M1370 747 V779" class="thin" marker-end="url(#arrowInk)"/>
+<!-- curled leaf, then open leaf -->
+<path d="M1211 844 H1295 M1240 844 V813 C1240 786 1283 783 1286 810 C1289 833 1261 837 1257 819 C1254 805 1270 802 1274 813" fill="none" stroke="#6a967b" stroke-width="9" stroke-linecap="round"/>
+<text x="1251" y="876" text-anchor="middle" class="small">卷叶闭合</text>
+<path d="M1320 818 H1379" class="thin" marker-end="url(#arrowInk)"/>
+<path d="M1402 844 H1533" class="thin"/>
+<path d="M1421 844 C1424 815 1461 802 1532 804 C1506 831 1468 846 1421 844 Z" fill="#a7cfaf" stroke="#56846b" stroke-width="2.5"/>
+<path d="M1421 844 Q1471 817 1532 804" fill="none" stroke="#56846b" stroke-width="2"/>
+<text x="1471" y="876" text-anchor="middle" class="small">出口舒展</text>
+<text x="1370" y="919" text-anchor="middle" class="body bold">完成后永久保持开放</text>
+<text x="1370" y="951" text-anchor="middle" class="body">复位镜子 ≠ 关闭出口</text>
+<text x="1370" y="983" text-anchor="middle" class="small">镜面调整与出口状态分离</text>
+
+<text x="30" y="1036" class="tiny">结构基准 · 2026-10-28 · H 为主角站立高度；可调镜始终竖直，仅绕 Y 轴旋转。固定镜可承担必要的高度转换。</text>
+<text x="1570" y="1036" text-anchor="end" class="tiny">本图不包含染色、折射或钥匙机制</text>
+</svg>

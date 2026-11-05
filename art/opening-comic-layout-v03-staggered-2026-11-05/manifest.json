@@ -1,0 +1,19 @@
+{
+  "output": "C:/Users/10029/Documents/ChatGPT/食光兽/art/opening-comic-layout-v03-staggered-2026-11-05/opening-staggered-gate-continuity-v03.png",
+  "source": "C:/Users/10029/.codex/generated_images/01a1a7d6-1c92-7ea0-bc30-fe064e10a87b/exec-017a7e3d-5d3f-4961-bd47-bcfa66fd2ebf.png",
+  "status": "静态效果稿，未制作动画",
+  "visualReview": {
+    "panelCount": 5,
+    "layout": "高低错位折线，宽羊皮纸间隔",
+    "gate": "直栏、尖顶、小卷饰、平顶方形门柱；已去除旧版拱形大门",
+    "lastPanel": "门槛内侧低机位，主角望向荒园；保留门柱、砖墙、藤蔓、苔地材质，未复刻关卡全景"
+  },
+  "revealOrder": [
+    "左上行走",
+    "上中发现温室微光",
+    "右上来到铁门",
+    "左下越过门槛",
+    "右下望入荒园"
+  ],
+  "generationMode": "built-in image_gen"
+}

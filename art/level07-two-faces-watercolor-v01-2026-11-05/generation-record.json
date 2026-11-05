@@ -1,0 +1,30 @@
+{
+  "tool": "built-in imagegen",
+  "unity_modified": false,
+  "state": "Both mechanisms open; cart at R1; one source; front R0 dark; target scale lit.",
+  "files": [
+    {
+      "name": "07-front-leaf-corridor.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "5631fa73cff85624187d70cba3f164da4b01fefdddee1e1d0260c0e234926f26"
+    },
+    {
+      "name": "07-back-trellis-maintenance.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "a17f8c650ac453c098f316e9cc945f2c83b56a9f8d56399c5c74f5fbc6d3dd55"
+    }
+  ],
+  "prompts": [
+    "back-linkage-edit-prompt.txt",
+    "back-prompt.txt",
+    "back-window-edit-prompt.txt",
+    "front-prompt.txt",
+    "front-scale-edit-prompt.txt"
+  ]
+}

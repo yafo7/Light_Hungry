@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小食光兽 · 连贯待机 v04</title>
+<style>
+:root{color-scheme:dark;font-family:"Microsoft YaHei","Segoe UI",sans-serif;color:#e9edf0;background:#101a24}*{box-sizing:border-box}body{margin:0;padding:32px;max-width:1240px;margin-inline:auto}header{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:26px}.eyebrow{color:#edc782;font-size:12px;letter-spacing:2px}h1{font-size:30px;margin:8px 0;font-weight:650}p{color:#a7b6c2;line-height:1.7;margin:8px 0}.badge{border:1px solid #3b4e5c;padding:8px 12px;border-radius:20px;font-size:12px;color:#b7c6d0;white-space:nowrap}.layout{display:grid;grid-template-columns:minmax(330px,1.35fr) minmax(280px,.85fr);gap:22px}.stage{min-height:500px;border:1px solid #304250;border-radius:18px;background:#1c2d3a;display:grid;place-items:center;position:relative;overflow:hidden}.stage.light{background:#e9e3d4}.stage.checker{background-color:#bcc4ca;background-image:linear-gradient(45deg,#dce2e6 25%,transparent 25%),linear-gradient(-45deg,#dce2e6 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#dce2e6 75%),linear-gradient(-45deg,transparent 75%,#dce2e6 75%);background-size:32px 32px;background-position:0 0,0 16px,16px -16px,-16px 0}.tag{position:absolute;top:20px;left:20px;background:#101a24db;border:1px solid #3b4e5c;border-radius:7px;padding:6px 10px;color:#edcf99;font-size:13px}#view{display:block;width:384px;height:auto;max-width:100%;aspect-ratio:1;object-fit:contain}.hint{position:absolute;bottom:18px;left:20px;color:#8da2b1;font-size:12px}.panel{padding:26px;border:1px solid #304250;border-radius:18px;background:#15222e}h2{font-size:19px;margin:0 0 12px}.controls{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}button,select{background:#203342;color:#dce5eb;border:1px solid #3a5262;border-radius:8px;padding:10px 13px;font:inherit;font-size:13px;cursor:pointer}button:hover{background:#294556}button:disabled{opacity:.45;cursor:default}button:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid #edc782;outline-offset:3px}button[aria-pressed="true"],button.primary{background:#e6bf7c;color:#1a2430;border-color:#e6bf7c}.rule{height:1px;background:#2a3d4b;margin:20px 0}label{font-size:13px;color:#b4c4cf;display:flex;align-items:center;gap:12px;margin:13px 0}select{margin-left:auto}progress{height:6px;width:100%;accent-color:#e6bf7c;border:0}progress::-webkit-progress-bar{background:#2a3d4b;border-radius:4px}progress::-webkit-progress-value{background:#e6bf7c;border-radius:4px}progress::-moz-progress-bar{background:#e6bf7c;border-radius:4px}#status{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:#c7d5df;margin:12px 0}.meta{display:grid;grid-template-columns:1fr 1fr;gap:14px}.meta span{display:block;color:#94a7b5;font-size:12px;margin-bottom:5px}.meta strong{font-size:15px;font-weight:500}.inspect{margin-top:22px;padding:20px;border:1px solid #304250;border-radius:16px;background:#15222e}.inspectHead{display:flex;align-items:center;justify-content:space-between;gap:12px}.inspectHead p{font-size:12px;margin:0}.phasebar{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 15px}.phasebutton{font-size:12px;padding:7px 11px}.phasebutton.current{border-color:#e6bf7c;color:#edce97}summary{cursor:pointer;padding:12px 0;color:#cbd9e2;font-size:14px}summary span{color:#8fa6b6;font-size:12px;margin-left:12px}.pages{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0 12px}.pages p{font-size:12px;margin:0 auto 0 2px}.pages button{padding:7px 10px;font-size:12px}.frames{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}.frame{padding:5px;background:#1e303e;border-color:transparent;min-width:0}.frame canvas{width:100%;height:auto;display:block;aspect-ratio:1}.frame small{font-size:11px;white-space:nowrap}.frame.selected{border-color:#e6bf7c;background:#2b4050;color:#edce97}.foot{display:flex;gap:18px;flex-wrap:wrap;margin:22px 0;color:#93a8b7;font-size:12px}a{color:#e6c88f;text-decoration:none}a:hover{text-decoration:underline}.error{color:#ffba9f}[hidden]{display:none!important}
+@media(max-width:750px){body{padding:18px}header{align-items:flex-start}.badge{display:none}.layout{grid-template-columns:1fr}.stage{min-height:420px}.panel{padding:20px}h1{font-size:25px}.frames{grid-template-columns:repeat(4,minmax(0,1fr))}.inspect{padding:14px}.inspectHead{align-items:flex-start}.inspectHead h2{font-size:17px}.inspectHead p{max-width:100px}summary span{display:block;margin:6px 0 0}}
+</style></head><body>
+<header><div><div class="eyebrow">LIGHT HUNGRY / CHARACTER ANIMATION</div><h1>小食光兽 · 连贯待机</h1><p>轻轻偏头，停一会儿，再眨两下眼睛。</p></div><span class="badge">美术预览 · v04 / 2026.10.25</span></header>
+<main><div class="layout"><section class="stage" id="stage" aria-label="角色动画预览">
+<div class="tag" id="stateTag">正在载入</div><canvas id="view" width="512" height="512" aria-label="小食光兽动画"></canvas><div class="hint" id="stageHint">右朝向 · 固定脚底</div>
+</section><aside class="panel"><h2>播放方式</h2><p id="description">正在载入动画数据与素材。</p>
+<div class="controls" id="modes"><button data-mode="auto" aria-pressed="true" id="autoMode">自动 · 3 秒触发</button><button data-mode="idle" aria-pressed="false">普通待机</button><button data-mode="think" aria-pressed="false">思考待机</button></div>
+<div id="status"><span id="phase">正在载入</span><span id="clock">0.00 s</span></div><progress id="progress" max="3" value="0"></progress>
+<div class="controls"><button id="play">暂停</button><button id="reset" class="primary">模拟操作 · 重新计时</button><button id="prev">上一帧</button><button id="next">下一帧</button></div>
+<div class="rule"></div>
+<label>预览背景<select id="background"><option value="dark">深色</option><option value="light">浅色</option><option value="checker">透明棋盘格</option></select></label>
+<label>播放速度<select id="speed"><option value=".25">0.25×</option><option value=".5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label>
+<label>显示尺寸<select id="size"><option value="128">128 px · 游戏尺寸</option><option value="256">256 px</option><option value="384" selected>384 px</option><option value="512">512 px · 原尺寸</option></select></label>
+<label><input type="checkbox" id="baseline">显示脚底参考线</label>
+<div class="rule"></div><div class="meta"><div><span>普通待机</span><strong id="idleMeta">—</strong></div><div><span>思考待机</span><strong id="thinkMeta">—</strong></div><div><span>单帧画布</span><strong id="frameMeta">—</strong></div><div><span>动画采样</span><strong id="rateMeta">—</strong></div></div>
+</aside></div>
+<section class="inspect"><div class="inspectHead"><h2 id="stripTitle">动作阶段</h2><p>点选阶段可暂停定位</p></div><div class="phasebar" id="phasebar"></div>
+<details id="framePanel"><summary>展开逐帧检查<span id="frameSummary">每页显示 12 帧</span></summary>
+<div class="pages"><button id="pagePrev">上一页</button><p id="pageLabel">—</p><button id="locate">定位当前帧</button><button id="pageNext">下一页</button></div><div class="frames" id="frames"></div></details>
+</section>
+<div class="foot"><a href="think.webp">思考 WebP 动图</a><a href="comparison.webp">并排 WebP 动图</a><a id="idleGrid" href="../animations.json">普通待机图集</a><a id="thinkGrid" href="../animations.json">思考图集</a><a href="../animations.json">帧时长数据</a><a href="../README.md">交付与导入说明</a><span>静止满 3 秒进入思考；模拟操作会立即重置。逐帧面板按需展开。</span></div>
+</main>
+<script src="../animations.js"></script>
+<script>
+'use strict';
+const $=id=>document.getElementById(id),canvas=$('view'),ctx=canvas.getContext('2d'),manifest=window.ANIMATION_MANIFEST;
+const clips={},assets=new Map(),stats={drawCalls:0,thumbnailBuilds:0,renderMsTotal:0,renderMsMax:0};
+let mode='auto',playing=true,elapsed=0,last=0,active='idle',frame=0,speed=1,threshold=3000,ready=false,clipTime=0;
+let paintedClip='',paintedFrame=-1,forcePaint=true,lastUi=0,inspectClip='',phaseNodes=[],lastPhase=-2;
+let thumbnailPage=0,thumbnailSignature='',selectedThumbnail=null;
+const PAGE_SIZE=12;
+window.__previewStats=stats;
+function seconds(ms){return Number((ms/1000).toFixed(2)).toString();}
+function localTime(name,time){const c=clips[name];return c.loop?((time%c.duration)+c.duration)%c.duration:Math.min(Math.max(time,0),c.duration-0.00001);}
+function frameAt(name,time){
+ const c=clips[name],t=localTime(name,time);let lo=0,hi=c.count-1;
+ while(lo<hi){const mid=(lo+hi)>>1;if(c.starts[mid+1]<=t+0.000001)lo=mid+1;else hi=mid;}return lo;
+}
+function firstFrameInPhase(name,time){const c=clips[name];let i=frameAt(name,time);if(c.starts[i]+0.000001<time)i=Math.min(i+1,c.count-1);return i;}
+function loadImage(file){
+ if(!assets.has(file))assets.set(file,new Promise((resolve,reject)=>{const img=new Image();img.onload=async()=>{try{if(img.decode)await img.decode();resolve(img);}catch(error){reject(error);}};img.onerror=()=>reject(new Error('Cannot load '+file));img.src='../'+file;}));
+ return assets.get(file);
+}
+function renderFrame(target,name,index,width,height){
+ const r=clips[name].renderers[index];target.clearRect(0,0,width,height);
+ target.drawImage(r.image,r.x,r.y,r.width,r.height,0,0,width,height);
+}
+function updateDescription(){
+ $('description').textContent=mode==='auto'?'先播放普通待机；静止满 '+seconds(threshold)+' 秒，自动进入思考循环。':mode==='idle'?'舒缓地呼吸、眨眼，保持落地姿态。':'头先向左偏并停留，再缓慢向右偏，快速眨眼两次后回正。';
+}
+function updateInspectionClip(){
+ if(inspectClip===active)return;
+ inspectClip=active;lastPhase=-2;thumbnailPage=0;thumbnailSignature='';selectedThumbnail=null;
+ $('stripTitle').textContent=clips[active].title+' · 动作阶段';$('phasebar').replaceChildren();phaseNodes=[];
+ for(const p of clips[active].phases){
+  const b=document.createElement('button');b.className='phasebutton';b.textContent=p.name;
+  b.title=seconds(p.startMs)+'—'+seconds(p.endMs)+' 秒';b.onclick=()=>chooseFrame(firstFrameInPhase(active,p.startMs));$('phasebar').append(b);phaseNodes.push(b);
+ }
+ $('frameSummary').textContent=clips[active].count+' 帧 · 每页 '+PAGE_SIZE+' 帧';
+ if($('framePanel').open)buildThumbnails();
+}
+function buildThumbnails(){
+ if(!ready||!$('framePanel').open)return;
+ const c=clips[active],maxPage=Math.ceil(c.count/PAGE_SIZE)-1;thumbnailPage=Math.min(Math.max(thumbnailPage,0),maxPage);
+ const signature=active+':'+thumbnailPage;if(signature===thumbnailSignature)return;
+ thumbnailSignature=signature;selectedThumbnail=null;stats.thumbnailBuilds++;$('frames').replaceChildren();
+ const start=thumbnailPage*PAGE_SIZE,end=Math.min(start+PAGE_SIZE,c.count);
+ for(let i=start;i<end;i++){
+  const button=document.createElement('button');button.className='frame';button.dataset.index=i;button.title='第 '+(i+1)+' 帧';button.setAttribute('aria-label','查看第 '+(i+1)+' 帧');
+  const thumb=document.createElement('canvas');thumb.width=192;thumb.height=192;renderFrame(thumb.getContext('2d'),active,i,192,192);button.append(thumb);
+  const label=document.createElement('small');label.textContent=String(i+1).padStart(3,'0')+' · '+Number(c.delay[i].toFixed(2))+'ms';button.append(label);
+  button.onclick=()=>chooseFrame(i);$('frames').append(button);
+ }
+ $('pageLabel').textContent=(start+1)+'–'+end+' / '+c.count+' 帧';$('pagePrev').disabled=thumbnailPage===0;$('pageNext').disabled=thumbnailPage===maxPage;
+ syncThumbnail();
+}
+function syncThumbnail(){
+ if(!$('framePanel').open)return;
+ const start=thumbnailPage*PAGE_SIZE,node=frame>=start&&frame<start+PAGE_SIZE?$('frames').children[frame-start]:null;
+ if(node===selectedThumbnail)return;
+ if(selectedThumbnail){selectedThumbnail.classList.remove('selected');selectedThumbnail.setAttribute('aria-pressed','false');}
+ selectedThumbnail=node??null;
+ if(selectedThumbnail){selectedThumbnail.classList.add('selected');selectedThumbnail.setAttribute('aria-pressed','true');}
+}
+function syncUi(now,force=false){
+ if(!ready)return;updateInspectionClip();
+ if(!force&&now-lastUi<100)return;lastUi=now;
+ const c=clips[active],t=localTime(active,clipTime),phaseIndex=c.phases.findIndex(p=>t>=p.startMs&&t<p.endMs);
+ if(phaseIndex!==lastPhase){
+  if(phaseNodes[lastPhase])phaseNodes[lastPhase].classList.remove('current');
+  if(phaseNodes[phaseIndex])phaseNodes[phaseIndex].classList.add('current');
+  lastPhase=phaseIndex;
+ }
+ const waiting=mode==='auto'&&elapsed<threshold;
+ $('phase').textContent=waiting?'等待思考触发':c.phases[phaseIndex]?.name??c.title;
+ $('clock').textContent=(elapsed/1000).toFixed(2)+' s';$('progress').max=waiting?threshold:c.duration;$('progress').value=waiting?elapsed:t;
+}
+function paint(now,force=false){
+ if(!ready)return;
+ const changed=paintedClip!==active||paintedFrame!==frame;
+ if(changed||force||forcePaint){
+  const began=performance.now();renderFrame(ctx,active,frame,canvas.width,canvas.height);
+  if($('baseline').checked){const y=manifest.footReferenceY??480;ctx.strokeStyle='#ed6868';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(0,y+.5);ctx.lineTo(canvas.width,y+.5);ctx.stroke();}
+  const cost=performance.now()-began;stats.drawCalls++;stats.renderMsTotal+=cost;stats.renderMsMax=Math.max(stats.renderMsMax,cost);
+  paintedClip=active;paintedFrame=frame;forcePaint=false;
+  canvas.dataset.clip=active;canvas.dataset.frame=frame;canvas.dataset.time=clipTime.toFixed(2);
+  $('stateTag').textContent=clips[active].title+' · '+String(frame+1).padStart(3,'0')+'/'+clips[active].count;
+  updateInspectionClip();syncThumbnail();
+ }
+ syncUi(now,force||changed&&lastPhase===-2);
+}
+function setPaused(){playing=false;$('play').textContent='播放';}
+function chooseFrame(i){
+ if(!ready)return;setPaused();frame=i;clipTime=clips[active].starts[i];elapsed=(mode==='auto'&&active==='think'?threshold:0)+clipTime;
+ thumbnailPage=Math.floor(i/PAGE_SIZE);if($('framePanel').open)buildThumbnails();paint(performance.now(),true);
+}
+function restart(){
+ if(!ready)return;elapsed=0;clipTime=0;active=mode==='think'?'think':'idle';frame=0;playing=true;last=performance.now();$('play').textContent='暂停';paint(last,true);
+}
+function resume(){if(!ready)return;playing=true;last=performance.now();$('play').textContent='暂停';}
+$('play').onclick=()=>{if(playing)setPaused();else resume();};
+$('reset').onclick=restart;
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{if(!ready)return;mode=b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));updateDescription();restart();});
+for(const [id,delta] of [['prev',-1],['next',1]])$(id).onclick=()=>{if(ready)chooseFrame((frame+delta+clips[active].count)%clips[active].count);};
+$('background').onchange=e=>$('stage').className='stage '+e.target.value;
+$('size').onchange=e=>canvas.style.width=e.target.value+'px';
+$('speed').onchange=e=>speed=Number(e.target.value);$('baseline').onchange=()=>paint(performance.now(),true);
+$('framePanel').addEventListener('toggle',()=>{if($('framePanel').open){thumbnailPage=Math.floor(frame/PAGE_SIZE);buildThumbnails();}else{$('frames').replaceChildren();thumbnailSignature='';selectedThumbnail=null;}});
+$('pagePrev').onclick=()=>{thumbnailPage--;buildThumbnails();};$('pageNext').onclick=()=>{thumbnailPage++;buildThumbnails();};
+$('locate').onclick=()=>{thumbnailPage=Math.floor(frame/PAGE_SIZE);buildThumbnails();syncThumbnail();};
+document.addEventListener('visibilitychange',()=>{last=performance.now();});
+async function prepareClip(name){
+ const c=clips[name],renderers=Array(c.count);
+ if(c.atlasPages?.length){
+  await Promise.all(c.atlasPages.map(async p=>{
+   if(!Number.isInteger(p.firstFrame)||!Number.isInteger(p.frameCount)||!Number.isInteger(p.columns)||!Number.isInteger(p.rows))throw new Error('Invalid atlas metadata: '+name);
+   const image=await loadImage(p.file),w=canvas.width,h=canvas.height;
+   if(image.naturalWidth!==p.columns*w||image.naturalHeight!==p.rows*h||p.frameCount>p.columns*p.rows)throw new Error('Invalid atlas dimensions: '+p.file);
+   for(let j=0;j<p.frameCount;j++){
+    const i=p.firstFrame+j;if(i<0||i>=c.count||renderers[i])throw new Error('Atlas coverage overlap: '+name);
+    renderers[i]={image,x:j%p.columns*w,y:Math.floor(j/p.columns)*h,width:w,height:h};
+   }
+  }));
+  c.sourceType='atlas';
+ }else{
+  if(!c.frames||c.frames.length!==c.count)throw new Error('Missing frame files: '+name);
+  await Promise.all(c.frames.map(async(file,i)=>{const image=await loadImage(file);if(image.naturalWidth!==canvas.width||image.naturalHeight!==canvas.height)throw new Error('Invalid frame size: '+file);renderers[i]={image,x:0,y:0,width:canvas.width,height:canvas.height};}));
+  c.sourceType='frames';
+ }
+ if(renderers.filter(Boolean).length!==c.count)throw new Error('Incomplete atlas coverage: '+name);
+ c.renderers=renderers;
+}
+async function init(){
+ if(!manifest?.clips?.idle||!manifest?.clips?.think)throw new Error('Missing animation manifest');
+ threshold=1000*(manifest.playback?.idleThresholdSeconds??3);canvas.width=manifest.frameSize?.[0]??512;canvas.height=manifest.frameSize?.[1]??512;
+ for(const name of ['idle','think']){
+  const c=manifest.clips[name],count=c.frames?.length??c.frameCount,rate=c.sampleRate??manifest.sampleRate??30,delay=c.frameDurationMs??Array(count).fill(1000/rate);
+  if(!Number.isInteger(count)||count<1||delay.length!==count||delay.some(d=>!(d>0)))throw new Error('Invalid clip timing: '+name);
+  const starts=[0];for(const d of delay)starts.push(starts.at(-1)+d);const duration=starts.at(-1);
+  clips[name]={...c,count,delay,starts,duration,loop:c.loop!==false,title:name==='idle'?'普通待机':'思考待机',phases:c.phases??[],sampleRate:rate};
+  $(name+'Meta').textContent=count+' 帧 / '+seconds(duration)+' 秒';
+  const firstAtlas=c.atlasPages?.[0]?.file??c.grid;if(firstAtlas){$(name+'Grid').href='../'+firstAtlas;$(name+'Grid').textContent=(name==='idle'?'普通待机':'思考')+'图集'+(c.atlasPages?.length>1?' · 第一页':'');}
+ }
+ $('frameMeta').textContent=canvas.width+' × '+canvas.height+' / RGBA';$('rateMeta').textContent=(manifest.sampleRate??clips.think.sampleRate)+' fps';
+ $('autoMode').textContent='自动 · '+seconds(threshold)+' 秒触发';$('stageHint').textContent='右朝向 · 固定脚底 · '+(manifest.sampleRate??clips.think.sampleRate)+' fps';updateDescription();
+ await Promise.all(['idle','think'].map(prepareClip));
+ ready=true;last=performance.now();paint(last,true);document.body.dataset.ready='true';document.body.dataset.source=clips.idle.sourceType+'/'+clips.think.sourceType;requestAnimationFrame(tick);
+}
+function tick(now){
+ if(playing&&!document.hidden){elapsed+=Math.max(0,now-last)*speed;active=mode==='auto'?(elapsed>=threshold?'think':'idle'):mode;clipTime=mode==='auto'&&active==='think'?elapsed-threshold:elapsed;frame=frameAt(active,clipTime);}
+ last=now;paint(now);requestAnimationFrame(tick);
+}
+init().catch(error=>{$('description').textContent='动画数据或图片加载失败。请保留 animations.js、Previews 与素材目录的相对位置。';$('description').className='error';document.body.dataset.ready='error';console.error(error);});
+</script></body></html>

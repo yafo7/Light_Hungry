@@ -1,0 +1,852 @@
+{
+  "settle": [
+    {
+      "file": "Source/Cels/settle/00.png",
+      "sourceCell": 0,
+      "scale": 0.9461538461538461,
+      "translate": [
+        70,
+        100
+      ]
+    },
+    {
+      "file": "Source/Cels/settle/01.png",
+      "sourceCell": 1,
+      "scale": 0.9461538461538461,
+      "translate": [
+        70,
+        100
+      ]
+    },
+    {
+      "file": "Source/Cels/settle/02.png",
+      "sourceCell": 2,
+      "scale": 0.9461538461538461,
+      "translate": [
+        70,
+        99
+      ]
+    },
+    {
+      "file": "Source/Cels/settle/03.png",
+      "sourceCell": 3,
+      "scale": 0.9461538461538461,
+      "translate": [
+        70,
+        99
+      ]
+    },
+    {
+      "file": "Source/Cels/settle/04.png",
+      "sourceCell": 4,
+      "scale": 0.9437340153452686,
+      "translate": [
+        70,
+        100
+      ]
+    },
+    {
+      "file": "Source/Cels/settle/05.png",
+      "sourceCell": 5,
+      "scale": 0.9437340153452686,
+      "translate": [
+        70,
+        100
+      ]
+    },
+    {
+      "file": "Source/Cels/settle/06.png",
+      "sourceCell": 6,
+      "scale": 0.9437340153452686,
+      "translate": [
+        70,
+        100
+      ]
+    },
+    {
+      "file": "Source/Cels/settle/07.png",
+      "sourceCell": 7,
+      "scale": 0.9437340153452686,
+      "translate": [
+        70,
+        100
+      ]
+    }
+  ],
+  "wheel": [
+    {
+      "file": "Source/Cels/wheel/00.png",
+      "sourceCell": 0,
+      "gray": [
+        9,
+        9,
+        182,
+        210
+      ],
+      "scale": 1.36864406779661,
+      "translate": [
+        77,
+        99
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/01.png",
+      "sourceCell": 1,
+      "gray": [
+        10,
+        9,
+        187,
+        212
+      ],
+      "scale": 1.3662551440329218,
+      "translate": [
+        72,
+        96
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/02.png",
+      "sourceCell": 2,
+      "gray": [
+        9,
+        10,
+        187,
+        214
+      ],
+      "scale": 1.3692946058091287,
+      "translate": [
+        67,
+        94
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/03.png",
+      "sourceCell": 3,
+      "gray": [
+        9,
+        9,
+        187,
+        215
+      ],
+      "scale": 1.3673469387755102,
+      "translate": [
+        60,
+        95
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/04.png",
+      "sourceCell": 4,
+      "gray": [
+        9,
+        9,
+        186,
+        215
+      ],
+      "scale": 1.368421052631579,
+      "translate": [
+        55,
+        96
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/05.png",
+      "sourceCell": 5,
+      "gray": [
+        9,
+        10,
+        184,
+        215
+      ],
+      "scale": 1.3689320388349515,
+      "translate": [
+        52,
+        96
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/06.png",
+      "sourceCell": 6,
+      "gray": [
+        9,
+        9,
+        187,
+        213
+      ],
+      "scale": 1.3666666666666667,
+      "translate": [
+        77,
+        102
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/07.png",
+      "sourceCell": 7,
+      "gray": [
+        10,
+        9,
+        192,
+        213
+      ],
+      "scale": 1.3699186991869918,
+      "translate": [
+        70,
+        101
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/08.png",
+      "sourceCell": 8,
+      "gray": [
+        10,
+        9,
+        193,
+        214
+      ],
+      "scale": 1.3694581280788178,
+      "translate": [
+        66,
+        101
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/09.png",
+      "sourceCell": 9,
+      "gray": [
+        10,
+        9,
+        192,
+        214
+      ],
+      "scale": 1.3694581280788178,
+      "translate": [
+        57,
+        101
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/10.png",
+      "sourceCell": 10,
+      "gray": [
+        9,
+        10,
+        191,
+        214
+      ],
+      "scale": 1.3681592039800996,
+      "translate": [
+        54,
+        103
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/11.png",
+      "sourceCell": 11,
+      "gray": [
+        9,
+        14,
+        189,
+        217
+      ],
+      "scale": 1.3668341708542713,
+      "translate": [
+        55,
+        99
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/12.png",
+      "sourceCell": 12,
+      "gray": [
+        15,
+        9,
+        194,
+        211
+      ],
+      "scale": 1.3676470588235294,
+      "translate": [
+        73,
+        103
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/13.png",
+      "sourceCell": 13,
+      "gray": [
+        9,
+        9,
+        193,
+        212
+      ],
+      "scale": 1.3694581280788178,
+      "translate": [
+        71,
+        103
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/14.png",
+      "sourceCell": 14,
+      "gray": [
+        9,
+        9,
+        195,
+        212
+      ],
+      "scale": 1.3658536585365855,
+      "translate": [
+        66,
+        103
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/15.png",
+      "sourceCell": 15,
+      "gray": [
+        9,
+        9,
+        192,
+        212
+      ],
+      "scale": 1.3663366336633664,
+      "translate": [
+        62,
+        103
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/16.png",
+      "sourceCell": 16,
+      "gray": [
+        9,
+        10,
+        191,
+        212
+      ],
+      "scale": 1.3681592039800996,
+      "translate": [
+        56,
+        103
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/17.png",
+      "sourceCell": 17,
+      "gray": [
+        9,
+        9,
+        192,
+        212
+      ],
+      "scale": 1.3663366336633664,
+      "translate": [
+        52,
+        103
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/18.png",
+      "sourceCell": 18,
+      "gray": [
+        10,
+        9,
+        191,
+        211
+      ],
+      "scale": 1.3681592039800996,
+      "translate": [
+        77,
+        103
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/19.png",
+      "sourceCell": 19,
+      "gray": [
+        9,
+        10,
+        194,
+        213
+      ],
+      "scale": 1.3676470588235294,
+      "translate": [
+        71,
+        103
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/20.png",
+      "sourceCell": 20,
+      "gray": [
+        10,
+        9,
+        193,
+        212
+      ],
+      "scale": 1.368421052631579,
+      "translate": [
+        66,
+        104
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/21.png",
+      "sourceCell": 21,
+      "gray": [
+        9,
+        10,
+        194,
+        213
+      ],
+      "scale": 1.3659574468085107,
+      "translate": [
+        59,
+        103
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/22.png",
+      "sourceCell": 22,
+      "gray": [
+        10,
+        9,
+        192,
+        212
+      ],
+      "scale": 1.368421052631579,
+      "translate": [
+        52,
+        104
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel/23.png",
+      "sourceCell": 23,
+      "gray": [
+        9,
+        10,
+        189,
+        212
+      ],
+      "scale": 1.3662551440329218,
+      "translate": [
+        54,
+        104
+      ]
+    }
+  ],
+  "wheel_top": [
+    {
+      "file": "Source/Cels/wheel_top/00.png",
+      "sourceCell": 0,
+      "gray": [
+        13,
+        13,
+        401,
+        354
+      ],
+      "scale": 0.8055555555555556,
+      "translate": [
+        75,
+        107
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel_top/01.png",
+      "sourceCell": 1,
+      "gray": [
+        13,
+        14,
+        314,
+        358
+      ],
+      "scale": 0.805352798053528,
+      "translate": [
+        75,
+        102
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel_top/02.png",
+      "sourceCell": 2,
+      "gray": [
+        13,
+        25,
+        318,
+        369
+      ],
+      "scale": 0.8064516129032258,
+      "translate": [
+        76,
+        95
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel_top/03.png",
+      "sourceCell": 3,
+      "gray": [
+        13,
+        68,
+        315,
+        407
+      ],
+      "scale": 0.8054711246200608,
+      "translate": [
+        76,
+        63
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel_top/04.png",
+      "sourceCell": 4,
+      "gray": [
+        13,
+        49,
+        317,
+        393
+      ],
+      "scale": 0.8066465256797583,
+      "translate": [
+        74,
+        80
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel_top/05.png",
+      "sourceCell": 5,
+      "gray": [
+        58,
+        14,
+        362,
+        358
+      ],
+      "scale": 0.8053333333333333,
+      "translate": [
+        38,
+        106
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel_top/06.png",
+      "sourceCell": 6,
+      "gray": [
+        99,
+        13,
+        402,
+        358
+      ],
+      "scale": 0.8052884615384616,
+      "translate": [
+        7,
+        105
+      ]
+    },
+    {
+      "file": "Source/Cels/wheel_top/07.png",
+      "sourceCell": 7,
+      "gray": [
+        38,
+        14,
+        340,
+        358
+      ],
+      "scale": 0.8050847457627118,
+      "translate": [
+        56,
+        104
+      ]
+    }
+  ],
+  "lever": [
+    {
+      "file": "Source/Cels/lever/00.png",
+      "sourceCell": 0,
+      "scale": 1.2958801498127341,
+      "translate": [
+        56,
+        172
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/01.png",
+      "sourceCell": 1,
+      "scale": 1.2921348314606742,
+      "translate": [
+        56,
+        174
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/02.png",
+      "sourceCell": 2,
+      "scale": 1.2961538461538462,
+      "translate": [
+        64,
+        174
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/03.png",
+      "sourceCell": 3,
+      "scale": 1.2896825396825398,
+      "translate": [
+        75,
+        181
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/04.png",
+      "sourceCell": 4,
+      "scale": 1.2570281124497993,
+      "translate": [
+        88,
+        166
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/05.png",
+      "sourceCell": 5,
+      "scale": 1.2521739130434784,
+      "translate": [
+        113,
+        160
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/06.png",
+      "sourceCell": 6,
+      "scale": 1.25764192139738,
+      "translate": [
+        113,
+        160
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/07.png",
+      "sourceCell": 7,
+      "scale": 1.25764192139738,
+      "translate": [
+        113,
+        161
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/08.png",
+      "sourceCell": 8,
+      "scale": 1.235042735042735,
+      "translate": [
+        112,
+        164
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/09.png",
+      "sourceCell": 9,
+      "scale": 1.235042735042735,
+      "translate": [
+        113,
+        167
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/10.png",
+      "sourceCell": 10,
+      "scale": 1.240343347639485,
+      "translate": [
+        112,
+        164
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/11.png",
+      "sourceCell": 11,
+      "scale": 1.2370689655172413,
+      "translate": [
+        113,
+        170
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/12.png",
+      "sourceCell": 12,
+      "scale": 1.2295081967213115,
+      "translate": [
+        113,
+        181
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/13.png",
+      "sourceCell": 13,
+      "scale": 1.2350597609561753,
+      "translate": [
+        113,
+        183
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/14.png",
+      "sourceCell": 14,
+      "scale": 1.22265625,
+      "translate": [
+        113,
+        187
+      ]
+    },
+    {
+      "file": "Source/Cels/lever/15.png",
+      "sourceCell": 15,
+      "scale": 1.2188679245283018,
+      "translate": [
+        113,
+        188
+      ]
+    }
+  ],
+  "mirror": [
+    {
+      "file": "Source/Cels/mirror/00.png",
+      "sourceCell": 0,
+      "scale": 1.3777777777777778,
+      "translate": [
+        123,
+        154
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/01.png",
+      "sourceCell": 1,
+      "scale": 1.3910614525139664,
+      "translate": [
+        122,
+        151
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/02.png",
+      "sourceCell": 2,
+      "scale": 1.3687150837988826,
+      "translate": [
+        125,
+        156
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/03.png",
+      "sourceCell": 3,
+      "scale": 1.3820224719101124,
+      "translate": [
+        124,
+        153
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/04.png",
+      "sourceCell": 4,
+      "scale": 1.3815028901734103,
+      "translate": [
+        131,
+        149
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/05.png",
+      "sourceCell": 5,
+      "scale": 1.3859649122807018,
+      "translate": [
+        134,
+        145
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/06.png",
+      "sourceCell": 6,
+      "scale": 1.3734939759036144,
+      "translate": [
+        142,
+        144
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/07.png",
+      "sourceCell": 7,
+      "scale": 1.3696969696969696,
+      "translate": [
+        144,
+        142
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/08.png",
+      "sourceCell": 8,
+      "scale": 1.3696969696969696,
+      "translate": [
+        144,
+        142
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/09.png",
+      "sourceCell": 9,
+      "scale": 1.3818181818181818,
+      "translate": [
+        142,
+        138
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/10.png",
+      "sourceCell": 10,
+      "scale": 1.3696969696969696,
+      "translate": [
+        144,
+        142
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/11.png",
+      "sourceCell": 11,
+      "scale": 1.3818181818181818,
+      "translate": [
+        142,
+        142
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/12.png",
+      "sourceCell": 12,
+      "scale": 1.3696969696969696,
+      "translate": [
+        144,
+        148
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/13.png",
+      "sourceCell": 13,
+      "scale": 1.387878787878788,
+      "translate": [
+        142,
+        143
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/14.png",
+      "sourceCell": 14,
+      "scale": 1.3696969696969696,
+      "translate": [
+        144,
+        148
+      ]
+    },
+    {
+      "file": "Source/Cels/mirror/15.png",
+      "sourceCell": 15,
+      "scale": 1.3818181818181818,
+      "translate": [
+        142,
+        143
+      ]
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+{
+  "date": "2026-10-30",
+  "scope": "Offline SVG/PNG composition, camera and layer controls; no game collision or physical ray tracing",
+  "pageErrors": [],
+  "failedRequests": [],
+  "initialCamera": {
+    "x": 0,
+    "y": 0,
+    "width": 96,
+    "height": 48
+  },
+  "placements": {
+    "l1-background": {
+      "file": "l1-background.png",
+      "x": -9.6,
+      "y": -9.4,
+      "width": 115.2,
+      "height": 57.6,
+      "fit": "contain",
+      "anchor": "center-box",
+      "layer": "background"
+    },
+    "l1-ground": {
+      "file": "l1-ground.png",
+      "x": 0,
+      "y": 6.4,
+      "width": 96,
+      "height": 6,
+      "fit": "width",
+      "anchor": "top-left",
+      "layer": "ground"
+    },
+    "l1-player": {
+      "file": "spirit.png",
+      "x": 34,
+      "y": 6,
+      "height": 1,
+      "fit": "height",
+      "anchor": "bottom-center",
+      "layer": "character"
+    },
+    "reflector": {
+      "file": "reflector.png",
+      "x": 36,
+      "y": 5.75,
+      "width": 4,
+      "height": 4.5,
+      "fit": "contain",
+      "anchor": "bottom-left",
+      "layer": "interactive"
+    },
+    "tail-rubble": {
+      "file": "tail-rubble.png",
+      "x": 49,
+      "y": 6,
+      "width": 22,
+      "height": 7,
+      "fit": "contain",
+      "anchor": "bottom-left",
+      "layer": "interactive"
+    },
+    "pot": {
+      "file": "pot.png",
+      "x": 70,
+      "y": 6,
+      "width": 25.2,
+      "height": 12,
+      "fit": "contain",
+      "anchor": "bottom-left",
+      "layer": "interactive"
+    },
+    "l2-background": {
+      "file": "l2-background.png",
+      "x": 0,
+      "y": 0,
+      "width": 32,
+      "height": 16,
+      "fit": "contain",
+      "anchor": "center-box",
+      "layer": "background"
+    },
+    "l2-player": {
+      "file": "spirit.png",
+      "x": 5,
+      "y": 4.35,
+      "height": 1,
+      "fit": "height",
+      "anchor": "bottom-center",
+      "layer": "character"
+    }
+  },
+  "beamPoints": [
+    {
+      "x": 57.6,
+      "y": 29
+    },
+    {
+      "x": 39,
+      "y": 8.1
+    },
+    {
+      "x": 52,
+      "y": 7.5
+    }
+  ],
+  "measurements": {
+    "l1-background": {
+      "x": -9.600000000000007,
+      "y": -9.400000000000004,
+      "width": 115.20000000000002,
+      "height": 57.60000000000001,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1774,
+        "height": 887,
+        "imageWidth": 1774,
+        "imageHeight": 887,
+        "fromMetadata": true
+      },
+      "loaded": true
+    },
+    "l1-ground": {
+      "x": 0,
+      "y": -1.8156028368794317,
+      "width": 96,
+      "height": 8.215602836879432,
+      "bbox": {
+        "x": 28,
+        "y": 360,
+        "width": 2115,
+        "height": 181,
+        "imageWidth": 2172,
+        "imageHeight": 724,
+        "fromMetadata": true
+      },
+      "loaded": true
+    },
+    "l1-player": {
+      "x": 33.67168674698795,
+      "y": 6,
+      "width": 0.6566265060240963,
+      "height": 1,
+      "bbox": {
+        "x": 232,
+        "y": 48,
+        "width": 763,
+        "height": 1162,
+        "imageWidth": 1254,
+        "imageHeight": 1254,
+        "fromMetadata": true
+      },
+      "loaded": true
+    },
+    "reflector": {
+      "x": 36,
+      "y": 5.75,
+      "width": 4,
+      "height": 3.915407854984894,
+      "bbox": {
+        "x": 278,
+        "y": 93,
+        "width": 993,
+        "height": 972,
+        "imageWidth": 1374,
+        "imageHeight": 1145,
+        "fromMetadata": true
+      },
+      "loaded": true
+    },
+    "tail-rubble": {
+      "x": 49,
+      "y": 6,
+      "width": 22,
+      "height": 5.538615847542628,
+      "bbox": {
+        "x": 103,
+        "y": 114,
+        "width": 1994,
+        "height": 502,
+        "imageWidth": 2172,
+        "imageHeight": 724,
+        "fromMetadata": true
+      },
+      "loaded": true
+    },
+    "pot": {
+      "x": 70,
+      "y": 6,
+      "width": 25.2,
+      "height": 11.031964624131396,
+      "bbox": {
+        "x": 96,
+        "y": 102,
+        "width": 1583,
+        "height": 693,
+        "imageWidth": 1774,
+        "imageHeight": 887,
+        "fromMetadata": true
+      },
+      "loaded": true
+    },
+    "l2-background": {
+      "x": 0,
+      "y": 0,
+      "width": 32,
+      "height": 16,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1774,
+        "height": 887,
+        "imageWidth": 1774,
+        "imageHeight": 887,
+        "fromMetadata": true
+      },
+      "loaded": true
+    },
+    "l2-player": {
+      "x": 4.671686746987952,
+      "y": 4.35,
+      "width": 0.6566265060240963,
+      "height": 1,
+      "bbox": {
+        "x": 232,
+        "y": 48,
+        "width": 763,
+        "height": 1162,
+        "imageWidth": 1254,
+        "imageHeight": 1254,
+        "fromMetadata": true
+      },
+      "loaded": true
+    }
+  },
+  "screenshots": {
+    "full": "preview-full.png",
+    "play": "preview-play.png",
+    "level2": "preview-level2.png",
+    "layers": "preview-layers.png"
+  },
+  "animationIntermediateZoom": 1.223947360944576,
+  "playCamera": {
+    "x": 30,
+    "y": 29.519999999999996,
+    "width": 32,
+    "height": 16
+  },
+  "rightmostCamera": {
+    "x": 64,
+    "y": 29.519999999999996,
+    "width": 32,
+    "height": 16
+  },
+  "playerSliderAt92": 92,
+  "layerChecks": [
+    {
+      "layer": "background",
+      "hidden": true,
+      "restored": true
+    },
+    {
+      "layer": "ground",
+      "hidden": true,
+      "restored": true
+    },
+    {
+      "layer": "character",
+      "hidden": true,
+      "restored": true
+    },
+    {
+      "layer": "interactive",
+      "hidden": true,
+      "restored": true
+    },
+    {
+      "layer": "beams",
+      "hidden": true,
+      "restored": true
+    }
+  ],
+  "rulerPresent": true,
+  "level2Camera": {
+    "x": 0,
+    "y": 0,
+    "width": 32,
+    "height": 16
+  },
+  "level2EmbeddedLayersDisabled": true,
+  "level2CharacterHeight": "1",
+  "desktopOverflow": false,
+  "mobileOverflow": false,
+  "resourceLinks": [
+    "l1-background.png",
+    "l1-ground.png",
+    "spirit.png",
+    "reflector.png",
+    "tail-rubble.png",
+    "pot.png",
+    "l2-background.png"
+  ],
+  "resourceFilesExist": true,
+  "originalPngIntegrity": [
+    {
+      "file": "l1-background.png",
+      "sha256Matches": true
+    },
+    {
+      "file": "l1-ground.png",
+      "sha256Matches": true
+    },
+    {
+      "file": "spirit.png",
+      "sha256Matches": true
+    },
+    {
+      "file": "reflector.png",
+      "sha256Matches": true
+    },
+    {
+      "file": "tail-rubble.png",
+      "sha256Matches": true
+    },
+    {
+      "file": "pot.png",
+      "sha256Matches": true
+    },
+    {
+      "file": "l2-background.png",
+      "sha256Matches": true
+    }
+  ],
+  "bboxSizing": {
+    "bothCharactersExactly1H": true,
+    "allMetadataBoundsUsed": true,
+    "allAspectRatiosPreserved": true,
+    "outerPotVisibleSizeH": [
+      25.2,
+      11.031964624131396
+    ],
+    "reflectorVisibleSizeH": [
+      4,
+      3.915407854984894
+    ]
+  },
+  "visualCalibrationNotes": [
+    "L1 background sheet placed at (-9.6,-9.4) with visible size115.2x57.6; source PNG unchanged.",
+    "L1 player foot y=6; ground sheet visible top6.4 compensates for painted grass above walking surface.",
+    "L1 reflector bottom5.75 buries lower brick backing; handle estimated around0.4H above ground.",
+    "L2 character foot y=4.35 aligned visually to painted platform.",
+    "Source, mirror and tail points were positioned by visual inspection, not verified by optical simulation.",
+    "Pot opening, pipe and water dimensions remain approximate illustration targets; no collision pass performed."
+  ],
+  "passed": true,
+  "level2LayerUpdate": {
+    "scope": "Only the new Level2 background/ground separation was retested; earlier Level1 checks were not repeated.",
+    "camera": {
+      "x": 0,
+      "y": 0,
+      "width": 32,
+      "height": 16
+    },
+    "measurements": {
+      "background": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 16,
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1774,
+          "height": 887,
+          "imageWidth": 1774,
+          "imageHeight": 887,
+          "fromMetadata": true
+        },
+        "loaded": true
+      },
+      "ground": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 16,
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1774,
+          "height": 887,
+          "imageWidth": 1774,
+          "imageHeight": 887,
+          "fromMetadata": true,
+          "mode": "full-canvas"
+        },
+        "loaded": true
+      },
+      "player": {
+        "x": 4.671686746987952,
+        "y": 4.35,
+        "width": 0.6566265060240963,
+        "height": 1,
+        "bbox": {
+          "x": 232,
+          "y": 48,
+          "width": 763,
+          "height": 1162,
+          "imageWidth": 1254,
+          "imageHeight": 1254,
+          "fromMetadata": true
+        },
+        "loaded": true
+      }
+    },
+    "pageErrors": [],
+    "failedRequests": [],
+    "groundSwitchEnabled": true,
+    "embeddedControlsDisabled": true,
+    "layerChecks": [
+      {
+        "layer": "background",
+        "hidden": true,
+        "restored": true
+      },
+      {
+        "layer": "ground",
+        "hidden": true,
+        "restored": true
+      },
+      {
+        "layer": "character",
+        "hidden": true,
+        "restored": true
+      }
+    ],
+    "resourceLinks": [
+      "l1-background.png",
+      "l1-ground.png",
+      "spirit.png",
+      "reflector.png",
+      "tail-rubble.png",
+      "pot.png",
+      "l2-background.png",
+      "l2-background-clean.png",
+      "l2-ground.png"
+    ],
+    "resourceFilesExist": true,
+    "currentAssetIntegrity": [
+      {
+        "file": "l1-background.png",
+        "sha256Matches": true
+      },
+      {
+        "file": "l1-ground.png",
+        "sha256Matches": true
+      },
+      {
+        "file": "spirit.png",
+        "sha256Matches": true
+      },
+      {
+        "file": "reflector.png",
+        "sha256Matches": true
+      },
+      {
+        "file": "tail-rubble.png",
+        "sha256Matches": true
+      },
+      {
+        "file": "pot.png",
+        "sha256Matches": true
+      },
+      {
+        "file": "l2-background.png",
+        "sha256Matches": true
+      },
+      {
+        "file": "l2-background-clean.png",
+        "sha256Matches": true
+      },
+      {
+        "file": "l2-ground.png",
+        "sha256Matches": true
+      }
+    ],
+    "groundSourcePlacement": {
+      "canvas": [
+        1774,
+        887
+      ],
+      "alphaBBox": {
+        "x": 0,
+        "y": 479,
+        "width": 1774,
+        "height": 368
+      },
+      "previewMode": "full-canvas",
+      "svgRectH": [
+        0,
+        0,
+        32,
+        16
+      ],
+      "svgViewBox": "0 0 1774 887"
+    },
+    "screenshots": [
+      "preview-level2.png",
+      "preview-level2-layers.png"
+    ],
+    "passed": true,
+    "visualReview": {
+      "screenshotsInspected": true,
+      "groundSeam": "No conspicuous seam or doubled platform edge observed in the composed screenshot; full-canvas alignment retained.",
+      "characterFoot": "Visible foot rests at the painted platform with y=4.35H; character bbox remains1H.",
+      "limit": "Visual alignment only; no collision or optical simulation."
+    }
+  },
+  "latestAssemblyScope": "Level2 clean background and full-canvas transparent ground; older checks above describe the preceding assembled preview."
+}

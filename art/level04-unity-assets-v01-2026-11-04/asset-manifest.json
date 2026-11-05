@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "coordinateSystem": "All image rectangles use top-left origin. Width and height include 4 px transparent padding around alpha > 10 bounds. Pivot UV is bottom-left-origin, Unity-compatible.",
+  "scene": {
+    "file": "clean-scene.png",
+    "width": 1858,
+    "height": 846,
+    "referenceWidth": 1859,
+    "referenceHeight": 846,
+    "worldPixelsPerUnit": 80,
+    "reference": "../level04-platform-layout-v06-2026-11-04/04-shallow-reservoir-platforms-corrected.png"
+  },
+  "atlas": {
+    "file": "props-atlas.png",
+    "width": 1024,
+    "height": 1536,
+    "alpha": true,
+    "backgroundAlpha": 0
+  },
+  "sprites": [
+    {
+      "id": "guide-leaf",
+      "crop": {
+        "x": 94,
+        "y": 98,
+        "w": 356,
+        "h": 362
+      },
+      "pivotPixel": {
+        "x": 125,
+        "y": 428
+      },
+      "pivotUV": {
+        "x": 0.08707865168539326,
+        "y": 0.08839779005524862
+      },
+      "suggestedScenePivot": {
+        "x": 830,
+        "y": 440
+      },
+      "suggestedSceneSize": {
+        "w": 160,
+        "h": 170
+      },
+      "notes": "Leaf includes a small round hinge despite prompt; align it directly over the existing baked hinge. Neutral sprite already points upper-right."
+    },
+    {
+      "id": "leaf-shutter",
+      "crop": {
+        "x": 621,
+        "y": 71,
+        "w": 279,
+        "h": 381
+      },
+      "pivotPixel": {
+        "x": 764,
+        "y": 88
+      },
+      "pivotUV": {
+        "x": 0.5125448028673835,
+        "y": 0.9553805774278216
+      },
+      "suggestedScenePivot": {
+        "x": 1163,
+        "y": 310
+      },
+      "suggestedSceneSize": {
+        "w": 100,
+        "h": 138
+      },
+      "notes": "Top tip pivot. Move down approximately 65–75 scene pixels to cover root aperture; keep static root barrier."
+    },
+    {
+      "id": "seedpod",
+      "crop": {
+        "x": 134,
+        "y": 634,
+        "w": 269,
+        "h": 277
+      },
+      "pivotPixel": {
+        "x": 269,
+        "y": 773
+      },
+      "pivotUV": {
+        "x": 0.5018587360594795,
+        "y": 0.4981949458483754
+      },
+      "suggestedSceneSize": {
+        "w": 52,
+        "h": 54
+      },
+      "notes": "Top storage position runtime configured; cup center approximately 774,506."
+    },
+    {
+      "id": "mirror-panel",
+      "crop": {
+        "x": 682,
+        "y": 579,
+        "w": 160,
+        "h": 380
+      },
+      "pivotPixel": {
+        "x": 762,
+        "y": 769
+      },
+      "pivotUV": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "suggestedSceneSize": {
+        "w": 34,
+        "h": 78
+      },
+      "notes": "Neutral panel is vertical. Rotate in XY to set mirror tangent; static scene contains root pivots near 244,474 and 1507,473. Configure optical contact positions consistently."
+    },
+    {
+      "id": "pressure-treadle",
+      "crop": {
+        "x": 71,
+        "y": 1246,
+        "w": 389,
+        "h": 65
+      },
+      "pivotPixel": {
+        "x": 433,
+        "y": 1282
+      },
+      "pivotUV": {
+        "x": 0.9305912596401028,
+        "y": 0.4461538461538461
+      },
+      "suggestedScenePivot": {
+        "x": 1004,
+        "y": 541
+      },
+      "suggestedSceneSize": {
+        "w": 222,
+        "h": 28
+      },
+      "notes": "Right hinge pivot; no seed/cup/lever attached. Can rotate slightly when weighted."
+    },
+    {
+      "id": "feeding-scale",
+      "crop": {
+        "x": 602,
+        "y": 1136,
+        "w": 315,
+        "h": 287
+      },
+      "pivotPixel": {
+        "x": 759,
+        "y": 1278
+      },
+      "pivotUV": {
+        "x": 0.4984126984126984,
+        "y": 0.505226480836237
+      },
+      "suggestedScenePivot": {
+        "x": 1671,
+        "y": 346
+      },
+      "suggestedSceneSize": {
+        "w": 105,
+        "h": 96
+      },
+      "notes": "Optional overlay. Static scene already includes dark target scale; use overlay only for controlled tint/glow."
+    }
+  ],
+  "alphaCheck": {
+    "topLeftCorner": 0,
+    "cellSeparators": 0,
+    "objectInteriorTypical": 252,
+    "perCellAlphaBoundsThreshold": 10
+  },
+  "validation": "Visual check: scene keeps all three jumps, banks, pipe, root screen/aperture and dark scale. Dynamic beams, spirit, guide leaf, shutter, seed, treadle board, mirror silver panels and ropes removed. Atlas has real alpha; black/brown preview outside sprites is hidden RGB under alpha=0, not opaque background.",
+  "limitations": "Generated clean plate differs by 1 px in width; map to the original 1859 x 846 virtual canvas. Final collider and joint positioning must be done in Unity; these suggested pivots are visually estimated."
+}

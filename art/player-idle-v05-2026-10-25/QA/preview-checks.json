@@ -1,0 +1,44 @@
+{
+  "checks": {
+    "completeSpriteCelMode": true,
+    "allFramesCovered": true,
+    "atlasPreferred": true,
+    "idleBeforeThreshold": true,
+    "thinkAfterThreshold": true,
+    "pauseStable": true,
+    "actionResetsIdle": true,
+    "manualThinking": true,
+    "thumbnailsLazy": true,
+    "thumbnailsBounded": true,
+    "thumbnailPaging": true,
+    "noThumbnailRebuildDuringPlayback": true,
+    "cadenceMatchesManifest": true,
+    "slowPlayback": true,
+    "allPhasesShown": true,
+    "phasePositioning": true,
+    "dynamicFrameCounts": true,
+    "noMobilePageOverflow": true,
+    "noScriptErrors": true
+  },
+  "productionMode": "complete-sprite-cels",
+  "transitionSeconds": 3.0094999999880794,
+  "displayedCounts": {
+    "idle": "36 帧 / 3 秒",
+    "think": "72 帧 / 6 秒"
+  },
+  "sourceTypes": "atlas/atlas",
+  "performance": {
+    "wallMs": 6212.200000017881,
+    "paintedFrames": 74,
+    "expectedTransitions": 74,
+    "cadenceCountError": 0,
+    "meanIntervalErrorMs": 6.847945205152851,
+    "measuredPaintRate": 11.912044042333957,
+    "renderMsMax": 1,
+    "thumbnailBuilds": 0,
+    "visibleTransitions": 75,
+    "slowDelta": 272.20000000298023
+  },
+  "note": "Draw cadence is compared with manifest frame durations. These counts do not assert unique drawings or a fixed 30-fps pose rate.",
+  "errors": []
+}

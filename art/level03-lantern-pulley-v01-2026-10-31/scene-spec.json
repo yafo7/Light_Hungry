@@ -1,0 +1,168 @@
+{
+  "version": "ThirdDrain concept v01",
+  "date": "2026-10-31",
+  "status": "Design proposal only. Existing Unity ThirdDrain remains arrival preview.",
+  "unit": "H = standing character height, same world scale as Level02",
+  "camera": "Orthographic side view perpendicular to back wall; camera zoom does not change world scale",
+  "platforms": [
+    {
+      "name": "入口",
+      "x": 0,
+      "y": 0,
+      "width": 5
+    },
+    {
+      "name": "操作台",
+      "x": 5.9,
+      "y": -0.5,
+      "width": 6.1
+    },
+    {
+      "name": "踏墩",
+      "x": 13,
+      "y": -0.5,
+      "width": 1.6
+    },
+    {
+      "name": "踏墩",
+      "x": 15.6,
+      "y": -0.5,
+      "width": 1.8
+    },
+    {
+      "name": "跳台 1",
+      "x": 18.4,
+      "y": 0.2,
+      "width": 2.3
+    },
+    {
+      "name": "跳台 2",
+      "x": 21.7,
+      "y": 0.9,
+      "width": 1.8
+    },
+    {
+      "name": "跳台 3",
+      "x": 24.5,
+      "y": 1.6,
+      "width": 1.8
+    },
+    {
+      "name": "跳台 4",
+      "x": 27.3,
+      "y": 2.3,
+      "width": 2
+    },
+    {
+      "name": "终点台",
+      "x": 30.3,
+      "y": 3,
+      "width": 3.7
+    }
+  ],
+  "optics": {
+    "source": [
+      14,
+      6.8
+    ],
+    "mirrorX": 14,
+    "mirrorLowY": 1,
+    "mirrorSolvedY": 4.1,
+    "mirrorAngle": "fixed 45-degree backslash in side view; vertical incoming ray reflects horizontally right",
+    "target": [
+      31.5,
+      4.1
+    ],
+    "lowRayBlockedBy": "front of jump platform 3 at x=24.5; top y=1.6",
+    "travelRange": [
+      1,
+      4.6
+    ],
+    "toleranceH": 0.18,
+    "type": "reflection, not refraction"
+  },
+  "controls": {
+    "lamp": "one-time shutter lever at entrance",
+    "winch": "E engages; W/S raises/lowers the reflector; release locks ratchet; E leaves",
+    "movement": "A/D, Space jump; previous 3-second light form retained"
+  },
+  "recovery": {
+    "shallowWaterDepthH": 0.25,
+    "dryReturnWalkY": -2.3,
+    "returnSteps": "toward operation terrace; <=0.6H each",
+    "checkpoint": "after setting reflector, preserve lamp and lift state"
+  },
+  "narrative": "A cropped tail-root scale drinks the light; its local skin fold relaxes upward and uncovers an existing outlet.",
+  "physicsReference": {
+    "moveSpeed": 3.2,
+    "jumpSpeed": 9,
+    "gravity": 29.43,
+    "note": "Numbers from current Level02 controller, analytical check only; no ThirdDrain runtime playtest."
+  },
+  "jumpEstimates": [
+    {
+      "from": "入口",
+      "to": "操作台",
+      "gapH": 0.9,
+      "riseH": -0.5,
+      "idealHorizontalReachH": 2.12,
+      "note": "Analytical bound; platform widths, collision and timing require graybox testing."
+    },
+    {
+      "from": "操作台",
+      "to": "踏墩",
+      "gapH": 1,
+      "riseH": 0,
+      "idealHorizontalReachH": 1.96,
+      "note": "Analytical bound; platform widths, collision and timing require graybox testing."
+    },
+    {
+      "from": "踏墩",
+      "to": "踏墩",
+      "gapH": 1,
+      "riseH": 0,
+      "idealHorizontalReachH": 1.96,
+      "note": "Analytical bound; platform widths, collision and timing require graybox testing."
+    },
+    {
+      "from": "踏墩",
+      "to": "跳台 1",
+      "gapH": 1,
+      "riseH": 0.7,
+      "idealHorizontalReachH": 1.66,
+      "note": "Analytical bound; platform widths, collision and timing require graybox testing."
+    },
+    {
+      "from": "跳台 1",
+      "to": "跳台 2",
+      "gapH": 1,
+      "riseH": 0.7,
+      "idealHorizontalReachH": 1.66,
+      "note": "Analytical bound; platform widths, collision and timing require graybox testing."
+    },
+    {
+      "from": "跳台 2",
+      "to": "跳台 3",
+      "gapH": 1,
+      "riseH": 0.7,
+      "idealHorizontalReachH": 1.66,
+      "note": "Analytical bound; platform widths, collision and timing require graybox testing."
+    },
+    {
+      "from": "跳台 3",
+      "to": "跳台 4",
+      "gapH": 1,
+      "riseH": 0.7,
+      "idealHorizontalReachH": 1.66,
+      "note": "Analytical bound; platform widths, collision and timing require graybox testing."
+    },
+    {
+      "from": "跳台 4",
+      "to": "终点台",
+      "gapH": 1,
+      "riseH": 0.7,
+      "idealHorizontalReachH": 1.66,
+      "note": "Analytical bound; platform widths, collision and timing require graybox testing."
+    }
+  ]
+}

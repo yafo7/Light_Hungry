@@ -1,0 +1,369 @@
+{
+  "name": "LightHungry Player Idle v05",
+  "date": "2026-10-25",
+  "status": "final-candidate",
+  "registration": {
+    "mode": "whole-character-per-frame-uniform-height",
+    "neutralHeightPx": 378
+  },
+  "sources": [
+    {
+      "clip": "idle",
+      "source": "Source/idle_a_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 0
+    },
+    {
+      "clip": "idle",
+      "source": "Source/idle_b_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 12
+    },
+    {
+      "clip": "idle",
+      "source": "Source/idle_c_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 24
+    },
+    {
+      "clip": "think",
+      "source": "Source/think_a_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 0
+    },
+    {
+      "clip": "think",
+      "source": "Source/think_b_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 12
+    },
+    {
+      "clip": "think",
+      "source": "Source/think_c_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 24
+    },
+    {
+      "clip": "think",
+      "source": "Source/think_d_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 36
+    },
+    {
+      "clip": "think",
+      "source": "Source/think_e_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 48
+    },
+    {
+      "clip": "think",
+      "source": "Source/think_f_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 60
+    }
+  ],
+  "clips": {
+    "idle": {
+      "durationMs": 3000,
+      "frameDurationMs": [
+        85,
+        85,
+        85,
+        85,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        40,
+        40,
+        40,
+        40,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        85,
+        85,
+        85,
+        85
+      ],
+      "phases": [
+        {
+          "name": "自然呼吸",
+          "startMs": 0,
+          "endMs": 1600
+        },
+        {
+          "name": "轻眨眼",
+          "startMs": 1600,
+          "endMs": 1760
+        },
+        {
+          "name": "呼吸收势",
+          "startMs": 1760,
+          "endMs": 3000
+        }
+      ]
+    },
+    "think": {
+      "durationMs": 6000,
+      "frameDurationMs": [
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        190,
+        100,
+        42,
+        42,
+        42,
+        84,
+        42,
+        42,
+        42,
+        84,
+        100,
+        190,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90
+      ],
+      "phases": [
+        {
+          "name": "抬手进入思考",
+          "startMs": 0,
+          "endMs": 1000
+        },
+        {
+          "name": "微左偏与停留",
+          "startMs": 1000,
+          "endMs": 2000
+        },
+        {
+          "name": "缓慢偏向右侧",
+          "startMs": 2000,
+          "endMs": 3000
+        },
+        {
+          "name": "快速眨眼两次",
+          "startMs": 3000,
+          "endMs": 4000
+        },
+        {
+          "name": "回正并开始收手",
+          "startMs": 4000,
+          "endMs": 5000
+        },
+        {
+          "name": "收手回到待机",
+          "startMs": 5000,
+          "endMs": 6000
+        }
+      ]
+    }
+  },
+  "frameReuse": [
+    {
+      "clip": "idle",
+      "index": 35,
+      "fromClip": "idle",
+      "fromIndex": 0,
+      "reason": "Shared complete neutral cel closes idle loop."
+    },
+    {
+      "clip": "think",
+      "index": 0,
+      "fromClip": "idle",
+      "fromIndex": 0,
+      "reason": "Shared complete neutral cel for state transition and loop endpoint."
+    },
+    {
+      "clip": "think",
+      "index": 71,
+      "fromClip": "idle",
+      "fromIndex": 0,
+      "reason": "Shared complete neutral cel for state transition and loop endpoint."
+    },
+    {
+      "clip": "think",
+      "index": 16,
+      "fromClip": "think",
+      "fromIndex": 15,
+      "reason": "Stable left-tilt hold using the same complete cel."
+    },
+    {
+      "clip": "think",
+      "index": 17,
+      "fromClip": "think",
+      "fromIndex": 15,
+      "reason": "Stable left-tilt hold using the same complete cel."
+    },
+    {
+      "clip": "think",
+      "index": 18,
+      "fromClip": "think",
+      "fromIndex": 15,
+      "reason": "Stable left-tilt hold using the same complete cel."
+    },
+    {
+      "clip": "think",
+      "index": 19,
+      "fromClip": "think",
+      "fromIndex": 15,
+      "reason": "Stable left-tilt hold using the same complete cel."
+    },
+    {
+      "clip": "think",
+      "index": 20,
+      "fromClip": "think",
+      "fromIndex": 15,
+      "reason": "Stable left-tilt hold using the same complete cel."
+    },
+    {
+      "clip": "think",
+      "index": 37,
+      "fromClip": "think",
+      "fromIndex": 36,
+      "reason": "Same complete open-eye pose during the double blink."
+    },
+    {
+      "clip": "think",
+      "index": 41,
+      "fromClip": "think",
+      "fromIndex": 36,
+      "reason": "Same complete open-eye pose during the double blink."
+    },
+    {
+      "clip": "think",
+      "index": 45,
+      "fromClip": "think",
+      "fromIndex": 36,
+      "reason": "Same complete open-eye pose during the double blink."
+    },
+    {
+      "clip": "think",
+      "index": 46,
+      "fromClip": "think",
+      "fromIndex": 36,
+      "reason": "Same complete open-eye pose during the double blink."
+    },
+    {
+      "clip": "think",
+      "index": 47,
+      "fromClip": "think",
+      "fromIndex": 36,
+      "reason": "Same complete open-eye pose during the double blink."
+    },
+    {
+      "clip": "think",
+      "index": 40,
+      "fromClip": "think",
+      "fromIndex": 38,
+      "reason": "Same complete half-closed cel for closing and reopening."
+    },
+    {
+      "clip": "think",
+      "index": 42,
+      "fromClip": "think",
+      "fromIndex": 38,
+      "reason": "Same complete half-closed cel for closing and reopening."
+    },
+    {
+      "clip": "think",
+      "index": 44,
+      "fromClip": "think",
+      "fromIndex": 38,
+      "reason": "Same complete half-closed cel for closing and reopening."
+    },
+    {
+      "clip": "think",
+      "index": 43,
+      "fromClip": "think",
+      "fromIndex": 39,
+      "reason": "Second blink reuses the same fully closed complete cel."
+    }
+  ],
+  "editorialNotes": [
+    "F original closing sequence selected after whole-character comparison with the revised sheet and A/Idle bridge candidates.",
+    "D uses imagegen-corrected black half-closed eyes and explicit complete-cel reuse for both blinks.",
+    "Adjacent cel differences remain, especially Think70 to71 and51 to52; shared endpoints do not prove continuous adjacent drawings."
+  ]
+}

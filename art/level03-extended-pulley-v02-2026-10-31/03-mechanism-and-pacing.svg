@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1190" viewBox="0 0 1600 1190"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#527e70" stroke-width="1.4"/></marker></defs><g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<rect x="0" y="0" width="1600" height="1190" fill="#f6f2e9" />
+<text x="50" y="55" font-size="32" fill="#334943" >03 排水暗渠 · 加长与进阶设计</text>
+<text x="50" y="90" font-size="18" fill="#7b877d" >76H 长度 / 约 5 个游玩屏宽 / 目标 24–28 次跳跃 / H 为主角高度 / 仍为待实测设计</text>
+<text x="50" y="133" font-size="23" fill="#334943" >一套机关，两次用途：先中位搭路，再高位送光</text>
+<rect x="50" y="170" width="480" height="406" fill="#fffdf7" rx="16" stroke="#ded8ca"/>
+<text x="72" y="202" font-size="23" fill="#334943" >① 初始低位</text>
+<rect x="75" y="417.9" width="125" height="76" fill="#ad9e87" />
+<rect x="285" y="397.2" width="90" height="95" fill="#ad9e87" />
+<rect x="395" y="385.7" width="110" height="106" fill="#ad9e87" />
+<text x="95" y="439.9" font-size="15" fill="#334943" >左岸</text>
+<text x="295" y="419.2" font-size="15" fill="#334943" >右岸</text>
+<text x="400" y="407.7" font-size="14" fill="#334943" >上层绞盘</text>
+<line x1="380" y1="231.6" x2="380" y2="424.8" stroke="#d39b2f" stroke-width="3" />
+<rect x="365" y="216.6" width="30" height="23" fill="#bb9557" rx="4"/>
+<line x1="366" y1="410.8" x2="394" y2="438.8" stroke="#6f8885" stroke-width="6" />
+<line x1="380" y1="424.8" x2="505" y2="424.8" stroke="#d39b2f" stroke-width="3" />
+<rect x="490" y="407.8" width="11" height="35" fill="#948b7d" />
+<text x="411" y="414.8" font-size="13" fill="#987629" >受阻</text>
+<circle cx="229" cy="225" r="9" fill="#cfb481" stroke="#80694c" stroke-width="2"/><circle cx="355" cy="225" r="9" fill="#cfb481" stroke="#80694c" stroke-width="2"/>
+<path d="M220,337.4 V225 Q220,216 229,216 H355 Q364,216 364,225 V410.8" fill="none" stroke="#88714d" stroke-width="3"/>
+<rect x="215" y="337.4" width="45" height="12" fill="#b3a46e" stroke="#76653d" stroke-width="2"/>
+<text x="199" y="327.4" font-size="14" fill="#334943" >配重踏板</text>
+<text x="72" y="514" font-size="17" fill="#8c744f" >镜托 2.4H ↑ / 配重 6.2H ↓</text>
+<text x="72" y="547" font-size="17" fill="#334943" >配重太高，无法接上两侧落脚台。</text>
+<rect x="555" y="170" width="480" height="406" fill="#fffdf7" rx="16" stroke="#ded8ca"/>
+<text x="577" y="202" font-size="23" fill="#334943" >② 中位：搭路</text>
+<rect x="580" y="417.9" width="125" height="76" fill="#ad9e87" />
+<rect x="790" y="397.2" width="90" height="95" fill="#ad9e87" />
+<rect x="900" y="385.7" width="110" height="106" fill="#ad9e87" />
+<text x="600" y="439.9" font-size="15" fill="#334943" >左岸</text>
+<text x="800" y="419.2" font-size="15" fill="#334943" >右岸</text>
+<text x="905" y="407.7" font-size="14" fill="#334943" >上层绞盘</text>
+<line x1="885" y1="231.6" x2="885" y2="355.8" stroke="#d39b2f" stroke-width="3" />
+<rect x="870" y="216.6" width="30" height="23" fill="#bb9557" rx="4"/>
+<line x1="871" y1="341.8" x2="899" y2="369.8" stroke="#6f8885" stroke-width="6" />
+<line x1="885" y1="355.8" x2="1010" y2="355.8" stroke="#d39b2f" stroke-width="3" />
+<rect x="995" y="338.8" width="11" height="35" fill="#948b7d" />
+<text x="916" y="345.8" font-size="13" fill="#987629" >受阻</text>
+<circle cx="734" cy="225" r="9" fill="#cfb481" stroke="#80694c" stroke-width="2"/><circle cx="860" cy="225" r="9" fill="#cfb481" stroke="#80694c" stroke-width="2"/>
+<path d="M725,406.4 V225 Q725,216 734,216 H860 Q869,216 869,225 V341.8" fill="none" stroke="#88714d" stroke-width="3"/>
+<rect x="720" y="406.4" width="45" height="12" fill="#b3a46e" stroke="#76653d" stroke-width="2"/>
+<text x="704" y="396.4" font-size="14" fill="#334943" >配重踏板</text>
+<path d="M694,413.9 Q712,366.4 734,402.4 M755,402.4 Q773,362.2 804,393.2" fill="none" stroke="#527e70" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<text x="577" y="514" font-size="17" fill="#8c744f" >镜托 5.4H ↑ / 配重 3.2H ↓</text>
+<text x="577" y="547" font-size="17" fill="#334943" >先过配重踏板，到达上层第二绞盘。</text>
+<rect x="1060" y="170" width="480" height="406" fill="#fffdf7" rx="16" stroke="#ded8ca"/>
+<text x="1082" y="202" font-size="23" fill="#334943" >③ 高位：送光</text>
+<rect x="1085" y="417.9" width="125" height="76" fill="#ad9e87" />
+<rect x="1295" y="397.2" width="90" height="95" fill="#ad9e87" />
+<rect x="1405" y="385.7" width="110" height="106" fill="#ad9e87" />
+<text x="1105" y="439.9" font-size="15" fill="#334943" >左岸</text>
+<text x="1305" y="419.2" font-size="15" fill="#334943" >右岸</text>
+<text x="1410" y="407.7" font-size="14" fill="#334943" >上层绞盘</text>
+<line x1="1390" y1="231.6" x2="1390" y2="291.4" stroke="#d39b2f" stroke-width="3" />
+<rect x="1375" y="216.6" width="30" height="23" fill="#bb9557" rx="4"/>
+<line x1="1376" y1="277.4" x2="1404" y2="305.4" stroke="#6f8885" stroke-width="6" />
+<line x1="1390" y1="291.4" x2="1515" y2="291.4" stroke="#d39b2f" stroke-width="3" />
+<ellipse cx="1515" cy="291.4" rx="9" ry="14" fill="#e5bf67"/>
+<circle cx="1239" cy="225" r="9" fill="#cfb481" stroke="#80694c" stroke-width="2"/><circle cx="1365" cy="225" r="9" fill="#cfb481" stroke="#80694c" stroke-width="2"/>
+<path d="M1230,470.8 V225 Q1230,216 1239,216 H1365 Q1374,216 1374,225 V277.4" fill="none" stroke="#88714d" stroke-width="3"/>
+<rect x="1225" y="470.8" width="45" height="12" fill="#b3a46e" stroke="#76653d" stroke-width="2"/>
+<text x="1209" y="460.8" font-size="14" fill="#334943" >配重踏板</text>
+<text x="1082" y="514" font-size="17" fill="#8c744f" >镜托 8.2H ↑ / 配重 0.4H ↓</text>
+<text x="1082" y="547" font-size="17" fill="#334943" >上层继续升镜，照亮深处的光鳞。</text>
+<text x="50" y="620" font-size="23" fill="#334943" >路线节奏：一段学习、一段组合、一段执行</text>
+<rect x="50" y="642" width="480" height="141" fill="#dce7db" rx="12"/>
+<text x="70" y="677" font-size="20" fill="#334943" >A 0–30H｜约 8 跳</text>
+<text x="70" y="716" font-size="20" fill="#334943" >开灯 → 节奏短跳 → 中位搭路</text>
+<text x="70" y="752" font-size="16" fill="#718079" >宽台起步 · 两侧绞盘 · 过闸前恢复点</text>
+<rect x="555" y="642" width="480" height="141" fill="#e5dfcb" rx="12"/>
+<text x="575" y="677" font-size="20" fill="#334943" >B 30–52H｜约 9 跳</text>
+<text x="575" y="716" font-size="20" fill="#334943" >高位送光 → 窄台 → 局部折返</text>
+<text x="575" y="752" font-size="16" fill="#718079" >高低交替 · 上层出口 · 失足回本段</text>
+<rect x="1060" y="642" width="480" height="141" fill="#d9e5e8" rx="12"/>
+<text x="1080" y="677" font-size="20" fill="#334943" >C 52–76H｜约 9 跳</text>
+<text x="1080" y="716" font-size="20" fill="#334943" >精确连跳 → 慢速摆渡 → 光鳞</text>
+<text x="1080" y="752" font-size="16" fill="#718079" >摆渡前休息 · 端点停顿 · 最后宽台</text>
+<text x="50" y="828" font-size="23" fill="#334943" >跳跃模块：远跳配低高差，高跳配短间距</text>
+<text x="60" y="865" font-size="17" fill="#7f877d" >模块</text>
+<text x="410" y="865" font-size="17" fill="#7f877d" >净距</text>
+<text x="640" y="865" font-size="17" fill="#7f877d" >上升</text>
+<text x="875" y="865" font-size="17" fill="#7f877d" >落脚宽度</text>
+<text x="1110" y="865" font-size="17" fill="#7f877d" >理论距离</text>
+<text x="1340" y="865" font-size="17" fill="#7f877d" >余量</text>
+<line x1="50" y1="910" x2="1540" y2="910" stroke="#ddd9ce" stroke-width="1" />
+<text x="60" y="898" font-size="17" fill="#334943" >节奏短跳</text>
+<text x="410" y="898" font-size="17" fill="#334943" >1.1H</text>
+<text x="640" y="898" font-size="17" fill="#334943" >0.45H</text>
+<text x="875" y="898" font-size="17" fill="#334943" >1.8H</text>
+<text x="1110" y="898" font-size="17" fill="#334943" >1.78H</text>
+<text x="1340" y="898" font-size="17" fill="#334943" >0.68H</text>
+<line x1="50" y1="949" x2="1540" y2="949" stroke="#ddd9ce" stroke-width="1" />
+<text x="60" y="937" font-size="17" fill="#334943" >跳上配重</text>
+<text x="410" y="937" font-size="17" fill="#334943" >1.2H</text>
+<text x="640" y="937" font-size="17" fill="#334943" >0.5H</text>
+<text x="875" y="937" font-size="17" fill="#334943" >1.25H</text>
+<text x="1110" y="937" font-size="17" fill="#334943" >1.76H</text>
+<text x="1340" y="937" font-size="17" fill="#334943" >0.56H</text>
+<line x1="50" y1="988" x2="1540" y2="988" stroke="#ddd9ce" stroke-width="1" />
+<text x="60" y="976" font-size="17" fill="#334943" >离开配重</text>
+<text x="410" y="976" font-size="17" fill="#334943" >1.15H</text>
+<text x="640" y="976" font-size="17" fill="#334943" >0.4H</text>
+<text x="875" y="976" font-size="17" fill="#334943" >2H</text>
+<text x="1110" y="976" font-size="17" fill="#334943" >1.8H</text>
+<text x="1340" y="976" font-size="17" fill="#334943" >0.65H</text>
+<line x1="50" y1="1027" x2="1540" y2="1027" stroke="#ddd9ce" stroke-width="1" />
+<text x="60" y="1015" font-size="17" fill="#334943" >窄台远跳</text>
+<text x="410" y="1015" font-size="17" fill="#334943" >1.5H</text>
+<text x="640" y="1015" font-size="17" fill="#334943" >0.1H</text>
+<text x="875" y="1015" font-size="17" fill="#334943" >1H</text>
+<text x="1110" y="1015" font-size="17" fill="#334943" >1.92H</text>
+<text x="1340" y="1015" font-size="17" fill="#334943" >0.42H</text>
+<line x1="50" y1="1066" x2="1540" y2="1066" stroke="#ddd9ce" stroke-width="1" />
+<text x="60" y="1054" font-size="17" fill="#334943" >折返高跳</text>
+<text x="410" y="1054" font-size="17" fill="#334943" >1.05H</text>
+<text x="640" y="1054" font-size="17" fill="#334943" >0.85H</text>
+<text x="875" y="1054" font-size="17" fill="#334943" >1.2H</text>
+<text x="1110" y="1054" font-size="17" fill="#334943" >1.58H</text>
+<text x="1340" y="1054" font-size="17" fill="#334943" >0.53H</text>
+<text x="50" y="1120" font-size="17" fill="#6f7d73" >移动踏板：宽 1.3H，往复行程 1.5H，端点停约 0.4 秒；导轨处于背景，不能直接踩着走过去。</text>
+<text x="50" y="1154" font-size="16" fill="#8a8d80" >表中距离只作解析估算；落点、顶头空间、折返碰撞与移动平台惯性须在 Unity 灰盒验证。</text>
+</g></svg>

@@ -1,0 +1,36 @@
+const {chromium}=require('playwright');
+const path=require('node:path'),fs=require('node:fs'),{pathToFileURL}=require('node:url');
+const root=path.resolve(__dirname,'..');
+(async()=>{
+const browser=await chromium.launch({headless:true,channel:'chrome'});
+const page=await browser.newPage({viewport:{width:1220,height:1000},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+await page.goto(pathToFileURL(path.join(root,'Previews/index.html')).href);
+await page.waitForSelector('body[data-ready="true"]');
+await page.click('#reset');
+await page.waitForTimeout(2750);
+const before=await page.locator('#view').getAttribute('data-clip');
+await page.waitForFunction(()=>document.querySelector('#view').dataset.clip==='think',{timeout:2000});
+const transitionClock=await page.locator('#clock').innerText();
+await page.click('#play');
+const paused=await page.locator('#view').getAttribute('data-frame');
+await page.waitForTimeout(200);
+const stable=(await page.locator('#view').getAttribute('data-frame'))===paused;
+await page.locator('#frames button').nth(4).click();
+await page.screenshot({path:path.join(root,'QA','preview-desktop.png'),fullPage:true});
+await page.selectOption('#background','light');
+await page.screenshot({path:path.join(root,'QA','preview-light.png'),fullPage:true});
+await page.click('#reset');
+const reset=await page.locator('#view').getAttribute('data-clip');
+await page.click('[data-mode="think"]');
+await page.click('#play');
+await page.click('#next');
+const manual=await page.locator('#view').getAttribute('data-clip');
+await page.selectOption('#background','checker');
+await page.setViewportSize({width:390,height:844});
+await page.screenshot({path:path.join(root,'QA','preview-mobile.png'),fullPage:true});
+const noOverflow=await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth);
+const checks={imagesLoaded:await page.evaluate(()=>Object.values(images).flat().every(i=>i.complete&&i.naturalWidth===512)),idleBefore3s:before==='idle',thinkAfter3s:Number.parseFloat(transitionClock)>=3,pauseStable:stable,actionResetsIdle:reset==='idle',manualThinking:manual==='think',noMobilePageOverflow:noOverflow,noScriptErrors:errors.length===0};
+fs.writeFileSync(path.join(root,'QA','preview-checks.json'),JSON.stringify({checks,transitionClock,errors},null,2));console.log(JSON.stringify({checks,transitionClock,errors},null,2));await browser.close();if(Object.values(checks).some(v=>!v))process.exitCode=1;
+})().catch(e=>{console.error(e);process.exit(1)});
+

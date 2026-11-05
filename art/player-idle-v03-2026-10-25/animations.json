@@ -1,0 +1,476 @@
+{
+  "name": "LightHungry Player Idle v03",
+  "date": "2026-10-25",
+  "generator": "built-in image_gen",
+  "frameSize": [
+    512,
+    512
+  ],
+  "facing": "right",
+  "pixelsPerUnit": 256,
+  "pivot": [
+    0.5,
+    0.0625
+  ],
+  "footReferenceY": 480,
+  "alpha": "RGBA PNG; generated alpha retained through cropping and uniform resizing.",
+  "playback": {
+    "idleThresholdSeconds": 3,
+    "thinkingLoopsWhileIdle": true,
+    "interruptImmediatelyOn": [
+      "move",
+      "jump",
+      "interact",
+      "ability",
+      "damage",
+      "death"
+    ],
+    "timerReset": "Any gameplay action or leaving grounded neutral state."
+  },
+  "clips": {
+    "idle": {
+      "frameCount": 16,
+      "loop": true,
+      "durationMs": 3000,
+      "frameDurationMs": [
+        400,
+        250,
+        200,
+        200,
+        200,
+        200,
+        150,
+        120,
+        60,
+        60,
+        60,
+        120,
+        200,
+        200,
+        250,
+        330
+      ],
+      "grid": "Sheets/player_idle_grid.png",
+      "gridLayout": [
+        4,
+        4
+      ],
+      "horizontalPages": [
+        {
+          "file": "Sheets/player_idle_strip_01.png",
+          "firstFrame": 0,
+          "frameCount": 8,
+          "dimensions": [
+            4096,
+            512
+          ]
+        },
+        {
+          "file": "Sheets/player_idle_strip_02.png",
+          "firstFrame": 8,
+          "frameCount": 8,
+          "dimensions": [
+            4096,
+            512
+          ]
+        }
+      ],
+      "frames": [
+        "Sprites/Idle/player_idle_00.png",
+        "Sprites/Idle/player_idle_01.png",
+        "Sprites/Idle/player_idle_02.png",
+        "Sprites/Idle/player_idle_03.png",
+        "Sprites/Idle/player_idle_04.png",
+        "Sprites/Idle/player_idle_05.png",
+        "Sprites/Idle/player_idle_06.png",
+        "Sprites/Idle/player_idle_07.png",
+        "Sprites/Idle/player_idle_08.png",
+        "Sprites/Idle/player_idle_09.png",
+        "Sprites/Idle/player_idle_10.png",
+        "Sprites/Idle/player_idle_11.png",
+        "Sprites/Idle/player_idle_12.png",
+        "Sprites/Idle/player_idle_13.png",
+        "Sprites/Idle/player_idle_14.png",
+        "Sprites/Idle/player_idle_15.png"
+      ],
+      "frameOrigins": [
+        {
+          "sheet": "idle",
+          "cell": 0
+        },
+        {
+          "sheet": "idle",
+          "cell": 1
+        },
+        {
+          "sheet": "idle",
+          "cell": 2
+        },
+        {
+          "sheet": "idle",
+          "cell": 3
+        },
+        {
+          "sheet": "idle",
+          "cell": 4
+        },
+        {
+          "sheet": "idle",
+          "cell": 5
+        },
+        {
+          "sheet": "idle",
+          "cell": 6
+        },
+        {
+          "sheet": "idle",
+          "cell": 7
+        },
+        {
+          "sheet": "idle",
+          "cell": 8
+        },
+        {
+          "sheet": "idle",
+          "cell": 9
+        },
+        {
+          "sheet": "idle",
+          "cell": 10
+        },
+        {
+          "sheet": "idle",
+          "cell": 11
+        },
+        {
+          "sheet": "idle",
+          "cell": 12
+        },
+        {
+          "sheet": "idle",
+          "cell": 13
+        },
+        {
+          "sheet": "idle",
+          "cell": 14
+        },
+        {
+          "reuse": "idle:00"
+        }
+      ],
+      "endpointReuse": "Frame 15 reuses frame 00.",
+      "phases": [
+        {
+          "name": "呼吸与眨眼",
+          "startMs": 0,
+          "endMs": 3000
+        }
+      ]
+    },
+    "think": {
+      "frameCount": 32,
+      "loop": true,
+      "durationMs": 6000,
+      "frameDurationMs": [
+        200,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        400,
+        400,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        300,
+        60,
+        60,
+        60,
+        80,
+        60,
+        60,
+        60,
+        120,
+        180,
+        180,
+        180,
+        720
+      ],
+      "grid": "Sheets/player_think_grid.png",
+      "gridLayout": [
+        8,
+        4
+      ],
+      "horizontalPages": [
+        {
+          "file": "Sheets/player_think_strip_01.png",
+          "firstFrame": 0,
+          "frameCount": 8,
+          "dimensions": [
+            4096,
+            512
+          ]
+        },
+        {
+          "file": "Sheets/player_think_strip_02.png",
+          "firstFrame": 8,
+          "frameCount": 8,
+          "dimensions": [
+            4096,
+            512
+          ]
+        },
+        {
+          "file": "Sheets/player_think_strip_03.png",
+          "firstFrame": 16,
+          "frameCount": 8,
+          "dimensions": [
+            4096,
+            512
+          ]
+        },
+        {
+          "file": "Sheets/player_think_strip_04.png",
+          "firstFrame": 24,
+          "frameCount": 8,
+          "dimensions": [
+            4096,
+            512
+          ]
+        }
+      ],
+      "frames": [
+        "Sprites/Think/player_think_00.png",
+        "Sprites/Think/player_think_01.png",
+        "Sprites/Think/player_think_02.png",
+        "Sprites/Think/player_think_03.png",
+        "Sprites/Think/player_think_04.png",
+        "Sprites/Think/player_think_05.png",
+        "Sprites/Think/player_think_06.png",
+        "Sprites/Think/player_think_07.png",
+        "Sprites/Think/player_think_08.png",
+        "Sprites/Think/player_think_09.png",
+        "Sprites/Think/player_think_10.png",
+        "Sprites/Think/player_think_11.png",
+        "Sprites/Think/player_think_12.png",
+        "Sprites/Think/player_think_13.png",
+        "Sprites/Think/player_think_14.png",
+        "Sprites/Think/player_think_15.png",
+        "Sprites/Think/player_think_16.png",
+        "Sprites/Think/player_think_17.png",
+        "Sprites/Think/player_think_18.png",
+        "Sprites/Think/player_think_19.png",
+        "Sprites/Think/player_think_20.png",
+        "Sprites/Think/player_think_21.png",
+        "Sprites/Think/player_think_22.png",
+        "Sprites/Think/player_think_23.png",
+        "Sprites/Think/player_think_24.png",
+        "Sprites/Think/player_think_25.png",
+        "Sprites/Think/player_think_26.png",
+        "Sprites/Think/player_think_27.png",
+        "Sprites/Think/player_think_28.png",
+        "Sprites/Think/player_think_29.png",
+        "Sprites/Think/player_think_30.png",
+        "Sprites/Think/player_think_31.png"
+      ],
+      "frameOrigins": [
+        {
+          "reuse": "idle:00"
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 1
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 2
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 3
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 4
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 5
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 6
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 7
+        },
+        {
+          "reuse": "think:07",
+          "reason": "Stable left-tilt hold."
+        },
+        {
+          "reuse": "think:07",
+          "reason": "Stable left-tilt hold."
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 10
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 11
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 12
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 13
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 14
+        },
+        {
+          "sheet": "thinkA",
+          "cell": 15
+        },
+        {
+          "sheet": "thinkB",
+          "cell": 0
+        },
+        {
+          "sheet": "thinkB",
+          "cell": 1
+        },
+        {
+          "sheet": "thinkB",
+          "cell": 2
+        },
+        {
+          "sheet": "thinkB",
+          "cell": 3
+        },
+        {
+          "sheet": "thinkB",
+          "cell": 4
+        },
+        {
+          "sheet": "thinkB",
+          "cell": 5
+        },
+        {
+          "reuse": "think:20",
+          "reason": "Stable half-closed blink pose."
+        },
+        {
+          "reuse": "think:19",
+          "reason": "Open eye between and after blinks."
+        },
+        {
+          "reuse": "think:20",
+          "reason": "Stable half-closed blink pose."
+        },
+        {
+          "reuse": "think:21",
+          "reason": "Second fully closed blink."
+        },
+        {
+          "reuse": "think:20",
+          "reason": "Stable half-closed blink pose."
+        },
+        {
+          "reuse": "think:19",
+          "reason": "Open eye between and after blinks."
+        },
+        {
+          "sheet": "thinkB",
+          "cell": 12
+        },
+        {
+          "sheet": "thinkB",
+          "cell": 13
+        },
+        {
+          "sheet": "thinkB",
+          "cell": 14
+        },
+        {
+          "reuse": "idle:00"
+        }
+      ],
+      "endpointReuse": "Frames 00 and 31 reuse idle frame 00; frames 08 and 09 reuse frame 07 for a stable left hold.",
+      "phases": [
+        {
+          "name": "进入思考",
+          "startMs": 0,
+          "endMs": 380,
+          "firstFrame": 0,
+          "lastFrame": 1
+        },
+        {
+          "name": "头向左偏",
+          "startMs": 380,
+          "endMs": 1460,
+          "firstFrame": 2,
+          "lastFrame": 7
+        },
+        {
+          "name": "左偏停留",
+          "startMs": 1460,
+          "endMs": 2260,
+          "firstFrame": 8,
+          "lastFrame": 9
+        },
+        {
+          "name": "缓慢转向右侧",
+          "startMs": 2260,
+          "endMs": 3880,
+          "firstFrame": 10,
+          "lastFrame": 18
+        },
+        {
+          "name": "右偏停留",
+          "startMs": 3880,
+          "endMs": 4180,
+          "firstFrame": 19,
+          "lastFrame": 19
+        },
+        {
+          "name": "快速眨眼两次",
+          "startMs": 4180,
+          "endMs": 4740,
+          "firstFrame": 20,
+          "lastFrame": 27
+        },
+        {
+          "name": "放下手并回正",
+          "startMs": 4740,
+          "endMs": 6000,
+          "firstFrame": 28,
+          "lastFrame": 31
+        }
+      ],
+      "blinkFrames": [
+        {
+          "closedFrame": 21
+        },
+        {
+          "closedFrame": 25
+        }
+      ],
+      "eyeRule": "Solid black bead eye; closed line, no visible sclera or rolling."
+    }
+  }
+}

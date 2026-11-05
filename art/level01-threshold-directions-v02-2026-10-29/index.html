@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>第一束光 · 食光兽第一关美术选型</title>
+  <style>
+    :root{--paper:#f3efe5;--panel:#faf7ef;--ink:#393e35;--muted:#777a6b;--line:#d9d8c9;--green:#586a52;--warm:#ab744b;--radius:16px}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",sans-serif;line-height:1.65;background:radial-gradient(ellipse at 10% 0%,#e7eadb 0,transparent 45%),radial-gradient(ellipse at 100% 40%,#eee0cf 0,transparent 45%),var(--paper)}
+    button,a,input{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #ba8b52;outline-offset:4px}a{color:var(--green);text-underline-offset:4px}button:disabled{cursor:default;opacity:.45}button{touch-action:manipulation}
+    .page{max-width:1380px;margin:auto;padding:44px 36px 24px}.eyebrow{color:var(--green);letter-spacing:.16em;font-size:12px;margin:0 0 10px}header{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;margin-bottom:30px}h1{font-family:"Noto Serif SC","Songti SC",SimSun,serif;font-size:clamp(28px,4vw,43px);font-weight:500;line-height:1.35;margin:0 0 13px;letter-spacing:.06em}.intro{margin:0;color:var(--muted);font-size:14px;max-width:750px}.edition{white-space:nowrap;font-size:12px;border:1px solid var(--line);border-radius:99px;padding:7px 12px;margin-top:6px;color:var(--muted)}
+    .controls{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:14px}.tabs{display:flex;gap:7px;flex-wrap:wrap}.tab{border:1px solid var(--line);border-radius:99px;background:rgba(250,247,239,.7);padding:9px 17px;font-size:14px;transition:background .15s,border-color .15s}.tab:hover{background:#e9eadf}.tab[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fffdf4}.tab .letter{font-family:Georgia,serif;margin-right:8px;font-size:16px}.compare-toggle{background:transparent;border:1px solid #aeb7a2;border-radius:9px;padding:8px 14px;font-size:13px}.compare-toggle[aria-pressed="true"]{background:#e2e7da;border-color:var(--green)}
+    .content{background:rgba(250,247,239,.82);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 9px 34px rgba(73,66,44,.035)}.subbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 20px;border-bottom:1px solid var(--line)}.layer-tabs{display:flex;gap:6px;flex-wrap:wrap}.layer-tabs .tab{font-size:13px;padding:5px 13px;border-radius:7px;background:transparent;border-color:transparent}.layer-tabs .tab[aria-pressed="true"]{color:var(--green);border-color:#bfc8b5;background:#e8ecdf}.layer-hint{font-size:12px;color:var(--muted);margin:0}.art-stage{padding:20px}.art-button{display:block;position:relative;width:100%;border:0;padding:0;text-align:left;border-radius:9px;overflow:hidden;background:#eae9df;min-height:240px}.art-button img{display:block;width:100%;height:auto;min-height:0;transition:opacity .2s}.art-button img.pending{display:none}.art-button.is-foreground,.zoom-surface.is-foreground{background-color:#f5f4ee;background-image:linear-gradient(45deg,#dedfd4 25%,transparent 25%),linear-gradient(-45deg,#dedfd4 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#dedfd4 75%),linear-gradient(-45deg,transparent 75%,#dedfd4 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0}.zoom-tag{position:absolute;right:12px;bottom:12px;font-size:12px;letter-spacing:.04em;border:1px solid rgba(255,255,255,.55);color:#fff;background:rgba(43,49,40,.7);padding:5px 10px;border-radius:99px;pointer-events:none}.placeholder{display:flex;min-height:300px;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--muted);background:rgba(239,238,227,.8);font-size:13px}.placeholder strong{display:block;font-size:17px;color:var(--green);font-weight:500;margin-bottom:5px}.placeholder span{display:block;font-size:12px;margin-top:7px}.placeholder[hidden]{display:none}.art-caption{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;padding:17px 2px 0}.art-caption h2{font-size:21px;font-family:"Noto Serif SC","Songti SC",SimSun,serif;font-weight:500;margin:0 0 4px}.art-caption p{font-size:13px;color:var(--muted);margin:0;max-width:850px}.file-link{white-space:nowrap;font-size:12px;margin-top:5px}.compare-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.compare-card h2{margin:13px 0 4px;font-family:"Noto Serif SC","Songti SC",SimSun,serif;font-size:20px;font-weight:500}.compare-card p{font-size:12px;color:var(--muted);margin:0 0 8px}.compare-card .art-button{min-height:190px}.compare-card .placeholder{min-height:240px}.compare-card .file-link{display:inline-block;margin:0}.compare-note{font-size:12px;color:var(--muted);margin:15px 0 0}
+    .route{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:25px 4px 21px}.route-item{position:relative;padding-right:15px}.route-item:not(:last-child):after{content:"→";position:absolute;right:0;top:4px;color:#b4b6a5}.route-item small{display:block;color:var(--warm);font-family:Georgia,serif;font-size:12px;letter-spacing:.1em}.route-item strong{display:block;font-size:14px;font-weight:500;margin:2px 0}.route-item p{margin:0;font-size:12px;color:var(--muted)}.notes{border-top:1px solid var(--line);padding:18px 4px 0;display:grid;grid-template-columns:1fr 1fr;gap:28px}.notes p{font-size:12px;color:var(--muted);margin:0}.notes strong{font-weight:500;color:var(--ink)}footer{margin-top:25px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--muted)}footer nav{display:flex;gap:16px}
+    dialog{border:0;border-radius:14px;padding:0;width:calc(100vw - 36px);max-width:1800px;height:calc(100vh - 36px);max-height:none;background:var(--panel);color:var(--ink);box-shadow:0 20px 90px #1118}dialog::backdrop{background:rgba(25,31,26,.8)}.dialog-layout{display:flex;flex-direction:column;height:100%}.dialog-bar{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:12px 18px;border-bottom:1px solid var(--line)}.dialog-bar p{font-size:14px;margin:0}.zoom-controls{display:flex;align-items:center;gap:12px;font-size:12px}.zoom-controls input{width:130px;accent-color:var(--green)}.close{border:1px solid var(--line);background:transparent;border-radius:6px;padding:5px 12px}.zoom-viewport{overflow:auto;flex:1;min-height:0;padding:20px;background:#e8e8de}.zoom-surface{width:100%;min-height:100%;display:flex;align-items:flex-start;justify-content:center;margin:auto}.zoom-surface img{display:block;width:100%;height:auto}.dialog-bottom{font-size:11px;color:var(--muted);padding:7px 18px;margin:0;border-top:1px solid var(--line)}[hidden]{display:none!important}
+    @media(max-width:900px){.page{padding:28px 20px 20px}.compare-grid{grid-template-columns:1fr}.compare-card .art-button{min-height:0}.compare-card p{font-size:13px}.notes{gap:20px}.art-stage{padding:14px}.route{gap:12px}.edition{display:none}}
+    @media(max-width:580px){.page{padding:24px 13px 20px}header{margin-bottom:22px}.controls{gap:12px}.tab{padding:8px 12px;font-size:12px}.subbar{padding:12px}.layer-hint{font-size:11px}.route{grid-template-columns:1fr 1fr;gap:20px}.route-item:nth-child(2):after{display:none}.notes{grid-template-columns:1fr;gap:14px}.art-caption{flex-direction:column;gap:6px}.art-caption h2{font-size:20px}.placeholder{min-height:240px}.zoom-controls input{width:85px}.dialog-bar{padding:10px 12px}.zoom-viewport{padding:8px}dialog{width:calc(100vw - 16px);height:calc(100vh - 16px)}}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}}@media print{.controls,.subbar,.zoom-tag,footer nav{display:none}.page{max-width:none;padding:0}.content{box-shadow:none}.compare-grid{grid-template-columns:1fr}.compare-card{break-inside:avoid}body{background:#fff}.art-button{background:#fff}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div><p class="eyebrow">食光兽 / 第一关 · 门槛苔地</p><h1>第一束光，三种花园。</h1><p class="intro">微小的光精灵走进荒园，将墙缝中的阳光送到石阶下。一小片灰白的“石头”，开始呼吸。</p></div>
+      <span class="edition">候选美术示意 · 2026.10.29</span>
+    </header>
+    <div class="controls">
+      <div class="tabs" role="group" aria-label="选择美术方向">
+        <button class="tab direction-tab" data-direction="A" aria-pressed="true"><span class="letter">A</span>苔墙拾镜</button>
+        <button class="tab direction-tab" data-direction="B" aria-pressed="false"><span class="letter">B</span>旧圃铜光</button>
+        <button class="tab direction-tab" data-direction="C" aria-pressed="false"><span class="letter">C</span>藤影残灯</button>
+      </div>
+      <button id="compare-toggle" class="compare-toggle" aria-pressed="false">三版并排比较</button>
+    </div>
+    <section class="content" aria-label="美术图预览">
+      <div class="subbar">
+        <div class="layer-tabs" role="group" aria-label="选择图纸类型">
+          <button class="tab layer-tab" data-layer="scene" aria-pressed="true">完整场景</button>
+          <button class="tab layer-tab" data-layer="background" aria-pressed="false">独立背景</button>
+          <button class="tab layer-tab" data-layer="foreground" aria-pressed="false">前景与道具</button>
+        </div>
+        <p class="layer-hint" id="layer-hint">观察构图、尺度、光路与行进方向。</p>
+      </div>
+      <div class="art-stage" id="art-stage" aria-live="polite"></div>
+    </section>
+    <section class="route" aria-label="共同场景流线">
+      <div class="route-item"><small>01 / 进入</small><strong>左侧花园门</strong><p>高墙与树冠压低视线。</p></div>
+      <div class="route-item"><small>02 / 调整</small><strong>杂物中的反射物</strong><p>墙洞 → 镜面 → 光鳞，一次反射。</p></div>
+      <div class="route-item"><small>03 / 发现</small><strong>石阶下的尾尖光鳞</strong><p>只露一小片身体，受光后微亮。</p></div>
+      <div class="route-item"><small>04 / 前行</small><strong>右侧倒扣陶盆</strong><p>沿门槛裂缝，抵达盆沿破口。</p></div>
+    </section>
+    <section class="notes" aria-label="设计边界">
+      <p><strong>这一轮用于选美术方向。</strong>图中为候选艺术示意，非 Unity 运行截图。背景作为静态底图参考；三类图并非像素严丝合缝、能够直接叠合的自动分层。</p>
+      <p><strong>选型后再整理可用资产。</strong>前景板上排是含墙体搭配的组合示意，下排是三个道具放大图，仍需拆分模块、确定尺寸与碰撞体。主角当前约图高7%，搭建时可进一步缩小。反射面绕竖直轴转动，安装倾角固定。</p>
+    </section>
+    <footer><span>水彩插画 · 柔和远景 · 清晰前景　｜　图片缺失时会自动重试加载。</span><nav><a href="设计说明.md">设计说明</a><a href="prompts.json">场景提示词</a><a href="scene-refinements.json">场景修订</a><a href="layer-prompts.json">图层提示词</a></nav></footer>
+  </main>
+  <dialog id="zoom-dialog" aria-labelledby="zoom-title">
+    <div class="dialog-layout">
+      <div class="dialog-bar"><p id="zoom-title">放大查看</p><div class="zoom-controls"><label for="zoom-range">缩放</label><input id="zoom-range" type="range" min="100" max="250" step="25" value="100"><output id="zoom-value" for="zoom-range">100%</output><button id="close-dialog" class="close">关闭</button></div></div>
+      <div class="zoom-viewport" id="zoom-viewport"><div class="zoom-surface" id="zoom-surface"><img id="zoom-image" alt=""></div></div>
+      <p class="dialog-bottom">100% 适应窗口宽度；放大后可滚动查看。按 Esc 关闭。</p>
+    </div>
+  </dialog>
+  <script>
+    'use strict';
+    const variants={
+      A:{name:'苔墙拾镜',summary:'破碎银镜、粗树根与苔绿灰石。荒园被植物慢慢收回，第一束光从旧物中醒来。',reflector:'破碎银镜'},
+      B:{name:'旧圃铜光',summary:'暖砖花圃与旧植物标牌。磨亮的黄铜背面接住阳光，留下曾被细心照料的温暖。',reflector:'抛光黄铜植物标牌背面'},
+      C:{name:'藤影残灯',summary:'冷灰石柱、垂藤与残旧园灯。平面镀银反光片藏在薄雾里，光线安静而清晰。',reflector:'旧园灯平面镀银反光片'}
+    };
+    const layers={
+      scene:{name:'完整场景',suffix:'scene.png',hint:'观察构图、尺度、光路与行进方向。',description:'整体气氛与画面组织示意，包含角色、反射物、光鳞和出口。'},
+      background:{name:'独立背景',suffix:'background.png',hint:'观察远景的水彩层次与巨物尺度。',description:'供静态底图方向参考，与完整场景不保证逐像素对应。'},
+      foreground:{name:'前景与道具',suffix:'foreground-design.png',hint:'棋盘格衬底用于查看透明区域；点击图片放大。',description:'上排为含墙体搭配的前景组合示意，下排为三个道具放大图；选型后再整理模块与碰撞体。'}
+    };
+    let selected='A',layer='scene',compare=false;
+    const stage=document.getElementById('art-stage');
+    const dialog=document.getElementById('zoom-dialog');
+    const zoomImage=document.getElementById('zoom-image');
+    const zoomSurface=document.getElementById('zoom-surface');
+    const zoomRange=document.getElementById('zoom-range');
+    const zoomViewport=document.getElementById('zoom-viewport');
+    const fileFor=(id)=>id+'-'+layers[layer].suffix;
+    function createImageButton(id){
+      const file=fileFor(id),label=id+' · '+variants[id].name+' — '+layers[layer].name;
+      const button=document.createElement('button');button.className='art-button'+(layer==='foreground'?' is-foreground':'');button.type='button';button.setAttribute('aria-label','放大查看 '+label);button.disabled=true;
+      const image=document.createElement('img');image.alt=label;image.className='pending';image.dataset.file=file;image.dataset.ready='false';image.decoding='async';
+      const placeholder=document.createElement('div');placeholder.className='placeholder';const text=document.createElement('div');const title=document.createElement('strong');title.textContent=label;const message=document.createElement('div');message.textContent='图片就绪后会自动显示';const filename=document.createElement('span');filename.textContent=file;text.append(title,message,filename);placeholder.append(text);
+      const badge=document.createElement('span');badge.className='zoom-tag';badge.textContent='点击放大';badge.hidden=true;
+      image.onload=()=>{image.dataset.ready='true';image.classList.remove('pending');placeholder.hidden=true;badge.hidden=false;button.disabled=false;};
+      image.onerror=()=>{image.dataset.ready='false';image.classList.add('pending');placeholder.hidden=false;badge.hidden=true;button.disabled=true;};
+      button.append(image,placeholder,badge);button.addEventListener('click',()=>openZoom(file,label,button.classList.contains('is-foreground')));image.src=file;return button;
+    }
+    function fileLink(id){const a=document.createElement('a');a.className='file-link';a.href=fileFor(id);a.textContent='打开原图 ↗';a.target='_blank';a.rel='noopener';return a;}
+    function render(){
+      document.querySelectorAll('.direction-tab').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.direction===selected)));
+      document.querySelectorAll('.layer-tab').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.layer===layer)));
+      const toggle=document.getElementById('compare-toggle');toggle.setAttribute('aria-pressed',String(compare));toggle.textContent=compare?'返回单版查看':'三版并排比较';
+      document.getElementById('layer-hint').textContent=layers[layer].hint;stage.replaceChildren();
+      if(compare){const grid=document.createElement('div');grid.className='compare-grid';Object.keys(variants).forEach(id=>{const card=document.createElement('article');card.className='compare-card';card.append(createImageButton(id));const heading=document.createElement('h2');heading.textContent=id+' · '+variants[id].name;const desc=document.createElement('p');desc.textContent=variants[id].summary;card.append(heading,desc,fileLink(id));grid.append(card);});const note=document.createElement('p');note.className='compare-note';note.textContent=layers[layer].description+' 三版均保持相同故事和流线。';stage.append(grid,note);}
+      else{stage.append(createImageButton(selected));const caption=document.createElement('div');caption.className='art-caption';const copy=document.createElement('div');const heading=document.createElement('h2');heading.textContent=selected+' · '+variants[selected].name;const desc=document.createElement('p');desc.textContent=variants[selected].summary+' '+layers[layer].description;copy.append(heading,desc);caption.append(copy,fileLink(selected));stage.append(caption);}
+    }
+    function setZoom(value){zoomRange.value=String(value);document.getElementById('zoom-value').textContent=value+'%';zoomSurface.style.width=value+'%';}
+    function openZoom(file,label,foreground){document.getElementById('zoom-title').textContent=label;zoomImage.alt=label;zoomImage.src=file;zoomSurface.classList.toggle('is-foreground',foreground);setZoom(100);dialog.showModal();zoomViewport.scrollTo(0,0);}
+    document.querySelectorAll('.direction-tab').forEach(b=>b.addEventListener('click',()=>{selected=b.dataset.direction;compare=false;render();}));
+    document.querySelectorAll('.layer-tab').forEach(b=>b.addEventListener('click',()=>{layer=b.dataset.layer;render();}));
+    document.getElementById('compare-toggle').addEventListener('click',()=>{compare=!compare;render();});
+    document.getElementById('close-dialog').addEventListener('click',()=>dialog.close());zoomRange.addEventListener('input',()=>setZoom(Number(zoomRange.value)));
+    dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
+    // Only missing images are retried. No server, network request, fetch or external dependency is required.
+    setInterval(()=>{if(document.hidden)return;stage.querySelectorAll('img[data-ready="false"]').forEach(img=>{img.src=img.dataset.file+'?retry='+Date.now();});},5000);
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden)stage.querySelectorAll('img[data-ready="false"]').forEach(img=>{img.src=img.dataset.file+'?retry='+Date.now();});});
+    render();
+  </script>
+</body>
+</html>

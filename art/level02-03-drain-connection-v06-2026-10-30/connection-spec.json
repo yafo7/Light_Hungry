@@ -1,0 +1,266 @@
+{
+  "version": "v06",
+  "status": "Art layout and dimensioned section; not a Unity playable level",
+  "unit": "H = same character mesh total visible height",
+  "camera": {
+    "projection": "orthographic",
+    "gameplayHeightH": 16,
+    "transition": "follow right and downward without changing character scale",
+    "overviewIsNotGameplayCamera": true
+  },
+  "pot": {
+    "widthH": 25.2,
+    "heightH": 11,
+    "rimY": -1,
+    "roofY": 10,
+    "topWidthH": 12,
+    "retainOriginalExternalSilhouette": true
+  },
+  "catchment": {
+    "openingX": [
+      17.4,
+      22.4
+    ],
+    "openingWidthH": 5,
+    "stairStart": [
+      17.4,
+      0
+    ],
+    "stairEnd": [
+      25.5,
+      -5.4
+    ],
+    "risers": 18,
+    "riserH": 0.3,
+    "treadH": 0.45,
+    "entry": "in soil floor, not ceramic side wall"
+  },
+  "connector": {
+    "start": [
+      25.5,
+      -5.4
+    ],
+    "landingEnd": [
+      29,
+      -5.4
+    ],
+    "end": [
+      35,
+      -7.6
+    ],
+    "clearHeightH": 3.5,
+    "insideWidthZH": 2.8,
+    "dryLedgeWidthZH": 1.1
+  },
+  "mainDrain": {
+    "entry": [
+      35,
+      -7.6
+    ],
+    "ceilingY": -0.6,
+    "clearHeightH": 7,
+    "insideWidthZH": 4.6,
+    "dryLedgeWidthZH": 1.2,
+    "waterSurfaceY": -8.25,
+    "waterDepthH": 0.25,
+    "turn": "continue into the previously designed perpendicular B passage"
+  },
+  "walkSurfaceXY": [
+    [
+      2,
+      0
+    ],
+    [
+      17.4,
+      0
+    ],
+    [
+      17.849999999999998,
+      0
+    ],
+    [
+      17.849999999999998,
+      -0.3
+    ],
+    [
+      18.299999999999997,
+      -0.3
+    ],
+    [
+      18.299999999999997,
+      -0.6
+    ],
+    [
+      18.75,
+      -0.6
+    ],
+    [
+      18.75,
+      -0.8999999999999999
+    ],
+    [
+      19.2,
+      -0.8999999999999999
+    ],
+    [
+      19.2,
+      -1.2
+    ],
+    [
+      19.65,
+      -1.2
+    ],
+    [
+      19.65,
+      -1.5
+    ],
+    [
+      20.099999999999998,
+      -1.5
+    ],
+    [
+      20.099999999999998,
+      -1.7999999999999998
+    ],
+    [
+      20.549999999999997,
+      -1.7999999999999998
+    ],
+    [
+      20.549999999999997,
+      -2.1
+    ],
+    [
+      21,
+      -2.1
+    ],
+    [
+      21,
+      -2.4
+    ],
+    [
+      21.45,
+      -2.4
+    ],
+    [
+      21.45,
+      -2.6999999999999997
+    ],
+    [
+      21.9,
+      -2.6999999999999997
+    ],
+    [
+      21.9,
+      -3
+    ],
+    [
+      22.349999999999998,
+      -3
+    ],
+    [
+      22.349999999999998,
+      -3.3
+    ],
+    [
+      22.799999999999997,
+      -3.3
+    ],
+    [
+      22.799999999999997,
+      -3.5999999999999996
+    ],
+    [
+      23.25,
+      -3.5999999999999996
+    ],
+    [
+      23.25,
+      -3.9
+    ],
+    [
+      23.7,
+      -3.9
+    ],
+    [
+      23.7,
+      -4.2
+    ],
+    [
+      24.15,
+      -4.2
+    ],
+    [
+      24.15,
+      -4.5
+    ],
+    [
+      24.599999999999998,
+      -4.5
+    ],
+    [
+      24.599999999999998,
+      -4.8
+    ],
+    [
+      25.049999999999997,
+      -4.8
+    ],
+    [
+      25.049999999999997,
+      -5.1
+    ],
+    [
+      25.5,
+      -5.1
+    ],
+    [
+      25.5,
+      -5.3999999999999995
+    ],
+    [
+      29,
+      -5.4
+    ],
+    [
+      35,
+      -7.6
+    ],
+    [
+      48,
+      -7.6
+    ]
+  ],
+  "roofProfileXY": [
+    [
+      22.4,
+      0
+    ],
+    [
+      25.5,
+      -1.9
+    ],
+    [
+      29,
+      -1.9
+    ],
+    [
+      35,
+      -4.1
+    ],
+    [
+      35,
+      -0.6
+    ],
+    [
+      48,
+      -0.6
+    ]
+  ],
+  "mechanics": "Keep Level 02 leaf reflector / exposed tail scale and Level 03 M1→M2 sequence. Optical coordinates are not defined by this section.",
+  "limits": [
+    "Geometric proposal, not a collision simulation.",
+    "Watercolor images are not dimension-authoritative.",
+    "Original Level 01 Unity scene remains unchanged."
+  ]
+}

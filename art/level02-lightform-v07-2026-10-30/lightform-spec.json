@@ -1,0 +1,110 @@
+{
+  "version": "v07",
+  "status": "design only, no Unity implementation",
+  "supersedes": {
+    "level02": "v06 feeding target and open walking passage",
+    "preserves": "downstream 3.5H connector and 7H main drain concept"
+  },
+  "confirmed": {
+    "globalAbility": true,
+    "level02CreaturePart": false,
+    "level02Goal": "Use light form to cross a rubble-blocked drain inlet through a real small gap",
+    "chargeSeconds": 3,
+    "chargingVisual": "body rim light grows, then body becomes one light mote",
+    "control": "player-controlled bidirectional movement along light path"
+  },
+  "proposedDefaults": {
+    "keys": {
+      "backward": "A",
+      "forward": "D",
+      "stop": "release both",
+      "manualReform": "E, safe-ground only; optional"
+    },
+    "chargeRequiresStanding": true,
+    "interactionPausesCharging": true,
+    "effectiveLight": [
+      "direct traced sunlight",
+      "reflected traced sunlight"
+    ],
+    "excludedLight": [
+      "own emission",
+      "creature glow",
+      "baked bright background"
+    ],
+    "breakChargeOnMovementOrLeavingLight": true,
+    "autoReformAtTutorialSafeLanding": true,
+    "rearmAfterReform": "leave and re-enter a valid beam",
+    "beamLost": "return to last safe corporeal anchor",
+    "particleCoreDiameterH": 0.08,
+    "slitClearanceNormalToRayH": 0.18,
+    "bodyHeightH": 1,
+    "bodyWidthH": 0.42
+  },
+  "layout": {
+    "unit": "H",
+    "potFloorY": 0,
+    "potWidthH": 25.2,
+    "potHeightH": 11,
+    "source": [
+      12.6,
+      9.6
+    ],
+    "fixedReflector": [
+      12.6,
+      1.2
+    ],
+    "reflectorNormalXY": [
+      -0.7772682871337934,
+      -0.6291693013935907
+    ],
+    "beamPolyline": [
+      [
+        12.6,
+        9.6
+      ],
+      [
+        12.6,
+        1.2
+      ],
+      [
+        23.4,
+        -1.1
+      ]
+    ],
+    "chargeFeet": [
+      14.3,
+      0
+    ],
+    "chargeRayHeightH": 0.8379629629629627,
+    "rubbleAcrossInletX": [
+      17.4,
+      22.4
+    ],
+    "slitCenter": [
+      19.2,
+      -0.2055555555555555
+    ],
+    "slitAxis": [
+      0.9780666904227232,
+      -0.20829198036780217
+    ],
+    "safeLandingFeet": [
+      22,
+      -1.3
+    ],
+    "arrivalOnRay": [
+      22,
+      -0.801851851851852
+    ],
+    "oldOpenStairRouteBlocked": true
+  },
+  "needsRuntimeValidation": [
+    "body light overlap",
+    "three-second uninterrupted timing",
+    "reflection and physical slit alignment",
+    "no corporeal bypass",
+    "bidirectional curve traversal",
+    "safe reform capsule clearance",
+    "compatibility with Level 01 mirror interaction"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "created": "2026-10-25",
+  "tool": "built-in image_gen.imagegen",
+  "artMethod": "Every cel is an image_gen generated complete full-body character drawing. No skeleton, layered transforms, optical flow, local deformation, or crossfade.",
+  "reference": "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v02-2026-10-25/Sprites/Idle/player_idle_00.png",
+  "sheets": [
+    {
+      "path": "Source/idle_a_generated.png",
+      "globalFrameRange": [
+        0,
+        11
+      ],
+      "columns": 4,
+      "rows": 3,
+      "order": "row-major",
+      "source": "C:/Users/10029/.codex/generated_images/01a17208-e609-7420-85bc-955f1d274815/exec-9d973f60-77ac-47ae-850f-b2002de43418.png",
+      "prompt": "Use case: stylized-concept. Asset: COMPLETE full-body hand-drawn animation cels for a 2D game sprite, not a rig, not separated pieces, not a turntable.\nUse the supplied neutral full-body player sprite as an EXACT character model. Preserve its blue-gray pear-shaped body, pale cream-yellow belly, hand-painted color patches, thick dark navy outline, one visible glossy black bead eye with a tiny white catchlight, softly open friendly small mouth, two asymmetrical rounded curled ears, tiny hanging near arm, stubby planted feet and leftward curled tail. Same right-facing three-quarter side view in every cel.\nThis character is NOT changing expression or thinking in this animation. No head turns or tilts. Keep head length/width, eye-to-nose distance, muzzle, ear roots and shoulder proportions identical throughout. Head never stretches, narrows or elongates. No ears becoming rabbit ears. Mouth keeps exactly the same small open smile. The near arm hangs naturally and never lifts.\nOutput exactly 12 consecutive COMPLETE CHARACTER cels in an evenly spaced 4 columns by 3 rows grid, row-major order. Requested canvas 2048x1536 with equal square 512x512 cells; zero border, no labels. Each cell uses the same camera, scale, root position and baseline. Character occupies roughly70% cell width and75% cell height, both feet planted at94% cell height with head top at19%; ample transparent gutters around every character. Keep the full tails, ears and feet within each cell.\nAnimation changes are TINY and continuous: quiet breathing only 2-3 pixels maximum on a512px cell, tiny delayed ear-tip and tail-tip movement. No full-body bouncing or changing body height by10pixels. Do not move the feet, pelvis or eye location. This is a closely registered traditional animation sequence, not twelve unrelated versions of the character. Preserve consistent color patches and line weight.\nEye MUST remain black with its small catchlight; never draw white sclera, white crescent, pupil looking upward or eye rolling. If a blink is requested, only the lid lowers over the black eye; closed eye is a dark curved line.\nGenuinely transparent alpha background; character interiors solid/opaque. No gray patches outside the outline, no shadow, no floor, no glow, no halos, no labels, no numbers, no text, no question marks.\nThis is IDLE PART A of a three-part36cel/3second loop. These are global frames00–11, the first third, before the blink. ALL twelve eyes FULLY OPEN and black, no blink in this sheet.\nCel1 starts exactly like the neutral reference. Cels2–4 very gently begin inhaling: belly contour expands at most1pixel, chest lifts only about1pixel, shoulders and head stay virtually still. Cels5–8 ease into a calm inhale: belly contour increases to2pixels, ear tips follow by only1pixel, tail tip relaxes upward by1–2pixels. Cels9–12 approach the inhale high point with decelerating changes, chest at most2–3pixels above neutral. The final three cels differ only by tiny continuing soft breathing, no new pose. Do not return to neutral at the end: partB continues from this inhale.",
+      "references": [
+        "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v02-2026-10-25/Sprites/Idle/player_idle_00.png"
+      ]
+    },
+    {
+      "path": "Source/idle_b_generated.png",
+      "globalFrameRange": [
+        12,
+        23
+      ],
+      "columns": 4,
+      "rows": 3,
+      "order": "row-major",
+      "source": "C:/Users/10029/.codex/generated_images/01a17208-e609-7420-85bc-955f1d274815/exec-53d27b89-6b12-41fa-a6b0-7c2d99ed697c.png",
+      "prompt": "Use case: stylized-concept. Asset: COMPLETE full-body hand-drawn animation cels for a 2D game sprite, not a rig, not separated pieces, not a turntable.\nUse the supplied neutral full-body player sprite as an EXACT character model. Preserve its blue-gray pear-shaped body, pale cream-yellow belly, hand-painted color patches, thick dark navy outline, one visible glossy black bead eye with a tiny white catchlight, softly open friendly small mouth, two asymmetrical rounded curled ears, tiny hanging near arm, stubby planted feet and leftward curled tail. Same right-facing three-quarter side view in every cel.\nThis character is NOT changing expression or thinking in this animation. No head turns or tilts. Keep head length/width, eye-to-nose distance, muzzle, ear roots and shoulder proportions identical throughout. Head never stretches, narrows or elongates. No ears becoming rabbit ears. Mouth keeps exactly the same small open smile. The near arm hangs naturally and never lifts.\nOutput exactly 12 consecutive COMPLETE CHARACTER cels in an evenly spaced 4 columns by 3 rows grid, row-major order. Requested canvas 2048x1536 with equal square 512x512 cells; zero border, no labels. Each cell uses the same camera, scale, root position and baseline. Character occupies roughly70% cell width and75% cell height, both feet planted at94% cell height with head top at19%; ample transparent gutters around every character. Keep the full tails, ears and feet within each cell.\nAnimation changes are TINY and continuous: quiet breathing only 2-3 pixels maximum on a512px cell, tiny delayed ear-tip and tail-tip movement. No full-body bouncing or changing body height by10pixels. Do not move the feet, pelvis or eye location. This is a closely registered traditional animation sequence, not twelve unrelated versions of the character. Preserve consistent color patches and line weight.\nEye MUST remain black with its small catchlight; never draw white sclera, white crescent, pupil looking upward or eye rolling. If a blink is requested, only the lid lowers over the black eye; closed eye is a dark curved line.\nGenuinely transparent alpha background; character interiors solid/opaque. No gray patches outside the outline, no shadow, no floor, no glow, no halos, no labels, no numbers, no text, no question marks.\nThis is IDLE PART B, global frames12–23 in the middle of the36cel loop. Reference1 is the immutable character design. References2–4 are the preceding three complete cels09,10,11 from partA in chronological order. Continue FROM reference4's exact painted proportions, root position and slightly inhaled state. Do not reframe, redesign, change mouth shape, or thicken/shrink the creature between sheets.\nThis sheet contains ONE short natural blink at the specified cells, while the subtle breathing continues. Every cel is a complete full-body drawing with the hand DOWN.\nCell1(global12): continue the inhale near-peak from previous final cel, eye fully open.\nCell2(global13): settle into inhale high point, tiny ear-tip follow.\nCell3(global14): same calm full inhale, tiny tail follow.\nCell4(global15): very slowly begin exhaling, eye fully open.\nCell5(global16): exhale progresses imperceptibly, eye fully open.\nCell6(global17): eye fully open, same head and body.\nCell7(global18): START BLINK: upper eyelid lowers just25% over black eye.\nCell8(global19): HALF CLOSED: lower portion of BLACK eye still visible. No white crescent.\nCell9(global20): FULLY CLOSED: eye becomes a simple dark curved closed eyelid.\nCell10(global21): HALF REOPENED: black eye, same contour as cell8.\nCell11(global22): FULLY OPEN black bead eye with tiny white catchlight.\nCell12(global23): open eye, relaxed exhale, slightly softer chest, ready for the final third.\nOnly eye lid changes quickly in cells7–11. All other contours and paint remain as consistent as possible, avoid any eyebrow that makes the character angry. Do not turn or tilt the head to blink. In particular NO eye rolling or white sclera. Belly/chest gradually lowers by ONLY1–2pixels over this entire sheet.",
+      "references": [
+        "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v02-2026-10-25/Sprites/Idle/player_idle_00.png",
+        "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v05-2026-10-25/Source/IdleRefs/idle_a_09.png",
+        "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v05-2026-10-25/Source/IdleRefs/idle_a_10.png",
+        "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v05-2026-10-25/Source/IdleRefs/idle_a_11.png"
+      ],
+      "correctionPrompt": "Use case: precise-object-edit. This is a 4-column by3-row full-body sprite sheet. Make ONLY ONE small correction: in cell10 (bottom row, SECOND column), change the FULLY OPEN eye into the HALF-REOPENED phase of a blink.\nThe upper eyelid should be halfway up, exposing only the lower half of the same BLACK bead eye, with its small white catchlight partly hidden. It should match the half-closed eye shape in cell8 (middle row fourth column). No white sclera, no rolling eyes, no angled angry eyebrow.\nDo not change the head shape, eye position, mouth, body, colors, feet, tail, ears, canvas size or cell layout. Preserve all other eleven cels exactly. The pose, paint and outline in cell10 must also remain exactly as supplied, changing only its upper eyelid.\nAll twelve characters remain full-body sprites on truly transparent alpha background. No text or shadows.",
+      "beforeCorrection": "Source/idle_b_before_eye_correction.png"
+    },
+    {
+      "path": "Source/idle_c_generated.png",
+      "globalFrameRange": [
+        24,
+        35
+      ],
+      "columns": 4,
+      "rows": 3,
+      "order": "row-major",
+      "source": "C:/Users/10029/.codex/generated_images/01a17208-e609-7420-85bc-955f1d274815/exec-cdda8b86-9b6c-49f3-a22b-8104cbc90480.png",
+      "prompt": "Use case: stylized-concept. Asset: COMPLETE full-body hand-drawn animation cels for a 2D game sprite, not a rig, not separated pieces, not a turntable.\nUse the supplied neutral full-body player sprite as an EXACT character model. Preserve its blue-gray pear-shaped body, pale cream-yellow belly, hand-painted color patches, thick dark navy outline, one visible glossy black bead eye with a tiny white catchlight, softly open friendly small mouth, two asymmetrical rounded curled ears, tiny hanging near arm, stubby planted feet and leftward curled tail. Same right-facing three-quarter side view in every cel.\nThis character is NOT changing expression or thinking in this animation. No head turns or tilts. Keep head length/width, eye-to-nose distance, muzzle, ear roots and shoulder proportions identical throughout. Head never stretches, narrows or elongates. No ears becoming rabbit ears. Mouth keeps exactly the same small open smile. The near arm hangs naturally and never lifts.\nOutput exactly 12 consecutive COMPLETE CHARACTER cels in an evenly spaced 4 columns by 3 rows grid, row-major order. Requested canvas 2048x1536 with equal square 512x512 cells; zero border, no labels. Each cell uses the same camera, scale, root position and baseline. Character occupies roughly70% cell width and75% cell height, both feet planted at94% cell height with head top at19%; ample transparent gutters around every character. Keep the full tails, ears and feet within each cell.\nAnimation changes are TINY and continuous: quiet breathing only 2-3 pixels maximum on a512px cell, tiny delayed ear-tip and tail-tip movement. No full-body bouncing or changing body height by10pixels. Do not move the feet, pelvis or eye location. This is a closely registered traditional animation sequence, not twelve unrelated versions of the character. Preserve consistent color patches and line weight.\nEye MUST remain black with its small catchlight; never draw white sclera, white crescent, pupil looking upward or eye rolling. If a blink is requested, only the lid lowers over the black eye; closed eye is a dark curved line.\nGenuinely transparent alpha background; character interiors solid/opaque. No gray patches outside the outline, no shadow, no floor, no glow, no halos, no labels, no numbers, no text, no question marks.\nThis is IDLE PART C, global frames24–35, the final12cels of the36cel loop. Image1 is the immutable original character reference. Images2–4 are the preceding chronological cels21,22,23 from partB: continue from image4 EXACTLY. Image5 is cel00 of partA, the target neutral pose that this final section must return to for a seamless loop.\nALL twelve eyes FULLY OPEN and black in this sheet. The blink has already finished. No eyelids lowering at all.\nCel1(global24): continue previous final cel, body gently exhaling, hand down.\nCels2–4(global25–27): breathing lowers only1pixel, belly contour softens slightly, ear tips settle slowly. Head shape and eye-to-nose proportions completely unchanged.\nCels5–7(global28–30): exhale reaches its relaxed low point, no slouch or squash, maximum change only1–2pixels. Tiny tail-tip delayed settling.\nCels8–10(global31–33): smoothly return toward neutral breathing, head and planted feet stay stable.\nCel11(global34): nearly the exact neutral first pose in reference5, minimal difference.\nCel12(global35): MATCH reference5's exact neutral pose, shape, palette and color patches as closely as possible, ready for the loop to repeat. No smile change and no mouth closing.\nKeep pose and head proportions extremely stable and directly consistent with previous sheet. Only minute breath/ear/tail follow-through. Do not grow or widen the body across the sheet. No whole-body tilting or independent head movement.",
+      "references": [
+        "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v02-2026-10-25/Sprites/Idle/player_idle_00.png",
+        "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v05-2026-10-25/Source/IdleRefs/idle_b_09.png",
+        "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v05-2026-10-25/Source/IdleRefs/idle_b_10.png",
+        "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v05-2026-10-25/Source/IdleRefs/idle_b_11.png",
+        "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v05-2026-10-25/Source/IdleRefs/idle_a_00.png"
+      ]
+    }
+  ],
+  "verifiedEyeSequence": {
+    "slightlyClosed": 18,
+    "halfClosed": 19,
+    "fullyClosed": 20,
+    "halfReopened": 21,
+    "fullyOpen": 22,
+    "noVisibleSclera": true
+  },
+  "suggestedDurationMs": 3000,
+  "suggestedDurations": [
+    85,
+    85,
+    85,
+    85,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    40,
+    40,
+    40,
+    40,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    85,
+    85,
+    85,
+    85
+  ],
+  "qaBoundary": "Source sheets inspected as still frames for identity, eye shapes, alpha and clipping. Final registered animation playback remains to be reviewed."
+}

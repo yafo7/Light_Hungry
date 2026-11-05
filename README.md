@@ -1,5 +1,40 @@
 # light hungry
 
+## 当前版本：v0.7.0-alpha.1（七关水彩原型）
+
+本次版本同步了七关水彩原型的源工程、关卡设计与美术资产。完整更新见 [CHANGELOG.md](CHANGELOG.md)，版本标识见 [VERSION](VERSION)。它是原型预发行版本，第八关尚未实装。
+
+仓库包含独立工程，请在 Unity Hub 中选对目录：
+
+| 目录 | Unity 版本 | 用途 |
+| --- | --- | --- |
+| [`UnityProject-NOVA-URP/`](UnityProject-NOVA-URP/) | **2021.3.42f1c1**，URP 12.1.15 | 当前七关水彩原型，含骨骼灯芯精灵和 NOVA 2.0.0 火焰 |
+| [`UnityProject/`](UnityProject/) | 2021.3.42f1c1，内置管线 | 保留的原版工程 |
+| 仓库根目录的 `Assets/`、`Packages/`、`ProjectSettings/` | **2022.3.62f3c1** | 原有程序实验工程，保留原目录和历史 |
+
+两套运行逻辑在本次同步中保持独立。打开七关版本：Unity Hub → Add project from disk → 选择 **`UnityProject-NOVA-URP`**，打开 `Assets/Scenes/SeventhTrellis.unity` 后 Play。第一至第七关均已列入该工程构建设置。
+
+### 下载源文件
+
+模型、图片和素材包使用 Git LFS。克隆后执行：
+
+```sh
+git lfs install
+git clone https://github.com/yafo7/Light_Hungry.git
+cd Light_Hungry
+git lfs pull
+```
+
+不要把 LFS 指针文件当成真实图片或模型导入 Unity。GitHub 的源代码 ZIP 是否包含实际 LFS 文件取决于仓库设置，建议使用上述克隆流程。
+
+美术源文件位于 [`art/`](art/)，第七关的拆分与复用说明见 [分层素材说明](art/level07-unity-assets-v01-2026-11-05/README.md)。源码与全部对应 `.meta` 已纳入管理；Unity 缓存、构建程序、自动验证产物和重复 ZIP 保留在本地。本次没有上传新的 Windows 安装包，根目录试玩脚本需先构建出本地程序才能运行。
+
+在七关工程中用 `SeventhLevelBuilder.BuildPlayer` 构建现有场景，避免重新生成已经手工调整的布局。根目录 `Tools` 中的 Windows 脚本保留了本机工具路径，换电脑时应调整路径或直接使用 Unity 编辑器菜单。
+
+第七关在本地输入驱动验证中通过 **121/121** 条断言，第六关独立回归 **123/123**；这不是对所有玩法组合或人工手感的验收。上述验证发生在本次版本号元数据调整前，本轮没有改动玩法，也没有重新构建可执行文件。
+
+## 原有程序实验工程说明（Unity 2022.3）
+
 Unity **2022.3.62f3c1**，原生 2D 基础交互工程。用已生成的基础素材搭建一个可运行的测试房间；各系统均有独立预制体，后续可组合到新场景。
 
 ## 打开与运行

@@ -1,0 +1,257 @@
+{
+  "original": {
+    "meanAbsoluteRgbDifference": 13.656805125679824,
+    "foregroundMeanAbsoluteRgbDifference": 34.7431302071069,
+    "alphaIntersectionOverUnion": 0.9255100058286381,
+    "changedPixelFraction": 0.13563156127929688
+  },
+  "bridge": [
+    {
+      "i": 0,
+      "from70": {
+        "meanAbsoluteRgbDifference": 10.092221752466031,
+        "foregroundMeanAbsoluteRgbDifference": 25.6824254425391,
+        "alphaIntersectionOverUnion": 0.9553837465189196,
+        "changedPixelFraction": 0.07583236694335938
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 13.835746735185724,
+        "foregroundMeanAbsoluteRgbDifference": 35.13529255627847,
+        "alphaIntersectionOverUnion": 0.9434464275310248,
+        "changedPixelFraction": 0.20668792724609375
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 4.107936500102274,
+        "foregroundMeanAbsoluteRgbDifference": 10.40060379890011,
+        "alphaIntersectionOverUnion": 0.9789581504243489,
+        "changedPixelFraction": 0.040874481201171875
+      }
+    },
+    {
+      "i": 1,
+      "from70": {
+        "meanAbsoluteRgbDifference": 9.420722353042757,
+        "foregroundMeanAbsoluteRgbDifference": 23.932619217164035,
+        "alphaIntersectionOverUnion": 0.9540123696903687,
+        "changedPixelFraction": 0.07490158081054688
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 14.257520553457468,
+        "foregroundMeanAbsoluteRgbDifference": 36.11760405916816,
+        "alphaIntersectionOverUnion": 0.9392169963880739,
+        "changedPixelFraction": 0.20545578002929688
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 2.929562058793477,
+        "foregroundMeanAbsoluteRgbDifference": 7.420956667812754,
+        "alphaIntersectionOverUnion": 0.9903615636772837,
+        "changedPixelFraction": 0.0277557373046875
+      }
+    },
+    {
+      "i": 2,
+      "from70": {
+        "meanAbsoluteRgbDifference": 9.196328695430742,
+        "foregroundMeanAbsoluteRgbDifference": 23.249237590744997,
+        "alphaIntersectionOverUnion": 0.9483299144637536,
+        "changedPixelFraction": 0.07601165771484375
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 13.021400227231544,
+        "foregroundMeanAbsoluteRgbDifference": 32.98552885292166,
+        "alphaIntersectionOverUnion": 0.9438207688805804,
+        "changedPixelFraction": 0.17280197143554688
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 3.814393904943852,
+        "foregroundMeanAbsoluteRgbDifference": 9.608953230659088,
+        "alphaIntersectionOverUnion": 0.9833902846270337,
+        "changedPixelFraction": 0.035182952880859375
+      }
+    },
+    {
+      "i": 3,
+      "from70": {
+        "meanAbsoluteRgbDifference": 8.45700499089915,
+        "foregroundMeanAbsoluteRgbDifference": 21.412846910290302,
+        "alphaIntersectionOverUnion": 0.9568479936401446,
+        "changedPixelFraction": 0.06669235229492188
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 14.370660096178312,
+        "foregroundMeanAbsoluteRgbDifference": 36.14150662345791,
+        "alphaIntersectionOverUnion": 0.9340941429835019,
+        "changedPixelFraction": 0.20506668090820312
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 5.189978954840384,
+        "foregroundMeanAbsoluteRgbDifference": 13.070393536715116,
+        "alphaIntersectionOverUnion": 0.9762529913867439,
+        "changedPixelFraction": 0.04752349853515625
+      }
+    },
+    {
+      "i": 4,
+      "from70": {
+        "meanAbsoluteRgbDifference": 9.0332538579574,
+        "foregroundMeanAbsoluteRgbDifference": 22.89945513346146,
+        "alphaIntersectionOverUnion": 0.9521427947131772,
+        "changedPixelFraction": 0.07366180419921875
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 12.950471132529009,
+        "foregroundMeanAbsoluteRgbDifference": 32.88049838464797,
+        "alphaIntersectionOverUnion": 0.9460698605121032,
+        "changedPixelFraction": 0.1895294189453125
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 3.1374635434634794,
+        "foregroundMeanAbsoluteRgbDifference": 7.930508725936598,
+        "alphaIntersectionOverUnion": 0.983393318206713,
+        "changedPixelFraction": 0.033580780029296875
+      }
+    },
+    {
+      "i": 5,
+      "from70": {
+        "meanAbsoluteRgbDifference": 7.627131488257337,
+        "foregroundMeanAbsoluteRgbDifference": 19.47862571210215,
+        "alphaIntersectionOverUnion": 0.9626956181533647,
+        "changedPixelFraction": 0.060939788818359375
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 13.37431797198544,
+        "foregroundMeanAbsoluteRgbDifference": 33.96300148799728,
+        "alphaIntersectionOverUnion": 0.941406022482381,
+        "changedPixelFraction": 0.19063949584960938
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 5.106889971567878,
+        "foregroundMeanAbsoluteRgbDifference": 12.920935849265652,
+        "alphaIntersectionOverUnion": 0.979925071765679,
+        "changedPixelFraction": 0.042041778564453125
+      }
+    },
+    {
+      "i": 6,
+      "from70": {
+        "meanAbsoluteRgbDifference": 7.160471912445026,
+        "foregroundMeanAbsoluteRgbDifference": 18.18629915871106,
+        "alphaIntersectionOverUnion": 0.9639035220113538,
+        "changedPixelFraction": 0.05859375
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 13.73361406509728,
+        "foregroundMeanAbsoluteRgbDifference": 34.47101844154374,
+        "alphaIntersectionOverUnion": 0.9289408784270072,
+        "changedPixelFraction": 0.15813827514648438
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 5.828014433611158,
+        "foregroundMeanAbsoluteRgbDifference": 14.703773240888365,
+        "alphaIntersectionOverUnion": 0.9725022292870159,
+        "changedPixelFraction": 0.05185699462890625
+      }
+    },
+    {
+      "i": 7,
+      "from70": {
+        "meanAbsoluteRgbDifference": 8.252681657363212,
+        "foregroundMeanAbsoluteRgbDifference": 21.041314207795175,
+        "alphaIntersectionOverUnion": 0.9592541975790707,
+        "changedPixelFraction": 0.06816482543945312
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 12.117786277782564,
+        "foregroundMeanAbsoluteRgbDifference": 30.715542255989998,
+        "alphaIntersectionOverUnion": 0.9389709588616184,
+        "changedPixelFraction": 0.12195587158203125
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 4.535915753734337,
+        "foregroundMeanAbsoluteRgbDifference": 11.502686160216134,
+        "alphaIntersectionOverUnion": 0.9782769927394801,
+        "changedPixelFraction": 0.04096221923828125
+      }
+    },
+    {
+      "i": 8,
+      "from70": {
+        "meanAbsoluteRgbDifference": 7.1067255705623795,
+        "foregroundMeanAbsoluteRgbDifference": 18.1012108277624,
+        "alphaIntersectionOverUnion": 0.9608796228514538,
+        "changedPixelFraction": 0.06098175048828125
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 12.855796913659647,
+        "foregroundMeanAbsoluteRgbDifference": 32.53660868881091,
+        "alphaIntersectionOverUnion": 0.9377328726688539,
+        "changedPixelFraction": 0.13089370727539062
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 4.671571380018756,
+        "foregroundMeanAbsoluteRgbDifference": 11.801258212850893,
+        "alphaIntersectionOverUnion": 0.9725902149596343,
+        "changedPixelFraction": 0.0456695556640625
+      }
+    },
+    {
+      "i": 9,
+      "from70": {
+        "meanAbsoluteRgbDifference": 9.3560669094528,
+        "foregroundMeanAbsoluteRgbDifference": 23.66867650625219,
+        "alphaIntersectionOverUnion": 0.9445466695074474,
+        "changedPixelFraction": 0.08275222778320312
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 12.052901623259146,
+        "foregroundMeanAbsoluteRgbDifference": 30.607058955474844,
+        "alphaIntersectionOverUnion": 0.9436474713235365,
+        "changedPixelFraction": 0.11994552612304688
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 5.225817452227712,
+        "foregroundMeanAbsoluteRgbDifference": 13.187437963585898,
+        "alphaIntersectionOverUnion": 0.974474241217935,
+        "changedPixelFraction": 0.0481719970703125
+      }
+    },
+    {
+      "i": 10,
+      "from70": {
+        "meanAbsoluteRgbDifference": 8.273211734726502,
+        "foregroundMeanAbsoluteRgbDifference": 20.946575240663712,
+        "alphaIntersectionOverUnion": 0.9534083195966256,
+        "changedPixelFraction": 0.07207107543945312
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 11.623102953506312,
+        "foregroundMeanAbsoluteRgbDifference": 29.311510190689,
+        "alphaIntersectionOverUnion": 0.9364891062179914,
+        "changedPixelFraction": 0.10030364990234375
+      },
+      "next": {
+        "meanAbsoluteRgbDifference": 3.090076775645955,
+        "foregroundMeanAbsoluteRgbDifference": 7.728476758534761,
+        "alphaIntersectionOverUnion": 0.9814741440126792,
+        "changedPixelFraction": 0.03391265869140625
+      }
+    },
+    {
+      "i": 11,
+      "from70": {
+        "meanAbsoluteRgbDifference": 9.666971623011621,
+        "foregroundMeanAbsoluteRgbDifference": 24.215445665336972,
+        "alphaIntersectionOverUnion": 0.9411149992809549,
+        "changedPixelFraction": 0.08385848999023438
+      },
+      "to71": {
+        "meanAbsoluteRgbDifference": 10.93866225594158,
+        "foregroundMeanAbsoluteRgbDifference": 27.521628263038473,
+        "alphaIntersectionOverUnion": 0.9430359636031005,
+        "changedPixelFraction": 0.09423828125
+      },
+      "next": null
+    }
+  ]
+}

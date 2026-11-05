@@ -1,0 +1,14 @@
+{
+  "dimensions": [
+    2200,
+    1560
+  ],
+  "boards": 2,
+  "svg_xml": "pass",
+  "editable_objects": 640,
+  "unique_ids": true,
+  "source_count": 1,
+  "split_beams": false,
+  "unity_graybox": "not performed",
+  "excalidraw_editor_import": "not performed"
+}

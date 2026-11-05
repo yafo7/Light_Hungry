@@ -1,0 +1,217 @@
+{
+  "version": "v10",
+  "canvas": {
+    "width": 1774,
+    "height": 887,
+    "origin": "top-left",
+    "pixelsPerCharacterHeight": 63
+  },
+  "registration": "Use each matrix as SVG pixel-space affine transform; PNG bytes are unmodified. Files are full canvas but extracted objects require these placement transforms.",
+  "layers": [
+    {
+      "id": "background",
+      "name": "背景 · 陶盆内壁与暗渠后壁",
+      "file": "00-background.png",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "order": 0,
+      "role": "静态背景，不加行走碰撞",
+      "asset": {
+        "width": 1774,
+        "height": 887,
+        "hasAlpha": false,
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "opaquePixels": 1573538,
+        "alphaBounds": [
+          0,
+          0,
+          1773,
+          886
+        ],
+        "sha256": "cb3e42afdda3e71b97aad5cc9e1c25440997ba8bbefa0f00a21a149b55585467"
+      },
+      "source": "art/level02-dew-layers-v08-2026-10-30/Layers/00-background.png"
+    },
+    {
+      "id": "ground",
+      "name": "地面 · 苔地／落脚台／下行石阶",
+      "file": "10-ground.png",
+      "matrix": [
+        1,
+        0,
+        0,
+        1.1,
+        0,
+        -23
+      ],
+      "order": 10,
+      "role": "行走与平台碰撞；按顶缘另建简化碰撞轮廓",
+      "asset": {
+        "width": 1774,
+        "height": 887,
+        "hasAlpha": true,
+        "transparentPixels": 1020837,
+        "partialAlphaPixels": 552626,
+        "opaquePixels": 75,
+        "alphaBounds": [
+          0,
+          505,
+          1773,
+          886
+        ],
+        "sha256": "87b3e93f6e50e5ecfab64e6b18db2fc4941234df3dbd2a6173ef2c23a66afbe9"
+      },
+      "source": "art/level02-dew-layers-v08-2026-10-30/Layers/10-ground.png"
+    },
+    {
+      "id": "leaf",
+      "name": "叶片与露珠 · 折射载体",
+      "file": "20-leaf-dew.png",
+      "matrix": [
+        0.41,
+        0,
+        0,
+        0.41,
+        341,
+        265
+      ],
+      "order": 20,
+      "role": "独立物件；第二关初始光路已对准，后续可做微摆动画",
+      "asset": {
+        "width": 1774,
+        "height": 887,
+        "hasAlpha": true,
+        "transparentPixels": 1487689,
+        "partialAlphaPixels": 85726,
+        "opaquePixels": 123,
+        "alphaBounds": [
+          493,
+          320,
+          1233,
+          720
+        ],
+        "sha256": "dd2f591d40df01b4da96c0e1462660dfe675ff8a8aae7c6ba9c2489effad1505"
+      },
+      "source": "art/level02-dew-layers-v08-2026-10-30/Layers/20-leaf-dew.png"
+    },
+    {
+      "id": "rubble",
+      "name": "低矮乱石 · 小石块、碎砖与少量陶片",
+      "file": "30-rubble.png",
+      "matrix": [
+        0.61,
+        0,
+        0,
+        0.61,
+        546,
+        252.1
+      ],
+      "order": 30,
+      "role": "上下岩块分别配置碰撞，保留真实缝口；本关不推动或清除",
+      "asset": {
+        "width": 1774,
+        "height": 887,
+        "hasAlpha": true,
+        "transparentPixels": 1316797,
+        "alphaBounds": [
+          787,
+          381,
+          1712,
+          827
+        ],
+        "alphaBoundsThreshold": 128,
+        "sha256": "e55aadabce7c9e731eec064de7a1dff3001ed0bd64e806b92831b00a68ebff15"
+      },
+      "source": "art/level02-loose-rubble-v10-2026-10-30/30-rubble.png"
+    },
+    {
+      "id": "light",
+      "name": "光线 · 入射／露珠内／出射",
+      "file": "40-light.png",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "order": 40,
+      "role": "Historical PNG reference only; runtime beams use the v10 lightPath nodes below.",
+      "asset": {
+        "width": 1774,
+        "height": 887,
+        "hasAlpha": true,
+        "transparentPixels": 1444021,
+        "partialAlphaPixels": 129517,
+        "opaquePixels": 0,
+        "alphaBounds": [
+          743,
+          45,
+          1382,
+          730
+        ],
+        "sha256": "61463bd0b218dd8c8bb388db4337957ad8dea1beb1b713c5ce2f2efa187c9572"
+      },
+      "source": "art/level02-dew-layers-v08-2026-10-30/Layers/40-light.png"
+    }
+  ],
+  "lightPath": {
+    "nodes": [
+      [
+        877,
+        61
+      ],
+      [
+        789,
+        401
+      ],
+      [
+        790,
+        415.336
+      ],
+      [
+        1370,
+        716.356
+      ]
+    ],
+    "unit": "scene pixels",
+    "type": "authored refracted path; art guide, not a Snell-law simulation",
+    "chargeZoneHint": {
+      "x": 1000,
+      "feetY": 571
+    },
+    "arrivalHint": {
+      "x": 1370,
+      "feetY": 728
+    }
+  },
+  "confirmed": {
+    "dewInsteadOfMirror": true,
+    "level02ContainsCreature": false,
+    "chargeSeconds": 3,
+    "globalAbility": true,
+    "lightMovement": "player-controlled bidirectional along the same light path"
+  },
+  "proposed": {
+    "dewPreset": true,
+    "bodyHeightPixels": 63,
+    "bodyWidthPixels": 26.46,
+    "moteCoreDiameterPixels": 5.04,
+    "autoReformAtSafeLanding": true
+  },
+  "collisionNotes": [
+    "The right pot rim and buried drain roof join the low loose rubble.",
+    "No additional UpperRubble object is used.",
+    "Separate upper and lower colliders keep an actual gap for the light core."
+  ],
+  "generationMode": "Built-in image_gen precise-object-edit for v10 rubble; original generated PNG bytes retained.",
+  "status": "Imported into Unity; native Windows playthrough passed; see Validation/level02/native-run."
+}

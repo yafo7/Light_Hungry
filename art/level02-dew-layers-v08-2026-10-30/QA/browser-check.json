@@ -1,0 +1,39 @@
+{
+  "errors": [],
+  "assets": [
+    {
+      "file": "Layers/00-background.png",
+      "ok": true,
+      "w": 1774,
+      "h": 887
+    },
+    {
+      "file": "Layers/10-ground.png",
+      "ok": true,
+      "w": 1774,
+      "h": 887
+    },
+    {
+      "file": "Layers/20-leaf-dew.png",
+      "ok": true,
+      "w": 1774,
+      "h": 887
+    },
+    {
+      "file": "Layers/30-rubble.png",
+      "ok": true,
+      "w": 1774,
+      "h": 887
+    },
+    {
+      "file": "Layers/40-light.png",
+      "ok": true,
+      "w": 1774,
+      "h": 887
+    }
+  ],
+  "backgroundToggle": true,
+  "foregroundToggle": true,
+  "nearViewBox": "320 320 1454 567",
+  "lightSlider": true
+}

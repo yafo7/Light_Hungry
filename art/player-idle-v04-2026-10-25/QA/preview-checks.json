@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "allFramesCovered": true,
+    "atlasPreferred": true,
+    "idleBeforeThreshold": true,
+    "thinkAfterThreshold": true,
+    "pauseStable": true,
+    "actionResetsIdle": true,
+    "manualThinking": true,
+    "thumbnailsLazy": true,
+    "thumbnailsBounded": true,
+    "thumbnailPaging": true,
+    "noThumbnailRebuildDuringPlayback": true,
+    "sampledPlaybackRate": true,
+    "slowPlayback": true,
+    "allPhasesShown": true,
+    "phasePositioning": true,
+    "dynamicFrameCounts": true,
+    "noMobilePageOverflow": true,
+    "noScriptErrors": true
+  },
+  "transitionSeconds": 3.0052999999999996,
+  "displayedCounts": {
+    "idle": "90 帧 / 3 秒",
+    "think": "180 帧 / 6 秒"
+  },
+  "sourceTypes": "atlas/atlas",
+  "performance": {
+    "wallMs": 6204.799999982119,
+    "paintedFrames": 186,
+    "measuredPaintRate": 29.976792160994073,
+    "renderMsMax": 1.300000011920929,
+    "thumbnailBuilds": 0,
+    "visibleTransitions": 187,
+    "slowDelta": 273.2500000059608
+  },
+  "errors": []
+}

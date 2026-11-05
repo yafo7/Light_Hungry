@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1400" viewBox="0 0 2200 1400"><defs><marker id="ray" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#c29034" /></marker><marker id="walk" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#4c7c86" /></marker><style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#354044} .line{fill:none;stroke:#526068;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}.fine{fill:none;stroke:#87928e;stroke-width:1.5}.ray{fill:none;stroke:#c29034;stroke-width:4;marker-end:url(#ray)}.walk{fill:none;stroke:#4c7c86;stroke-width:3;stroke-dasharray:9 6;marker-end:url(#walk)}.hidden{fill:none;stroke:#909b95;stroke-width:2;stroke-dasharray:7 5}.muted{fill:#6f7c78}.body{fill:#e2e7d9;stroke:#8d9d82;stroke-width:2}</style></defs><rect width="2200" height="1400" fill="#faf9f4" />
+<text x="60" y="65" font-size="38" font-weight="bold" text-anchor="start">02｜倒扣陶盆 · 结构设计</text>
+<text x="60" y="112" font-size="23" font-weight="normal" text-anchor="start">20°轻俯正交侧视 + 俯视光路校核｜微小主角 H=1｜灰盒设计，非实测可玩</text>
+<rect x="50" y="155" width="1465" height="620" rx="12" fill="#fffefb" stroke="#d7dcd2" stroke-width="2" />
+<rect x="1550" y="155" width="600" height="735" rx="12" fill="#fffefb" stroke="#d7dcd2" stroke-width="2" />
+<rect x="50" y="800" width="1465" height="535" rx="12" fill="#fffefb" stroke="#d7dcd2" stroke-width="2" />
+<rect x="1550" y="915" width="600" height="420" rx="12" fill="#fffefb" stroke="#d7dcd2" stroke-width="2" />
+<text x="80" y="197" font-size="25" font-weight="bold" text-anchor="start">A｜主侧视结构</text>
+<text x="80" y="235" font-size="20" font-weight="normal" text-anchor="start">镜头固定轻俯20°；只增强转向可读性，光线世界高度仍为1.8H。</text>
+<text x="1580" y="200" font-size="25" font-weight="bold" text-anchor="start">俯视 XZ｜真实光路与行走</text>
+<text x="1580" y="235" font-size="20" font-weight="normal" text-anchor="start">所有光段 y = 1.8H；人物高 1H</text>
+<rect x="1600.0" y="490.0" width="530.0" height="265.0" rx="0" fill="#edf0e7" stroke="#a6afa1" stroke-width="1.2" />
+<rect x="1840.909090909091" y="656.2272727272727" width="9.636363636363644" height="98.77272727272727" rx="0" fill="#8c9591" stroke="#6a7770" stroke-width="1" />
+<rect x="1840.909090909091" y="603.2272727272727" width="9.636363636363644" height="21.68181818181817" rx="0" fill="#8c9591" stroke="#6a7770" stroke-width="1" />
+<rect x="1840.909090909091" y="569.5" width="9.636363636363644" height="33.727272727272734" rx="0" fill="#8c9591" stroke="#6a7770" stroke-width="1" />
+<rect x="1840.909090909091" y="490.0" width="9.636363636363644" height="79.49999999999999" rx="0" fill="#8c9591" stroke="#6a7770" stroke-width="1" />
+<rect x="2081.818181818182" y="603.2272727272727" width="9.636363636363601" height="151.77272727272725" rx="0" fill="#8c9591" stroke="#6a7770" stroke-width="1" />
+<rect x="2081.818181818182" y="569.5" width="9.636363636363601" height="33.727272727272734" rx="0" fill="#8c9591" stroke="#6a7770" stroke-width="1" />
+<rect x="2081.818181818182" y="490.0" width="9.636363636363601" height="79.49999999999999" rx="0" fill="#8c9591" stroke="#6a7770" stroke-width="1" />
+<rect x="2021.590909090909" y="490.0" width="48.18181818181818" height="60.22727272727273" rx="0" fill="#dce4d2" stroke="#8d9d82" stroke-width="1.5" />
+<path d="M1600.0,733.3181818181819 L1720.4545454545455,733.3181818181819 L1787.909090909091,733.3181818181819 L1787.909090909091,586.3636363636364 L2130.0,586.3636363636364" class="walk" />
+<path d="M1624.090909090909 706.8181818181819L1720.4545454545455 706.8181818181819" class="ray" />
+<path d="M1720.4545454545455 706.8181818181819L2033.6363636363635 550.2272727272727" class="ray" />
+<path d="M1707.558996344098 709.8624080154344L1733.350094564993 703.7739556209293" class="line" stroke-width="5" />
+<circle cx="1720.4545454545455" cy="706.8181818181819" r="4" fill="#526068" stroke="#526068" stroke-width="2" />
+<text x="1732.4545454545455" y="694.8181818181819" font-size="20" font-weight="bold" text-anchor="start">M1</text>
+<circle cx="1720.4545454545455" cy="733.3181818181819" r="9" fill="#f5f1e2" stroke="#4c7c86" stroke-width="2" />
+<circle cx="1624.090909090909" cy="706.8181818181819" r="7" fill="#e6c677" stroke="#a8894f" stroke-width="2" />
+<text x="1616.090909090909" y="736.8181818181819" font-size="18" font-weight="normal" text-anchor="middle">入光</text>
+<circle cx="2033.6363636363635" cy="550.2272727272727" r="8" fill="#c7d4ad" stroke="#819569" stroke-width="2" />
+<text x="2025.6363636363635" y="528.2272727272727" font-size="18" font-weight="normal" text-anchor="end">体表光鳞</text>
+<rect x="1774.909090909091" y="720.3181818181819" width="26" height="26" rx="0" fill="#dce9e8" stroke="#4c7c86" stroke-width="1.5" />
+<text x="1804.909090909091" y="757.3181818181819" font-size="16" font-weight="normal" text-anchor="start">A/B</text>
+<rect x="1774.909090909091" y="573.3636363636364" width="26" height="26" rx="0" fill="#dce9e8" stroke="#4c7c86" stroke-width="1.5" />
+<text x="1804.909090909091" y="610.3636363636364" font-size="16" font-weight="normal" text-anchor="start">A/B</text>
+<text x="1780" y="580" font-size="18" font-weight="normal" text-anchor="end">光孔</text>
+<path d="M1820.7272727272727 614.5454545454545L1845.7272727272727 641.7727272727273" class="fine" />
+<text x="1863.7272727272727" y="586.3636363636364" font-size="16" font-weight="normal" text-anchor="start">低处人行口</text>
+<text x="1590" y="820" font-size="19" font-weight="normal" text-anchor="start">金色：完成态光线   蓝虚线：真实步行线</text>
+<text x="1590" y="850" font-size="19" font-weight="normal" text-anchor="start">圆环：镜架操作位   方框：安全观察点</text>
+<path d="M2110 795L2145 795" class="line" />
+<text x="2152" y="802" font-size="18" font-weight="normal" text-anchor="start">X</text>
+<path d="M2110 795L2110 760" class="line" />
+<text x="2103" y="748" font-size="18" font-weight="normal" text-anchor="start">Z</text>
+<text x="1580" y="958" font-size="25" font-weight="bold" text-anchor="start">本关规则</text>
+<text x="1580" y="1004" font-size="20" font-weight="normal" text-anchor="start">同一操作台切A/B、找孔并调镜</text>
+<text x="1580" y="1047" font-size="20" font-weight="normal" text-anchor="start">离开观察后按X/Z步道自动选镜头</text>
+<text x="1580" y="1090" font-size="20" font-weight="normal" text-anchor="start">人物绕盆沿走真实 X→Z→X 路线</text>
+<text x="1580" y="1133" font-size="20" font-weight="normal" text-anchor="start">光孔与人行孔是两个不同开口</text>
+<text x="1580" y="1220" font-size="18" font-weight="normal" text-anchor="start">共同约束：稳定光源 · 无消耗 · 无计时</text>
+<text x="1580" y="1254" font-size="18" font-weight="normal" text-anchor="start">静态已检查：反射方向／穿墙／步行覆盖</text>
+<text x="1580" y="1288" font-size="18" font-weight="normal" text-anchor="start">尚需灰盒实测：控制手感／镜头／跳跃</text>
+<text x="65" y="1374" font-size="21" font-weight="normal" text-anchor="start">尺寸单位 H；前三关普通场景不因投影重合而通行。剖切只影响显示；碰撞、光遮挡与道具角度始终保留。</text>
+<defs><clipPath id="main-content"><rect x="78" y="262" width="1410" height="485" /></clipPath></defs><g clip-path="url(#main-content)">
+<rect x="100" y="489.6446000398233" width="1276" height="218.20885144177663" fill="#f0f2e9" stroke="#a9b3a4" stroke-width="1.5" />
+<rect x="100" y="707.8534514815999" width="1276" height="18" fill="#dce1d5" stroke="#778673" stroke-width="1.5" />
+<path d="M100 690 L552.4 690 M552.4 568.9932732913784 L1376 568.9932732913784" class="walk" />
+<path d="M1124 539.2375208220452Q1100 390.9916129668603 1166.0 343.0297016019475Q1208.0 308.1483115183746 1244 343.0297016019475L1244 539.2375208220452Z" class="body" />
+<path d="M1132 459.13361121199637Q1116 433.13361121199637 1138 416.13361121199637Q1165 410.13361121199637 1167 436.13361121199637Q1167 460.13361121199637 1132 459.13361121199637Z" class="body" />
+<path d="M1136 451.13361121199637Q1149 434.13361121199637 1156 423.13361121199637" class="fine" />
+<path d="M680 564.6049717032706L680 275.7434600736824Q981.5999999999999 237.5919396697745 1283.1999999999998 198.37850365341615L1283.1999999999998 476.33958088188785" class="line" />
+<path d="M702 564.6049717032706L702 286.6438944747989" class="fine" />
+<path d="M390 668.1791148558224L390 540.0990106427031" class="line" />
+<rect x="385" y="540.0990106427031" width="10" height="59.95238920614097" fill="#d9e9eb" stroke="#526068" stroke-width="2" />
+<path d="M373 668.1791148558224L407 668.1791148558224" class="line" />
+<circle cx="390" cy="632.7527030521936" r="8" fill="#eef2ea" stroke="#526068" stroke-width="2" />
+<text x="408" y="550.0752052457735" font-size="23" font-weight="bold" text-anchor="start">M1</text>
+<text x="408" y="660.1791148558224" font-size="20" font-weight="normal" text-anchor="start">↻ Y</text>
+<circle cx="175.4" cy="644.7631972353664" r="8.72034752089323" fill="#4b5960" stroke="#4b5960" stroke-width="2" />
+<path d="M175.4 653.4835447562596L175.4 676.3744569986043 M175.4 661.658870557097L165.58960903899512 673.6493483983252 M175.4 661.658870557097L185.2103909610049 673.6493483983252 M175.4 676.3744569986043L167.76969591921844 690.0 M175.4 676.3744569986043L183.03030408078158 690.0" class="line" />
+<path d="M158 570.0752052457735L390 570.0752052457735" class="ray" />
+<path d="M390 570.0752052457735L680 548.9926037964877" class="ray" />
+<path d="M670 536.9926037964877l20 24m0 -24l-20 24" class="line" stroke="#b5654f" />
+<text x="635" y="513.9926037964877" font-size="20" font-weight="normal" text-anchor="end">初始光撞盆壁</text>
+<rect x="346.5" y="685.0" width="87.0" height="10" fill="#dce9e8" stroke="#4c7c86" stroke-width="2" />
+<text x="390" y="723.0" font-size="18" font-weight="normal" text-anchor="middle">原地观察A/B＋调镜</text>
+<rect x="508.9" y="685.0" width="87.0" height="10" fill="#dce9e8" stroke="#4c7c86" stroke-width="2" />
+<text x="552.4" y="723.0" font-size="18" font-weight="normal" text-anchor="middle">转角安全台</text>
+<rect x="1264.6" y="372.7854540712807" width="14" height="103.55412681060712" fill="#c5cdbf" stroke="#788674" stroke-width="2" />
+<circle cx="1271.6" cy="476.33958088188785" r="11" fill="#e6eddd" stroke="#809375" stroke-width="2" />
+</g>
+<text x="86" y="757" font-size="18" font-weight="normal" text-anchor="start">A侧向行走基线（蓝虚线）；屏幕上扬可来自深度，未增加光线俯仰。</text>
+<text x="80" y="845" font-size="24" font-weight="bold" text-anchor="start">B｜盆内正交观察：同一操作台可看孔并调镜</text>
+<text x="80" y="884" font-size="20" font-weight="normal" text-anchor="start">相机位于右盆壁内侧的真实盆腔；不剖掉中央盆壁，只看已有破口。</text>
+<rect x="180" y="927.4747022483062" width="880" height="248.0788518874798" fill="#ded6c8" stroke="#7a756c" stroke-width="2" />
+<rect x="508.0" y="1006.4088823943225" width="104.0" height="56.381557247154504" fill="#fffefb" stroke="#756e64" stroke-width="2" />
+<rect x="684.0" y="1062.790439641477" width="112.0" height="112.76311449430901" fill="#fffefb" stroke="#756e64" stroke-width="2" />
+<text x="560.0" y="988.4088823943225" font-size="22" font-weight="normal" text-anchor="middle">真光孔</text>
+<text x="740" y="1042.790439641477" font-size="22" font-weight="normal" text-anchor="middle">低处人行口</text>
+<circle cx="740" cy="1113.1579641156018" r="12.02806554605963" fill="#4b5960" stroke="#4b5960" stroke-width="2" />
+<path d="M740 1125.1860296616615L740 1156.7597017200678 M740 1136.4623411110922L726.4684262606829 1153.0009312369243 M740 1136.4623411110922L753.5315737393171 1153.0009312369243 M740 1156.7597017200678L729.4754426471978 1175.553554135786 M740 1156.7597017200678L750.5245573528022 1175.553554135786" class="line" />
+<text x="560.0" y="1209.553554135786" font-size="20" font-weight="normal" text-anchor="middle">1.3H × 0.75H</text>
+<text x="740" y="1209.553554135786" font-size="20" font-weight="normal" text-anchor="middle">净高1.5H</text>
+<path d="M848.0 1277.1307084710431Q832.0 1251.1307084710431 854.0 1234.1307084710431Q881.0 1228.1307084710431 883.0 1254.1307084710431Q883.0 1278.1307084710431 848.0 1277.1307084710431Z" class="body" />
+<path d="M852.0 1269.1307084710431Q865.0 1252.1307084710431 872.0 1241.1307084710431" class="fine" />
+<text x="900.0" y="1266.1307084710431" font-size="20" font-weight="normal" text-anchor="start">盆内体表（相机同侧）</text>
+<text x="80" y="1305" font-size="20" font-weight="normal" text-anchor="start">切回行走后：X段自动A，Z段自动B；同一真实折线连续前进。</text>
+<rect x="1705.4545454545455" y="718.3181818181819" width="30" height="30" fill="none" stroke="#4c7c86" stroke-width="2" />
+<text x="1700.4545454545455" y="773.3181818181819" font-size="16" font-weight="normal" text-anchor="middle">操作／A/B</text>
+<text x="86" y="282" font-size="18" font-weight="normal" text-anchor="start">渲染剖切：无；中央盆壁的真孔与实体保持一致。</text>
+</svg>

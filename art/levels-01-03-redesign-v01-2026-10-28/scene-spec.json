@@ -1,0 +1,2731 @@
+{
+  "version": "v01",
+  "date": "2026-10-28",
+  "status": "静态设计方案，未实现控制器，未实测可玩",
+  "coordinateSystem": {
+    "unit": "H",
+    "H": "主角站立高度",
+    "axes": {
+      "X": "主段横向",
+      "Y": "竖直向上",
+      "Z": "深度／转角后的横向"
+    },
+    "angles": "yawDeg = atan2(normal.z, normal.x)，仅绕世界Y轴旋转",
+    "levelOrigins": "各关同时给出局部绘图坐标及同一串联世界坐标；相邻出入口世界坐标重合"
+  },
+  "playerReference": {
+    "heightH": 1,
+    "collisionHalfWidthXZ": 0.22,
+    "maxHorizontalJumpH": 2.2,
+    "maxRiseH": 1,
+    "firstThreeRequiredGapH": 1.3,
+    "largestWalkingStepH": 0.45,
+    "noHardDeath": true,
+    "jumpNote": "走跳参数为灰盒调试起点，尚未校验动力学；第一关设计轨迹水平1.7H，净沟宽1.3H，峰高0.65H。"
+  },
+  "knowledgeRules": [
+    "稳定连续光源；无计时、无消耗。",
+    "所有可调镜只绕竖直Y轴yaw；镜片中心高度固定1.8H；前三关不需要高度转换。",
+    "不加入颜色、露珠折射、宝石分光、俯仰等新规则。",
+    "人物只能沿真实预设步行折线运动；视角变化不改变几何、碰撞、光路或道具角度。",
+    "A/B切换在安全观察点发生；前三关普通场景中，投影重合不产生通路；后续特殊光框规则须独立教学。",
+    "镜架固定，可随时回调。",
+    "光鳞是身体表面进食组织，不是机械按钮；每关只出现极小身体局部。",
+    "目标首次恢复后，出口卷叶或细根永久舒展，保持已有门洞开放；离开镜架或移开光线不会重新封门。",
+    "第一关采用20度轻俯角的固定正交A镜头以显露yaw方向反馈；第二关起引入A/B。",
+    "交互半径按XZ平面或旋钮的交互投影判断，绝不按镜心3D距离判断。",
+    "离开观察/调镜状态后，X步道自动用A，Z步道自动用B；相机切换不改变任何玩家世界坐标。"
+  ],
+  "levels": [
+    {
+      "id": "01",
+      "name": "园门苔地",
+      "originWorld": [
+        0,
+        0,
+        0
+      ],
+      "boundsLocal": {
+        "min": [
+          0,
+          -0.45,
+          0
+        ],
+        "max": [
+          20,
+          7,
+          10
+        ]
+      },
+      "source": [
+        1,
+        1.8,
+        3.2
+      ],
+      "mirrors": [
+        {
+          "id": "M1",
+          "positionLocal": [
+            8,
+            1.8,
+            3.2
+          ],
+          "initialYawDeg": -60,
+          "operationLocal": [
+            8,
+            0,
+            2
+          ],
+          "solvedNormalWorld": [
+            0.20985530113019946,
+            0,
+            -0.9777324545025359
+          ],
+          "solvedYawDeg": -77.88612734102293,
+          "rotationAxisWorld": [
+            0,
+            1,
+            0
+          ],
+          "mirrorHalfWidthH": 0.55,
+          "mirrorHalfHeightH": 0.55,
+          "interactionRadiusH": 1.4,
+          "handleHeightH": 0.65,
+          "baseCollider": {
+            "id": "M1-base",
+            "minLocal": [
+              7.8,
+              0,
+              3
+            ],
+            "maxLocal": [
+              8.2,
+              1.3,
+              3.4000000000000004
+            ],
+            "kind": "mirror-base",
+            "blocksPlayer": true,
+            "blocksLight": true,
+            "minWorld": [
+              7.8,
+              0,
+              3
+            ],
+            "maxWorld": [
+              8.2,
+              1.3,
+              3.4000000000000004
+            ]
+          },
+          "positionWorld": [
+            8,
+            1.8,
+            3.2
+          ],
+          "operationWorld": [
+            8,
+            0,
+            2
+          ],
+          "interactionDistanceMetric": "XZ平面内角色脚点至operationLocal；或旋钮的屏幕交互投影；不使用镜心的3D距离",
+          "interactionRangeOriginLocal": [
+            8,
+            0,
+            2
+          ]
+        }
+      ],
+      "target": [
+        16,
+        1.8,
+        6.8
+      ],
+      "body": {
+        "id": "tail-tip",
+        "minLocal": [
+          15.7,
+          0,
+          6.8
+        ],
+        "maxLocal": [
+          18.5,
+          4.5,
+          10
+        ],
+        "kind": "body",
+        "blocksPlayer": true,
+        "blocksLight": true,
+        "minWorld": [
+          15.7,
+          0,
+          6.8
+        ],
+        "maxWorld": [
+          18.5,
+          4.5,
+          10
+        ]
+      },
+      "walk": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          4.3,
+          0,
+          2
+        ],
+        [
+          6,
+          0,
+          2
+        ],
+        [
+          8,
+          0,
+          2
+        ],
+        [
+          20,
+          0,
+          2
+        ]
+      ],
+      "jumpSegmentIndex": 1,
+      "floor": [
+        {
+          "id": "west-ground",
+          "minLocal": [
+            0,
+            -0.3,
+            0
+          ],
+          "maxLocal": [
+            4.5,
+            0,
+            10
+          ],
+          "kind": "floor",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            0,
+            -0.3,
+            0
+          ],
+          "maxWorld": [
+            4.5,
+            0,
+            10
+          ]
+        },
+        {
+          "id": "safe-shallow-bed",
+          "minLocal": [
+            4.5,
+            -0.75,
+            0
+          ],
+          "maxLocal": [
+            5.8,
+            -0.45,
+            10
+          ],
+          "kind": "floor",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            4.5,
+            -0.75,
+            0
+          ],
+          "maxWorld": [
+            5.8,
+            -0.45,
+            10
+          ]
+        },
+        {
+          "id": "east-ground",
+          "minLocal": [
+            5.8,
+            -0.3,
+            0
+          ],
+          "maxLocal": [
+            20,
+            0,
+            10
+          ],
+          "kind": "floor",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            5.8,
+            -0.3,
+            0
+          ],
+          "maxWorld": [
+            20,
+            0,
+            10
+          ]
+        }
+      ],
+      "walls": [
+        {
+          "id": "exit-wall-0-0",
+          "minLocal": [
+            19.5,
+            0,
+            0
+          ],
+          "maxLocal": [
+            19.8,
+            4,
+            1.2
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            19.5,
+            0,
+            0
+          ],
+          "maxWorld": [
+            19.8,
+            4,
+            1.2
+          ]
+        },
+        {
+          "id": "exit-wall-1-1",
+          "minLocal": [
+            19.5,
+            1.6,
+            1.2
+          ],
+          "maxLocal": [
+            19.8,
+            4,
+            2.8
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            19.5,
+            1.6,
+            1.2
+          ],
+          "maxWorld": [
+            19.8,
+            4,
+            2.8
+          ]
+        },
+        {
+          "id": "exit-wall-2-0",
+          "minLocal": [
+            19.5,
+            0,
+            2.8
+          ],
+          "maxLocal": [
+            19.8,
+            4,
+            10
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            19.5,
+            0,
+            2.8
+          ],
+          "maxWorld": [
+            19.8,
+            4,
+            10
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "id": "short-jump",
+          "xMin": 4.5,
+          "xMax": 5.8,
+          "clearWidthH": 1.3,
+          "safeBedY": -0.45,
+          "landingX": [
+            5.8,
+            8
+          ]
+        }
+      ],
+      "gate": {
+        "id": "leaf-exit-01",
+        "positionLocal": [
+          19.65,
+          0,
+          2
+        ],
+        "clearWidthH": 1.6,
+        "clearHeightH": 1.6,
+        "blocker": "curled-leaf",
+        "stateMachine": {
+          "initial": "blocked-by-leaf-or-fine-root",
+          "onTargetRestored": "open-latched",
+          "requiresContinuousLightAfterOpen": false,
+          "resetsOnViewChange": false
+        },
+        "closedCollider": {
+          "minLocal": [
+            19.5,
+            0,
+            1.2
+          ],
+          "maxLocal": [
+            19.8,
+            1.6,
+            2.8
+          ],
+          "minWorld": [
+            19.5,
+            0,
+            1.2
+          ],
+          "maxWorld": [
+            19.8,
+            1.6,
+            2.8
+          ],
+          "activeOnlyInState": "blocked-by-leaf-or-fine-root",
+          "disabledPermanentlyOnTargetRestored": true
+        }
+      },
+      "entryLocal": [
+        0,
+        0,
+        2
+      ],
+      "exitLocal": [
+        20,
+        0,
+        2
+      ],
+      "views": [
+        {
+          "id": "A",
+          "lookDirection": [
+            0,
+            -0.3420201433256687,
+            0.9396926207859084
+          ],
+          "screenRight": [
+            1,
+            0,
+            0
+          ],
+          "screenUp": [
+            0,
+            0.9396926207859084,
+            0.3420201433256687
+          ],
+          "projection": "orthographic",
+          "pitchDeg": 20,
+          "purpose": "保留侧向移动；固定轻俯角只增强XZ转向的视觉反馈",
+          "cutawayRenderOnlyWallIds": [],
+          "collisionAndLightOcclusionUnchanged": true
+        }
+      ],
+      "observePads": [],
+      "teaches": [
+        "左右移动",
+        "一次宽容短跳",
+        "固定镜架交互与Y轴转向",
+        "从入光到目标的单次反射"
+      ],
+      "solutionText": [
+        "沿安全地面抵达M1；1.3H浅沟可短跳，失足落在-0.45H安全渠底。",
+        "保持水平稳定入光，旋转M1的竖轴角度，使反射光照向尾尖局部光鳞。",
+        "光鳞恢复触发一次性卷叶舒展；既存门洞永久开放，随后可离开操作区。"
+      ],
+      "beamChainLocal": [
+        [
+          1,
+          1.8,
+          3.2
+        ],
+        [
+          8,
+          1.8,
+          3.2
+        ],
+        [
+          16,
+          1.8,
+          6.8
+        ]
+      ],
+      "beamChainWorld": [
+        [
+          1,
+          1.8,
+          3.2
+        ],
+        [
+          8,
+          1.8,
+          3.2
+        ],
+        [
+          16,
+          1.8,
+          6.8
+        ]
+      ],
+      "sourceWorld": [
+        1,
+        1.8,
+        3.2
+      ],
+      "targetWorld": [
+        16,
+        1.8,
+        6.8
+      ],
+      "walkWorld": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          4.3,
+          0,
+          2
+        ],
+        [
+          6,
+          0,
+          2
+        ],
+        [
+          8,
+          0,
+          2
+        ],
+        [
+          20,
+          0,
+          2
+        ]
+      ],
+      "entryWorld": [
+        0,
+        0,
+        2
+      ],
+      "exitWorld": [
+        20,
+        0,
+        2
+      ],
+      "staticCheck": {
+        "level": "01",
+        "maxReflectionVectorError": 5.117875266520903e-16,
+        "solvedBeamWallIntersections": [],
+        "prescribedWalkCollisionSamples": [],
+        "unsupportedWalkSamples": [],
+        "staticDesignPass": true
+      },
+      "targetAcceptRadiusH": 0.75,
+      "beamRadiusH": 0.04,
+      "renderNotes": [
+        "固定20度轻俯角正交投影，仍以2D侧向操作与可读步道为主。",
+        "侧视结构图中的屏幕高度差可能来自Z深度，不代表光路改变世界Y高度。",
+        "cutawayRenderOnlyWallIds只影响墙面渲染；碰撞和光遮挡必须保留。",
+        "仅显示局部体表；光鳞不是机械按钮。"
+      ],
+      "initialOpticalState": {
+        "source": "stable-on",
+        "M1": "receives-source",
+        "target": "unlit",
+        "M2": "not-present",
+        "firstMiss": "M1初始反射向偏北方向，未命中尾尖光鳞。"
+      },
+      "walkSegments": [
+        {
+          "index": 0,
+          "fromLocal": [
+            0,
+            0,
+            2
+          ],
+          "toLocal": [
+            4.3,
+            0,
+            2
+          ],
+          "dominantAxis": "X",
+          "automaticWalkingView": "A",
+          "transition": "在真实拐角切换相机，玩家世界坐标保持连续"
+        },
+        {
+          "index": 1,
+          "fromLocal": [
+            4.3,
+            0,
+            2
+          ],
+          "toLocal": [
+            6,
+            0,
+            2
+          ],
+          "dominantAxis": "X",
+          "automaticWalkingView": "A",
+          "transition": "在真实拐角切换相机，玩家世界坐标保持连续"
+        },
+        {
+          "index": 2,
+          "fromLocal": [
+            6,
+            0,
+            2
+          ],
+          "toLocal": [
+            8,
+            0,
+            2
+          ],
+          "dominantAxis": "X",
+          "automaticWalkingView": "A",
+          "transition": "在真实拐角切换相机，玩家世界坐标保持连续"
+        },
+        {
+          "index": 3,
+          "fromLocal": [
+            8,
+            0,
+            2
+          ],
+          "toLocal": [
+            20,
+            0,
+            2
+          ],
+          "dominantAxis": "X",
+          "automaticWalkingView": "A",
+          "transition": "在真实拐角切换相机，玩家世界坐标保持连续"
+        }
+      ],
+      "cameraInteractionState": {
+        "walk": "按当前步道段自动选择A(X段)或B(Z段)，不会在无屏幕反馈的深度轴上走路",
+        "observe": "只在安全台或镜架操作状态进入；静止时允许切换本关开放的A/B视图",
+        "mirrorInteract": "保持原地操作权；切A/B不重置选镜、角度、光源、人物坐标",
+        "resumeWalking": "离开观察或调镜后自动恢复当前/下一步道段的可读侧视",
+        "level01Exception": "第一关仍只开放A；A/B观察教学从第二关开始"
+      }
+    },
+    {
+      "id": "02",
+      "name": "倒扣陶盆",
+      "originWorld": [
+        20,
+        0,
+        1.1
+      ],
+      "boundsLocal": {
+        "min": [
+          0,
+          -0.3,
+          0
+        ],
+        "max": [
+          22,
+          9,
+          11
+        ]
+      },
+      "source": [
+        1,
+        1.8,
+        2
+      ],
+      "mirrors": [
+        {
+          "id": "M1",
+          "positionLocal": [
+            5,
+            1.8,
+            2
+          ],
+          "initialYawDeg": -84,
+          "operationLocal": [
+            5,
+            0,
+            0.9
+          ],
+          "solvedNormalWorld": [
+            0.22975292054736124,
+            0,
+            -0.9732489894677301
+          ],
+          "solvedYawDeg": -76.717474411461,
+          "rotationAxisWorld": [
+            0,
+            1,
+            0
+          ],
+          "mirrorHalfWidthH": 0.55,
+          "mirrorHalfHeightH": 0.55,
+          "interactionRadiusH": 1.4,
+          "handleHeightH": 0.65,
+          "baseCollider": {
+            "id": "M1-base",
+            "minLocal": [
+              4.8,
+              0,
+              1.8
+            ],
+            "maxLocal": [
+              5.2,
+              1.3,
+              2.2
+            ],
+            "kind": "mirror-base",
+            "blocksPlayer": true,
+            "blocksLight": true,
+            "minWorld": [
+              24.8,
+              0,
+              2.9000000000000004
+            ],
+            "maxWorld": [
+              25.2,
+              1.3,
+              3.3000000000000003
+            ]
+          },
+          "positionWorld": [
+            25,
+            1.8,
+            3.1
+          ],
+          "operationWorld": [
+            25,
+            0,
+            2
+          ],
+          "interactionDistanceMetric": "XZ平面内角色脚点至operationLocal；或旋钮的屏幕交互投影；不使用镜心的3D距离",
+          "interactionRangeOriginLocal": [
+            5,
+            0,
+            0.9
+          ]
+        }
+      ],
+      "target": [
+        18,
+        1.8,
+        8.5
+      ],
+      "body": {
+        "id": "tail-scales",
+        "minLocal": [
+          17.5,
+          0,
+          8.5
+        ],
+        "maxLocal": [
+          19.5,
+          4.5,
+          11
+        ],
+        "kind": "body",
+        "blocksPlayer": true,
+        "blocksLight": true,
+        "minWorld": [
+          37.5,
+          0,
+          9.6
+        ],
+        "maxWorld": [
+          39.5,
+          4.5,
+          12.1
+        ]
+      },
+      "walk": [
+        [
+          0,
+          0,
+          0.9
+        ],
+        [
+          5,
+          0,
+          0.9
+        ],
+        [
+          7.8,
+          0,
+          0.9
+        ],
+        [
+          7.8,
+          0,
+          7
+        ],
+        [
+          22,
+          0,
+          7
+        ]
+      ],
+      "jumpSegmentIndex": null,
+      "floor": [
+        {
+          "id": "pot-ground",
+          "minLocal": [
+            0,
+            -0.3,
+            0
+          ],
+          "maxLocal": [
+            22,
+            0,
+            11
+          ],
+          "kind": "floor",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            20,
+            -0.3,
+            1.1
+          ],
+          "maxWorld": [
+            42,
+            0,
+            12.1
+          ]
+        }
+      ],
+      "walls": [
+        {
+          "id": "pot-left-wall-0-0",
+          "minLocal": [
+            10,
+            0,
+            0
+          ],
+          "maxLocal": [
+            10.4,
+            7,
+            4.1
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            30,
+            0,
+            1.1
+          ],
+          "maxWorld": [
+            30.4,
+            7,
+            5.199999999999999
+          ]
+        },
+        {
+          "id": "pot-left-wall-1-0",
+          "minLocal": [
+            10,
+            0,
+            4.1
+          ],
+          "maxLocal": [
+            10.4,
+            1.5,
+            5.4
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            30,
+            0,
+            5.199999999999999
+          ],
+          "maxWorld": [
+            30.4,
+            1.5,
+            6.5
+          ]
+        },
+        {
+          "id": "pot-left-wall-1-2",
+          "minLocal": [
+            10,
+            2.25,
+            4.1
+          ],
+          "maxLocal": [
+            10.4,
+            7,
+            5.4
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            30,
+            2.25,
+            5.199999999999999
+          ],
+          "maxWorld": [
+            30.4,
+            7,
+            6.5
+          ]
+        },
+        {
+          "id": "pot-left-wall-2-0",
+          "minLocal": [
+            10,
+            0,
+            5.4
+          ],
+          "maxLocal": [
+            10.4,
+            7,
+            6.3
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            30,
+            0,
+            6.5
+          ],
+          "maxWorld": [
+            30.4,
+            7,
+            7.4
+          ]
+        },
+        {
+          "id": "pot-left-wall-3-1",
+          "minLocal": [
+            10,
+            1.5,
+            6.3
+          ],
+          "maxLocal": [
+            10.4,
+            7,
+            7.7
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            30,
+            1.5,
+            7.4
+          ],
+          "maxWorld": [
+            30.4,
+            7,
+            8.8
+          ]
+        },
+        {
+          "id": "pot-left-wall-4-0",
+          "minLocal": [
+            10,
+            0,
+            7.7
+          ],
+          "maxLocal": [
+            10.4,
+            7,
+            11
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            30,
+            0,
+            8.8
+          ],
+          "maxWorld": [
+            30.4,
+            7,
+            12.1
+          ]
+        },
+        {
+          "id": "pot-right-wall-0-0",
+          "minLocal": [
+            20,
+            0,
+            0
+          ],
+          "maxLocal": [
+            20.4,
+            7,
+            6.3
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            40,
+            0,
+            1.1
+          ],
+          "maxWorld": [
+            40.4,
+            7,
+            7.4
+          ]
+        },
+        {
+          "id": "pot-right-wall-1-1",
+          "minLocal": [
+            20,
+            1.7,
+            6.3
+          ],
+          "maxLocal": [
+            20.4,
+            7,
+            7.7
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            40,
+            1.7,
+            7.4
+          ],
+          "maxWorld": [
+            40.4,
+            7,
+            8.8
+          ]
+        },
+        {
+          "id": "pot-right-wall-2-0",
+          "minLocal": [
+            20,
+            0,
+            7.7
+          ],
+          "maxLocal": [
+            20.4,
+            7,
+            11
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            40,
+            0,
+            8.8
+          ],
+          "maxWorld": [
+            40.4,
+            7,
+            12.1
+          ]
+        }
+      ],
+      "openings": [
+        {
+          "id": "true-light-crack",
+          "wall": "pot-left-wall",
+          "minLocal": [
+            10,
+            1.5,
+            4.1
+          ],
+          "maxLocal": [
+            10.4,
+            2.25,
+            5.4
+          ],
+          "purpose": "光孔，独立于低处的人行口"
+        },
+        {
+          "id": "low-walk-door",
+          "wall": "pot-left-wall",
+          "minLocal": [
+            10,
+            0,
+            6.3
+          ],
+          "maxLocal": [
+            10.4,
+            1.5,
+            7.7
+          ],
+          "purpose": "预设步行折线通过的真实人行门洞"
+        }
+      ],
+      "gate": {
+        "id": "root-exit-02",
+        "positionLocal": [
+          20.2,
+          0,
+          7
+        ],
+        "clearWidthH": 1.4,
+        "clearHeightH": 1.7,
+        "blocker": "fine-roots",
+        "stateMachine": {
+          "initial": "blocked-by-leaf-or-fine-root",
+          "onTargetRestored": "open-latched",
+          "requiresContinuousLightAfterOpen": false,
+          "resetsOnViewChange": false
+        },
+        "closedCollider": {
+          "minLocal": [
+            20,
+            0,
+            6.3
+          ],
+          "maxLocal": [
+            20.4,
+            1.7,
+            7.7
+          ],
+          "minWorld": [
+            40,
+            0,
+            7.4
+          ],
+          "maxWorld": [
+            40.4,
+            1.7,
+            8.8
+          ],
+          "activeOnlyInState": "blocked-by-leaf-or-fine-root",
+          "disabledPermanentlyOnTargetRestored": true
+        }
+      },
+      "entryLocal": [
+        0,
+        0,
+        0.9
+      ],
+      "exitLocal": [
+        22,
+        0,
+        7
+      ],
+      "views": [
+        {
+          "id": "A",
+          "lookDirection": [
+            0,
+            -0.3420201433256687,
+            0.9396926207859084
+          ],
+          "screenRight": [
+            1,
+            0,
+            0
+          ],
+          "screenUp": [
+            0,
+            0.9396926207859084,
+            0.3420201433256687
+          ],
+          "projection": "orthographic",
+          "pitchDeg": 20,
+          "purpose": "保留侧向移动；固定轻俯角只增强XZ转向的视觉反馈",
+          "cutawayRenderOnlyWallIds": [],
+          "collisionAndLightOcclusionUnchanged": true,
+          "neverCutawayWallIds": [
+            "pot-left-wall-0-0",
+            "pot-left-wall-1-0",
+            "pot-left-wall-1-2",
+            "pot-left-wall-2-0",
+            "pot-left-wall-3-1",
+            "pot-left-wall-4-0",
+            "pot-right-wall-0-0",
+            "pot-right-wall-1-1",
+            "pot-right-wall-2-0"
+          ]
+        },
+        {
+          "id": "B",
+          "lookDirection": [
+            -0.9396926207859084,
+            -0.3420201433256687,
+            0
+          ],
+          "screenRight": [
+            0,
+            0,
+            1
+          ],
+          "screenUp": [
+            -0.3420201433256687,
+            0.9396926207859084,
+            0
+          ],
+          "projection": "orthographic",
+          "pitchDeg": 20,
+          "purpose": "正交观察Z向步道或真孔；不改变任何空间几何",
+          "cutawayRenderOnlyWallIds": [],
+          "collisionAndLightOcclusionUnchanged": true,
+          "lookAtLocal": [
+            10,
+            2,
+            5.5
+          ],
+          "nearClipH": 0.1,
+          "farClipH": 30,
+          "framing": "观察相机位于右盆壁内侧的开放盆腔，直接看向左盆壁真实缺口；右盆壁在相机后方，不进行X-ray剖切。",
+          "neverCutawayWallIds": [
+            "pot-left-wall-0-0",
+            "pot-left-wall-1-0",
+            "pot-left-wall-1-2",
+            "pot-left-wall-2-0",
+            "pot-left-wall-3-1",
+            "pot-left-wall-4-0",
+            "pot-right-wall-0-0",
+            "pot-right-wall-1-1",
+            "pot-right-wall-2-0"
+          ],
+          "inspectionCameraPlacementLocal": [
+            18.457233587073176,
+            5.078181289931019,
+            5.5
+          ],
+          "walkingCameraMountRule": {
+            "forSegmentAxis": "Z",
+            "cameraX": 9.3,
+            "cameraY": 1.4,
+            "cameraZ": "跟随当前Z步道的屏幕中心",
+            "lookDirection": [
+              -0.9396926207859084,
+              -0.3420201433256687,
+              0
+            ],
+            "reason": "步行相机留在左盆壁外侧；避免盆壁挡住外部Z向行走。"
+          },
+          "mountTransition": "观察/调镜使用盆内检查机位；恢复Z向步行前切回盆外跟随机位。机位平移不改A/B正交基或任何几何。"
+        }
+      ],
+      "observePads": [
+        {
+          "id": "mirror-operation-observation-pad",
+          "positionLocal": [
+            5,
+            0,
+            0.9
+          ],
+          "sizeXZ": [
+            1.8,
+            1.6
+          ],
+          "views": [
+            "A",
+            "B"
+          ],
+          "sharesMirrorOperation": "M1"
+        },
+        {
+          "id": "outer-corner",
+          "positionLocal": [
+            7.8,
+            0,
+            0.9
+          ],
+          "sizeXZ": [
+            2,
+            2
+          ],
+          "views": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "id": "rim-corner",
+          "positionLocal": [
+            7.8,
+            0,
+            7
+          ],
+          "sizeXZ": [
+            2,
+            2
+          ],
+          "views": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "teaches": [
+        "在固定安全点观察同一空间的另一正交侧面",
+        "识别遮挡与真实孔洞",
+        "保持已有镜架转向规则"
+      ],
+      "solutionText": [
+        "站在M1操作位同一块安全观察台上切换A/B，识别盆壁上的真实光孔；观察和调镜无需分离站位。",
+        "返回或保持镜架操作位置，调M1穿过光孔，照向盆内尾部光鳞。",
+        "沿X→Z→X的既定步道绕盆沿，经低处人行口进入；完成后出口细根永久舒展。"
+      ],
+      "beamChainLocal": [
+        [
+          1,
+          1.8,
+          2
+        ],
+        [
+          5,
+          1.8,
+          2
+        ],
+        [
+          18,
+          1.8,
+          8.5
+        ]
+      ],
+      "beamChainWorld": [
+        [
+          21,
+          1.8,
+          3.1
+        ],
+        [
+          25,
+          1.8,
+          3.1
+        ],
+        [
+          38,
+          1.8,
+          9.6
+        ]
+      ],
+      "sourceWorld": [
+        21,
+        1.8,
+        3.1
+      ],
+      "targetWorld": [
+        38,
+        1.8,
+        9.6
+      ],
+      "walkWorld": [
+        [
+          20,
+          0,
+          2
+        ],
+        [
+          25,
+          0,
+          2
+        ],
+        [
+          27.8,
+          0,
+          2
+        ],
+        [
+          27.8,
+          0,
+          8.1
+        ],
+        [
+          42,
+          0,
+          8.1
+        ]
+      ],
+      "entryWorld": [
+        20,
+        0,
+        2
+      ],
+      "exitWorld": [
+        42,
+        0,
+        8.1
+      ],
+      "staticCheck": {
+        "level": "02",
+        "maxReflectionVectorError": 1.1102230246251565e-16,
+        "solvedBeamWallIntersections": [],
+        "prescribedWalkCollisionSamples": [],
+        "unsupportedWalkSamples": [],
+        "staticDesignPass": true
+      },
+      "targetAcceptRadiusH": 0.75,
+      "beamRadiusH": 0.04,
+      "renderNotes": [
+        "固定20度轻俯角正交投影，仍以2D侧向操作与可读步道为主。",
+        "侧视结构图中的屏幕高度差可能来自Z深度，不代表光路改变世界Y高度。",
+        "cutawayRenderOnlyWallIds只影响墙面渲染；碰撞和光遮挡必须保留。",
+        "仅显示局部体表；光鳞不是机械按钮。"
+      ],
+      "initialOpticalState": {
+        "source": "stable-on",
+        "M1": "receives-source",
+        "target": "unlit",
+        "M2": "not-present",
+        "firstMiss": "M1初始反射与左盆壁相交，交点约(10, 1.8, 3.063)H，位于真光孔之外。"
+      },
+      "walkSegments": [
+        {
+          "index": 0,
+          "fromLocal": [
+            0,
+            0,
+            0.9
+          ],
+          "toLocal": [
+            5,
+            0,
+            0.9
+          ],
+          "dominantAxis": "X",
+          "automaticWalkingView": "A",
+          "transition": "在真实拐角切换相机，玩家世界坐标保持连续"
+        },
+        {
+          "index": 1,
+          "fromLocal": [
+            5,
+            0,
+            0.9
+          ],
+          "toLocal": [
+            7.8,
+            0,
+            0.9
+          ],
+          "dominantAxis": "X",
+          "automaticWalkingView": "A",
+          "transition": "在真实拐角切换相机，玩家世界坐标保持连续"
+        },
+        {
+          "index": 2,
+          "fromLocal": [
+            7.8,
+            0,
+            0.9
+          ],
+          "toLocal": [
+            7.8,
+            0,
+            7
+          ],
+          "dominantAxis": "Z",
+          "automaticWalkingView": "B",
+          "transition": "在真实拐角切换相机，玩家世界坐标保持连续"
+        },
+        {
+          "index": 3,
+          "fromLocal": [
+            7.8,
+            0,
+            7
+          ],
+          "toLocal": [
+            22,
+            0,
+            7
+          ],
+          "dominantAxis": "X",
+          "automaticWalkingView": "A",
+          "transition": "在真实拐角切换相机，玩家世界坐标保持连续"
+        }
+      ],
+      "cameraInteractionState": {
+        "walk": "按当前步道段自动选择A(X段)或B(Z段)，不会在无屏幕反馈的深度轴上走路",
+        "observe": "只在安全台或镜架操作状态进入；静止时允许切换本关开放的A/B视图",
+        "mirrorInteract": "保持原地操作权；切A/B不重置选镜、角度、光源、人物坐标",
+        "resumeWalking": "离开观察或调镜后自动恢复当前/下一步道段的可读侧视",
+        "level01Exception": "第一关仍只开放A；A/B观察教学从第二关开始"
+      }
+    },
+    {
+      "id": "03",
+      "name": "L形排水暗渠",
+      "originWorld": [
+        42,
+        0,
+        5.9
+      ],
+      "boundsLocal": {
+        "min": [
+          0,
+          -0.3,
+          0
+        ],
+        "max": [
+          11,
+          7,
+          16
+        ]
+      },
+      "source": [
+        -1,
+        1.8,
+        1
+      ],
+      "mirrors": [
+        {
+          "id": "M1",
+          "positionLocal": [
+            3,
+            1.8,
+            1
+          ],
+          "initialYawDeg": -60,
+          "operationLocal": [
+            3,
+            0,
+            2.2
+          ],
+          "solvedNormalWorld": [
+            0.28978414868843005,
+            0,
+            -0.957092026489053
+          ],
+          "solvedYawDeg": -73.15496623701011,
+          "rotationAxisWorld": [
+            0,
+            1,
+            0
+          ],
+          "mirrorHalfWidthH": 0.55,
+          "mirrorHalfHeightH": 0.55,
+          "interactionRadiusH": 1.4,
+          "handleHeightH": 0.65,
+          "baseCollider": {
+            "id": "M1-base",
+            "minLocal": [
+              2.8,
+              0,
+              0.8
+            ],
+            "maxLocal": [
+              3.2,
+              1.3,
+              1.2
+            ],
+            "kind": "mirror-base",
+            "blocksPlayer": true,
+            "blocksLight": true,
+            "minWorld": [
+              44.8,
+              0,
+              6.7
+            ],
+            "maxWorld": [
+              45.2,
+              1.3,
+              7.1000000000000005
+            ]
+          },
+          "positionWorld": [
+            45,
+            1.8,
+            6.9
+          ],
+          "operationWorld": [
+            45,
+            0,
+            8.100000000000001
+          ],
+          "interactionDistanceMetric": "XZ平面内角色脚点至operationLocal；或旋钮的屏幕交互投影；不使用镜心的3D距离",
+          "interactionRangeOriginLocal": [
+            3,
+            0,
+            2.2
+          ]
+        },
+        {
+          "id": "M2",
+          "positionLocal": [
+            9,
+            1.8,
+            5
+          ],
+          "initialYawDeg": -45,
+          "operationLocal": [
+            10,
+            0,
+            5
+          ],
+          "solvedNormalWorld": [
+            0.8816745987679437,
+            0,
+            -0.47185792553202427
+          ],
+          "solvedYawDeg": -28.154966237010104,
+          "rotationAxisWorld": [
+            0,
+            1,
+            0
+          ],
+          "mirrorHalfWidthH": 0.55,
+          "mirrorHalfHeightH": 0.55,
+          "interactionRadiusH": 1.4,
+          "handleHeightH": 0.65,
+          "baseCollider": {
+            "id": "M2-base",
+            "minLocal": [
+              8.8,
+              0,
+              4.8
+            ],
+            "maxLocal": [
+              9.2,
+              1.3,
+              5.2
+            ],
+            "kind": "mirror-base",
+            "blocksPlayer": true,
+            "blocksLight": true,
+            "minWorld": [
+              50.8,
+              0,
+              10.7
+            ],
+            "maxWorld": [
+              51.2,
+              1.3,
+              11.100000000000001
+            ]
+          },
+          "positionWorld": [
+            51,
+            1.8,
+            10.9
+          ],
+          "operationWorld": [
+            52,
+            0,
+            10.9
+          ],
+          "interactionDistanceMetric": "XZ平面内角色脚点至operationLocal；或旋钮的屏幕交互投影；不使用镜心的3D距离",
+          "interactionRangeOriginLocal": [
+            10,
+            0,
+            5
+          ]
+        }
+      ],
+      "target": [
+        9,
+        1.8,
+        13
+      ],
+      "body": {
+        "id": "tail-root",
+        "minLocal": [
+          7,
+          0,
+          13
+        ],
+        "maxLocal": [
+          9.2,
+          4.2,
+          16
+        ],
+        "kind": "body",
+        "blocksPlayer": true,
+        "blocksLight": true,
+        "minWorld": [
+          49,
+          0,
+          18.9
+        ],
+        "maxWorld": [
+          51.2,
+          4.2,
+          21.9
+        ]
+      },
+      "walk": [
+        [
+          0,
+          0,
+          2.2
+        ],
+        [
+          3,
+          0,
+          2.2
+        ],
+        [
+          9.5,
+          0,
+          2.2
+        ],
+        [
+          10,
+          0,
+          2.2
+        ],
+        [
+          10,
+          0,
+          5
+        ],
+        [
+          10,
+          0,
+          16
+        ]
+      ],
+      "jumpSegmentIndex": null,
+      "floor": [
+        {
+          "id": "horizontal-channel",
+          "minLocal": [
+            0,
+            -0.3,
+            0
+          ],
+          "maxLocal": [
+            11,
+            0,
+            6
+          ],
+          "kind": "floor",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            42,
+            -0.3,
+            5.9
+          ],
+          "maxWorld": [
+            53,
+            0,
+            11.9
+          ]
+        },
+        {
+          "id": "vertical-channel",
+          "minLocal": [
+            7,
+            -0.3,
+            0
+          ],
+          "maxLocal": [
+            11,
+            0,
+            16
+          ],
+          "kind": "floor",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            49,
+            -0.3,
+            5.9
+          ],
+          "maxWorld": [
+            53,
+            0,
+            21.9
+          ]
+        }
+      ],
+      "walls": [
+        {
+          "id": "south-wall",
+          "minLocal": [
+            0,
+            0,
+            -0.35
+          ],
+          "maxLocal": [
+            11,
+            5,
+            0
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            42,
+            0,
+            5.550000000000001
+          ],
+          "maxWorld": [
+            53,
+            5,
+            5.9
+          ]
+        },
+        {
+          "id": "inner-horizontal",
+          "minLocal": [
+            0,
+            0,
+            6
+          ],
+          "maxLocal": [
+            7,
+            5,
+            6.35
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            42,
+            0,
+            11.9
+          ],
+          "maxWorld": [
+            49,
+            5,
+            12.25
+          ]
+        },
+        {
+          "id": "inner-vertical",
+          "minLocal": [
+            6.65,
+            0,
+            6
+          ],
+          "maxLocal": [
+            7,
+            5,
+            16
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            48.65,
+            0,
+            11.9
+          ],
+          "maxWorld": [
+            49,
+            5,
+            21.9
+          ]
+        },
+        {
+          "id": "outer-east",
+          "minLocal": [
+            11,
+            0,
+            0
+          ],
+          "maxLocal": [
+            11.35,
+            5,
+            16
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            53,
+            0,
+            5.9
+          ],
+          "maxWorld": [
+            53.35,
+            5,
+            21.9
+          ]
+        },
+        {
+          "id": "west-entry-0-0",
+          "minLocal": [
+            -0.35,
+            0,
+            0
+          ],
+          "maxLocal": [
+            0,
+            5,
+            0.6
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            41.65,
+            0,
+            5.9
+          ],
+          "maxWorld": [
+            42,
+            5,
+            6.5
+          ]
+        },
+        {
+          "id": "west-entry-1-0",
+          "minLocal": [
+            -0.35,
+            0,
+            0.6
+          ],
+          "maxLocal": [
+            0,
+            1.5,
+            1.4
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            41.65,
+            0,
+            6.5
+          ],
+          "maxWorld": [
+            42,
+            1.5,
+            7.300000000000001
+          ]
+        },
+        {
+          "id": "west-entry-1-2",
+          "minLocal": [
+            -0.35,
+            2.1,
+            0.6
+          ],
+          "maxLocal": [
+            0,
+            5,
+            1.4
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            41.65,
+            2.1,
+            6.5
+          ],
+          "maxWorld": [
+            42,
+            5,
+            7.300000000000001
+          ]
+        },
+        {
+          "id": "west-entry-2-0",
+          "minLocal": [
+            -0.35,
+            0,
+            1.4
+          ],
+          "maxLocal": [
+            0,
+            5,
+            1.5
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            41.65,
+            0,
+            7.300000000000001
+          ],
+          "maxWorld": [
+            42,
+            5,
+            7.4
+          ]
+        },
+        {
+          "id": "west-entry-3-1",
+          "minLocal": [
+            -0.35,
+            1.6,
+            1.5
+          ],
+          "maxLocal": [
+            0,
+            5,
+            2.9
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            41.65,
+            1.6,
+            7.4
+          ],
+          "maxWorld": [
+            42,
+            5,
+            8.8
+          ]
+        },
+        {
+          "id": "west-entry-4-0",
+          "minLocal": [
+            -0.35,
+            0,
+            2.9
+          ],
+          "maxLocal": [
+            0,
+            5,
+            6
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            41.65,
+            0,
+            8.8
+          ],
+          "maxWorld": [
+            42,
+            5,
+            11.9
+          ]
+        },
+        {
+          "id": "north-left",
+          "minLocal": [
+            7,
+            0,
+            15.75
+          ],
+          "maxLocal": [
+            9.3,
+            5,
+            16
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            49,
+            0,
+            21.65
+          ],
+          "maxWorld": [
+            51.3,
+            5,
+            21.9
+          ]
+        },
+        {
+          "id": "north-right",
+          "minLocal": [
+            10.7,
+            0,
+            15.75
+          ],
+          "maxLocal": [
+            11,
+            5,
+            16
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            52.7,
+            0,
+            21.65
+          ],
+          "maxWorld": [
+            53,
+            5,
+            21.9
+          ]
+        },
+        {
+          "id": "north-lintel",
+          "minLocal": [
+            9.3,
+            1.6,
+            15.75
+          ],
+          "maxLocal": [
+            10.7,
+            5,
+            16
+          ],
+          "kind": "wall",
+          "blocksPlayer": true,
+          "blocksLight": true,
+          "minWorld": [
+            51.3,
+            1.6,
+            21.65
+          ],
+          "maxWorld": [
+            52.7,
+            5,
+            21.9
+          ]
+        }
+      ],
+      "gate": {
+        "id": "leaf-exit-03",
+        "positionLocal": [
+          10,
+          0,
+          15.75
+        ],
+        "clearWidthH": 1.4,
+        "clearHeightH": 1.6,
+        "blocker": "curled-leaf",
+        "stateMachine": {
+          "initial": "blocked-by-leaf-or-fine-root",
+          "onTargetRestored": "open-latched",
+          "requiresContinuousLightAfterOpen": false,
+          "resetsOnViewChange": false
+        },
+        "closedCollider": {
+          "minLocal": [
+            9.3,
+            0,
+            15.75
+          ],
+          "maxLocal": [
+            10.7,
+            1.6,
+            16
+          ],
+          "minWorld": [
+            51.3,
+            0,
+            21.65
+          ],
+          "maxWorld": [
+            52.7,
+            1.6,
+            21.9
+          ],
+          "activeOnlyInState": "blocked-by-leaf-or-fine-root",
+          "disabledPermanentlyOnTargetRestored": true
+        }
+      },
+      "entryLocal": [
+        0,
+        0,
+        2.2
+      ],
+      "exitLocal": [
+        10,
+        0,
+        16
+      ],
+      "views": [
+        {
+          "id": "A",
+          "lookDirection": [
+            0,
+            -0.3420201433256687,
+            0.9396926207859084
+          ],
+          "screenRight": [
+            1,
+            0,
+            0
+          ],
+          "screenUp": [
+            0,
+            0.9396926207859084,
+            0.3420201433256687
+          ],
+          "projection": "orthographic",
+          "pitchDeg": 20,
+          "purpose": "保留侧向移动；固定轻俯角只增强XZ转向的视觉反馈",
+          "cutawayRenderOnlyWallIds": [
+            "south-wall"
+          ],
+          "collisionAndLightOcclusionUnchanged": true,
+          "neverCutawayWallIds": [
+            "inner-horizontal",
+            "inner-vertical"
+          ]
+        },
+        {
+          "id": "B",
+          "lookDirection": [
+            -0.9396926207859084,
+            -0.3420201433256687,
+            0
+          ],
+          "screenRight": [
+            0,
+            0,
+            1
+          ],
+          "screenUp": [
+            -0.3420201433256687,
+            0.9396926207859084,
+            0
+          ],
+          "projection": "orthographic",
+          "pitchDeg": 20,
+          "purpose": "正交观察Z向步道或真孔；不改变任何空间几何",
+          "cutawayRenderOnlyWallIds": [
+            "outer-east",
+            "north-right"
+          ],
+          "collisionAndLightOcclusionUnchanged": true,
+          "neverCutawayWallIds": [
+            "inner-horizontal",
+            "inner-vertical"
+          ],
+          "bodyVisibilityRule": "纵段步行线X=10位于体表X=7..9.2的相机近侧；不通过隐藏兽体来保持人物可见。"
+        }
+      ],
+      "observePads": [
+        {
+          "id": "safe-turn-platform",
+          "positionLocal": [
+            9.5,
+            0,
+            2.2
+          ],
+          "sizeXZ": [
+            3,
+            3
+          ],
+          "views": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "teaches": [
+        "连续两次反射",
+        "用已学A/B观察转角与下游目标",
+        "先给M2送光，再调M2送至光鳞"
+      ],
+      "solutionText": [
+        "入口M1稳定受光，M2初始位于阴影中。",
+        "调M1使光真正到达转角M2；在安全平台切B观察纵段。",
+        "调M2把光沿纵段送至尾根光鳞，出口卷叶一次性舒展并保持开放。"
+      ],
+      "beamChainLocal": [
+        [
+          -1,
+          1.8,
+          1
+        ],
+        [
+          3,
+          1.8,
+          1
+        ],
+        [
+          9,
+          1.8,
+          5
+        ],
+        [
+          9,
+          1.8,
+          13
+        ]
+      ],
+      "beamChainWorld": [
+        [
+          41,
+          1.8,
+          6.9
+        ],
+        [
+          45,
+          1.8,
+          6.9
+        ],
+        [
+          51,
+          1.8,
+          10.9
+        ],
+        [
+          51,
+          1.8,
+          18.9
+        ]
+      ],
+      "sourceWorld": [
+        41,
+        1.8,
+        6.9
+      ],
+      "targetWorld": [
+        51,
+        1.8,
+        18.9
+      ],
+      "walkWorld": [
+        [
+          42,
+          0,
+          8.100000000000001
+        ],
+        [
+          45,
+          0,
+          8.100000000000001
+        ],
+        [
+          51.5,
+          0,
+          8.100000000000001
+        ],
+        [
+          52,
+          0,
+          8.100000000000001
+        ],
+        [
+          52,
+          0,
+          10.9
+        ],
+        [
+          52,
+          0,
+          21.9
+        ]
+      ],
+      "entryWorld": [
+        42,
+        0,
+        8.100000000000001
+      ],
+      "exitWorld": [
+        52,
+        0,
+        21.9
+      ],
+      "staticCheck": {
+        "level": "03",
+        "maxReflectionVectorError": 2.220446049250313e-16,
+        "solvedBeamWallIntersections": [],
+        "prescribedWalkCollisionSamples": [],
+        "unsupportedWalkSamples": [],
+        "staticDesignPass": true,
+        "addedExitLintelClearanceH": 0.6000000000000001,
+        "addedExitSideClearanceH": 0.47999999999999865,
+        "addedExitWallBeamClearanceH": 2.75
+      },
+      "targetAcceptRadiusH": 0.75,
+      "beamRadiusH": 0.04,
+      "renderNotes": [
+        "固定20度轻俯角正交投影，仍以2D侧向操作与可读步道为主。",
+        "侧视结构图中的屏幕高度差可能来自Z深度，不代表光路改变世界Y高度。",
+        "cutawayRenderOnlyWallIds只影响墙面渲染；碰撞和光遮挡必须保留。",
+        "仅显示局部体表；光鳞不是机械按钮。"
+      ],
+      "initialOpticalState": {
+        "source": "stable-on",
+        "M1": "receives-source",
+        "target": "unlit",
+        "M2": "dark",
+        "firstMiss": "M1初始反射与内转角横墙相交，交点约(5.887, 1.8, 6)H，M2保持暗。"
+      },
+      "walkSegments": [
+        {
+          "index": 0,
+          "fromLocal": [
+            0,
+            0,
+            2.2
+          ],
+          "toLocal": [
+            3,
+            0,
+            2.2
+          ],
+          "dominantAxis": "X",
+          "automaticWalkingView": "A",
+          "transition": "真实拐角切换；世界位置连续"
+        },
+        {
+          "index": 1,
+          "fromLocal": [
+            3,
+            0,
+            2.2
+          ],
+          "toLocal": [
+            9.5,
+            0,
+            2.2
+          ],
+          "dominantAxis": "X",
+          "automaticWalkingView": "A",
+          "transition": "真实拐角切换；世界位置连续"
+        },
+        {
+          "index": 2,
+          "fromLocal": [
+            9.5,
+            0,
+            2.2
+          ],
+          "toLocal": [
+            10,
+            0,
+            2.2
+          ],
+          "dominantAxis": "X",
+          "automaticWalkingView": "A",
+          "transition": "真实拐角切换；世界位置连续"
+        },
+        {
+          "index": 3,
+          "fromLocal": [
+            10,
+            0,
+            2.2
+          ],
+          "toLocal": [
+            10,
+            0,
+            5
+          ],
+          "dominantAxis": "Z",
+          "automaticWalkingView": "B",
+          "transition": "真实拐角切换；世界位置连续"
+        },
+        {
+          "index": 4,
+          "fromLocal": [
+            10,
+            0,
+            5
+          ],
+          "toLocal": [
+            10,
+            0,
+            16
+          ],
+          "dominantAxis": "Z",
+          "automaticWalkingView": "B",
+          "transition": "真实拐角切换；世界位置连续"
+        }
+      ],
+      "cameraInteractionState": {
+        "walk": "按当前步道段自动选择A(X段)或B(Z段)，不会在无屏幕反馈的深度轴上走路",
+        "observe": "只在安全台或镜架操作状态进入；静止时允许切换本关开放的A/B视图",
+        "mirrorInteract": "保持原地操作权；切A/B不重置选镜、角度、光源、人物坐标",
+        "resumeWalking": "离开观察或调镜后自动恢复当前/下一步道段的可读侧视",
+        "level01Exception": "第一关仍只开放A；A/B观察教学从第二关开始"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "fromLevel": "01",
+      "fromPort": "exit",
+      "toLevel": "02",
+      "toPort": "entry",
+      "worldPosition": [
+        20,
+        0,
+        2
+      ],
+      "continuous": true
+    },
+    {
+      "fromLevel": "02",
+      "fromPort": "exit",
+      "toLevel": "03",
+      "toPort": "entry",
+      "worldPosition": [
+        42,
+        0,
+        8.1
+      ],
+      "continuous": true
+    },
+    {
+      "fromLevel": "03",
+      "fromPort": "exit",
+      "toLevel": "04",
+      "toPort": "future-pool-entry",
+      "worldPosition": [
+        52,
+        0,
+        21.9
+      ],
+      "note": "第四关尚未设计；此出口作为下一关入口约束。"
+    }
+  ],
+  "validation": {
+    "method": "单位法线反射方程、3D线段/AABB求交、规定步行线101点/段的角色AABB与地面覆盖检查",
+    "notValidated": [
+      "实际角色控制器与跳跃动力学",
+      "真实镜片有限尺寸中的拖动容差",
+      "渲染遮挡与相机可读性",
+      "游戏运行时状态保存"
+    ],
+    "checks": [
+      {
+        "level": "01",
+        "maxReflectionVectorError": 5.117875266520903e-16,
+        "solvedBeamWallIntersections": [],
+        "prescribedWalkCollisionSamples": [],
+        "unsupportedWalkSamples": [],
+        "staticDesignPass": true
+      },
+      {
+        "level": "02",
+        "maxReflectionVectorError": 1.1102230246251565e-16,
+        "solvedBeamWallIntersections": [],
+        "prescribedWalkCollisionSamples": [],
+        "unsupportedWalkSamples": [],
+        "staticDesignPass": true
+      },
+      {
+        "level": "03",
+        "maxReflectionVectorError": 2.220446049250313e-16,
+        "solvedBeamWallIntersections": [],
+        "prescribedWalkCollisionSamples": [],
+        "unsupportedWalkSamples": [],
+        "staticDesignPass": true,
+        "addedExitLintelClearanceH": 0.6000000000000001,
+        "addedExitSideClearanceH": 0.47999999999999865,
+        "addedExitWallBeamClearanceH": 2.75
+      }
+    ],
+    "svgTextBounds": [
+      {
+        "level": "01",
+        "overflow": []
+      },
+      {
+        "level": "02",
+        "overflow": []
+      },
+      {
+        "level": "03",
+        "overflow": []
+      }
+    ],
+    "visualReview": {
+      "files": [
+        "layout-01.png",
+        "layout-02.png",
+        "layout-03.png"
+      ],
+      "method": "view_image逐张目视检查，修复标题遮挡、图注交叠和人物尺度。",
+      "result": "完成20度正交投影重绘与人物前景步道调整；最终PNG文字边界无溢出，仍为静态结构图。"
+    },
+    "cameraBasisAndProjection": [
+      {
+        "level": "01",
+        "basis": [
+          {
+            "view": "A",
+            "orthonormalAndHandednessError": 0
+          }
+        ],
+        "yawProjectionFeedback": [
+          {
+            "mirror": "M1",
+            "readableView": "A",
+            "solvedProjectedDirectionH": [
+              8,
+              1.2312725159724072
+            ],
+            "plusMinus2DegYaw": [
+              {
+                "yawOffsetDeg": -2,
+                "projectedEndpointShiftH": 0.3020570420358986
+              },
+              {
+                "yawOffsetDeg": 2,
+                "projectedEndpointShiftH": 0.3294294430295787
+              }
+            ],
+            "nonzeroFeedback": true
+          }
+        ]
+      },
+      {
+        "level": "02",
+        "basis": [
+          {
+            "view": "A",
+            "orthonormalAndHandednessError": 0
+          },
+          {
+            "view": "B",
+            "orthonormalAndHandednessError": 0
+          }
+        ],
+        "yawProjectionFeedback": [
+          {
+            "mirror": "M1",
+            "readableView": "A",
+            "solvedProjectedDirectionH": [
+              13,
+              2.2231309316168466
+            ],
+            "plusMinus2DegYaw": [
+              {
+                "yawOffsetDeg": -2,
+                "projectedEndpointShiftH": 0.5267427105088696
+              },
+              {
+                "yawOffsetDeg": 2,
+                "projectedEndpointShiftH": 0.5728642397725442
+              }
+            ],
+            "nonzeroFeedback": true
+          },
+          {
+            "mirror": "M1",
+            "readableView": "B",
+            "solvedProjectedDirectionH": [
+              6.5,
+              -4.446261863233693
+            ],
+            "plusMinus2DegYaw": [
+              {
+                "yawOffsetDeg": -2,
+                "projectedEndpointShiftH": 0.9338753115388982
+              },
+              {
+                "yawOffsetDeg": 2,
+                "projectedEndpointShiftH": 0.9063153663962404
+              }
+            ],
+            "nonzeroFeedback": true
+          }
+        ]
+      },
+      {
+        "level": "03",
+        "basis": [
+          {
+            "view": "A",
+            "orthonormalAndHandednessError": 0
+          },
+          {
+            "view": "B",
+            "orthonormalAndHandednessError": 0
+          }
+        ],
+        "yawProjectionFeedback": [
+          {
+            "mirror": "M1",
+            "readableView": "A",
+            "solvedProjectedDirectionH": [
+              6,
+              1.3680805733026749
+            ],
+            "plusMinus2DegYaw": [
+              {
+                "yawOffsetDeg": -2,
+                "projectedEndpointShiftH": 0.30227391629183276
+              },
+              {
+                "yawOffsetDeg": 2,
+                "projectedEndpointShiftH": 0.3252290549953263
+              }
+            ],
+            "nonzeroFeedback": true
+          },
+          {
+            "mirror": "M2",
+            "readableView": "B",
+            "solvedProjectedDirectionH": [
+              8,
+              0
+            ],
+            "plusMinus2DegYaw": [
+              {
+                "yawOffsetDeg": -2,
+                "projectedEndpointShiftH": 0.19185723032048146
+              },
+              {
+                "yawOffsetDeg": 2,
+                "projectedEndpointShiftH": 0.191857230320482
+              }
+            ],
+            "nonzeroFeedback": true
+          }
+        ]
+      }
+    ],
+    "htmlLocalImages": {
+      "images": [
+        {
+          "src": "background-01.png",
+          "loaded": true
+        },
+        {
+          "src": "layout-01.png",
+          "loaded": true
+        },
+        {
+          "src": "background-02-views.png",
+          "loaded": true
+        },
+        {
+          "src": "layout-02.png",
+          "loaded": true
+        },
+        {
+          "src": "background-03-views.png",
+          "loaded": true
+        },
+        {
+          "src": "layout-03.png",
+          "loaded": true
+        },
+        {
+          "src": "interaction-props-sheet.png",
+          "loaded": true
+        },
+        {
+          "src": "props-mechanics.png",
+          "loaded": true
+        }
+      ],
+      "horizontalOverflow": false,
+      "pageErrors": []
+    }
+  }
+}

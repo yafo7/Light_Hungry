@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小食光兽 · 待机动作 v03</title>
+<style>
+:root{color-scheme:dark;font-family:"Microsoft YaHei","Segoe UI",sans-serif;color:#e9edf0;background:#101a24}*{box-sizing:border-box}body{margin:0;padding:32px;max-width:1240px;margin-inline:auto}header{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:26px}.eyebrow{color:#edc782;font-size:12px;letter-spacing:2px}h1{font-size:30px;margin:8px 0;font-weight:650}p{color:#a7b6c2;line-height:1.7;margin:8px 0}.badge{border:1px solid #3b4e5c;padding:8px 12px;border-radius:20px;font-size:12px;color:#b7c6d0}.layout{display:grid;grid-template-columns:minmax(330px,1.35fr) minmax(280px,.85fr);gap:22px}.stage{min-height:500px;border:1px solid #304250;border-radius:18px;background:#1c2d3a;display:grid;place-items:center;position:relative;overflow:hidden}.stage.light{background:#e9e3d4}.stage.checker{background-color:#bcc4ca;background-image:linear-gradient(45deg,#dce2e6 25%,transparent 25%),linear-gradient(-45deg,#dce2e6 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#dce2e6 75%),linear-gradient(-45deg,transparent 75%,#dce2e6 75%);background-size:32px 32px;background-position:0 0,0 16px,16px -16px,-16px 0}.tag{position:absolute;top:20px;left:20px;background:#101a24db;border:1px solid #3b4e5c;border-radius:7px;padding:6px 10px;color:#edcf99;font-size:13px}canvas{display:block;width:384px;height:auto;max-width:100%;aspect-ratio:1;object-fit:contain}.hint{position:absolute;bottom:18px;left:20px;color:#8da2b1;font-size:12px}.panel{padding:26px;border:1px solid #304250;border-radius:18px;background:#15222e}h2{font-size:19px;margin:0 0 12px}.controls{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}button,select{background:#203342;color:#dce5eb;border:1px solid #3a5262;border-radius:8px;padding:10px 13px;font:inherit;font-size:13px;cursor:pointer}button:hover{background:#294556}button:focus-visible,select:focus-visible{outline:2px solid #edc782;outline-offset:3px}button[aria-pressed="true"],button.primary{background:#e6bf7c;color:#1a2430;border-color:#e6bf7c}.rule{height:1px;background:#2a3d4b;margin:22px 0}label{font-size:13px;color:#b4c4cf;display:flex;align-items:center;gap:12px;margin:13px 0}select{margin-left:auto}progress{height:6px;width:100%;accent-color:#e6bf7c;border:0}#status{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:#c7d5df;margin:12px 0}.meta{display:grid;grid-template-columns:1fr 1fr;gap:14px}.meta span{display:block;color:#94a7b5;font-size:12px;margin-bottom:5px}.meta strong{font-size:15px;font-weight:500}.stripbox{margin-top:22px;padding:20px;border:1px solid #304250;border-radius:16px;background:#15222e}.striphead{display:flex;justify-content:space-between;align-items:center;gap:12px}.striphead p{font-size:12px}.frames{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px;padding:8px 0}.frame{padding:5px;background:#1e303e;border-color:transparent;min-width:0}.frame img{width:100%;display:block;aspect-ratio:1;object-fit:contain}.frame small{font-size:11px;white-space:nowrap}.frame.selected{border-color:#e6bf7c;background:#2b4050}.phasebar{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}.phasebutton{font-size:12px;padding:7px 11px}.phasebutton.current{border-color:#e6bf7c;color:#edce97}.foot{display:flex;gap:18px;flex-wrap:wrap;margin:22px 0;color:#93a8b7;font-size:12px}a{color:#e6c88f;text-decoration:none}a:hover{text-decoration:underline}.error{color:#ffba9f}
+.frame.selected{color:#edce97}progress::-webkit-progress-bar{background:#2a3d4b;border-radius:4px}progress::-webkit-progress-value{background:#e6bf7c;border-radius:4px}progress::-moz-progress-bar{background:#e6bf7c;border-radius:4px}
+@media(max-width:750px){body{padding:18px}header{align-items:flex-start}.badge{display:none}.layout{grid-template-columns:1fr}.stage{min-height:420px}.panel{padding:20px}h1{font-size:25px}.frames{grid-template-columns:repeat(4,minmax(0,1fr))}.stripbox{padding:14px}.striphead{align-items:flex-start}.striphead h2{font-size:17px}.striphead p{max-width:110px;margin:0}}
+</style></head><body>
+<header><div><div class="eyebrow">LIGHT HUNGRY / CHARACTER ANIMATION</div><h1>小食光兽 · 待机动作</h1><p>轻轻左偏，想一会儿；再向右偏，眨两下眼睛。</p></div><span class="badge">美术预览 · v03 / 2026.10.25</span></header>
+<main><div class="layout"><section class="stage" id="stage" aria-label="角色动画预览">
+<div class="tag" id="stateTag">正在载入</div><canvas id="view" width="512" height="512" aria-label="小食光兽动画"></canvas><div class="hint">右朝向 · 固定脚底 · 原始帧播放</div>
+</section><aside class="panel"><h2>播放方式</h2><p id="description">正在载入动画数据与素材。</p>
+<div class="controls" id="modes"><button data-mode="auto" aria-pressed="true" id="autoMode">自动 · 3 秒触发</button><button data-mode="idle" aria-pressed="false">普通待机</button><button data-mode="think" aria-pressed="false">思考待机</button></div>
+<div id="status"><span id="phase">正在载入</span><span id="clock">0.00 s</span></div><progress id="progress" max="3" value="0"></progress>
+<div class="controls"><button id="play">暂停</button><button id="reset" class="primary">模拟操作 · 重新计时</button><button id="prev">上一帧</button><button id="next">下一帧</button></div>
+<div class="rule"></div>
+<label>预览背景<select id="background"><option value="dark">深色</option><option value="light">浅色</option><option value="checker">透明棋盘格</option></select></label>
+<label>播放速度<select id="speed"><option value=".5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label>
+<label>显示尺寸<select id="size"><option value="128">128 px · 游戏尺寸</option><option value="256">256 px</option><option value="384" selected>384 px</option><option value="512">512 px · 原尺寸</option></select></label>
+<label><input type="checkbox" id="baseline">显示脚底参考线</label>
+<div class="rule"></div><div class="meta"><div><span>普通待机</span><strong id="idleMeta">—</strong></div><div><span>思考待机</span><strong id="thinkMeta">—</strong></div><div><span>单帧画布</span><strong id="frameMeta">—</strong></div><div><span>思考顺序</span><strong>左偏 → 停留 → 右偏 → 双眨眼</strong></div></div>
+</aside></div>
+<section class="stripbox"><div class="striphead"><h2 id="stripTitle">逐帧查看</h2><p>点击单帧或动作阶段可暂停检查</p></div><div class="phasebar" id="phasebar"></div><div class="frames" id="frames"></div></section>
+<div class="foot"><a id="idleGrid" href="../Sheets/player_idle_grid.png">普通待机序列图</a><a id="thinkGrid" href="../Sheets/player_think_grid.png">思考序列图</a><a href="../animations.json">帧时长数据</a><a href="../README.md">交付与导入说明</a><span>自动模式中，思考持续循环；点击“模拟操作”可立即回到普通待机。</span></div>
+</main>
+<script src="../animations.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const canvas=$('view'),ctx=canvas.getContext('2d');
+const manifest=window.ANIMATION_MANIFEST;
+const clips={},images={};
+let mode='auto',playing=true,elapsed=0,last=0,active='idle',frame=0,speed=1,stripActive='',threshold=3000,ready=false,clipTime=0;
+function formatSeconds(ms){return Number((ms/1000).toFixed(2)).toString();}
+function frameAt(name,time){const c=clips[name];let t=c.loop?((time%c.duration)+c.duration)%c.duration:Math.min(Math.max(time,0),c.duration-0.001);for(let i=0;i<c.count;i++){if(t<c.delay[i])return i;t-=c.delay[i];}return c.count-1;}
+function timeAtFrame(name,i){return clips[name].delay.slice(0,i).reduce((a,b)=>a+b,0);}
+function phaseAt(name,time){const c=clips[name],local=c.loop?time%c.duration:Math.min(time,c.duration-0.001);return c.phases.find(p=>local>=p.startMs&&local<p.endMs);}
+function updateModeDescription(){$('description').textContent=mode==='auto'?'先播放普通待机；静止满 '+formatSeconds(threshold)+' 秒，自动进入思考循环。':mode==='idle'?'舒缓呼吸、耳尖跟随与轻轻眨眼，双脚始终落地。':'头先向画面左侧偏，停留，再向右偏，快速眨眼两次后收势。';}
+function setPaused(){playing=false;$('play').textContent='播放';}
+function chooseFrame(i){if(!ready)return;setPaused();frame=i;clipTime=timeAtFrame(active,i);elapsed=(mode==='auto'&&active==='think'?threshold:0)+clipTime;draw();}
+function renderStrip(){
+ if(stripActive===active)return;
+ stripActive=active;$('stripTitle').textContent=clips[active].title+' · '+clips[active].count+' 帧';$('frames').replaceChildren();$('phasebar').replaceChildren();
+ for(const p of clips[active].phases){const b=document.createElement('button');b.className='phasebutton';b.textContent=p.name;b.dataset.start=p.startMs;b.dataset.end=p.endMs;b.title=formatSeconds(p.startMs)+'—'+formatSeconds(p.endMs)+' 秒';b.onclick=()=>chooseFrame(frameAt(active,p.startMs));$('phasebar').append(b);}
+ for(let i=0;i<clips[active].count;i++){
+  const b=document.createElement('button');b.className='frame';b.title='第 '+(i+1)+' 帧';b.setAttribute('aria-label','查看第 '+(i+1)+' 帧');
+  const img=images[active][i].cloneNode();img.alt='第 '+(i+1)+' 帧';b.append(img);
+  const label=document.createElement('small');label.textContent=String(i+1).padStart(2,'0')+' · '+clips[active].delay[i]+'ms';b.append(label);b.onclick=()=>chooseFrame(i);$('frames').append(b);
+ }
+}
+function draw(){
+ if(!ready)return;ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(images[active][frame],0,0,canvas.width,canvas.height);
+ if($('baseline').checked){const y=manifest.footReferenceY??480;ctx.strokeStyle='#ed6868';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(0,y+.5);ctx.lineTo(canvas.width,y+.5);ctx.stroke();}
+ canvas.dataset.clip=active;canvas.dataset.frame=frame;canvas.dataset.time=clipTime.toFixed(2);renderStrip();
+ [...$('frames').children].forEach((b,i)=>{b.classList.toggle('selected',i===frame);b.setAttribute('aria-pressed',String(i===frame));});
+ const local=clips[active].loop?clipTime%clips[active].duration:Math.min(clipTime,clips[active].duration-0.001);
+ [...$('phasebar').children].forEach(b=>b.classList.toggle('current',local>=Number(b.dataset.start)&&local<Number(b.dataset.end)));
+ const phase=phaseAt(active,clipTime);
+ $('stateTag').textContent=clips[active].title+' · '+String(frame+1).padStart(2,'0')+'/'+clips[active].count;
+ $('clock').textContent=(elapsed/1000).toFixed(2)+' s';
+ $('phase').textContent=mode==='auto'&&elapsed<threshold?'等待思考触发':phase?.name??clips[active].title;
+ $('progress').max=mode==='auto'&&elapsed<threshold?threshold:clips[active].duration;
+ $('progress').value=mode==='auto'&&elapsed<threshold?elapsed:local;
+}
+function restart(){if(!ready)return;elapsed=0;clipTime=0;active=mode==='think'?'think':'idle';frame=0;playing=true;last=performance.now();$('play').textContent='暂停';draw();}
+function resumeFromFrame(){if(!ready)return;clipTime=timeAtFrame(active,frame);elapsed=(mode==='auto'&&active==='think'?threshold:0)+clipTime;playing=true;last=performance.now();$('play').textContent='暂停';}
+$('play').onclick=()=>{if(playing)setPaused();else resumeFromFrame();};
+$('reset').onclick=restart;
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{if(!ready)return;mode=b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));updateModeDescription();restart();});
+for(const [id,delta] of [['prev',-1],['next',1]])$(id).onclick=()=>{if(ready)chooseFrame((frame+delta+clips[active].count)%clips[active].count);};
+$('background').onchange=e=>$('stage').className='stage '+e.target.value;
+$('size').onchange=e=>canvas.style.width=e.target.value+'px';
+$('speed').onchange=e=>speed=Number(e.target.value);$('baseline').onchange=draw;
+async function init(){
+ if(!manifest?.clips?.idle||!manifest?.clips?.think)throw new Error('Missing animation manifest');
+ threshold=1000*(manifest.playback?.idleThresholdSeconds??3);canvas.width=manifest.frameSize?.[0]??512;canvas.height=manifest.frameSize?.[1]??512;
+ for(const name of ['idle','think']){
+  const c=manifest.clips[name],count=c.frames.length,delay=c.frameDurationMs;
+  if(!count||delay.length!==count||delay.some(d=>!(d>0)))throw new Error('Invalid clip timing: '+name);
+  const duration=delay.reduce((a,b)=>a+b,0);
+  clips[name]={...c,count,delay,duration,loop:c.loop!==false,title:name==='idle'?'普通待机':'思考待机',phases:c.phases??[]};
+  images[name]=[];
+  $(name+'Meta').textContent=count+' 帧 / '+formatSeconds(duration)+' 秒';if(c.grid)$(name+'Grid').href='../'+c.grid;
+ }
+ $('frameMeta').textContent=canvas.width+' × '+canvas.height+' / RGBA';$('autoMode').textContent='自动 · '+formatSeconds(threshold)+' 秒触发';updateModeDescription();
+ await Promise.all(Object.entries(clips).flatMap(([name,c])=>c.frames.map((file,i)=>new Promise((resolve,reject)=>{const img=new Image();img.onload=resolve;img.onerror=()=>reject(new Error('Cannot load '+file));img.src='../'+file;images[name][i]=img;}))));
+ ready=true;last=performance.now();draw();document.body.dataset.ready='true';requestAnimationFrame(tick);
+}
+function tick(now){
+ if(playing){elapsed+=Math.min(now-last,100)*speed;active=mode==='auto'?(elapsed>=threshold?'think':'idle'):mode;clipTime=mode==='auto'&&active==='think'?elapsed-threshold:elapsed;frame=frameAt(active,clipTime);}
+ last=now;draw();requestAnimationFrame(tick);
+}
+init().catch(error=>{$('description').textContent='动画数据或图片加载失败。请保留 animations.js、Previews 和 Sprites 的相对位置。';$('description').className='error';document.body.dataset.ready='error';console.error(error);});
+</script></body></html>

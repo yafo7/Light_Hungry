@@ -1,0 +1,190 @@
+{
+  "source": ".\\art\\player-idle-v05-2026-10-25\\Source\\idle_c_generated.png",
+  "width": 1448,
+  "height": 1086,
+  "hasAlpha": true,
+  "columns": 4,
+  "rows": 3,
+  "frames": [
+    {
+      "i": 0,
+      "bounds": [
+        30,
+        36,
+        336,
+        347
+      ],
+      "visibleSize": [
+        307,
+        312
+      ],
+      "transparentPixels": 60133,
+      "edgePixels": 0
+    },
+    {
+      "i": 1,
+      "bounds": [
+        28,
+        37,
+        336,
+        347
+      ],
+      "visibleSize": [
+        309,
+        311
+      ],
+      "transparentPixels": 59132,
+      "edgePixels": 0
+    },
+    {
+      "i": 2,
+      "bounds": [
+        28,
+        37,
+        336,
+        347
+      ],
+      "visibleSize": [
+        309,
+        311
+      ],
+      "transparentPixels": 58812,
+      "edgePixels": 0
+    },
+    {
+      "i": 3,
+      "bounds": [
+        29,
+        36,
+        336,
+        347
+      ],
+      "visibleSize": [
+        308,
+        312
+      ],
+      "transparentPixels": 58823,
+      "edgePixels": 0
+    },
+    {
+      "i": 4,
+      "bounds": [
+        29,
+        34,
+        338,
+        344
+      ],
+      "visibleSize": [
+        310,
+        311
+      ],
+      "transparentPixels": 58939,
+      "edgePixels": 0
+    },
+    {
+      "i": 5,
+      "bounds": [
+        29,
+        35,
+        336,
+        345
+      ],
+      "visibleSize": [
+        308,
+        311
+      ],
+      "transparentPixels": 58776,
+      "edgePixels": 0
+    },
+    {
+      "i": 6,
+      "bounds": [
+        29,
+        34,
+        336,
+        345
+      ],
+      "visibleSize": [
+        308,
+        312
+      ],
+      "transparentPixels": 58808,
+      "edgePixels": 0
+    },
+    {
+      "i": 7,
+      "bounds": [
+        28,
+        34,
+        336,
+        345
+      ],
+      "visibleSize": [
+        309,
+        312
+      ],
+      "transparentPixels": 58573,
+      "edgePixels": 0
+    },
+    {
+      "i": 8,
+      "bounds": [
+        29,
+        31,
+        336,
+        342
+      ],
+      "visibleSize": [
+        308,
+        312
+      ],
+      "transparentPixels": 58689,
+      "edgePixels": 0
+    },
+    {
+      "i": 9,
+      "bounds": [
+        28,
+        28,
+        336,
+        343
+      ],
+      "visibleSize": [
+        309,
+        316
+      ],
+      "transparentPixels": 57700,
+      "edgePixels": 0
+    },
+    {
+      "i": 10,
+      "bounds": [
+        28,
+        30,
+        336,
+        343
+      ],
+      "visibleSize": [
+        309,
+        314
+      ],
+      "transparentPixels": 58527,
+      "edgePixels": 0
+    },
+    {
+      "i": 11,
+      "bounds": [
+        29,
+        30,
+        336,
+        342
+      ],
+      "visibleSize": [
+        308,
+        313
+      ],
+      "transparentPixels": 58559,
+      "edgePixels": 0
+    }
+  ]
+}

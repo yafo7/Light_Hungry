@@ -1,0 +1,44 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "date": "2026-10-25",
+  "assets": [
+    {
+      "id": "bridge",
+      "source": "Source/bridge_generated.png",
+      "prompt": "Use case: identity-preserve. Create a complete-character sprite animation RETAKE to connect two existing drawings without a final pop.\nImage1 = exact desired END drawing and paint reference. Image2 = START drawing. They are the same little blue gray pear creature; neither image is a new character. Output12 full body cels,4columns3rows, transparent background, row-major.\nThe entire change between start and end must be spread smoothly across these12 closely spaced drawings. Current problem: arm outline, nose height and cream belly paint suddenly change in one frame. Retake these12 as gradual, evenly paced settling into image1. First cel very close to image2; last cel as close as possible to image1. The last4 especially must converge to image1's exact face/eye/mouth position, ROUND arm outline, belly patch layout and body silhouette, with no pose change at the final boundary.\nHead never gets longer or squashed. Keep the same compact round head/short muzzle. Hand settles slightly upward and back into relaxed hanging pose. Black eye open, same friendly open mouth. Nose still points right. No head tilt/new blink/action. Feet stay planted with identical baseline and body height. Do not create disconnected parts. No ghosting, transparency blending, rig, optical flow, text, shadow or grid lines. Keep dark navy ink, pale cream belly, blue gray paint patches and same model proportions from image1. Ample alpha gutters. Twelve whole character drawings, not a keyframe pair."
+    },
+    {
+      "id": "wheel",
+      "source": "Source/wheel_generated.png",
+      "prompt": "Use case: stylized-concept. Create a game prop SPRITE ANIMATION from the supplied pulley_wheel reference, exact iron wheel/brass crank/wood handle design, dark navy outline and painted metal texture.\nOutput24 COMPLETE wheel cels in exactly6columns4rows, transparent background, row-major. The wheel turns one full CLOCKWISE revolution around the fixed center of its axle. Angle per cel15degrees:0,15,30,45,60,75 /90,105,120,135,150,165 /180,195,210,225,240,255 /270,285,300,315,330,345. The wooden crank grip starts lower-right like the reference, and travels a complete ellipse around the hub. The iron spokes turn WITH the crank. Keep the oval outer wheel rim identical size, same vertical orientation and same perspective in every cel; this is an axle turning, NOT the whole elliptical wheel tumbling or rocking like a coin. Brass hub stays at identical local position. The grip stays cylindrical with proper projection. Same number of spokes in all cels; never duplicate or detach handle.\nClosely spaced consistent cel drawings, no camera motion or changes in scale/paint/style. Only this one complete rotating prop per cell, no person, no rope, no stand, no labels, no text, no floor, no shadow, no background. Solid opaque metal/wood interiors, holes genuinely transparent. Ample space between objects. 6x4 exact grid."
+    },
+    {
+      "id": "lever",
+      "source": "Source/lever_generated.png",
+      "prompt": "Use case: stylized-concept. Make a complete prop sprite animation for this EXACT brass lever with red-brown round knob.\nImage1 is OFF tilted upper-left. Image2 is ON tilted upper-right. Same mechanism. Output16 COMPLETE cels in4columns4rows, transparent, read row-major.\nThe base MUST stay absolutely fixed with identical paint and bolt positions. Move only the straight brass lever shaft and red knob along a smooth circular arc around its fixed pin. Fixed lever length and round knob size. No bending, shrinking or stretching. Draw a SINGLE knob and shaft.\n16 angles from45degrees left of vertical through vertical to45degrees right of vertical. Ease gently: left45,44,41,36,29,21,13,4,right4,13,21,29,36,41,44,45. Cel1 matches image1 off; cel16 matches image2 on. Register both to the same centered brass base, same width and baseline: do not copy different canvas offsets from the references. All bolts and base shape are unchanged, no base sliding, wobbling or mirroring. Dark navy ink, warm ochre brass, red lacquer rounded knob, restrained painterly brush marks. Full object visible in everycell. No numerals, text, arrows, guides, shadows or background. Real transparent alpha. Ample padding."
+    },
+    {
+      "id": "mirror",
+      "source": "Source/mirror_generated.png",
+      "prompt": "Use case: stylized-concept. Create an interaction animation of a circular golden-framed pale-blue mirror on the provided brass pedestal.\nImage1=mirror head material/design; image2=pedestal design. Assemble the mirror onto the TOP round pivot of pedestal. Output16 COMPLETE mirror+pedestal cels in4columns4rows, transparent background, row-major.\nMirror smoothly TILTS from slanting up-left/down-right (backslash) through upright to slanting down-left/up-right (slash), total approximately80degrees. Exactly the same oval mirror and gold frame in everycel, turning in the image plane about the fixed gold pivot at the mirror center on the upper post. Angle of long axis relative vertical: -40,-39,-36,-32,-26,-19,-11,-4,+4,+11,+19,+26,+32,+36,+39,+40 degrees. The fixed brass upright post and low gray rectangular plinth NEVER rotate, move, change size or change paint. The head's upper/lower ends travel around fixed pivot with equal length, no bending or shrinking. Blue reflective face remains visible throughout, no back-of-mirror turn. Same short brass post, low gray base with gold corners as image2; NO stone cube. Dark navy outline and restrained painted texture from references. No light beams, sparkles, scene, floor, shadows, texts or grid labels. Genuine alpha background and transparent margins. Entire assembled prop in everycell, same size and anchor."
+    },
+    {
+      "id": "settle",
+      "source": "Source/settle_generated.png",
+      "prompt": "Precise-object-edit. Use this exact full character image as the sole master. Output8 complete character cels in4columns2rows, row-major, transparent background. All8 must match the reference head, eye, snout, open mouth, ears, feet, tail, body silhouette, blue/cream paint patches and linework AS EXACTLY AS POSSIBLE. Do not redraw a new model or simplify the texture.\nONLY the tiny hanging near arm changes: cel1 its rounded tip is slightly lower and toward the belly than reference (about6pixels at512); cel2 5px lower; cel3 4px lower; cel4 3px lower; cel5 2px; cel6 1px; cel7 exact reference arm; cel8 exact reference arm. The hand settles upward very gently into original hanging shape. No hand raise to face. No finger changes. NO head/face pose change, NO mouth movement, NO eye blink. Keep torso and head absolutely stationary in each drawing. Final two whole characters should visually match the supplied reference exactly.\nSame camera/size/baseline within eachcell. Ample transparent padding, no labels/text/shadows. A clean whole-character Sprite cels sheet.",
+      "references": [
+        "Source/V05/Sprites/Think/player_think_071.png"
+      ]
+    },
+    {
+      "id": "wheel_top",
+      "source": "Source/wheel_top_generated.png",
+      "prompt": "Edit/reference exact wheel design supplied. Draw8 COMPLETE pulley wheel sprite cels,4columns2rows, transparent alpha. This is the missing TOP HALF of a wheel-turn sequence, not a rocking wheel. Outer oval wheel rim stays vertical and absolutely same size/position/perspective. Center hub stays fixed.\nCrank grip positions, read row-major: cell1 at3oclock(right);2 at2oclock;3 at1oclock;4 at12oclock(straight above hub);5 at11oclock;6 at10oclock;7 at9oclock(left);8 at8oclock. Exactly one brass crank/wood cylindrical handgrip at each position. Same crank length. Spokes rotate with it, same count of spokes and solid iron rim, no body tumbling. Keep reference iron blue-gray metal, golden hub and arm, orange-brown wood grip and thick dark ink. Precise rigid mechanism geometry. All wheel holes transparent, no scene, no floor, no shadow, no background, no numbering. Enough room so grip is fully visible in eachcell.",
+      "references": [
+        "Source/References/pulley_wheel.png"
+      ]
+    }
+  ],
+  "postprocessing": "Whole sprite crop, uniform scale, translation for registration, frame selection, timing and atlas packing only. No local head deformation, skeletal animation or crossfade.",
+  "selection": "Player ending uses bridge cels6,7,9,10,11 then settle0,1,2,4,5,6. Wheel CCW uses top0..7 then wheel15,16,18,19,20,21,22; CW reverses around shared start. Lever/mirror use all16 with reverse sequences."
+}

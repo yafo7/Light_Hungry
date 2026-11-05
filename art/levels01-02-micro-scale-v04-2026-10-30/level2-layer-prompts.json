@@ -1,0 +1,18 @@
+{
+  "mode": "built-in image_gen",
+  "reference": "C:/Users/10029/Documents/ChatGPT/食光兽/art/levels01-02-micro-scale-v04-2026-10-30/l2-background.png",
+  "jobs": [
+    {
+      "key": "l2-clean",
+      "file": "l2-background-clean.png",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit. The attached pot-interior watercolor scene is the edit target. Create its BACKGROUND LAYER ONLY, preserving the exact whole 2:1 canvas, camera, scale, roof, hanging roots, leaf/mica/dew optical prop, tail side, left entry gap and right drainage tunnel exactly in place. Do not reframe, zoom or recenter.\nRemove ONLY the foreground horizontal walking lip and the large earth/stone cut-face below it (currently in lower about27 percent of canvas). Also remove the low freestanding rectangular dirt/stone stump near middle-left at floor level (below the leaf); that stump belongs to the ground layer. Keep the walls, rear floor moss and rear plants where they are. Fill the vacated lower strip with a quiet dark brown low-detail earth background wash, with no hard horizontal platform contour, no foreground block texture or prominent roots, so a separate ground layer can be laid over it. Preserve the right tunnel opening and the glimpse of shallow water behind the removed foreground edge. Preserve everything above the walking region, including light. No character or text. This is an in-place background clean plate, NOT a new composition."
+    },
+    {
+      "key": "l2-ground",
+      "file": "l2-ground.png",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Extract just the FOREGROUND GROUND LAYER from the attached pot-interior watercolor scene. Critical: retain the ORIGINAL ENTIRE 2:1 canvas and the ORIGINAL PIXEL PLACEMENT of the ground across its lower roughly27 percent; everything else becomes truly transparent. DO NOT CENTER or enlarge the ground or change camera. The top edge of the walking path stays around72.8 percent down from the top, with roots/stone/soil front cut-face continuing to the bottom about95 percent. Preserve its long level horizontal contour and clear ink edge. Include the little freestanding rectangular moss/earth block on the path around center-left (below the leaf) and tiny plants rooted on the platform. Include the shallow water notch at far right under the drainage exit, but NO pipe or tunnel shell.\nRemove ALL background: pot shell, high hanging roots, trees, walls, leaf/mica/dew mechanism, body/tail scales, tunnel mouth, gates, sky and sun beams. No character, no detached painted shadows, no text. Exactly ONE connected ground/platform silhouette with an isolated little low raised stump integrated to its top; transparent empty area above; wide strip spans essentially full original image width. Match watercolor edges/material colors exactly. Preserve original image coordinates to allow overlay with a background clean plate."
+    }
+  ]
+}

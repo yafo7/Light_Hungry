@@ -1,0 +1,24 @@
+{
+  "levels": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "png_size": [
+    1600,
+    1100
+  ],
+  "vector_boards": 9,
+  "native_elements": 1705,
+  "svg_xml": "pass",
+  "excalidraw_structure": "pass",
+  "unique_ids": true,
+  "visual_review": "performed",
+  "unity_validation": "not performed",
+  "editor_import": "not performed"
+}

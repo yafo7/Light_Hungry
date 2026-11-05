@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小食光兽 · 待机动作 v02</title>
+<style>
+:root{color-scheme:dark;font-family:"Microsoft YaHei","Segoe UI",sans-serif;color:#e9edf0;background:#101a24}*{box-sizing:border-box}body{margin:0;padding:32px;max-width:1240px;margin-inline:auto}header{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:26px}.eyebrow{color:#edc782;font-size:12px;letter-spacing:2px}h1{font-size:30px;margin:8px 0 8px;font-weight:650}p{color:#a7b6c2;line-height:1.7;margin:8px 0}.badge{border:1px solid #3b4e5c;padding:8px 12px;border-radius:20px;font-size:12px;color:#b7c6d0}.layout{display:grid;grid-template-columns:minmax(330px,1.35fr) minmax(280px,.85fr);gap:22px}.stage{min-height:500px;border:1px solid #304250;border-radius:18px;background:#1c2d3a;display:grid;place-items:center;position:relative;overflow:hidden}.stage.light{background:#e9e3d4}.stage.checker{background-color:#bcc4ca;background-image:linear-gradient(45deg,#dce2e6 25%,transparent 25%),linear-gradient(-45deg,#dce2e6 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#dce2e6 75%),linear-gradient(-45deg,transparent 75%,#dce2e6 75%);background-size:32px 32px;background-position:0 0,0 16px,16px -16px,-16px 0}.tag{position:absolute;top:20px;left:20px;background:#101a24db;border:1px solid #3b4e5c;border-radius:7px;padding:6px 10px;color:#edcf99;font-size:13px}canvas{display:block;width:384px;height:384px;max-width:100%;object-fit:contain}.hint{position:absolute;bottom:18px;left:20px;color:#8da2b1;font-size:12px}.panel{padding:26px;border:1px solid #304250;border-radius:18px;background:#15222e}h2{font-size:19px;margin:0 0 12px}.controls{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}button,select{background:#203342;color:#dce5eb;border:1px solid #3a5262;border-radius:8px;padding:10px 13px;font:inherit;font-size:13px;cursor:pointer}button:hover{background:#294556}button[aria-pressed="true"],button.primary{background:#e6bf7c;color:#1a2430;border-color:#e6bf7c}.rule{height:1px;background:#2a3d4b;margin:22px 0}label{font-size:13px;color:#b4c4cf;display:flex;align-items:center;gap:12px;margin:13px 0}select{margin-left:auto}progress{height:6px;width:100%;accent-color:#e6bf7c;border:0}#status{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:#c7d5df;margin:12px 0}.meta{display:grid;grid-template-columns:1fr 1fr;gap:14px}.meta span{display:block;color:#94a7b5;font-size:12px;margin-bottom:5px}.meta strong{font-size:15px;font-weight:500}.stripbox{margin-top:22px;padding:20px;border:1px solid #304250;border-radius:16px;background:#15222e}.striphead{display:flex;justify-content:space-between;align-items:center}.striphead p{font-size:12px}.frames{display:flex;overflow:auto;gap:8px;padding:8px 0}.frame{padding:5px;min-width:78px;flex:1;background:#1e303e;border-color:transparent}.frame img{width:100%;min-width:64px;max-width:100px;display:block}.frame small{font-size:11px}.frame.selected{border-color:#e6bf7c;background:#2b4050}.foot{display:flex;gap:18px;flex-wrap:wrap;margin:22px 0;color:#93a8b7;font-size:12px}a{color:#e6c88f;text-decoration:none}a:hover{text-decoration:underline}
+@media(max-width:750px){body{padding:18px}header{align-items:flex-start}.badge{display:none}.layout{grid-template-columns:1fr}.stage{min-height:420px}.panel{padding:20px}h1{font-size:25px}}
+</style></head><body>
+<header><div><div class="eyebrow">LIGHT HUNGRY / CHARACTER ANIMATION</div><h1>小食光兽 · 待机动作</h1><p>呼吸、眨眼，然后歪着脑袋想一想。</p></div><span class="badge">美术预览 · v02 / 2026.10.25</span></header>
+<main><div class="layout"><section class="stage" id="stage" aria-label="角色动画预览">
+<div class="tag" id="stateTag">普通待机</div><canvas id="view" width="512" height="512" aria-label="小食光兽动画"></canvas><div class="hint">右朝向 · 固定脚底 · 原始帧播放</div>
+</section><aside class="panel"><h2>播放方式</h2><p id="description">先播放普通待机；静止满 3 秒，自动进入思考循环。</p>
+<div class="controls" id="modes"><button data-mode="auto" aria-pressed="true">自动 · 3 秒触发</button><button data-mode="idle" aria-pressed="false">普通待机</button><button data-mode="think" aria-pressed="false">思考待机</button></div>
+<div id="status"><span id="phase">正在待机</span><span id="clock">0.00 s</span></div><progress id="progress" max="3" value="0"></progress>
+<div class="controls"><button id="play">暂停</button><button id="reset" class="primary">模拟操作 · 重新计时</button><button id="prev">上一帧</button><button id="next">下一帧</button></div>
+<div class="rule"></div>
+<label>预览背景<select id="background"><option value="dark">深色</option><option value="light">浅色</option><option value="checker">透明棋盘格</option></select></label>
+<label>播放速度<select id="speed"><option value=".5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label>
+<label>显示尺寸<select id="size"><option value="128">128 px · 游戏尺寸</option><option value="256">256 px</option><option value="384" selected>384 px</option><option value="512">512 px · 原尺寸</option></select></label>
+<label><input type="checkbox" id="baseline">显示脚底参考线</label>
+<div class="rule"></div><div class="meta"><div><span>普通待机</span><strong>8 帧 / 1.5 秒</strong></div><div><span>思考待机</span><strong>12 帧 / 2 秒</strong></div><div><span>单帧画布</span><strong>512 × 512 / RGBA</strong></div><div><span>衔接</span><strong>共享首尾姿态</strong></div></div>
+</aside></div>
+<section class="stripbox"><div class="striphead"><h2 id="stripTitle">普通待机 · 逐帧查看</h2><p>点击单帧可暂停检查</p></div><div class="frames" id="frames"></div></section>
+<div class="foot"><a href="../Sheets/player_idle_grid.png">普通待机序列图</a><a href="../Sheets/player_think_grid.png">思考序列图</a><a href="../animations.json">帧时长数据</a><a href="../README.md">交付与导入说明</a><span>自动模式中，触发思考后持续循环；点击“模拟操作”可立即回到普通待机。</span></div>
+</main>
+<script>
+const clips={
+ idle:{delay:[300,200,250,70,80,70,230,300],count:8,dir:'Idle',title:'普通待机'},
+ think:{delay:[120,120,140,180,260,140,160,260,100,140,160,220],count:12,dir:'Think',title:'思考待机'}
+};
+const images={idle:[],think:[]};let mode='auto',playing=true,elapsed=0,last=0,active='idle',frame=0,speed=1,stripActive='';
+const canvas=document.getElementById('view'),ctx=canvas.getContext('2d');
+const $=id=>document.getElementById(id);
+function frameAt(name,time){const d=clips[name].delay,total=d.reduce((a,b)=>a+b,0);let t=time%total;for(let i=0;i<d.length;i++){if(t<d[i])return i;t-=d[i]}return 0;}
+function renderStrip(){if(stripActive===active)return;stripActive=active;$('stripTitle').textContent=clips[active].title+' · 逐帧查看';$('frames').innerHTML='';
+ for(let i=0;i<clips[active].count;i++){const b=document.createElement('button');b.className='frame';b.title='第 '+(i+1)+' 帧';const img=images[active][i].cloneNode();img.alt='第 '+(i+1)+' 帧';b.append(img);const label=document.createElement('small');label.textContent=String(i+1).padStart(2,'0')+' · '+clips[active].delay[i]+'ms';b.append(label);b.onclick=()=>{setPaused();frame=i;draw();};$('frames').append(b);}
+}
+function draw(){ctx.clearRect(0,0,512,512);ctx.drawImage(images[active][frame],0,0);if($('baseline').checked){ctx.strokeStyle='#ed6868';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(0,480.5);ctx.lineTo(512,480.5);ctx.stroke();}
+ canvas.dataset.clip=active;canvas.dataset.frame=frame;renderStrip();[...$('frames').children].forEach((b,i)=>b.classList.toggle('selected',i===frame));
+ $('stateTag').textContent=clips[active].title+' · '+String(frame+1).padStart(2,'0')+'/'+clips[active].count;
+ $('clock').textContent=(elapsed/1000).toFixed(2)+' s';$('phase').textContent=mode==='auto'?(elapsed<3000?'等待思考触发':'已进入思考循环'):clips[active].title;
+ $('progress').value=mode==='auto'?Math.min(3,elapsed/1000):((elapsed%clips[active].delay.reduce((a,b)=>a+b,0))/1000);
+}
+function setPaused(){playing=false;$('play').textContent='播放';}
+function restart(){elapsed=0;active=mode==='think'?'think':'idle';frame=0;playing=true;last=performance.now();$('play').textContent='暂停';draw();}
+function resumeFromFrame(){const start=clips[active].delay.slice(0,frame).reduce((a,b)=>a+b,0);elapsed=mode==='auto'?(active==='think'?3000+start:start):start;playing=true;last=performance.now();$('play').textContent='暂停';}
+$('play').onclick=()=>{if(playing)setPaused();else resumeFromFrame();};
+$('reset').onclick=restart;
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(x=>x.setAttribute('aria-pressed',x===b));$('description').textContent=mode==='auto'?'先播放普通待机；静止满 3 秒，自动进入思考循环。':mode==='idle'?'轻微呼吸、耳尖跟随和短暂眨眼，双脚始终落地。':'抬眼、抬手抵下巴，轻微晃头思考，再自然收势。';restart();});
+for(const [id,delta] of [['prev',-1],['next',1]])$(id).onclick=()=>{setPaused();frame=(frame+delta+clips[active].count)%clips[active].count;draw();};
+$('background').onchange=e=>$('stage').className='stage '+e.target.value;
+$('size').onchange=e=>{canvas.style.width=e.target.value+'px';canvas.style.height=e.target.value+'px';};
+$('speed').onchange=e=>speed=Number(e.target.value);$('baseline').onchange=draw;
+async function init(){await Promise.all(Object.entries(clips).flatMap(([name,c])=>Array.from({length:c.count},(_,i)=>new Promise((resolve,reject)=>{const img=new Image();img.src='../Sprites/'+c.dir+'/player_'+name+'_'+String(i).padStart(2,'0')+'.png';img.onload=resolve;img.onerror=reject;images[name][i]=img;}))));
+ last=performance.now();requestAnimationFrame(tick);document.body.dataset.ready='true';
+}
+function tick(now){if(playing){elapsed+=Math.min(now-last,100)*speed;active=mode==='auto'?(elapsed>=3000?'think':'idle'):mode;frame=frameAt(active,mode==='auto'&&active==='think'?elapsed-3000:elapsed);}last=now;draw();requestAnimationFrame(tick);}
+init().catch(()=>{$('description').textContent='图片加载失败，请保留 Previews、Sprites 文件夹的相对位置。';});
+</script></body></html>

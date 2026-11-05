@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "nineBoundFBX": true,
+    "originalFBXUnchanged": true,
+    "all22Bones": true,
+    "allWeighted": true,
+    "allTextured": true,
+    "finiteGeometry": true,
+    "sampledFloorPenetrationBelow1mm": true,
+    "nineClips": true,
+    "allAnimated": true,
+    "allHaveTracks": true,
+    "noBrowserErrors": true
+  },
+  "diagnostics": {
+    "strict0_1mmFloorTolerance": false,
+    "maxSampledPenetrationModelUnits": 0.0002070524642476812,
+    "floorToleranceNote": "Subframe interpolation after FBX roundtrip leaves approximately 0.207 mm penetration in Push_01 assuming 1 unit = 1 metre; within the 1 mm preview tolerance, not exact contact."
+  },
+  "validationBoundary": "Geometry checked at 9 timestamps per clip. No exhaustive self-collision, hand-object IK or Unity scene validation."
+}

@@ -1,0 +1,104 @@
+{
+  "name": "LightHungry Player Idle v02",
+  "date": "2026-10-25",
+  "generator": "built-in image_gen",
+  "frameSize": [
+    512,
+    512
+  ],
+  "facing": "right",
+  "pixelsPerUnit": 256,
+  "pivot": [
+    0.5,
+    0.0625
+  ],
+  "footReferenceY": 480,
+  "alpha": "RGBA PNG; generated alpha preserved through slicing and resizing.",
+  "playback": {
+    "idleThresholdSeconds": 3,
+    "thinkingLoopsWhileIdle": true,
+    "interruptImmediatelyOn": [
+      "move",
+      "jump",
+      "interact",
+      "ability",
+      "damage",
+      "death"
+    ],
+    "timerReset": "Any gameplay action or leaving grounded neutral state."
+  },
+  "clips": {
+    "idle": {
+      "frameCount": 8,
+      "loop": true,
+      "durationMs": 1500,
+      "frameDurationMs": [
+        300,
+        200,
+        250,
+        70,
+        80,
+        70,
+        230,
+        300
+      ],
+      "grid": "Sheets/player_idle_grid.png",
+      "gridLayout": [
+        4,
+        2
+      ],
+      "horizontalStrip": "Sheets/player_idle_strip.png",
+      "frames": [
+        "Sprites/Idle/player_idle_00.png",
+        "Sprites/Idle/player_idle_01.png",
+        "Sprites/Idle/player_idle_02.png",
+        "Sprites/Idle/player_idle_03.png",
+        "Sprites/Idle/player_idle_04.png",
+        "Sprites/Idle/player_idle_05.png",
+        "Sprites/Idle/player_idle_06.png",
+        "Sprites/Idle/player_idle_07.png"
+      ],
+      "endpointReuse": "Frame 07 is frame 00."
+    },
+    "think": {
+      "frameCount": 12,
+      "loop": true,
+      "durationMs": 2000,
+      "frameDurationMs": [
+        120,
+        120,
+        140,
+        180,
+        260,
+        140,
+        160,
+        260,
+        100,
+        140,
+        160,
+        220
+      ],
+      "grid": "Sheets/player_think_grid.png",
+      "gridLayout": [
+        4,
+        3
+      ],
+      "horizontalStrip": "Sheets/player_think_strip.png",
+      "frames": [
+        "Sprites/Think/player_think_00.png",
+        "Sprites/Think/player_think_01.png",
+        "Sprites/Think/player_think_02.png",
+        "Sprites/Think/player_think_03.png",
+        "Sprites/Think/player_think_04.png",
+        "Sprites/Think/player_think_05.png",
+        "Sprites/Think/player_think_06.png",
+        "Sprites/Think/player_think_07.png",
+        "Sprites/Think/player_think_08.png",
+        "Sprites/Think/player_think_09.png",
+        "Sprites/Think/player_think_10.png",
+        "Sprites/Think/player_think_11.png"
+      ],
+      "endpointReuse": "Frames 00 and 11 reuse idle frame 00."
+    }
+  }
+}

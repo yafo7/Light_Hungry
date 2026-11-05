@@ -1,0 +1,124 @@
+{
+  "name": "LightHungry Lever v07",
+  "type": "rigid-skeletal-2d",
+  "textureSize": [
+    512,
+    512
+  ],
+  "coordinates": "pixels, x right, y down; clockwise positive degrees",
+  "pixelsPerUnit": 256,
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "position": [
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "handle",
+      "parent": "root",
+      "position": [
+        256,
+        372
+      ],
+      "length": 224.28,
+      "scale": [
+        1,
+        1
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "arm",
+      "bone": "handle",
+      "texture": "Textures/lever_arm.png",
+      "texturePivot": [
+        256,
+        372
+      ],
+      "weight": 1,
+      "drawOrder": 0
+    },
+    {
+      "name": "base",
+      "bone": "root",
+      "texture": "Textures/lever_base.png",
+      "texturePivot": [
+        0,
+        0
+      ],
+      "weight": 1,
+      "drawOrder": 1
+    }
+  ],
+  "motion": {
+    "leftDegrees": -43,
+    "rightDegrees": 43,
+    "durationMs": 640,
+    "easing": "6t^5-15t^4+10t^3",
+    "animatedChannels": [
+      "handle.rotation"
+    ],
+    "scaling": false,
+    "translation": false
+  },
+  "unity": {
+    "baseSpritePivot": [
+      0.5,
+      0.0625
+    ],
+    "armSpritePivot": [
+      0.5,
+      0.2734375
+    ],
+    "handleLocalPosition": [
+      0,
+      0.421875,
+      0
+    ],
+    "angleSign": -1
+  },
+  "sourceRegistration": {
+    "base": {
+      "sourceRect": {
+        "left": 202,
+        "top": 413,
+        "width": 742,
+        "height": 420
+      },
+      "sourcePivot": [
+        573,
+        572
+      ],
+      "uniformScale": 0.42,
+      "placement": [
+        100,
+        305
+      ]
+    },
+    "arm": {
+      "sourceRect": {
+        "left": 1262,
+        "top": 66,
+        "width": 288,
+        "height": 752
+      },
+      "sourcePivot": [
+        1406,
+        742
+      ],
+      "uniformScale": 0.42,
+      "placement": [
+        196,
+        88
+      ]
+    }
+  }
+}

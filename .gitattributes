@@ -17,3 +17,50 @@
 *.otf binary
 *.fbx binary
 *.psd binary
+
+# Binary art for the independent seven-level prototypes (Git LFS)
+art/**/*.png filter=lfs diff=lfs merge=lfs -text
+art/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+art/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+art/**/*.gif filter=lfs diff=lfs merge=lfs -text
+art/**/*.webp filter=lfs diff=lfs merge=lfs -text
+art/**/*.glb filter=lfs diff=lfs merge=lfs -text
+art/**/*.fbx filter=lfs diff=lfs merge=lfs -text
+art/**/*.blend filter=lfs diff=lfs merge=lfs -text
+art/**/*.unitypackage filter=lfs diff=lfs merge=lfs -text
+art/**/*.psd filter=lfs diff=lfs merge=lfs -text
+art/**/*.wav filter=lfs diff=lfs merge=lfs -text
+art/**/*.ogg filter=lfs diff=lfs merge=lfs -text
+art/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
+art/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.png filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.gif filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.webp filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.glb filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.fbx filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.blend filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.unitypackage filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.psd filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.wav filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.ogg filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
+UnityProject/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.png filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.gif filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.webp filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.glb filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.fbx filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.blend filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.unitypackage filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.psd filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.wav filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.ogg filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+*_basecolor.jpg filter=lfs diff=lfs merge=lfs -text
+*.cmd text eol=crlf
+*.ps1 text eol=crlf

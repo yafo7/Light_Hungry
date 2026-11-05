@@ -1,0 +1,156 @@
+{
+  "frameSize": [
+    512,
+    512
+  ],
+  "renderScale": 2,
+  "footReferenceY": 480,
+  "pivot": [
+    285,
+    285
+  ],
+  "body": {
+    "file": "Rig/body_raw.png",
+    "x": 76,
+    "y": 212.43243243243245,
+    "width": 360,
+    "height": 267.56756756756755,
+    "scale": 0.6081081081081081
+  },
+  "head": {
+    "file": "Rig/head_feathered.png",
+    "rawFile": "Rig/head_raw.png",
+    "x": 91,
+    "y": 96,
+    "width": 344,
+    "height": 262.25742574257424,
+    "scale": 0.5676567656765676,
+    "feather": "Fixed diagonal alpha ramp in source layer. No animated mask changes."
+  },
+  "eye": {
+    "file": "Rig/eye_raw.png",
+    "center": [
+      311,
+      215
+    ],
+    "width": 34,
+    "height": 34.73913043478261
+  },
+  "closed": {
+    "file": "Rig/closed_raw.png",
+    "center": [
+      311,
+      215.5
+    ],
+    "width": 28,
+    "height": 13.391304347826088
+  },
+  "extracted": {
+    "body": {
+      "file": "Rig/body_raw.png",
+      "sourceRect": [
+        27,
+        220,
+        592,
+        440
+      ],
+      "width": 592,
+      "height": 440,
+      "component": {
+        "n": 188502,
+        "x0": 31,
+        "y0": 224,
+        "x1": 614,
+        "y1": 655
+      }
+    },
+    "head": {
+      "file": "Rig/head_raw.png",
+      "sourceRect": [
+        634,
+        111,
+        606,
+        462
+      ],
+      "width": 606,
+      "height": 462,
+      "component": {
+        "n": 159333,
+        "x0": 638,
+        "y0": 115,
+        "x1": 1235,
+        "y1": 568
+      }
+    },
+    "eye": {
+      "file": "Rig/eye_raw.png",
+      "sourceRect": [
+        285,
+        918,
+        92,
+        94
+      ],
+      "width": 92,
+      "height": 94,
+      "component": {
+        "n": 5633,
+        "x0": 289,
+        "y0": 922,
+        "x1": 372,
+        "y1": 1007
+      }
+    },
+    "closed": {
+      "file": "Rig/closed_raw.png",
+      "sourceRect": [
+        895,
+        956,
+        92,
+        44
+      ],
+      "width": 92,
+      "height": 44,
+      "component": {
+        "n": 1092,
+        "x0": 899,
+        "y0": 960,
+        "x1": 982,
+        "y1": 995
+      }
+    }
+  },
+  "registrationOffset": [
+    -15.5,
+    2
+  ],
+  "spritePivot": [
+    0.5,
+    0.0625
+  ],
+  "landmarks": {
+    "eye": [
+      311,
+      215
+    ],
+    "nose": [
+      397,
+      200
+    ],
+    "earBase": [
+      202,
+      174
+    ],
+    "cheek": [
+      398,
+      263
+    ],
+    "headWidthA": [
+      177,
+      221
+    ],
+    "headWidthB": [
+      411,
+      221
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "assetImages": [
+    {
+      "file": "background-front.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "sha256": "93125e86e9460f028e0d7cab353646e32ca8415a58f21275f37a583e195c46de",
+      "importedBytesIdentical": true
+    },
+    {
+      "file": "background-back.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "sha256": "83bce9e4f2f2072d6da7f0309b77b17ea8501a3f8005d93aa1312688ba492ea3",
+      "importedBytesIdentical": true
+    },
+    {
+      "file": "trellis-atlas.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "sha256": "1f539a2571fcb881d29e6750dd76548a3124861cf4b5271c913fe4764e5618e5",
+      "importedBytesIdentical": true
+    }
+  ],
+  "newPrefabs": [
+    {
+      "name": "LeafPanel",
+      "path": "Assets/Prefabs/TrellisReusable/LeafPanel.prefab",
+      "includedInPackage": true,
+      "packageBytesIdentical": true,
+      "sourceLinkedSceneInstances": 0
+    },
+    {
+      "name": "LeafShelf",
+      "path": "Assets/Prefabs/TrellisReusable/LeafShelf.prefab",
+      "includedInPackage": true,
+      "packageBytesIdentical": true,
+      "sourceLinkedSceneInstances": 120
+    },
+    {
+      "name": "MirrorCart",
+      "path": "Assets/Prefabs/TrellisReusable/MirrorCart.prefab",
+      "includedInPackage": true,
+      "packageBytesIdentical": true,
+      "sourceLinkedSceneInstances": 14
+    },
+    {
+      "name": "MirrorWindow",
+      "path": "Assets/Prefabs/TrellisReusable/MirrorWindow.prefab",
+      "includedInPackage": true,
+      "packageBytesIdentical": true,
+      "sourceLinkedSceneInstances": 84
+    },
+    {
+      "name": "RailBridge",
+      "path": "Assets/Prefabs/TrellisReusable/RailBridge.prefab",
+      "includedInPackage": true,
+      "packageBytesIdentical": true,
+      "sourceLinkedSceneInstances": 16
+    },
+    {
+      "name": "RollShade",
+      "path": "Assets/Prefabs/TrellisReusable/RollShade.prefab",
+      "includedInPackage": true,
+      "packageBytesIdentical": true,
+      "sourceLinkedSceneInstances": 16
+    }
+  ],
+  "package": {
+    "file": "TrellisReusable.unitypackage",
+    "bytes": 6595762,
+    "sha256": "28603cac04bfc35b450ed00afa4fbf51abb99b58e463a0b65bed9cb681331192",
+    "assetCount": 59,
+    "paths": [
+      "Assets/Art/GardenReusableGeometry/Bank_Paint.asset",
+      "Assets/Art/GardenReusableGeometry/GardenMirror_Base.asset",
+      "Assets/Art/GardenReusableGeometry/GardenMirror_Head.asset",
+      "Assets/Art/GardenReusableGeometry/GardenMirror_PivotPin.asset",
+      "Assets/Art/GardenReusableGeometry/GardenMirror_ShortMountingArm.asset",
+      "Assets/Art/GardenReusableGeometry/GardenWinch_Paint.asset",
+      "Assets/Art/GardenReusableGeometry/GlassDeck_Paint.asset",
+      "Assets/Art/GardenReusableGeometry/Lever_Paint.asset",
+      "Assets/Art/GardenReusableGeometry/NurseryTray_Paint.asset",
+      "Assets/Art/GardenReusableGeometry/Pulley_Paint.asset",
+      "Assets/Art/GardenReusableGeometry/RootArch_Paint.asset",
+      "Assets/Art/GardenReusableGeometry/TerracottaStep_Paint.asset",
+      "Assets/Art/Level06/props-atlas.png",
+      "Assets/Art/Level06/terrain-atlas.png",
+      "Assets/Art/Level07/trellis-atlas.png",
+      "Assets/Art/TrellisReusableGeometry/LeafPanel_Paint.asset",
+      "Assets/Art/TrellisReusableGeometry/LeafShelf_Paint.asset",
+      "Assets/Art/TrellisReusableGeometry/MirrorCart_ChassisPaint.asset",
+      "Assets/Art/TrellisReusableGeometry/MirrorWindow_Paint.asset",
+      "Assets/Art/TrellisReusableGeometry/RailBridge_Paint.asset",
+      "Assets/Art/TrellisReusableGeometry/RollShade_Paint.asset",
+      "Assets/Materials/GardenReusable/Bank_Paint.mat",
+      "Assets/Materials/GardenReusable/GardenMirror_Base.mat",
+      "Assets/Materials/GardenReusable/GardenMirror_Head.mat",
+      "Assets/Materials/GardenReusable/GardenMirror_PivotPin.mat",
+      "Assets/Materials/GardenReusable/GardenMirror_ShortMountingArm.mat",
+      "Assets/Materials/GardenReusable/GardenWinch_Paint.mat",
+      "Assets/Materials/GardenReusable/GlassDeck_Paint.mat",
+      "Assets/Materials/GardenReusable/Lever_Paint.mat",
+      "Assets/Materials/GardenReusable/NurseryTray_Paint.mat",
+      "Assets/Materials/GardenReusable/Pulley_Paint.mat",
+      "Assets/Materials/GardenReusable/RootArch_Paint.mat",
+      "Assets/Materials/GardenReusable/TerracottaStep_Paint.mat",
+      "Assets/Materials/TrellisReusable/LeafPanel_Paint.mat",
+      "Assets/Materials/TrellisReusable/LeafShelf_Paint.mat",
+      "Assets/Materials/TrellisReusable/MirrorCart_ChassisPaint.mat",
+      "Assets/Materials/TrellisReusable/MirrorWindow_Paint.mat",
+      "Assets/Materials/TrellisReusable/RailBridge_Paint.mat",
+      "Assets/Materials/TrellisReusable/RollShade_Paint.mat",
+      "Assets/Prefabs/GardenReusable",
+      "Assets/Prefabs/GardenReusable/Bank.prefab",
+      "Assets/Prefabs/GardenReusable/GardenMirror.prefab",
+      "Assets/Prefabs/GardenReusable/GardenWinch.prefab",
+      "Assets/Prefabs/GardenReusable/GlassDeck.prefab",
+      "Assets/Prefabs/GardenReusable/Lever.prefab",
+      "Assets/Prefabs/GardenReusable/NurseryTray.prefab",
+      "Assets/Prefabs/GardenReusable/Pulley.prefab",
+      "Assets/Prefabs/GardenReusable/RootArch.prefab",
+      "Assets/Prefabs/GardenReusable/TerracottaStep.prefab",
+      "Assets/Prefabs/TrellisReusable",
+      "Assets/Prefabs/TrellisReusable/LeafPanel.prefab",
+      "Assets/Prefabs/TrellisReusable/LeafShelf.prefab",
+      "Assets/Prefabs/TrellisReusable/MirrorCart.prefab",
+      "Assets/Prefabs/TrellisReusable/MirrorWindow.prefab",
+      "Assets/Prefabs/TrellisReusable/RailBridge.prefab",
+      "Assets/Prefabs/TrellisReusable/RollShade.prefab",
+      "Assets/Scripts/GardenReusableProp.cs",
+      "Assets/Shaders/InteractablePaint.shader",
+      "Assets/Shaders/PaintedLayer.shader"
+    ],
+    "unresolvedSerializedGuids": [],
+    "scope": "Serialized GUID dependency closure audit; clean-project import not executed."
+  },
+  "sceneRootsPresent": {
+    "FACE_A_Front_LeafCorridor": true,
+    "FACE_B_Back_Maintenance": true,
+    "01_Background_NoCollision": true,
+    "02_HorizontalPlatforms_Collisions": true,
+    "03_ReusableProps_Mechanisms": true
+  },
+  "promptFiles": [
+    "atlas-prompt.txt",
+    "back-prompt.txt",
+    "front-prompt.txt"
+  ],
+  "passed": true,
+  "visualLayoutRevision": {
+    "scope": "Unity scene regenerated and native player rebuilt successfully. Final native visual screenshot review is pending.",
+    "builder": "UnityProject-NOVA-URP/Assets/Editor/SeventhLevelBuilder.cs",
+    "frontLeafWallPaintRect": [
+      1245,
+      0,
+      135,
+      887
+    ],
+    "frontLeafWallCollisionRectUnchanged": [
+      1245,
+      -80,
+      135,
+      967
+    ],
+    "bankPaintBottomY": 887,
+    "bankCollisionBottomYUnchanged": 930,
+    "creatureBodyRect": [
+      1480,
+      120,
+      360,
+      620
+    ],
+    "creatureBodyContour": "Curved upper-left boundary; lower edge at 740 hidden by bank; right edge at 1840 outside canvas.",
+    "targetCentreUnchanged": [
+      1650,
+      320
+    ],
+    "buildResult": {
+      "result": "Succeeded",
+      "errors": 0,
+      "warnings": 1
+    },
+    "sceneSha256": "7ef79e824c156eef6fad24d4d33336257ec8d2fa20c2b3563d8f4d954c3e1c45",
+    "builderSha256": "5b9ac41e74f84cb5c00f17d310fadbf72971e4f840caebcd9fb76c0a87a8ef53"
+  }
+}

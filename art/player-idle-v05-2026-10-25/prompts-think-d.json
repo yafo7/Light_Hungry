@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-25",
+  "tool": "built-in image_gen.imagegen",
+  "source": "C:/Users/10029/.codex/generated_images/01a17208-e609-7420-85bc-955f1d274815/exec-8b220fa6-0ecd-4b09-9627-4cbf26076c92.png",
+  "halfEyeCorrection": {"tool":"built-in image_gen.imagegen","source":"C:/Users/10029/.codex/generated_images/01a17208-e609-7420-85bc-955f1d274815/exec-8b220fa6-0ecd-4b09-9627-4cbf26076c92.png","prompt":"Edit this complete 4-column by3-row sprite sheet. Make ONLY this correction:\nIn cells3,5,7,9 (counting1–12 left-to-right, top-to-bottom), the half-closed eyes contain a white reflection that looks like an eye roll. REMOVE ALL WHITE from those four half-closed eyes. Make the visible half-eye a solid BLACK lower semicircle or black narrow slit under the existing upper eyelid. No highlight, no white crescent, no white pupil, no white sclera in these four eyes.\nPreserve the exact eyelid position, eye silhouette, head shape, head tilt, nose, mouth, hand, body, feet, ears, tail, painterly colors and all outlines. Keep every complete full-body pose, grid placement and image dimensions unchanged. Keep the tiny white catchlights of the FULLY OPEN eyes in other cells unchanged. Keep fully closed eyes unchanged.\nOutput the complete12-cel full-body sprite sheet on the same true transparent alpha background. No other changes.","previousSource":"Source/think_d_before_half_eye_fix.png","affectedCellsZeroBased":[2,4,6,8],"review":"All four half-closed eyes now have solid black visible areas with no white reflection; fully open eye catchlights remain. Full-body pose and twelve-cell layout retained."},
+  "output": "Source/think_d_generated.png",
+  "reference": "C:/Users/10029/Documents/ChatGPT/食光兽/art/player-idle-v05-2026-10-25/Source/References/think_c_11.png",
+  "prompt": "Use case: precise-object-edit. Production COMPLETE FULL-BODY 2D game animation cels.\nThe supplied image is the exact last full-body cel of the preceding animation, showing the small light-eating creature with its head gently tilted to screen-right and its near hand resting under the chin. This precise pose is the immutable source. Make a short DOUBLE BLINK animation while preserving that exact full-body pose, style and proportions.\nOutput exactly TWELVE COMPLETE full-body cels arranged in a regular FOUR COLUMNS by THREE ROWS grid, read left-to-right then top-to-bottom. Requested canvas2048x1536, 512-square logical cells, identical character scale and baseline in every cell. No labels or cell borders. Each cel is a complete single painted character, not separated parts or a rig sheet.\nAll twelve characters must match the supplied reference in every feature except the UPPER EYELID: the SAME head tilt, SAME head length/width, SAME eye location, SAME nose and mouth, SAME eye-nose distance, SAME ears, SAME neck/chest connection, SAME near hand against chin, SAME pear-shaped blue-gray body, SAME cream-yellow belly, SAME two planted feet, SAME curled tail. Preserve the exact thick dark navy outlines and painterly color patches. No body breathing, bobbing, widening, shrinking, extra arm, hand movement or head return in this segment. The mouth remains exactly as supplied throughout. Do not straighten the head.\nEye is the same SOLID BLACK bead with its tiny white catchlight. NO white sclera, no white crescent, no eye rolling, no pupil moving upward. Closing only lowers the upper lid over the BLACK eye; full closure is one soft dark curved eyelid line. No angry brow. Preserve eye position through all states.\nExact eye states per cel:\n1 fully OPEN, exact supplied reference.\n2 fully OPEN, same exact pose.\n3 HALF CLOSED, visible lower half of black eye.\n4 FULLY CLOSED curved eyelid — first blink.\n5 HALF REOPENED, black eye visible, same geometry as cel3.\n6 FULLY OPEN black eye — clear separation between blinks.\n7 HALF CLOSED — second blink starts.\n8 FULLY CLOSED curved eyelid — second blink.\n9 HALF REOPENED, black eye visible.\n10 FULLY OPEN black eye.\n11 fully OPEN, exact supplied reference.\n12 fully OPEN, exact supplied reference, ready for the next action.\nThese are two short blink beats, not a long sleepy eye closure. Do not invent different facial expressions.\nGenuinely transparent alpha background with solid character interiors and smooth antialiased outlines. No shadows, floor, glow, external pixel debris, halos, checkerboard drawing, text, numbers, watermark or props. Entire ears, hands, tail and feet must remain inside every cell with generous transparent gutters.",
+  "columns": 4,
+  "rows": 3,
+  "order": "row-major",
+  "fullCharacterCels": 12,
+  "eyeStates": [
+    "open",
+    "open",
+    "half-closed",
+    "closed",
+    "half-open",
+    "open",
+    "half-closed",
+    "closed",
+    "half-open",
+    "open",
+    "open",
+    "open"
+  ],
+  "fullClosedLocalIndicesZeroBased": [
+    3,
+    7
+  ],
+  "artMethod": "Every cell is a complete full-body generated sprite; no local eye layer, skeletal transform, optical flow, deformation or crossfade.",
+  "inspection": "Visual sequence matches requested eye states. Eyes stay black with small specular highlights and no sclera. Hand-to-chin and right-tilt pose preserved closely; remaining line/paint variation and final registered playback should be reviewed after packaging.",
+  "reusePolicy": "If packaging identifies pose jitter, may reuse whole complete-character open/half/closed cels; never cut and paste an eye region."
+}

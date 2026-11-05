@@ -1,0 +1,842 @@
+{
+  "name": "LightHungry Player Idle v05",
+  "date": "2026-10-25",
+  "status": "final-candidate",
+  "generator": "built-in image_gen complete character cels",
+  "productionMode": "complete-sprite-cels",
+  "frameSize": [
+    512,
+    512
+  ],
+  "facing": "right",
+  "pixelsPerUnit": 256,
+  "pivot": [
+    0.5,
+    0.0625
+  ],
+  "footReferenceY": 480,
+  "registration": {
+    "kind": "whole-character-per-frame-uniform-height",
+    "neutralHeightPx": 378,
+    "footBottomY": 479,
+    "footCenterX": 285.5,
+    "details": "QA/prepared.json"
+  },
+  "playback": {
+    "idleThresholdSeconds": 3,
+    "thinkingLoopsWhileIdle": true,
+    "interruptImmediatelyOn": [
+      "move",
+      "jump",
+      "interact",
+      "ability",
+      "damage",
+      "death"
+    ]
+  },
+  "clips": {
+    "idle": {
+      "frameCount": 36,
+      "loop": true,
+      "durationMs": 3000,
+      "frameDurationMs": [
+        85,
+        85,
+        85,
+        85,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        40,
+        40,
+        40,
+        40,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        85,
+        85,
+        85,
+        85
+      ],
+      "frames": [
+        "Sprites/Idle/player_idle_000.png",
+        "Sprites/Idle/player_idle_001.png",
+        "Sprites/Idle/player_idle_002.png",
+        "Sprites/Idle/player_idle_003.png",
+        "Sprites/Idle/player_idle_004.png",
+        "Sprites/Idle/player_idle_005.png",
+        "Sprites/Idle/player_idle_006.png",
+        "Sprites/Idle/player_idle_007.png",
+        "Sprites/Idle/player_idle_008.png",
+        "Sprites/Idle/player_idle_009.png",
+        "Sprites/Idle/player_idle_010.png",
+        "Sprites/Idle/player_idle_011.png",
+        "Sprites/Idle/player_idle_012.png",
+        "Sprites/Idle/player_idle_013.png",
+        "Sprites/Idle/player_idle_014.png",
+        "Sprites/Idle/player_idle_015.png",
+        "Sprites/Idle/player_idle_016.png",
+        "Sprites/Idle/player_idle_017.png",
+        "Sprites/Idle/player_idle_018.png",
+        "Sprites/Idle/player_idle_019.png",
+        "Sprites/Idle/player_idle_020.png",
+        "Sprites/Idle/player_idle_021.png",
+        "Sprites/Idle/player_idle_022.png",
+        "Sprites/Idle/player_idle_023.png",
+        "Sprites/Idle/player_idle_024.png",
+        "Sprites/Idle/player_idle_025.png",
+        "Sprites/Idle/player_idle_026.png",
+        "Sprites/Idle/player_idle_027.png",
+        "Sprites/Idle/player_idle_028.png",
+        "Sprites/Idle/player_idle_029.png",
+        "Sprites/Idle/player_idle_030.png",
+        "Sprites/Idle/player_idle_031.png",
+        "Sprites/Idle/player_idle_032.png",
+        "Sprites/Idle/player_idle_033.png",
+        "Sprites/Idle/player_idle_034.png",
+        "Sprites/Idle/player_idle_035.png"
+      ],
+      "frameOrigins": [
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 0
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 1
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 2
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 3
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 4
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 5
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 6
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 7
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 8
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 9
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 10
+        },
+        {
+          "source": "Source/idle_a_generated.png",
+          "sourceCell": 11
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 0
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 1
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 2
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 3
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 4
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 5
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 6
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 7
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 8
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 9
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 10
+        },
+        {
+          "source": "Source/idle_b_generated.png",
+          "sourceCell": 11
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 0
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 1
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 2
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 3
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 4
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 5
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 6
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 7
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 8
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 9
+        },
+        {
+          "source": "Source/idle_c_generated.png",
+          "sourceCell": 10
+        },
+        {
+          "reuse": {
+            "clip": "idle",
+            "index": 0
+          },
+          "reason": "Shared complete neutral cel closes idle loop."
+        }
+      ],
+      "independentImageCount": 35,
+      "uniqueFrameCount": 35,
+      "atlasPages": [
+        {
+          "file": "Sheets/player_idle_atlas_01.png",
+          "firstFrame": 0,
+          "frameCount": 36,
+          "columns": 8,
+          "rows": 5
+        }
+      ],
+      "grid": "Sheets/player_idle_atlas_01.png",
+      "phases": [
+        {
+          "name": "自然呼吸",
+          "startMs": 0,
+          "endMs": 1600
+        },
+        {
+          "name": "轻眨眼",
+          "startMs": 1600,
+          "endMs": 1760
+        },
+        {
+          "name": "呼吸收势",
+          "startMs": 1760,
+          "endMs": 3000
+        }
+      ],
+      "animationMethod": "Complete character sprite cels switched directly according to frameDurationMs."
+    },
+    "think": {
+      "frameCount": 72,
+      "loop": true,
+      "durationMs": 6000,
+      "frameDurationMs": [
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        190,
+        100,
+        42,
+        42,
+        42,
+        84,
+        42,
+        42,
+        42,
+        84,
+        100,
+        190,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90
+      ],
+      "frames": [
+        "Sprites/Think/player_think_000.png",
+        "Sprites/Think/player_think_001.png",
+        "Sprites/Think/player_think_002.png",
+        "Sprites/Think/player_think_003.png",
+        "Sprites/Think/player_think_004.png",
+        "Sprites/Think/player_think_005.png",
+        "Sprites/Think/player_think_006.png",
+        "Sprites/Think/player_think_007.png",
+        "Sprites/Think/player_think_008.png",
+        "Sprites/Think/player_think_009.png",
+        "Sprites/Think/player_think_010.png",
+        "Sprites/Think/player_think_011.png",
+        "Sprites/Think/player_think_012.png",
+        "Sprites/Think/player_think_013.png",
+        "Sprites/Think/player_think_014.png",
+        "Sprites/Think/player_think_015.png",
+        "Sprites/Think/player_think_016.png",
+        "Sprites/Think/player_think_017.png",
+        "Sprites/Think/player_think_018.png",
+        "Sprites/Think/player_think_019.png",
+        "Sprites/Think/player_think_020.png",
+        "Sprites/Think/player_think_021.png",
+        "Sprites/Think/player_think_022.png",
+        "Sprites/Think/player_think_023.png",
+        "Sprites/Think/player_think_024.png",
+        "Sprites/Think/player_think_025.png",
+        "Sprites/Think/player_think_026.png",
+        "Sprites/Think/player_think_027.png",
+        "Sprites/Think/player_think_028.png",
+        "Sprites/Think/player_think_029.png",
+        "Sprites/Think/player_think_030.png",
+        "Sprites/Think/player_think_031.png",
+        "Sprites/Think/player_think_032.png",
+        "Sprites/Think/player_think_033.png",
+        "Sprites/Think/player_think_034.png",
+        "Sprites/Think/player_think_035.png",
+        "Sprites/Think/player_think_036.png",
+        "Sprites/Think/player_think_037.png",
+        "Sprites/Think/player_think_038.png",
+        "Sprites/Think/player_think_039.png",
+        "Sprites/Think/player_think_040.png",
+        "Sprites/Think/player_think_041.png",
+        "Sprites/Think/player_think_042.png",
+        "Sprites/Think/player_think_043.png",
+        "Sprites/Think/player_think_044.png",
+        "Sprites/Think/player_think_045.png",
+        "Sprites/Think/player_think_046.png",
+        "Sprites/Think/player_think_047.png",
+        "Sprites/Think/player_think_048.png",
+        "Sprites/Think/player_think_049.png",
+        "Sprites/Think/player_think_050.png",
+        "Sprites/Think/player_think_051.png",
+        "Sprites/Think/player_think_052.png",
+        "Sprites/Think/player_think_053.png",
+        "Sprites/Think/player_think_054.png",
+        "Sprites/Think/player_think_055.png",
+        "Sprites/Think/player_think_056.png",
+        "Sprites/Think/player_think_057.png",
+        "Sprites/Think/player_think_058.png",
+        "Sprites/Think/player_think_059.png",
+        "Sprites/Think/player_think_060.png",
+        "Sprites/Think/player_think_061.png",
+        "Sprites/Think/player_think_062.png",
+        "Sprites/Think/player_think_063.png",
+        "Sprites/Think/player_think_064.png",
+        "Sprites/Think/player_think_065.png",
+        "Sprites/Think/player_think_066.png",
+        "Sprites/Think/player_think_067.png",
+        "Sprites/Think/player_think_068.png",
+        "Sprites/Think/player_think_069.png",
+        "Sprites/Think/player_think_070.png",
+        "Sprites/Think/player_think_071.png"
+      ],
+      "frameOrigins": [
+        {
+          "reuse": {
+            "clip": "idle",
+            "index": 0
+          },
+          "reason": "Shared complete neutral cel for state transition and loop endpoint."
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 1
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 2
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 3
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 4
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 5
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 6
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 7
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 8
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 9
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 10
+        },
+        {
+          "source": "Source/think_a_generated.png",
+          "sourceCell": 11
+        },
+        {
+          "source": "Source/think_b_generated.png",
+          "sourceCell": 0
+        },
+        {
+          "source": "Source/think_b_generated.png",
+          "sourceCell": 1
+        },
+        {
+          "source": "Source/think_b_generated.png",
+          "sourceCell": 2
+        },
+        {
+          "source": "Source/think_b_generated.png",
+          "sourceCell": 3
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 15
+          },
+          "reason": "Stable left-tilt hold using the same complete cel."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 15
+          },
+          "reason": "Stable left-tilt hold using the same complete cel."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 15
+          },
+          "reason": "Stable left-tilt hold using the same complete cel."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 15
+          },
+          "reason": "Stable left-tilt hold using the same complete cel."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 15
+          },
+          "reason": "Stable left-tilt hold using the same complete cel."
+        },
+        {
+          "source": "Source/think_b_generated.png",
+          "sourceCell": 9
+        },
+        {
+          "source": "Source/think_b_generated.png",
+          "sourceCell": 10
+        },
+        {
+          "source": "Source/think_b_generated.png",
+          "sourceCell": 11
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 0
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 1
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 2
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 3
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 4
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 5
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 6
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 7
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 8
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 9
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 10
+        },
+        {
+          "source": "Source/think_c_generated.png",
+          "sourceCell": 11
+        },
+        {
+          "source": "Source/think_d_generated.png",
+          "sourceCell": 0
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 36
+          },
+          "reason": "Same complete open-eye pose during the double blink."
+        },
+        {
+          "source": "Source/think_d_generated.png",
+          "sourceCell": 2
+        },
+        {
+          "source": "Source/think_d_generated.png",
+          "sourceCell": 3
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 38
+          },
+          "reason": "Same complete half-closed cel for closing and reopening."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 36
+          },
+          "reason": "Same complete open-eye pose during the double blink."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 38
+          },
+          "reason": "Same complete half-closed cel for closing and reopening."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 39
+          },
+          "reason": "Second blink reuses the same fully closed complete cel."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 38
+          },
+          "reason": "Same complete half-closed cel for closing and reopening."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 36
+          },
+          "reason": "Same complete open-eye pose during the double blink."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 36
+          },
+          "reason": "Same complete open-eye pose during the double blink."
+        },
+        {
+          "reuse": {
+            "clip": "think",
+            "index": 36
+          },
+          "reason": "Same complete open-eye pose during the double blink."
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 0
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 1
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 2
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 3
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 4
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 5
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 6
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 7
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 8
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 9
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 10
+        },
+        {
+          "source": "Source/think_e_generated.png",
+          "sourceCell": 11
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 0
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 1
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 2
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 3
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 4
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 5
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 6
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 7
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 8
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 9
+        },
+        {
+          "source": "Source/think_f_generated.png",
+          "sourceCell": 10
+        },
+        {
+          "reuse": {
+            "clip": "idle",
+            "index": 0
+          },
+          "reason": "Shared complete neutral cel for state transition and loop endpoint."
+        }
+      ],
+      "independentImageCount": 57,
+      "uniqueFrameCount": 57,
+      "atlasPages": [
+        {
+          "file": "Sheets/player_think_atlas_01.png",
+          "firstFrame": 0,
+          "frameCount": 64,
+          "columns": 8,
+          "rows": 8
+        },
+        {
+          "file": "Sheets/player_think_atlas_02.png",
+          "firstFrame": 64,
+          "frameCount": 8,
+          "columns": 8,
+          "rows": 1
+        }
+      ],
+      "grid": "Sheets/player_think_atlas_01.png",
+      "phases": [
+        {
+          "name": "抬手进入思考",
+          "startMs": 0,
+          "endMs": 1000
+        },
+        {
+          "name": "微左偏与停留",
+          "startMs": 1000,
+          "endMs": 2000
+        },
+        {
+          "name": "缓慢偏向右侧",
+          "startMs": 2000,
+          "endMs": 3000
+        },
+        {
+          "name": "快速眨眼两次",
+          "startMs": 3000,
+          "endMs": 4000
+        },
+        {
+          "name": "回正并开始收手",
+          "startMs": 4000,
+          "endMs": 5000
+        },
+        {
+          "name": "收手回到待机",
+          "startMs": 5000,
+          "endMs": 6000
+        }
+      ],
+      "animationMethod": "Complete character sprite cels switched directly according to frameDurationMs."
+    }
+  }
+}

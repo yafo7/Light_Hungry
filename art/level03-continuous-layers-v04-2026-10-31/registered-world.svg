@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2170" height="725" viewBox="0 0 2170 725"><defs><filter id="beam-soft" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="6"/></filter><clipPath id="surface-window"><rect y="542" width="2170" height="183"/></clipPath><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#cfcbff"/></marker></defs>
+ <g data-layer="background"><svg width="2170" height="725" viewBox="0 10 2170 702" preserveAspectRatio="none" overflow="hidden"><image href="Layers/00-background.png" x="0" y="0" width="2170" height="725" preserveAspectRatio="none"/></svg></g>
+ <g data-layer="water"><image href="Layers/20-water.png" x="0" y="0" width="2170" height="725" preserveAspectRatio="none"/></g>
+ <g data-layer="platforms"><image href="Layers/10-platforms.png" x="0" y="0" width="2170" height="725" preserveAspectRatio="none"/></g>
+ <g data-layer="props">
+  <g id="mechanism-lines" fill="none" stroke-linecap="round">
+   <path d="M690 76 V353 M700 76 V353 M1719 407 H2010" stroke="#1c1811" stroke-width="11"/>
+   <path d="M690 76 V353 M700 76 V353 M1719 407 H2010" stroke="#a88647" stroke-width="4"/>
+   <path d="M407 369 V123 Q407 105 434 105 H546 M658 105 H693" stroke="#302319" stroke-width="5"/>
+   <path d="M407 369 V123 Q407 105 434 105 H546 M658 105 H693" stroke="#c2a05b" stroke-width="2"/>
+   <path id="rope-A" d="M535 112 V482 M649 112 V482" stroke="#241b12" stroke-width="6"/>
+   <path id="rope-A-highlight" d="M535 112 V482 M649 112 V482" stroke="#b89a59" stroke-width="2"/>
+   <path d="M909 308 H948 V125 H707" stroke="#b89a59" stroke-width="2"/>
+  </g>
+  <svg id="guide-A" x="516" y="83" width="155" height="485" viewBox="938 413 225 310" preserveAspectRatio="none" overflow="hidden"><image href="Props/props-atlas.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="none"/></svg>
+<svg id="bulb-A" x="673" y="-3" width="126" height="124" viewBox="18 0 397 388" preserveAspectRatio="none" overflow="hidden"><image href="Props/props-atlas.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="none"/></svg>
+<svg id="root-switch" x="88" y="304" width="51" height="56" viewBox="450 8 365 400" preserveAspectRatio="none" overflow="hidden"><image href="Props/props-atlas.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="none"/></svg>
+<svg id="winch-left" x="372" y="369" width="80" height="51" viewBox="444 505 368 235" preserveAspectRatio="none" overflow="hidden"><image href="Props/props-atlas.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="none"/></svg>
+<svg id="winch-right" x="870" y="298" width="80" height="51" viewBox="444 505 368 235" preserveAspectRatio="none" overflow="hidden"><image href="Props/props-atlas.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="none"/></svg>
+<svg id="counterweight-A" x="510" y="472" width="164" height="102" viewBox="16 514 386 240" preserveAspectRatio="none" overflow="hidden"><image href="Props/props-atlas.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="none"/></svg>
+<svg id="mirror-A" x="690" y="170" width="92" height="90" viewBox="910 75 282 274" preserveAspectRatio="none" overflow="hidden"><image href="Props/props-atlas.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="none"/></svg>
+<svg id="water-wheel" x="1810" y="438" width="134" height="131" viewBox="448 844 368 359" preserveAspectRatio="none" overflow="hidden"><image href="Props/props-atlas.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="none"/></svg>
+<svg id="moving-deck" x="1818" y="375" width="120" height="64" viewBox="16 947 402 214" preserveAspectRatio="none" overflow="hidden"><image href="Props/props-atlas.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="none"/></svg>
+<svg id="feeding-scale" x="2022" y="125" width="160" height="198" viewBox="897 833 340 421" preserveAspectRatio="none" overflow="hidden"><image href="Props/props-atlas.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="none"/></svg>
+ </g>
+ <g data-layer="light" fill="none" stroke-linecap="round">
+  <path class="beam-path" d="M736 112 V215 H2075" stroke="#ffad31" opacity=".75" stroke-width="13" filter="url(#beam-soft)"/>
+  <path class="beam-path" d="M736 112 V215 H2075" stroke="#ffd568" stroke-width="4"/>
+  <path class="beam-path" d="M736 112 V215 H2075" stroke="#fff3bd" stroke-width="1.6"/>
+ </g>
+ <g data-layer="water" clip-path="url(#surface-window)"><image href="Layers/20-water.png" x="0" y="0" width="2170" height="725" preserveAspectRatio="none"/></g>
+ <g data-layer="route" style="display:none" fill="none" stroke="#cfcbff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)">
+  <path d="M785 400 Q835 442 881 478 L997 497 H1225"/>
+  <path d="M1225 497 Q1253 404 1290 404"/>
+  <path d="M1290 404 Q1257 368 1223 417"/>
+  <path d="M1223 417 Q1168 320 1132 344"/>
+  <path d="M1132 344 Q1173 258 1229 281"/>
+  <path d="M1229 281 Q1274 223 1329 255 H1588"/>
+ </g></svg>

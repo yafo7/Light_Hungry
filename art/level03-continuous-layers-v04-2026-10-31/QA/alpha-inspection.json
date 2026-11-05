@@ -1,0 +1,208 @@
+[
+  {
+    "file": "References/continuous-master.png",
+    "width": 2203,
+    "height": 714,
+    "hasAlpha": false,
+    "zeroAlpha": 0,
+    "partialAlpha": 0,
+    "redPixels": 208,
+    "visibleRedPixels": 208,
+    "centralNontransparent": 393414
+  },
+  {
+    "file": "Layers/00-background.png",
+    "width": 2170,
+    "height": 725,
+    "hasAlpha": false,
+    "zeroAlpha": 0,
+    "partialAlpha": 0,
+    "redPixels": 0,
+    "visibleRedPixels": 0,
+    "centralNontransparent": 392770,
+    "topRows": [
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "bottomRows": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170,
+      2170
+    ]
+  },
+  {
+    "file": "Layers/10-platforms.png",
+    "width": 2170,
+    "height": 725,
+    "hasAlpha": true,
+    "zeroAlpha": 1237255,
+    "partialAlpha": 335333,
+    "redPixels": 6404,
+    "visibleRedPixels": 0,
+    "centralNontransparent": 179895
+  },
+  {
+    "file": "Layers/20-water.png",
+    "width": 2170,
+    "height": 725,
+    "hasAlpha": true,
+    "zeroAlpha": 1035959,
+    "partialAlpha": 537291,
+    "redPixels": 4,
+    "visibleRedPixels": 0,
+    "centralNontransparent": 71985
+  },
+  {
+    "file": "Layers/90-camera-roots.png",
+    "width": 1672,
+    "height": 941,
+    "hasAlpha": true,
+    "zeroAlpha": 1144665,
+    "partialAlpha": 428655,
+    "redPixels": 512,
+    "visibleRedPixels": 0,
+    "centralNontransparent": 954
+  },
+  {
+    "file": "Props/props-atlas.png",
+    "width": 1254,
+    "height": 1254,
+    "hasAlpha": true,
+    "zeroAlpha": 927903,
+    "partialAlpha": 644185,
+    "redPixels": 5932,
+    "visibleRedPixels": 96,
+    "centralNontransparent": 110256,
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "sourceRect": {
+          "x": 22,
+          "y": 0,
+          "width": 389,
+          "height": 387
+        }
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "sourceRect": {
+          "x": 454,
+          "y": 12,
+          "width": 355,
+          "height": 392
+        }
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "sourceRect": {
+          "x": 910,
+          "y": 80,
+          "width": 278,
+          "height": 338
+        }
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "sourceRect": {
+          "x": 19,
+          "y": 518,
+          "width": 380,
+          "height": 235
+        }
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "sourceRect": {
+          "x": 447,
+          "y": 509,
+          "width": 360,
+          "height": 228
+        }
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "sourceRect": {
+          "x": 942,
+          "y": 418,
+          "width": 215,
+          "height": 409
+        }
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "sourceRect": {
+          "x": 21,
+          "y": 950,
+          "width": 397,
+          "height": 207
+        }
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "sourceRect": {
+          "x": 418,
+          "y": 845,
+          "width": 397,
+          "height": 358
+        }
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "sourceRect": {
+          "x": 902,
+          "y": 837,
+          "width": 328,
+          "height": 417
+        }
+      }
+    ]
+  }
+]

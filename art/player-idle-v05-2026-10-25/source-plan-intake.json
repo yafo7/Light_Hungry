@@ -1,0 +1,192 @@
+{
+  "name": "LightHungry Player Idle v05",
+  "date": "2026-10-25",
+  "status": "INTAKE ONLY - Think A-C seam review, not final timing",
+  "registration": {
+    "mode": "whole-character-per-frame-uniform-foot-width",
+    "neutralHeightPx": 378
+  },
+  "sources": [
+    {
+      "clip": "idle",
+      "source": "Source/idle_a_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 0
+    },
+    {
+      "clip": "idle",
+      "source": "Source/idle_b_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 12
+    },
+    {
+      "clip": "idle",
+      "source": "Source/idle_c_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 24
+    },
+    {
+      "clip": "think",
+      "source": "Source/think_a_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 0
+    },
+    {
+      "clip": "think",
+      "source": "Source/think_b_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 12
+    },
+    {
+      "clip": "think",
+      "source": "Source/think_c_generated.png",
+      "cols": 4,
+      "rows": 3,
+      "frameStart": 24
+    }
+  ],
+  "clips": {
+    "idle": {
+      "durationMs": 3000,
+      "frameDurationMs": [
+        85,
+        85,
+        85,
+        85,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        40,
+        40,
+        40,
+        40,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        85,
+        85,
+        85,
+        85
+      ],
+      "phases": [
+        {
+          "name": "自然呼吸",
+          "startMs": 0,
+          "endMs": 1600
+        },
+        {
+          "name": "轻眨眼",
+          "startMs": 1600,
+          "endMs": 1760
+        },
+        {
+          "name": "呼吸收势",
+          "startMs": 1760,
+          "endMs": 3000
+        }
+      ]
+    },
+    "think": {
+      "durationMs": 3600,
+      "frameDurationMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "phases": []
+    }
+  },
+  "frameReuse": [
+    {
+      "clip": "think",
+      "index": 16,
+      "fromClip": "think",
+      "fromIndex": 15,
+      "reason": "Left-tilt hold repeats the same complete character cel, avoiding paint flicker."
+    },
+    {
+      "clip": "think",
+      "index": 17,
+      "fromClip": "think",
+      "fromIndex": 15,
+      "reason": "Left-tilt hold repeats the same complete character cel, avoiding paint flicker."
+    },
+    {
+      "clip": "think",
+      "index": 18,
+      "fromClip": "think",
+      "fromIndex": 15,
+      "reason": "Left-tilt hold repeats the same complete character cel, avoiding paint flicker."
+    },
+    {
+      "clip": "think",
+      "index": 19,
+      "fromClip": "think",
+      "fromIndex": 15,
+      "reason": "Left-tilt hold repeats the same complete character cel, avoiding paint flicker."
+    },
+    {
+      "clip": "think",
+      "index": 20,
+      "fromClip": "think",
+      "fromIndex": 15,
+      "reason": "Left-tilt hold repeats the same complete character cel, avoiding paint flicker."
+    }
+  ]
+}

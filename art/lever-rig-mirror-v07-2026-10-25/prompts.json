@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-25",
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "lever_parts",
+      "source": "Source/lever_parts_generated.png",
+      "prompt": "Use case: precise-object-edit. Asset type: transparent layered 2D game prop artwork for a rigid two-bone lever animation.\nThe supplied image is the design reference. Preserve its exact painted cartoon visual language: dark navy outlines, brass gold mechanism, dark orange-red round wooden knob, patchy handpainted shading.\nCreate a clean disassembled texture sheet with EXACTLY TWO widely separated isolated parts on true transparency:\nLEFT: the complete stationary base only, including the horizontal brass plinth, two screws, semicircular brass support and front circular axle hub. Remove all of the rod and red grip from this base, reconstruct the small missing brass edge. The circular axle hub stays visible at the center of the semicircular support.\nRIGHT: ONE single completely straight vertical rigid lever arm, including the red ball grip at TOP, small gold collar below it and a long straight brass rod extending DOWN to a plain rounded pivot end. Entire rod and knob attached as ONE piece. The rod must be perfectly vertical. It will pivot around its lower end behind the stationary base hub.\nNo extra parts, no labels, no guides, no floor, no shadows outside the isolated objects. Do not draw the assembled lever. Do not draw multiple animation frames. Leave generous transparent empty space between these TWO parts so each can be cropped. Both parts large and crisp. Preserve reference proportions: pivot-to-grip-center distance approximately 0.8 times the stationary base width, grip diameter approximately 0.36 times base width. NO stretching, no curving rod.",
+      "references": [
+        "Source/References/lever_off.png"
+      ],
+      "processing": "Separate isolated layers, uniform scale 0.42, registration to fixed pivot. Rotation-only rigid bone runtime."
+    },
+    {
+      "id": "mirror_right",
+      "source": "Source/mirror_right_generated.png",
+      "prompt": "Use case: stylized-concept. Asset type: single transparent game-prop image.\nReference image 1 is the mirror head MATERIAL AND STYLE reference, NOT its tilted orientation. Reference image 2 is the brass stand and low stone plinth style reference.\nCreate ONE upright plane mirror assembly in a strict orthographic RIGHT SIDE elevation, perfectly level camera, no three-quarter perspective. Its circular mirror plate stands vertically, seen EDGE-ON as a narrow straight vertical strip with softly rounded top and bottom and a gold/brass edge. The slender cyan glass edge is on the viewer's LEFT of the gold rim; a tiny strip of pale-blue glass and gold thickness makes it readable. Do NOT show a broad oval mirror face, not a convex lens or curved glass: a flat planar mirror with straight parallel vertical sides in this side view. The plate's top and bottom must share exactly the same horizontal center, NO diagonal lean at all.\nThe circular plate is mounted from below on a short gold vertical spindle/post centered directly under it, on the reference low rectangular gray stone base with gold edging and two bolts. The intended mechanism is YAW rotation about this vertical spindle: from above the glass turns left/right, while remaining vertical. No visible horizontal side hinge, no gimbal, no horizontal axle or lateral pivot knob. Static image only, do not add motion arrows or multiple views.\nMatch the existing game's thick dark navy contour, warm yellow brass bevels and restrained painterly color patches. Transparent background. One centered full prop, generous margins, no words, grid, floor or cast shadow. The mirror plate height approximately 65% of the full assembly height, the support and base 35%.",
+      "references": [
+        "Source/References/mirror_head.png",
+        "Source/References/mirror_stand.png"
+      ],
+      "processing": "Crop transparent margins, uniform height normalization and center on 512x512 transparent canvas."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "sequencePage": 1,
+  "title": "灯具中的家与流浪的开始",
+  "output": "C:/Users/10029/Documents/ChatGPT/食光兽/art/opening-page01-origin-v01-2026-11-05/page01-lamp-spirit-origin.png",
+  "source": "C:/Users/10029/.codex/generated_images/01a1a7d6-1c92-7ea0-bc30-fe064e10a87b/exec-05c6ac82-622b-4e5d-86e9-ab81310d5da2.png",
+  "mode": "built-in image_gen",
+  "status": "静态漫画分镜效果稿，未制作实际动画",
+  "revealOrder": [
+    "左上：住在台灯底座缝隙",
+    "右上：借镜片把台灯已有光引到书页",
+    "左下：人家搬走、台灯断电",
+    "下中：旧灯拆散破损、精灵失去住处",
+    "右下：离开空屋，走向暮色石墙"
+  ],
+  "nextPage": {
+    "sequencePage": 2,
+    "title": "循光入园",
+    "file": "C:/Users/10029/Documents/ChatGPT/食光兽/art/opening-comic-layout-v06-selected-layout-2026-11-05/opening-selected-layout-halfscale-v06.png"
+  },
+  "visualReview": "已检查五格叙事、同款台灯复现、光源来自台灯并经镜面折转、搬家后断电、暮色离屋衔接。"
+}

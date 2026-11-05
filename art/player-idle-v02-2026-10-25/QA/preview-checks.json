@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "imagesLoaded": true,
+    "idleBefore3s": true,
+    "thinkAfter3s": true,
+    "pauseStable": true,
+    "actionResetsIdle": true,
+    "manualThinking": true,
+    "noMobilePageOverflow": true,
+    "noScriptErrors": true
+  },
+  "transitionClock": "3.01 s",
+  "errors": []
+}

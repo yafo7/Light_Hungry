@@ -1,0 +1,20 @@
+{
+  "sequencePage": 1,
+  "title": "墙挂提灯中的家",
+  "output": "C:/Users/10029/Documents/ChatGPT/食光兽/art/opening-page01-origin-v03-wall-lantern-2026-11-05/page01-wall-lantern-origin.png",
+  "source": "C:/Users/10029/.codex/generated_images/01a1a7d6-1c92-7ea0-bc30-fe064e10a87b/exec-3ff60b8e-e91e-418d-8e96-f7b115b524f8.png",
+  "mode": "built-in image_gen",
+  "status": "静态漫画分镜效果稿，未制作动画",
+  "layout": "上方一幅生活全景、中间三格错落斜切、下方一幅离屋远景；区别于第二张上二下三。",
+  "revealOrder": [
+    "墙挂旧提灯与屋内读书、倒水的人",
+    "精灵拨动铰接于灯框内的反光灯片，引导灯芯火光到读书人处",
+    "搬家时提灯从墙钩取下",
+    "旧灯拆散破损，精灵告别",
+    "精灵离开空屋走向暮色石墙"
+  ],
+  "visualReview": "已目视检查：墙钩承托提手、灯体悬挂、灯片连接灯框且由精灵拨动、光由灯芯发出、屋内有人起居、五格呈1-3-1布局。",
+  "promptFiles": [
+    "prompts.json"
+  ]
+}

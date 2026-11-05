@@ -25,3 +25,31 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+# Independent local Unity art prototypes
+/UnityProject*/[Ll]ibrary/
+/UnityProject*/[Tt]emp/
+/UnityProject*/[Oo]bj/
+/UnityProject*/[Ll]ogs/
+/UnityProject*/[Uu]ser[Ss]ettings/
+/UnityProject*/.vs/
+/UnityProject*/.idea/
+/UnityProject*/MemoryCaptures/
+/UnityProject*/Recordings/
+/UnityProject*/[Bb]uilds/
+/UnityProject*/[Bb]uild/
+
+# Machine-local downloads, generated evidence and disposable build checkouts
+/.tools/
+/.build-*/
+/Validation/
+**/__pycache__/
+*.pyc
+*.log
+*.blend1
+*.blend2
+**/node_modules/
+
+# Reproducible delivery archives; editable sources remain tracked under art/
+/art/**/*.zip
+/art/**/*.zip.sha256.txt

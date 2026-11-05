@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>食光兽｜第1—3关重构设计 v01</title>
+<style>
+:root{color-scheme:light;--ink:#283d42;--paper:#f7f3e9;--line:#d7d9c9;--accent:#9b642a}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.8 "Microsoft YaHei","PingFang SC",sans-serif}main{max-width:1080px;margin:auto;padding:40px 28px 80px}h1{font-size:36px;line-height:1.3;margin:0 0 12px}h2{font-size:26px;margin:54px 0 12px}h3{font-size:20px;margin:24px 0 8px}p{margin:10px 0}small,.sub{color:#607171}a{color:#85521d;text-underline-offset:4px}nav{display:flex;gap:18px;flex-wrap:wrap;border-block:1px solid var(--line);padding:16px 0;margin:26px 0}figure{margin:24px 0}img{display:block;width:100%;height:auto;background:#fff}figcaption{font-size:14px;color:#607171;margin-top:8px}table{border-collapse:collapse;width:100%;margin:18px 0}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid var(--line)}th{background:#e9ecdf;font-weight:600}.table-wrap{overflow-x:auto}.rule{border-left:4px solid #a6b692;padding:6px 0 6px 18px;margin:20px 0}details{margin:18px 0;padding:14px 0;border-block:1px solid var(--line)}summary{cursor:pointer;font-weight:600}.files{display:flex;flex-wrap:wrap;gap:16px}.note{font-size:15px;color:#5c6b6b}li{margin:7px 0}.tag{font-size:14px;color:#7a603f;letter-spacing:.08em}section{scroll-margin-top:20px}footer{border-top:1px solid var(--line);margin-top:48px;padding-top:24px;font-size:14px}@media(max-width:640px){main{padding:24px 16px 50px}h1{font-size:28px}h2{font-size:23px}table{font-size:15px}th,td{padding:8px}}
+</style></head><body><main>
+<header><p class="tag">关卡设计草案 · 2026-10-28 · v01</p><h1>食光兽｜第1—3关重构</h1><p>流浪的小灯匠从园门进入，发现尾尖在吞食光；随后绕进倒扣陶盆，再循呼吸进入排水暗渠。三关连续，始终只露出巨兽身体的极小局部。</p><p class="sub">本稿包含水彩背景、结构图、交互道具、知识规则与静态结构数据。背景用于构图与气氛；精确开口、光路、镜头和尺寸以结构图及 scene-spec.json 为准。尚未完成可玩灰盒与手感验证。</p></header>
+<nav><a href="#principles">整体规则</a><a href="#level01">01 借一束光</a><a href="#level02">02 墙后还有光</a><a href="#level03">03 让光接着走</a><a href="#props">道具设计</a><a href="#validation">检查与后续</a></nav>
+<section id="principles"><h2>先建立理解，再增加组合</h2><p>知识锁按“理解后就能行动”设计：工具一直在场，玩家通过观察掌握规则，再用规则找到解法。前三关只使用一到两面旋镜和固定观察点，基础动作贯穿后续关卡。</p>
+<div class="table-wrap"><table><thead><tr><th>关卡</th><th>玩家学到的知识</th><th>操作负担</th><th>叙事进展</th></tr></thead><tbody>
+<tr><td>01 园门苔地</td><td>镜面转向会改变光的去向；光鳞会吞食光。</td><td>移动、一次宽容短跳、调一面镜。</td><td>为自己找落脚处，意外发现生命。</td></tr>
+<tr><td>02 倒扣陶盆</td><td>换观察面能发现被遮挡的真实通光孔。</td><td>同一操作位观察 A/B，再调一面镜。</td><td>主动寻找同样的光鳞，确认它仍在延伸。</td></tr>
+<tr><td>03 排水暗渠</td><td>下一面镜子必须先收到光，才能继续传光。</td><td>复用观察与调镜，串起 M1、M2。</td><td>沿光脉听见深处呼吸，选择继续救助。</td></tr>
+</tbody></table></div>
+<div class="rule"><p><strong>镜头与光路：</strong>固定正交镜头保留约 20° 轻俯角，人物仍沿侧向步道行动，让镜面 yaw 的深度变化可见。观察切换保持真实墙体、门洞、镜面角度和光路。相机侧外墙可作渲染剖切，仍保留碰撞与遮光。</p><p><strong>基本操作：</strong>靠近镜架交互进入调节，左右旋转，退出时保持角度。安全观察台切换 A/B；退出观察后回到当前步道段的行走镜头。镜架底座固定，旋钮高约 0.65H，镜心高 1.8H；H 为角色站立高度。</p><p><strong>反馈与恢复：</strong>镜面即时反光，亮边提示是否受光；目标首次恢复后，出口卷叶永久舒展。镜面可以随时回调，已有通路持续开放。光源稳定、无消耗、无倒计时。</p></div>
+</section>
+<section id="level01"><h2>01 借一束光 · 门槛苔地</h2><p>左侧铁门与昨夜的临时遮雨布引入主角。中部镜架、右侧苔藓间的柔软尾尖同时入画；最右是通往倒扣陶盆的旧缺口。</p>
+<figure><a href="background-01.png"><img src="background-01.png" alt="第一关水彩背景：园门、短沟、竖轴镜架和尾尖局部"></a><figcaption>水彩构图：晨光、浅杏色留白、少量紫藤；体表采用薄皮、短绒与半透明光鳞。</figcaption></figure>
+<p><strong>玩家流程：</strong>从左侧进入 → 走过低台、跨越浅沟 → 站上镜架旁宽平台 → 转动镜面，使可见光斑接近光鳞 → 看见鳞片吸入光尘、身体出现呼吸 → 卷叶舒展，钻向陶盆。</p>
+<p><strong>知识提示：</strong>镜框的受光边、移动的光斑、目标随照射出现的反应构成连续反馈。初次偶然扫中后，玩家可以再主动转回，验证“光让它恢复”。不显示角度答案。</p>
+<p><strong>平台设计：</strong>仅一处约 1.3H 净宽浅沟；参考最大水平跳跃为 2.2H。沟底可站立、两侧能回返。调镜区平坦，解谜过程中无需跳跃操作。</p>
+<details open><summary>平台、墙体、门洞与真实光路</summary><figure><a href="layout-01.png"><img src="layout-01.png" alt="第一关结构图"></a></figure><div class="files"><a href="layout-01.svg">可编辑 SVG</a><a href="layout-01.png">PNG 原图</a></div></details>
+</section>
+<section id="level02"><h2>02 墙后还有光 · 倒扣陶盆</h2><p>陶盆外壳形成一道明确遮挡。相同的月牙纹、旧铜线与叶片在两个观察面保持可辨，帮助玩家认出这是同一个空间。</p>
+<figure><a href="background-02-views.png"><img src="background-02-views.png" alt="第二关陶盆外侧与另一观察面水彩背景"></a><figcaption>A/B 为镜头意图草图；精确通光孔、人行孔及站位见结构图。</figcaption></figure>
+<p><strong>玩家流程：</strong>来到盆外镜架 → 看见初始光斑停在陶壁 → 在镜架旁同一安全平台切换观察面 → 发现被曲面遮住的真实光孔 → 保持观察并转镜，让光穿孔抵达尾部光鳞 → 出口卷叶舒展 → 沿盆缘真实通道进入排水口。</p>
+<p><strong>知识提示：</strong>连续的裂缝边缘、孔壁亮斑与不变的铜线位置引导空间推理。光孔和低处人行孔分开，玩家能走到光孔附近观察，也能理解为什么光必须找准高度与方向。</p>
+<p><strong>平台设计：</strong>镜架操作位同时覆盖观察范围；无需往返盲调。真实步道按 X→Z→X 绕盆缘，拐角有安全站台。小陶片作为低台阶，光孔约宽 1.3H、高 0.75H，人行孔净高约 1.5H。</p>
+<details open><summary>陶盆剖面、两种开口与操作位置</summary><figure><a href="layout-02.png"><img src="layout-02.png" alt="第二关结构图"></a></figure><div class="files"><a href="layout-02.svg">可编辑 SVG</a><a href="layout-02.png">PNG 原图</a></div></details>
+</section>
+<section id="level03"><h2>03 让光接着走 · 排水暗渠</h2><p>沿用真实 L 形暗渠。入口 M1 始终受光，转角处 M2 起初处在暗处。两个镜头分别呈现横渠和纵渠，月牙刻痕与同一根藤结标记真实转角。</p>
+<figure><a href="background-03-views.png"><img src="background-03-views.png" alt="第三关入口段和转角段水彩背景"></a><figcaption>深蓝紫薄染与纸白水面提供安静的暗部；只露出一小段尾根表皮。</figcaption></figure>
+<p><strong>玩家流程：</strong>在入口调 M1 → 光照到 M2，暗镜亮起 → 沿宽渠沿走到安全转角 → 观察第二段 → 调 M2 将光送到尾根光鳞 → 光脉继续向画外延伸，出口打开至下一关浅池。</p>
+<p><strong>知识提示：</strong>“光路逐段长出来”直接提示顺序。玩家可以事先转动未受光的 M2，镜架仍可操作；当 M1 把光送到它时，会立即按当前角度反射。再次回调任何一面镜子都保留另一面镜子的状态。</p>
+<p><strong>平台设计：</strong>转角操作台宽约 3H，镜架可从安全步道接近。渠底浅、可回返；中央转角墙始终遮光。相机只剖开面向玩家的外墙显示内容，不改变真实光路与碰撞。</p>
+<details open><summary>L 形步道、两段观察面与接力光路</summary><figure><a href="layout-03.png"><img src="layout-03.png" alt="第三关结构图"></a></figure><div class="files"><a href="layout-03.svg">可编辑 SVG</a><a href="layout-03.png">PNG 原图</a></div></details>
+</section>
+<section id="props"><h2>交互道具与场景组件</h2>
+<p>旋镜与观察点是前三关的两种主要操作对象；光鳞、卷叶出口负责传达进食与恢复。石阶、陶片、渠沿和真实门洞建立统一的行走与遮挡语言。</p>
+<figure><a href="interaction-props-sheet.png"><img src="interaction-props-sheet.png" alt="首三关水彩交互道具与环境组件外观设计"></a><figcaption>水彩外观板；绘画比例不作为尺寸标尺。</figcaption></figure>
+<figure><a href="props-mechanics.png"><img src="props-mechanics.png" alt="镜架竖轴旋转、尺寸、反射和出口状态结构基准"></a><figcaption>结构基准：镜面始终竖直；所有受控转动为绕 Y 轴的左右 yaw。角度图供设计者检查，不要求玩家计算。</figcaption></figure>
+<div class="files"><a href="props-mechanics.svg">道具结构 SVG</a><a href="interaction-props-sheet.png">水彩外观原图</a></div>
+</section>
+<section id="validation"><h2>检查边界与后续难度</h2>
+<p>本稿对规定光段做静态反射方向、墙体相交和步行线采样检查，并记录镜头基向量、可观察位置与关卡衔接。它还不是可玩关卡；角色控制器、跳跃轨迹、镜头切换舒适度、光斑可读性与实际难度，需要灰盒试玩后调整。</p>
+<div class="table-wrap"><table><thead><tr><th>阶段</th><th>拟增加的认知负担</th></tr></thead><tbody><tr><td>01—03</td><td>反射、真实遮挡、多段传光；完成基本操作与故事导入。</td></tr><tr><td>04—06</td><td>复用已学规则，增加空间安排与少量几何组合。</td></tr><tr><td>07—10</td><td>更复杂的离散观察面、深度判断与视错觉辨认。</td></tr><tr><td>11—13</td><td>如引入能改变连通性的特殊“光框”，必须有明确标记并单独教学；普通场景继续遵守真实遮挡。</td></tr><tr><td>14—15</td><td>用熟悉规则完成综合题，将最后的恢复与叙事收束结合。</td></tr></tbody></table></div>
+<p class="note">后十二关为难度方向占位，尚未进行具体重构。</p>
+<div class="files"><a href="scene-spec.json">完整结构数据与静态检查</a><a href="prompts.json">内置图像工具提示词</a></div>
+</section>
+<footer><p>参考阅读：<a href="https://polytron.itch.io/fez">FEZ 开发者介绍</a>说明通过不同 2D 视角观察 3D 结构；<a href="https://play.google.com/store/apps/details?id=unity.Annapurna.Gorogoa">Gorogoa 官方发行页</a>说明手绘画面与板块组合的解谜方式。本稿的关卡、叙事和水彩构图为本次原创方案。<a href="https://monumentvalleygame.squarespace.com/blog/2014/5/9/how-we-made-monument-valley-what-do-you-want-to-know-1">Monument Valley 开发者文章</a>与<a href="https://playdead.com/games/limbo/">LIMBO 官方页面</a>作为建筑谜题及侧向画面参考。</p><p>2026-10-28 · 设计草案 v01 · 图像由内置 image_gen 生成；结构图为可编辑 SVG。</p></footer>
+</main></body></html>

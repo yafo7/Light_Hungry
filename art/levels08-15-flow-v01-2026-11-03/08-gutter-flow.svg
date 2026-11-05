@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<rect x="0" y="0" width="1600" height="1100" fill="#F7F5EF" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="55" y="66.68" font-family="Microsoft YaHei, sans-serif" font-size="36" font-weight="700" fill="#263B40">08  雨槽屋脊｜滑动镜位，对准唯一窄口</text>
+<text x="57" y="103.48" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#687A7D">07 破玻璃口 → 温室屋顶雨槽 → 09 阁楼窗　　身体局部：背脊　　重点：先调位置，再沿光越过断槽</text>
+<rect x="48" y="130" width="1504" height="54" fill="#FFFDF8" stroke="#CDD6D1" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="70,157 125,157" fill="none" stroke="#287FAF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="125,157 111.36551375487673,163.25306203643817 111.36551375487673,150.74693796356183" fill="#287FAF" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<text x="138" y="159.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#263B40">实体行走 / 跳跃</text>
+<polyline points="355,157 409,157" fill="none" stroke="#DFA42D" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<text x="422" y="159.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#263B40">有效光束</text>
+<polyline points="594,157 650,157" fill="none" stroke="#D56D2F" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 8"/>
+<polygon points="650,157 636.3655137548767,163.25306203643817 636.3655137548767,150.74693796356183" fill="#D56D2F" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<text x="663" y="159.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#263B40">化光后的行动方向</text>
+<polyline points="926,157 982,157" fill="none" stroke="#8664B2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 8"/>
+<polygon points="982,157 968.3655137548767,163.25306203643817 968.3655137548767,150.74693796356183" fill="#8664B2" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<text x="995" y="159.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#263B40">纵深跨层</text>
+<ellipse cx="1199.5" cy="156.5" rx="11.5" ry="11.5" fill="none" stroke="#478568" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1224" y="159.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#263B40">交互点</text>
+<rect x="1371" y="146" width="18" height="20" fill="#6B7074" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1402" y="159.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#263B40">待照光鳞</text>
+<rect x="48" y="205" width="1504" height="620" fill="#FFFDF8" stroke="#CDD6D1" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="80" y="716" width="1440" height="64" fill="#E7EEF0" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="80" y="700" width="125" height="80" fill="#DAE2DB" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="80,780 80,700 205,700 205,780" fill="none" stroke="#263B40" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="95,718 107,707" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="130,718 142,707" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="165,718 177,707" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="240" y="650" width="95" height="130" fill="#DAE2DB" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="240,780 240,650 335,650 335,780" fill="none" stroke="#263B40" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="255,668 267,657" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="290,668 302,657" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="370" y="610" width="100" height="170" fill="#DAE2DB" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="370,780 370,610 470,610 470,780" fill="none" stroke="#263B40" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="385,628 397,617" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="420,628 432,617" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="455,628 467,617" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="505" y="575" width="275" height="205" fill="#DAE2DB" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="505,780 505,575 780,575 780,780" fill="none" stroke="#263B40" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="520,593 532,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="555,593 567,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="590,593 602,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="625,593 637,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="660,593 672,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="695,593 707,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="730,593 742,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="765,593 777,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="1080" y="575" width="440" height="205" fill="#DAE2DB" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1080,780 1080,575 1520,575 1520,780" fill="none" stroke="#263B40" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1095,593 1107,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1130,593 1142,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1165,593 1177,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1200,593 1212,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1235,593 1247,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1270,593 1282,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1305,593 1317,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1340,593 1352,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1375,593 1387,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1410,593 1422,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1445,593 1457,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1480,593 1492,582" fill="none" stroke="#CDD6D1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="785,715 1075,715" fill="none" stroke="#AAB4B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 8"/>
+<rect x="803" y="697" width="204.0" height="30.650000000000002" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="810" y="716.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#687A7D">断槽宽度超过普通跳距</text>
+<rect x="440" y="385" width="198" height="28" fill="#DAE2DB" stroke="#263B40" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="682" y="385" width="70" height="28" fill="#DAE2DB" stroke="#263B40" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="88" y="339" width="212.0" height="29.3" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="95" y="357.84" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#687A7D">金属槽沿：只留一个窄口</text>
+<polyline points="638,372 638,420" fill="none" stroke="#AAB4B3" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 8"/>
+<polyline points="682,372 682,420" fill="none" stroke="#AAB4B3" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 8"/>
+<polygon points="1515,342 1515,514 1310,514 1275,448.64 1287,393.6 1383.0,342" fill="#F1F0E4" stroke="#BBC4BC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1305,377 1320,389 1335,377" fill="none" stroke="#D1D6CC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1350,377 1365,389 1380,377" fill="none" stroke="#D1D6CC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1395,377 1410,389 1425,377" fill="none" stroke="#D1D6CC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1317,411 1332,423 1347,411" fill="none" stroke="#D1D6CC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1362,411 1377,423 1392,411" fill="none" stroke="#D1D6CC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1407,411 1422,423 1437,411" fill="none" stroke="#D1D6CC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1305,445 1320,457 1335,445" fill="none" stroke="#D1D6CC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1350,445 1365,457 1380,445" fill="none" stroke="#D1D6CC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1395,445 1410,457 1425,445" fill="none" stroke="#D1D6CC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="1386,445 1405,421 1424,445 1405,469" fill="#6B7074" stroke="#263B40" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="1275" y="520" width="158.0" height="29.3" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1282" y="538.84" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#687A7D">背脊局部（浅白）</text>
+<ellipse cx="180.0" cy="520.0" rx="15.0" ry="15.0" fill="#F6D886" stroke="#DFA42D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="201.0,520.0 208.0,520.0" fill="none" stroke="#DFA42D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="194.8492424049175,534.8492424049175 199.79898987322332,539.7989898732234" fill="none" stroke="#DFA42D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="180.0,541.0 180.0,548.0" fill="none" stroke="#DFA42D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="165.1507575950825,534.8492424049175 160.20101012677668,539.7989898732234" fill="none" stroke="#DFA42D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="159.0,520.0 152.0,520.0" fill="none" stroke="#DFA42D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="165.1507575950825,505.1507575950825 160.20101012677668,500.2010101267767" fill="none" stroke="#DFA42D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="180.0,499.0 180.0,492.0" fill="none" stroke="#DFA42D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="194.8492424049175,505.1507575950825 199.79898987322332,500.2010101267767" fill="none" stroke="#DFA42D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="208" y="502" width="14.0" height="32.0" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="215" y="522.6" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#DFA42D"></text>
+<polyline points="180,520 660,520 660,300 1150,520 1405,445" fill="none" stroke="#DFA42D" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="98" y="460" width="166.0" height="30.650000000000002" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="105" y="479.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#DFA42D">雨槽内的横向来光</text>
+<polyline points="660,539 660,567 641,567 679,567" fill="none" stroke="#478568" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="660.0" cy="520.0" rx="30.0" ry="30.0" fill="none" stroke="#478568" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="643.0294372515228,536.9705627484772 676.9705627484772,503.02943725152284" fill="none" stroke="#478568" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="631" y="571" width="52.0" height="30.650000000000002" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="638" y="590.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#478568">滑镜</text>
+<ellipse cx="660.0" cy="300.0" rx="30.0" ry="30.0" fill="none" stroke="#687A7D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="639.8515004028552,313.0398605814577 680.1484995971448,286.9601394185423" fill="none" stroke="#687A7D" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="660,269 660,230" fill="none" stroke="#687A7D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="698" y="252" width="86.0" height="29.3" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="705" y="270.84" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#687A7D">固定上镜</text>
+<polyline points="1150,539 1150,567 1131,567 1169,567" fill="none" stroke="#478568" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse cx="1150.0" cy="520.0" rx="30.0" ry="30.0" fill="none" stroke="#478568" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1126.0554287855055,518.3698130923123 1173.9445712144945,521.6301869076877" fill="none" stroke="#478568" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="1121" y="571" width="52.0" height="30.650000000000002" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1128" y="590.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#478568">末镜</text>
+<polyline points="535,539 535,567 516,567 554,567" fill="none" stroke="#AAB4B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 8"/>
+<ellipse cx="535.0" cy="520.0" rx="30.0" ry="30.0" fill="none" stroke="#AAB4B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="518.2790389756681,537.2165461815886 551.7209610243319,502.78345381841143" fill="none" stroke="#AAB4B3" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 8"/>
+<polyline points="515,569 745,569" fill="none" stroke="#478568" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="540,608 660,608" fill="none" stroke="#478568" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="660,608 647.2744795045517,613.836191234009 647.2744795045517,602.163808765991" fill="#478568" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="88" y="392" width="161.0" height="61.7" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="95" y="413.48" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#478568">滑镜角度固定</text>
+<text x="95" y="441.83000000000004" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#478568">只改变折转位置</text>
+<polyline points="535,487 535,416" fill="none" stroke="#AAB4B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 8"/>
+<rect x="308" y="290" width="204.0" height="30.650000000000002" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="315" y="309.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#687A7D">旧镜位：光被槽沿挡住</text>
+<ellipse cx="125.0" cy="667.5" rx="12.0" ry="12.5" fill="#FFF4CD" stroke="#D56D2F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="118,661 117,646 126,655 134,648 135,662" fill="#FFF4CD" stroke="#D56D2F" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="125,681 125,692 118,698 125,692 132,698" fill="none" stroke="#D56D2F" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="145,688 183,688" fill="none" stroke="#287FAF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="183,688 169.36551375487673,694.2530620364381 169.36551375487673,681.7469379635619" fill="#287FAF" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="187.0,686.0 190.66666666666666,676.4930555555557 194.33333333333331,667.6388888888888 198.0,659.4375 201.66666666666666,651.8888888888889 205.33333333333334,644.9930555555554 209.0,638.75 212.66666666666666,633.1597222222222 216.33333333333334,628.2222222222224 220.0,623.9375 223.66666666666666,620.3055555555554 227.33333333333337,617.3263888888889 231.0,615.0 234.66666666666663,613.3263888888889 238.33333333333337,612.3055555555555 242.0,611.9375 245.66666666666669,612.2222222222222 249.33333333333334,613.1597222222222 253.0,614.75 256.66666666666663,616.9930555555555 260.33333333333337,619.8888888888889 264.0,623.4375 267.66666666666663,627.6388888888889 271.33333333333337,632.4930555555555 275.0,638.0" fill="none" stroke="#287FAF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="275.0,638.0 262.23867359669714,630.1165649347276 272.64843514529855,623.1854752781558" fill="#287FAF" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="298.0,638.0 302.5,629.1458333333334 307.0,620.9166666666666 311.5,613.3125 316.0,606.3333333333334 320.49999999999994,599.9791666666666 325.0,594.25 329.5,589.1458333333334 334.0,584.6666666666667 338.5,580.8125 342.9999999999999,577.5833333333333 347.5,574.9791666666666 352.0,573.0 356.5,571.6458333333334 361.0,570.9166666666667 365.5,570.8125 370.0,571.3333333333334 374.5,572.4791666666666 379.0,574.25 383.5,576.6458333333333 388.0,579.6666666666667 392.5,583.3125 396.99999999999994,587.5833333333333 401.5,592.4791666666667 406.0,598.0" fill="none" stroke="#287FAF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="406.0,598.0 392.5387596108267,591.3822203735023 402.2326174749613,583.4808116993396" fill="#287FAF" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="440.0,598.0 444.16666666666674,589.5538194444445 448.33333333333326,581.7152777777776 452.5,574.484375 456.66666666666674,567.8611111111112 460.83333333333326,561.8454861111111 465.0,556.4375 469.16666666666663,551.6371527777777 473.33333333333337,547.4444444444445 477.5,543.859375 481.6666666666666,540.8819444444443 485.83333333333337,538.5121527777778 490.0,536.75 494.16666666666663,535.5954861111111 498.33333333333337,535.0486111111111 502.5,535.109375 506.6666666666667,535.7777777777777 510.8333333333333,537.0538194444445 515.0,538.9375 519.1666666666666,541.4288194444445 523.3333333333334,544.5277777777778 527.5,548.234375 531.6666666666666,552.5486111111111 535.8333333333334,557.4704861111111 540.0,563.0" fill="none" stroke="#287FAF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="540.0,563.0 526.8007433475641,555.8740176941614 536.7886831018403,548.3477836564022" fill="#287FAF" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="660,492 660,310" fill="none" stroke="#D56D2F" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 8"/>
+<polygon points="660,310 666.2530620364381,323.6344862451233 653.7469379635619,323.6344862451233" fill="#D56D2F" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="704,298 1115,493" fill="none" stroke="#D56D2F" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 8"/>
+<polygon points="1115,493 1100.0012677893753,492.8049818624519 1105.3620581760001,481.50608520141236" fill="#D56D2F" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1200,562 1480,562" fill="none" stroke="#287FAF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="1480,562 1466.3655137548767,568.2530620364381 1466.3655137548767,555.7469379635619" fill="#287FAF" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1500,515 1496,575" fill="none" stroke="#478568" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="1498,545 1480,531 1498,545 1514,530" fill="none" stroke="#478568" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="1298" y="587" width="184.0" height="27.950000000000003" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1305" y="604.96" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" fill="#478568">受光后，窗边根缝松开</text>
+<ellipse cx="310.0" cy="590.0" rx="19.0" ry="19.0" fill="#FFFDF8" stroke="#287FAF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="303" y="597.36" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#287FAF">1</text>
+<ellipse cx="607.0" cy="656.0" rx="19.0" ry="19.0" fill="#FFFDF8" stroke="#287FAF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="600" y="663.36" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#287FAF">2</text>
+<ellipse cx="836.0" cy="340.0" rx="19.0" ry="19.0" fill="#FFFDF8" stroke="#287FAF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="829" y="347.36" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#287FAF">3</text>
+<ellipse cx="1205.0" cy="465.0" rx="19.0" ry="19.0" fill="#FFFDF8" stroke="#287FAF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1198" y="472.36" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#287FAF">4</text>
+<ellipse cx="1460.0" cy="548.0" rx="19.0" ry="19.0" fill="#FFFDF8" stroke="#287FAF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1453" y="555.36" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#287FAF">5</text>
+<rect x="83" y="235" width="216.0" height="32.0" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="90" y="255.6" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#287FAF">← 第 07 关：破玻璃口</text>
+<rect x="1183" y="241" width="188.0" height="33.35" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1190" y="262.48" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#287FAF">第 09 关 → 阁楼窗</text>
+<rect x="809" y="562" width="166.0" height="56.300000000000004" fill="#FFFDF8" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="816" y="581.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#687A7D">沿上镜折转跨断槽</text>
+<text x="816" y="607.37" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#687A7D">上镜无需实体操作</text>
+<rect x="48.0" y="850" width="291.2" height="140" fill="#FFFDF8" stroke="#CDD6D1" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="64.0" y="882.36" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#478568">01</text>
+<text x="64.0" y="917.48" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#263B40">短跳到镜轨</text>
+<text x="64.0" y="950.84" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#687A7D">沿窄雨槽向右</text>
+<rect x="351.2" y="850" width="291.2" height="140" fill="#FFFDF8" stroke="#CDD6D1" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="367.2" y="882.36" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#478568">02</text>
+<text x="367.2" y="917.48" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#263B40">平移滑镜</text>
+<text x="367.2" y="950.84" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#687A7D">对准槽沿窄口</text>
+<rect x="654.4" y="850" width="291.2" height="140" fill="#FFFDF8" stroke="#CDD6D1" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="670.4" y="882.36" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#478568">03</text>
+<text x="670.4" y="917.48" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#263B40">化光穿口</text>
+<text x="670.4" y="950.84" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#687A7D">借上镜越过断槽</text>
+<rect x="957.5999999999999" y="850" width="291.2" height="140" fill="#FFFDF8" stroke="#CDD6D1" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="973.5999999999999" y="882.36" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#478568">04</text>
+<text x="973.5999999999999" y="917.48" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#263B40">右岸调整末镜</text>
+<text x="973.5999999999999" y="950.84" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#687A7D">送光到背脊光鳞</text>
+<rect x="1260.8" y="850" width="291.2" height="140" fill="#FFFDF8" stroke="#CDD6D1" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1276.8" y="882.36" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#478568">05</text>
+<text x="1276.8" y="917.48" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#263B40">阁楼窗开放</text>
+<text x="1276.8" y="950.84" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#687A7D">走入园丁阁楼</text>
+<text x="52" y="1023.72" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#263B40">固定角度＋水平滑轨：把“移动镜子”用于找准光柱位置；不再重复升镜 Z 字路线。</text>
+<text x="52" y="1058.84" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#687A7D">共同规则：站光 3 秒化光；沿光路手动前后移动。圆号表示先后顺序，箭头不限制回退。</text>
+<text x="52" y="1085.08" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#687A7D">v01 非比例草图 · 展示完成态光路，按步骤接通 · 恢复点为设计建议；跳距、碰撞和切换待灰盒验证。</text>
+</svg>

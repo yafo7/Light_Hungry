@@ -1,0 +1,13 @@
+{
+  "sequencePage": 1,
+  "title": "旧提灯中的家与流浪的开始",
+  "output": "C:/Users/10029/Documents/ChatGPT/食光兽/art/opening-page01-origin-v02-old-lantern-2026-11-05/page01-old-lantern-origin.png",
+  "source": "C:/Users/10029/.codex/generated_images/01a1a7d6-1c92-7ea0-bc30-fe064e10a87b/exec-ed61930f-0bd5-42b2-bc20-5e45490aa77c.png",
+  "mode": "built-in image_gen",
+  "status": "静态漫画分镜效果稿",
+  "correction": "整页灯具统一改成古旧手提油灯：弧形提手、锈旧金属护架、积灰玻璃、灯芯火苗；搬家后熄灯，破损镜头与末格屋内残骸同步替换。",
+  "visualReview": "已查看五格，移除电台灯长臂、陶瓷灯罩、电灯泡、电线和插头；保持既有叙事与分镜布局。",
+  "promptFiles": [
+    "prompts.json"
+  ]
+}

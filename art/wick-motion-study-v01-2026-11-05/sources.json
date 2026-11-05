@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-05",
+  "repository": "https://github.com/Shriinivas/cmubvh",
+  "repositoryTreeSnapshot": "3bc9c75c481ac6e622f3c378369b293d8de9be45",
+  "sourceFBX": "C:\\Users\\10029\\Desktop\\食光兽\\美术\\灯芯精灵_骨骼绑定_v01\\WickSpirit_Rigged.fbx",
+  "sourceFBXSHA256": "643191b6200a5ac2c577eeac761ea5771d07325d33a3e63b75be14f6c87a884b",
+  "copiedSourceUnchanged": true,
+  "motions": [
+    {
+      "id": "143_05",
+      "downloadURL": "https://raw.githubusercontent.com/Shriinivas/cmubvh/main/Sequence-141-144/143/Data/143_05.zip",
+      "repositoryBlobSha": "086c190e90b17735b7e23b6ca880cf4d44fda082",
+      "zipSHA256": "b971e4ac27772ec265eba914f55aa162177ee0d3800f834474fe9657f08773ab",
+      "bvhSHA256": "6254ca460d2e091637564a7c51b0db212982f94bdb1c3dd94df1f941cd31a781"
+    },
+    {
+      "id": "143_06",
+      "downloadURL": "https://raw.githubusercontent.com/Shriinivas/cmubvh/main/Sequence-141-144/143/Data/143_06.zip",
+      "repositoryBlobSha": "4bb4258b4519acd791d9513a0dad5a0c0f00a198",
+      "zipSHA256": "315051fc264351084cd7e07666db26e4e2bdad91a2999071ac824721a6b43acf",
+      "bvhSHA256": "4c61ea522834ab27befa302825ec8835e2287d781b922387c1e471bee386bb13"
+    },
+    {
+      "id": "143_07",
+      "downloadURL": "https://raw.githubusercontent.com/Shriinivas/cmubvh/main/Sequence-141-144/143/Data/143_07.zip",
+      "repositoryBlobSha": "28c8d8f152df2e84950f8735b45c845b28eece6e",
+      "zipSHA256": "3bd40328d1f75207af400ea632a6600b08e00cf8a8c42df5cb8a19bc5acbc849",
+      "bvhSHA256": "8c9bcd52b72024365890a38729fde0291c8112b27cbd9a73eb01e74ba9b7b8df"
+    },
+    {
+      "id": "81_05",
+      "downloadURL": "https://raw.githubusercontent.com/Shriinivas/cmubvh/main/Sequence-081-085/81/Data/81_05.zip",
+      "repositoryBlobSha": "c61c19399e5a3dc28c0bd10b9b74928886768a3e",
+      "zipSHA256": "36f10259d2c0bfcd1fb4375633955e9e31cbbd29919cc7e5c9888b6a3fda0151",
+      "bvhSHA256": "de960294dea18c5b3d63dc3e9c7a38abe47323ce99bce573cc3abdc2c940c194"
+    },
+    {
+      "id": "81_06",
+      "downloadURL": "https://raw.githubusercontent.com/Shriinivas/cmubvh/main/Sequence-081-085/81/Data/81_06.zip",
+      "repositoryBlobSha": "0c4c3ef2f550abf6baec5cf32163c240b09d943a",
+      "zipSHA256": "1a65ce3dd1aaa7c5f253f18a2721436bd49a472dee19949024fd79bf0f233f5f",
+      "bvhSHA256": "c46a4e52f1642a87792a2a256416fe530529df20d8445b80aeb5aad413bb8b5e"
+    },
+    {
+      "id": "82_06",
+      "downloadURL": "https://raw.githubusercontent.com/Shriinivas/cmubvh/main/Sequence-081-085/82/Data/82_06.zip",
+      "repositoryBlobSha": "507a9a0ed22f0f30a0359e3345175d447e703b7a",
+      "zipSHA256": "67846076eb348106234ecddf41ce57fbad6b2c7cc34e9e2aafae59aef5b048e8",
+      "bvhSHA256": "1c0052e30ac7db00eaea896cf6b2619b8a672102a4ac77ac08fab8e710a9f39d"
+    },
+    {
+      "id": "140_06",
+      "downloadURL": "https://raw.githubusercontent.com/Shriinivas/cmubvh/main/Sequence-136-140/140/Data/140_06.zip",
+      "repositoryBlobSha": "9ef85ca8f13273165e85561882b0112e6644d144",
+      "zipSHA256": "0a0f8edda3b7e254701ffc70832929ab065bd25c021f33b7e6cefeb7be8205e8",
+      "bvhSHA256": "a4035318459ac8313c822fa8b6fbfc9fb873308a052ea410a67b26c679b16407"
+    },
+    {
+      "id": "140_07",
+      "downloadURL": "https://raw.githubusercontent.com/Shriinivas/cmubvh/main/Sequence-136-140/140/Data/140_07.zip",
+      "repositoryBlobSha": "dacb70e3928dfdfc2903ce2597f9d06cf3fdac2b",
+      "zipSHA256": "89bc6887ad08f22281af24673dd604965d85a0f81736dfacc3ef43b4fe928fc3",
+      "bvhSHA256": "887e959672f854103229b6c14ceb40ed244bf92d61b6e0b70d02565b1c7dbd7b"
+    },
+    {
+      "id": "139_02",
+      "downloadURL": "https://raw.githubusercontent.com/Shriinivas/cmubvh/main/Sequence-136-140/139/Data/139_02.zip",
+      "repositoryBlobSha": "8602e82c5f65d1918f7914480fd7eb18f2576a32",
+      "zipSHA256": "0a8890058bfc104a534de92baaf1524552611a84908073debf45113806dc40af",
+      "bvhSHA256": "d6eef8f4ab182bef1bb5db0c46cbec0261b81a63ce1720b8a19777b7e79887a9"
+    }
+  ]
+}

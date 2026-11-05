@@ -1,0 +1,59 @@
+{
+  "version": "v07",
+  "mode": "Built-in image_gen",
+  "scope": "Concept art and global ability design, not runtime implementation",
+  "confirmedControl": "A backward / D forward along the connected light path",
+  "confirmedDurationSeconds": 3,
+  "noCreatureInLevel02": true,
+  "unityModified": false,
+  "selectedArt": "02-陶盆-化光穿隙-v07.png",
+  "visualReview": [
+    "creature removed",
+    "rubble-blocked drain",
+    "one narrow lit seam",
+    "spirit intersects reflected beam",
+    "dry landing beyond slit"
+  ],
+  "files": [
+    {
+      "name": "02-陶盆-化光穿隙-v07.png",
+      "bytes": 2422013,
+      "sha256": "E397D4D32ACEE7FC3253421C1291616091F3F8C4C05A9FFC00BFC89F54236D65"
+    },
+    {
+      "name": "化光教学与光路.png",
+      "bytes": 201820,
+      "sha256": "26DAAE189AAEAE0E37832E8030E063DA49EB56CFA4CD75BA6E6C710B64C897F2"
+    },
+    {
+      "name": "化光教学与光路.svg",
+      "bytes": 9023,
+      "sha256": "E4BD75EA3991F0D047D997F8CADC66C219AE838E0B10333ED64681F611281F4A"
+    },
+    {
+      "name": "lightform-spec.json",
+      "bytes": 2570,
+      "sha256": "33C428EF24C30A24944E349C29C47615BCC20117F4FCC30404A3665419E6A4DA"
+    },
+    {
+      "name": "全局化光能力与第二关设计.md",
+      "bytes": 6621,
+      "sha256": "89F891ACD0A3435C8E8830813E7461C8C8042B7271CC0643E239B9ACE8965B4A"
+    },
+    {
+      "name": "index.html",
+      "bytes": 3651,
+      "sha256": "49AF639F2F01496FE031606B51C13389E124F64F4F12CC1C8D676A4D442E019F"
+    },
+    {
+      "name": "generation-prompt.txt",
+      "bytes": 5034,
+      "sha256": "35929311CEA2C6E97787DAEE853504667C0ABDB2552A86EA8AB6191E4B0E47FC"
+    },
+    {
+      "name": "refinement-prompt.txt",
+      "bytes": 1108,
+      "sha256": "2474E2D701E29822C5C3BF44E806B16EA4BAC2A2FD638FD7432AC233DCAF4C26"
+    }
+  ]
+}

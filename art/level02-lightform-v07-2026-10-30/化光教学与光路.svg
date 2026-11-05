@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1030" viewBox="0 0 1480 1030"><defs><radialGradient id="halo"><stop stop-color="#ffe4a1" stop-opacity=".95"/><stop offset=".5" stop-color="#efbe56" stop-opacity=".4"/><stop offset="1" stop-color="#efbe56" stop-opacity="0"/></radialGradient><pattern id="earth" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="20" height="20" fill="#d5c7ae"/><path d="M0 20L20 0" stroke="#c4b698" stroke-width=".8"/></pattern><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0L7 3.5L0 7Z" fill="#578a8b"/></marker></defs><rect width="1480" height="1030" fill="#f6f1e5"/><g font-family="Microsoft YaHei,Microsoft YaHei UI,Arial,sans-serif">
+<text x="42" y="49" font-size="29" fill="#33433c" text-anchor="start">第二关 · 化光穿隙</text>
+<text x="42" y="80" font-size="17" fill="#6b7665" text-anchor="start">全局能力教学：站在光中 3 秒 → 一个光核 → A / D 沿光路前后移动</text>
+<rect x="42" y="108" width="264" height="239" rx="12" fill="#293c3b"/>
+<text x="60" y="139" font-size="18" fill="#f3e5ba" text-anchor="start">0 秒</text>
+<line x1="66" y1="279" x2="282" y2="279" stroke="#a8aa88" stroke-width="3"/>
+<path d="M148 157L196 157L213 279L136 279Z" fill="#eec05a" opacity=".12"/>
+<ellipse cx="174" cy="221.9" rx="50.796" ry="63.1584" fill="url(#halo)" opacity="0.12"/>
+<g transform="translate(174,278) scale(102)" stroke="#987543" stroke-width=".025" fill="#fff0c6"><path d="M-.13,-.29 L-.21,0 L-.06,0 L.01,-.14 L.11,0 L.23,0 L.13,-.29 Z"/><path d="M-.26,-.28 Q-.46,-.48 -.31,-.80 L-.13,-.7 L-.14,-1 L.08,-.81 Q.39,-.76 .35,-.47 Q.32,-.25 -.26,-.28Z"/><ellipse cx=".12" cy="-.55" rx=".028" ry=".052" fill="#584630"/><ellipse cx=".25" cy="-.54" rx=".022" ry=".046" fill="#584630"/></g>
+<text x="174" y="318" font-size="16" fill="#e1e6d4" text-anchor="middle">站定受光</text>
+<rect x="325" y="108" width="264" height="239" rx="12" fill="#293c3b"/>
+<text x="343" y="139" font-size="18" fill="#f3e5ba" text-anchor="start">约 1 秒</text>
+<line x1="349" y1="279" x2="565" y2="279" stroke="#a8aa88" stroke-width="3"/>
+<path d="M431 157L479 157L496 279L419 279Z" fill="#eec05a" opacity=".12"/>
+<ellipse cx="457" cy="221.9" rx="56.60999999999999" ry="69.36" fill="url(#halo)" opacity="0.5"/>
+<g transform="translate(457,278) scale(102)" stroke="#987543" stroke-width=".025" fill="#fff0c6"><path d="M-.13,-.29 L-.21,0 L-.06,0 L.01,-.14 L.11,0 L.23,0 L.13,-.29 Z"/><path d="M-.26,-.28 Q-.46,-.48 -.31,-.80 L-.13,-.7 L-.14,-1 L.08,-.81 Q.39,-.76 .35,-.47 Q.32,-.25 -.26,-.28Z"/><ellipse cx=".12" cy="-.55" rx=".028" ry=".052" fill="#584630"/><ellipse cx=".25" cy="-.54" rx=".022" ry=".046" fill="#584630"/></g>
+<text x="457" y="318" font-size="16" fill="#e1e6d4" text-anchor="middle">身体边缘发亮</text>
+<rect x="608" y="108" width="264" height="239" rx="12" fill="#293c3b"/>
+<text x="626" y="139" font-size="18" fill="#f3e5ba" text-anchor="start">约 2 秒</text>
+<line x1="632" y1="279" x2="848" y2="279" stroke="#a8aa88" stroke-width="3"/>
+<path d="M714 157L762 157L779 279L702 279Z" fill="#eec05a" opacity=".12"/>
+<ellipse cx="740" cy="221.9" rx="63.495" ry="76.704" fill="url(#halo)" opacity="0.95"/>
+<g transform="translate(740,278) scale(102)" stroke="#987543" stroke-width=".025" fill="#fff0c6"><path d="M-.13,-.29 L-.21,0 L-.06,0 L.01,-.14 L.11,0 L.23,0 L.13,-.29 Z"/><path d="M-.26,-.28 Q-.46,-.48 -.31,-.80 L-.13,-.7 L-.14,-1 L.08,-.81 Q.39,-.76 .35,-.47 Q.32,-.25 -.26,-.28Z"/><ellipse cx=".12" cy="-.55" rx=".028" ry=".052" fill="#584630"/><ellipse cx=".25" cy="-.54" rx=".022" ry=".046" fill="#584630"/></g>
+<text x="740" y="318" font-size="16" fill="#e1e6d4" text-anchor="middle">光晕扩大、轮廓消融</text>
+<rect x="891" y="108" width="264" height="239" rx="12" fill="#293c3b"/>
+<text x="909" y="139" font-size="18" fill="#f3e5ba" text-anchor="start">满 3 秒</text>
+<line x1="915" y1="279" x2="1131" y2="279" stroke="#a8aa88" stroke-width="3"/>
+<circle cx="1023" cy="224" r="25.200000000000003" fill="url(#halo)"/><circle cx="1023" cy="224" r="4.2" fill="#fff8d2"/>
+<path d="M976 245Q994 217 1016 224" stroke="#e8c477" stroke-width="2" fill="none" stroke-dasharray="3 6"/>
+<text x="1023" y="318" font-size="16" fill="#e1e6d4" text-anchor="middle">收拢成一个光核</text>
+<rect x="1174" y="108" width="264" height="239" rx="12" fill="#293c3b"/>
+<text x="1192" y="139" font-size="18" fill="#f3e5ba" text-anchor="start">光态</text>
+<line x1="1198" y1="279" x2="1414" y2="279" stroke="#a8aa88" stroke-width="3"/>
+<line x1="1209" y1="223" x2="1403" y2="223" stroke="#e7bf63" stroke-width="3"/><line x1="1248" y1="253" x2="1364" y2="253" stroke="#8cbdba" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<circle cx="1306" cy="223" r="25.200000000000003" fill="url(#halo)"/><circle cx="1306" cy="223" r="4.2" fill="#fff8d2"/>
+<text x="1306" y="318" font-size="16" fill="#e1e6d4" text-anchor="middle">A 后退 / D 前进</text>
+<text x="42" y="380" font-size="15" fill="#647363" text-anchor="start">前三秒完成前仍是实体；光晕大小与光核碰撞大小分开。具体恢复规则见设计文档中的建议项。</text>
+<rect x="42" y="407" width="1396" height="567" rx="12" fill="#eae4d4"/>
+<text x="65" y="442" font-size="20" fill="#33433c" text-anchor="start">同一条真实光路：顶部孔 → 固定反光片 → 平地充能 → 石缝 → 缝后平台</text>
+<path d="M104.00,720.00L680.00,720.00L680.00,936.00L976.00,936.00L1000.00,824.00L1160.00,824.00L1264.00,944.00L1344.00,944.00L1344.00,960.00L104.00,960.00Z" fill="url(#earth)"/>
+<path d="M104.00,720.00L680.00,720.00 M1000.00,824.00L1160.00,824.00L1264.00,944.00L1344.00,944.00" fill="none" stroke="#7b8665" stroke-width="5"/>
+<polygon points="681.50,698.74 680.00,576.00 736.00,544.00 820.00,580.00 900.00,556.00 960.00,600.00 961.50,758.37" fill="#858c78" stroke="#59634f" stroke-width="2"/><polygon points="678.50,712.82 958.50,772.45 976.00,936.00 680.00,936.00" fill="#747e6c" stroke="#59634f" stroke-width="2"/>
+<path d="M736.00,544.00L780.00,672.00L820.00,580.00 M868.00,564.00L896.00,692.00" fill="none" stroke="#5d674f" stroke-width="2"/>
+<path d="M224.00,712.00Q232.00,624.00 296.00,624.00" fill="none" stroke="#728253" stroke-width="4"/><ellipse cx="280" cy="636" rx="49" ry="12" fill="#94a365"/>
+<line x1="283.4166139721282" y1="608.4546342573242" x2="308.5833860278717" y2="639.5453657426758" stroke="#f3ecd6" stroke-width="7"/>
+<polyline points="296.00,480.00 296.00,624.00 1160.00,808.00" fill="none" stroke="#d2a34c" stroke-width="8" opacity=".25"/><polyline points="296.00,480.00 296.00,624.00 1160.00,808.00" fill="none" stroke="#fff2b8" stroke-width="3"/>
+<ellipse cx="432.00000000000006" cy="676" rx="46.8" ry="56.959999999999994" fill="url(#halo)" opacity="0.7"/>
+<g transform="translate(432.00000000000006,720) scale(80)" stroke="#987543" stroke-width=".025" fill="#fff0c6"><path d="M-.13,-.29 L-.21,0 L-.06,0 L.01,-.14 L.11,0 L.23,0 L.13,-.29 Z"/><path d="M-.26,-.28 Q-.46,-.48 -.31,-.80 L-.13,-.7 L-.14,-1 L.08,-.81 Q.39,-.76 .35,-.47 Q.32,-.25 -.26,-.28Z"/><ellipse cx=".12" cy="-.55" rx=".028" ry=".052" fill="#584630"/><ellipse cx=".25" cy="-.54" rx=".022" ry=".046" fill="#584630"/></g>
+<circle cx="824" cy="736.4444444444445" r="19.200000000000003" fill="url(#halo)"/><circle cx="824" cy="736.4444444444445" r="3.2" fill="#fff8d2"/>
+<rect x="1031.2" y="744" width="33.6" height="80" rx="15" fill="none" stroke="#6b9d9b" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="135.99999999999997" y="493" font-size="15" fill="#33433c" text-anchor="start">顶部孔投下的日光</text>
+<text x="168" y="776" font-size="15" fill="#33433c" text-anchor="start">固定反光片，已经对准</text>
+<text x="372.00000000000006" y="769.6" font-size="17" fill="#9d7935" text-anchor="start">站定 3 秒</text>
+<text x="704" y="516" font-size="16" fill="#33433c" text-anchor="start">石砾始终堵住入口</text>
+<text x="856.0000000000001" y="872" font-size="15" fill="#fff2cf" text-anchor="middle">真缝隙约 0.18H</text>
+<text x="1016.0000000000001" y="692" font-size="16" fill="#33433c" text-anchor="start">缝后安全平台</text>
+<text x="1016.0000000000001" y="724" font-size="14" fill="#647c73" text-anchor="start">自动恢复：建议</text>
+<text x="1176" y="908" font-size="16" fill="#33433c" text-anchor="start">接第三关</text>
+<line x1="503.99999999999994" y1="704" x2="616.0000000000001" y2="728" stroke="#578a8b" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="65" y="951" font-size="14" fill="#677263" text-anchor="start">图中光核与落脚轮廓用于说明不同阶段；同一时刻只有一个玩家。示意坐标不是已验证的 Unity 碰撞布局。</text>
+<text x="42" y="1008" font-size="17" fill="#33433c" text-anchor="start">第二关没有食光兽部位。此处教会的是通行能力；碎石不会因为过关而消失。</text>
+</g></svg>

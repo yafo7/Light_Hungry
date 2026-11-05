@@ -1,0 +1,19 @@
+{
+  "mode": "built-in image_gen",
+  "jobs": [
+    {
+      "key": "pot",
+      "file": "pot.png",
+      "ref": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-c59262e8-7b2a-4667-840d-86cf1368e746.png",
+      "transparent": true,
+      "prompt": "Use case: precise-object-edit. This is an edit of the attached isolated terracotta planter, which has a transparent background: preserve actual alpha transparency. Keep its watercolor style, warm ceramic material, moss, upside-down orientation, pointed chipped rim, whole external silhouette and top drainage hole. Make ONLY its lower-left arched ENTRY much smaller: reduce both height and width of the DARK OPENING to approximately HALF of the current opening dimensions, with its bottom anchored exactly at the same pot-rim ground line. Fill the removed upper and side opening area with matching warm terracotta shell, organically chipped around the remaining tiny opening. The final opening should be about 13-15 percent of the total pot height, and about 7-8 percent of total pot width. It should admit a very tiny spirit, not look like a large doorway. Keep the doorway at the same lower-left region. Do not shrink the entire pot, do not move the opening off the ground. One isolated prop, transparent background, no character or text."
+    },
+    {
+      "key": "level2",
+      "file": "l2-background.png",
+      "ref": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-2ffb75cb-e2ca-4f96-afc7-9a809c37a02e.png",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit. Revise the geometry/proportions of this watercolor pot-interior cutaway scene while preserving its refined style, warm garden atmosphere, roots, left leaf with separate flat mica reflector and decorative droplet, right local beast tail patch, and one reflected light ray. Do not add any characters.\nThe essential edit is a NARROWER and TALLER POT CHAMBER, lower continuous foreground floor, and corrected SMALL PORTALS. Use a wide exact 2:1 composition. The pot itself should occupy only the central THREE QUARTERS of the canvas WIDTH, with slim planted garden margins outside on both sides. Its outer silhouette edges are at 12.5 percent and87.5 percent of image width, the roof top at6.25 percent of image height. The continuous floor walking lip must be LOW, at81.25 percent of image height. The exposed earth cut-face is then the lower18.75 percent. From this lip to roof top the pot is75 percent of canvas height. These proportions produce one large broad garden flowerpot 24 units wide and12 units tall in a32-by16-unit picture; not an enormous wide hangar dome.\nThe LEFT rim entry must be much SMALLER than in the reference: only10 percent of canvas height,5.6 percent of canvas width, bottom anchored at81.25 percent down. Organic chipped ceramic, tiny opening, no masonry door.\nThe RIGHT drainage pipe hole must be a simple small circular pipe, internal diameter15 percent of canvas HEIGHT (=7.5 percent canvas width), about 1.5 times the left entry HEIGHT. Bottom at same floor level, very shallow flowing water, dry walkable ledge along its side. No giant tunnel, no large arched building portal.\nRoof drainage hole is SMALL:3.75 percent canvas WIDTH, only1.2 world units. Leaf at about40 percent width /50 percent height; tail side at about75 percent width /57 percent height. Keep leaf, mica, dew and tail sized in relation to the new narrower pot, and leave a clear flat place inside the left entrance for a future tiny sprite. Clay shell not brick arch; shell thickness visible in cross-section. No massive trees INSIDE the pot. No black character silhouettes, labels, UI, arrows or visible dimensions. One complete game concept scene. Critical priority: floor at81.25 percent down, narrower/taller pot silhouette, left opening noticeably smaller than right pipe."
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "unit": "H",
+  "files": [
+    {
+      "file": "l1-background.png",
+      "width": 1774,
+      "height": 887,
+      "bbox": {
+        "height": 887,
+        "x": 0,
+        "y": 0,
+        "width": 1774
+      },
+      "alpha": null,
+      "source_identical": true,
+      "sha256": "86CFF3D6E676AF2FDAF1BF04AC544F7B59443431EF72248667D6BD3CC9F5BA23"
+    },
+    {
+      "file": "l1-ground.png",
+      "width": 2172,
+      "height": 724,
+      "bbox": {
+        "height": 181,
+        "x": 28,
+        "y": 360,
+        "width": 2115
+      },
+      "alpha": {
+        "partial": 381398,
+        "transparent": 1191096,
+        "opaque": 34,
+        "threshold": 32
+      },
+      "source_identical": true,
+      "sha256": "8F8555E36BDD2EC06BE004A3BB92D3B8EF26B51899153FD20F2CC0E9FA99EC08"
+    },
+    {
+      "file": "spirit.png",
+      "width": 1254,
+      "height": 1254,
+      "bbox": {
+        "height": 1162,
+        "x": 232,
+        "y": 48,
+        "width": 763
+      },
+      "alpha": {
+        "partial": 509093,
+        "transparent": 1063371,
+        "opaque": 52,
+        "threshold": 32
+      },
+      "source_identical": true,
+      "sha256": "92919210E025AFC9BA8B501C27E25D4EF68D7A1B55C82C07BDA6FBE35C99C989"
+    },
+    {
+      "file": "reflector.png",
+      "width": 1374,
+      "height": 1145,
+      "bbox": {
+        "height": 972,
+        "x": 278,
+        "y": 93,
+        "width": 993
+      },
+      "alpha": {
+        "partial": 577242,
+        "transparent": 995162,
+        "opaque": 826,
+        "threshold": 32
+      },
+      "source_identical": true,
+      "sha256": "48B4220608EEDEE40400A271B9385DB3221EF0B6DA5A062EBE3533EF4D48B193"
+    },
+    {
+      "file": "tail-rubble.png",
+      "width": 2172,
+      "height": 724,
+      "bbox": {
+        "height": 502,
+        "x": 103,
+        "y": 114,
+        "width": 1994
+      },
+      "alpha": {
+        "partial": 577588,
+        "transparent": 994817,
+        "opaque": 123,
+        "threshold": 32
+      },
+      "source_identical": true,
+      "sha256": "384300EF05595D0E56AE60D3CF30325A0B5FF5EE018EBDE64DF28FF7C10064EF"
+    },
+    {
+      "file": "pot.png",
+      "width": 1774,
+      "height": 887,
+      "bbox": {
+        "height": 693,
+        "x": 96,
+        "y": 102,
+        "width": 1583
+      },
+      "alpha": {
+        "partial": 837060,
+        "transparent": 736253,
+        "opaque": 225,
+        "threshold": 32
+      },
+      "source_identical": true,
+      "sha256": "3B74997F36F50C18C20B42AA8300769306F351442DE3E4056E70DACE0840837D"
+    },
+    {
+      "file": "l2-background.png",
+      "width": 1774,
+      "height": 887,
+      "bbox": {
+        "height": 887,
+        "x": 0,
+        "y": 0,
+        "width": 1774
+      },
+      "alpha": null,
+      "source_identical": true,
+      "sha256": "267095FAC80EB38382535BB3A6FCC36754F5D6C2EBE76A613953584CD054AF09"
+    },
+    {
+      "file": "l2-background-clean.png",
+      "width": 1774,
+      "height": 887,
+      "bbox": {
+        "height": 887,
+        "width": 1774,
+        "y": 0,
+        "x": 0
+      },
+      "alpha": null,
+      "sha256": "9A9EE8B208C1C48C4AB059EC0F4773FB52C6F724B47EBC8F62A8AE3F82C4C83E",
+      "source_identical": true
+    },
+    {
+      "file": "l2-ground.png",
+      "width": 1774,
+      "height": 887,
+      "bbox": {
+        "height": 368,
+        "width": 1774,
+        "y": 479,
+        "x": 0
+      },
+      "alpha": {
+        "threshold": 32,
+        "opaque": 195,
+        "transparent": 1104787,
+        "partial": 468556
+      },
+      "sha256": "09A985C83E27146F8850D85796BA400746CCDEDDC45F88C758595B81FADF6CC8",
+      "source_identical": true
+    }
+  ]
+}

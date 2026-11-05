@@ -1,0 +1,76 @@
+{
+  "title": "食光兽｜01门槛苔地｜三套美术选型",
+  "date": "2026-10-29",
+  "mode": "built-in image_gen",
+  "status": "art_direction_candidates",
+  "unity_scene_created": false,
+  "rendered_in_unity": false,
+  "record_files": [
+    "prompts.json",
+    "scene-refinements.json",
+    "layer-prompts.json"
+  ],
+  "files": [
+    {
+      "file": "A-scene.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-15175461-4215-490c-b17b-c5bc2fb556da.png",
+      "kind": "scene",
+      "direction": "A"
+    },
+    {
+      "file": "B-scene.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-a4941fb3-070f-42b5-a307-de7970dd2b81.png",
+      "kind": "scene",
+      "direction": "B"
+    },
+    {
+      "file": "C-scene.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-82048802-8c1b-4b42-a865-e743d016ce5d.png",
+      "kind": "scene",
+      "direction": "C"
+    },
+    {
+      "file": "A-background.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-69ce755a-ce17-46ca-a923-5d9c87d6f50c.png",
+      "kind": "background",
+      "direction": "A"
+    },
+    {
+      "file": "A-foreground-design.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-37b0978c-900a-468a-9a43-dd504ad29c9e.png",
+      "kind": "foreground",
+      "direction": "A"
+    },
+    {
+      "file": "B-background.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-9adfe231-12ac-4331-8ca4-aec965d0fbd3.png",
+      "kind": "background",
+      "direction": "B"
+    },
+    {
+      "file": "B-foreground-design.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-83ee3c60-cf99-4254-982f-6551c5c92978.png",
+      "kind": "foreground",
+      "direction": "B"
+    },
+    {
+      "file": "C-background.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-0d2c088e-486b-402d-83aa-ae7a593d7232.png",
+      "kind": "background",
+      "direction": "C"
+    },
+    {
+      "file": "C-foreground-design.png",
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-c609c10b-ea63-41be-9d0a-a6670b621c35.png",
+      "kind": "foreground",
+      "direction": "C"
+    }
+  ],
+  "notes": [
+    "9 illustrations for art-direction selection, not running Unity screenshots.",
+    "Backgrounds and foreground design boards are redrawn concepts, not pixel-aligned extracted layers.",
+    "Foreground boards contain an assembly composition and separate prop closeups; further asset separation is required.",
+    "Full scenes show the first successful feeding moment.",
+    "Source PNG bytes are copied intact; alpha is preserved."
+  ]
+}

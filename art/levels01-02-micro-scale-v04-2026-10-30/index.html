@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>微小的来客 · 食光兽尺度与镜头预览</title>
+  <link rel="stylesheet" href="preview.css">
+  <script defer src="preview.js"></script>
+</head>
+<body>
+  <main class="page">
+    <header class="page-head"><div><p class="eyebrow">食光兽 / 第一、二关 · 美术尺度提案</p><h1>微小的来客，巨大的花园。</h1><p class="lead">以同一个角色身高，观察园墙全景、贴近地面的镜头，以及陶盆内部的空间。</p></div><span class="edition">离线图层预览 · 2026.10.30</span></header>
+    <section class="viewer" aria-label="尺度与镜头预览器">
+      <div class="viewer-head"><div class="level-tabs" role="group" aria-label="选择场景"><button data-level="l1" aria-pressed="true">第一关 · 园门苔地</button><button data-level="l2" aria-pressed="false">第二关 · 陶盆之内</button></div><span class="metric" id="view-metric">全景 96H × 48H</span></div>
+      <div class="stage" id="stage"><svg id="scene-svg" viewBox="0 0 96 48" xmlns="http://www.w3.org/2000/svg" aria-labelledby="scene-title scene-description" role="img"><title id="scene-title">第一关园门苔地的图层组合预览</title><desc id="scene-description">可切换远近镜头与图层。角色以一单位身高绘制，光线为示意。</desc><g id="world-root"></g></svg><div class="stage-label" id="stage-label">第一关 · 全景</div><div class="waiting" id="waiting">等待本地图片就绪<span>图片保存到当前文件夹后会自动载入。</span></div></div>
+      <div class="control-panel">
+        <div class="camera-controls" id="camera-controls"><div class="camera-actions"><button id="overview" class="quiet">回到全景</button><button id="push-in" class="primary">下移推近 · 2.6秒</button></div><label class="range-control"><span>镜头缩放 <output id="zoom-output">1.00×</output></span><input id="zoom" type="range" min="1" max="3" step="0.01" value="1" aria-label="第一关镜头缩放"></label><label class="range-control"><span>水平巡视 <output id="focus-output">38.0H</output></span><input id="focus" type="range" min="16" max="80" step="0.1" value="38" aria-label="第一关镜头水平位置"></label></div>
+        <div class="focus-row" id="focus-row"><span>镜头到：</span><button data-focus="player">人物</button><button data-focus="reflector">园灯</button><button data-focus="tail">尾鳞</button><button data-focus="pot">陶盆入口</button><small id="camera-note">推近后可沿地面巡视；世界与角色尺寸保持不变。</small></div>
+        <div class="controls-bottom"><label class="range-control player-control"><span>人物摆位 <output id="player-output">22.0H</output></span><input id="player-position" type="range" min="14" max="92" step="0.1" value="22" aria-label="人物水平摆位"></label><fieldset class="layer-switches"><legend>显示图层</legend><label><input class="layer-toggle" type="checkbox" data-layer="background" checked>背景</label><label id="ground-label"><input class="layer-toggle" type="checkbox" data-layer="ground" checked>地面</label><label><input class="layer-toggle" type="checkbox" data-layer="character" checked>人物</label><label id="interactive-label"><input class="layer-toggle" type="checkbox" data-layer="interactive" checked>交互物</label><label id="beams-label"><input class="layer-toggle" type="checkbox" data-layer="beams" checked>示意光束</label><label class="ruler-label"><input id="ruler-toggle" type="checkbox">同 H 标尺</label></fieldset></div>
+        <div class="status-row"><span id="load-status" aria-live="polite">正在读取本地图片…</span><span id="scale-status">角色 1H · 约占全景屏高 2.08%</span></div>
+      </div>
+    </section>
+    <p class="boundary" id="scene-note">这是美术图层、镜头与尺度预览。人物滑条只改变摆位；当前没有运行游戏碰撞、行走或物理反射。</p>
+    <section class="lower-grid"><div class="scale-panel"><p class="section-label">共用尺度</p><h2>一个身高，贯穿两个空间。</h2><div class="table-wrap"><table><thead><tr><th>观察对象</th><th>设计尺度 / 当前图示</th></tr></thead><tbody><tr><td>角色身高</td><td>1H，以 PNG 实测可见包围盒锁定</td></tr><tr><td>第一关世界 / 全景</td><td>96H × 48H</td></tr><tr><td>第一关游玩视窗 / 第二关画面</td><td>32H × 16H</td></tr><tr><td>角色屏高</td><td>全景 2.08% → 推近 6.25%</td></tr><tr><td>大盆生产目标 / 外盆当前图示</td><td>约 24–25H 宽、12H 高 / 25.2H × 约11H</td></tr><tr><td>盆沿缺口 / 管口 / 浅水目标</td><td>约 1.6H / 2.4H / 0.25H，需校准</td></tr><tr><td>大头短臂角色的操作握点</td><td>离脚底约 0.3–0.45H</td></tr></tbody></table></div><p class="small-note">道具按原图比例等比缩放，园灯下部砖片略埋入地面，以降低手柄。盆内绘画目测盆体约22.5H × 11H、左入口约1.7–1.9H、管口约2–2.4H；这些是近似观察，尚未验证通行或碰撞。水深与开口尺寸仍需制作时校准。</p></div><div class="reading-panel"><p class="section-label">观察重点</p><h2>先看尺度，再看连接。</h2><p>全景中，精灵只是巨树与园墙下的微小亮点。镜头向地面推近后，人物保持 1H，园灯手柄、尾尖和陶盆破口才逐渐成为可读的目标。</p><p>第一关从墙洞引光，经园灯的平面反光板照向尾鳞。光束是按绘画位置摆放的示意，没有进行物理反射验证。</p><p>第二关保留同一个角色身高，脚底依实际绘制的平台调整到约4.35H。叶上云母片承担反射，露珠作为环境装饰。盆内地面与中央低土台已独立拆出，机关和光束仍保留在背景中。</p><p class="small-note">透明资产按 PNG 实测可见包围盒缩放，不把画布空白算作角色或道具尺寸。为衔接墙脚，第一关背景景片在预览中放大1.2倍并下移裁边，原始 PNG 未改。第二关地面是原幅定位资产，按整张透明画布覆盖32H × 16H，不使用包围盒铺满。其余资产缺少包围盒数据时暂以整图适配。</p></div></section>
+    <section class="resources" aria-label="原始图片"><div class="resource-head"><div><p class="section-label">原始图片</p><h2>独立图层与合成参照。</h2></div><button id="reload-assets" class="quiet">重新读取图片与尺度</button></div><div class="resource-grid" id="resource-grid"></div></section>
+    <footer><span>本地离线预览 · 不修改原始图片 · 无外网资源</span><span id="metadata-status">包围盒数据：等待 assets-data.js</span></footer>
+  </main>
+</body>
+</html>

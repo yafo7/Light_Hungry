@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-10-30T07:09:13.300Z",
+  "layerCount": 5,
+  "allCanvasMatch": true,
+  "foregroundAlpha": true,
+  "slitCheck": {
+    "samples": 7497,
+    "coreDiameterScenePixels": 5.04,
+    "maxAlpha": 6,
+    "blockedSamples": 0,
+    "firstFailures": [],
+    "scope": "Image alpha only, not Unity collision or physical optics"
+  },
+  "artReconstructionNotLossless": true
+}

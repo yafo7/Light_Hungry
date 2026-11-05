@@ -1,0 +1,65 @@
+{
+  "scope": "Revised art and dimensioned design only",
+  "generation": "Built-in image_gen",
+  "finalArt": "陶盆至暗渠-连续美术-v06.png",
+  "section": "02-03-continuous-section.png",
+  "unityModified": false,
+  "visualReview": [
+    "right-side small pipe removed",
+    "stair route below intact pot rim",
+    "continuous dry ledge through right edge",
+    "visible roof light well",
+    "no iron gate"
+  ],
+  "limits": [
+    "Painted scale approximate; section and JSON define intended dimensions",
+    "No Unity collision or optical tests for this route"
+  ],
+  "files": [
+    {
+      "file": "陶盆至暗渠-连续美术-v06.png",
+      "bytes": 2237555,
+      "sha256": "EF068AB98FAC72A6ABABFFC26AA1112C07399F41F65B1D92BCD096BDEC8108FA"
+    },
+    {
+      "file": "02-03-continuous-section.png",
+      "bytes": 149882,
+      "sha256": "D311C5A8B3B20AC8342B13A0ACDC036605B93D573301C3B3BCC7D018316C7951"
+    },
+    {
+      "file": "02-03-continuous-section.svg",
+      "bytes": 10550,
+      "sha256": "C17BB11547B1BD77332446F802ABEA6FC1947DFAE7D30FCD658B123FD45E65F9"
+    },
+    {
+      "file": "connection-spec.json",
+      "bytes": 3750,
+      "sha256": "14673C75F549C9D3AEDC44240DD35C81E63353F730B9CE8ACDF8EFAFBF6ADC3D"
+    },
+    {
+      "file": "index.html",
+      "bytes": 5098,
+      "sha256": "C4C10F967D562FE6CD41F6F5370456AF09E9F5B1CFBB8EA17F52D78634B984EE"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3455,
+      "sha256": "DF46D204F817E4BDC48C36CA5AF9385B4B90287D9093D65D35B9313C7F6299A0"
+    },
+    {
+      "file": "generation-prompt.txt",
+      "bytes": 4921,
+      "sha256": "3FB0B096D505245394FA06D77C14B66ABDC8C72208DA09EB74EC1F86B8CEEE21"
+    },
+    {
+      "file": "refinement-prompt.txt",
+      "bytes": 2262,
+      "sha256": "B6F4BCA93C02CC20F7FDF4E7E3D632D1EC24C39D08BEFB242E9D242F8B18CAAD"
+    },
+    {
+      "file": "proportion-prompt.txt",
+      "bytes": 1792,
+      "sha256": "01C7F4BEE6EFF07BA2422C4CB08CC1F3E452716D76C66970CD11AA1F7B1F6C50"
+    }
+  ]
+}

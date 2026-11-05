@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "assetsLoaded": true,
+    "initialLeft": true,
+    "inBetween": true,
+    "stopsRight": true,
+    "stopsLeft": true,
+    "fixedLength": true,
+    "fixedPivot": true,
+    "unitScale": true,
+    "pauseStable": true,
+    "reverseKeepsAngle": true,
+    "bonesVisible": true,
+    "noMobileOverflow": true,
+    "noScriptErrors": true
+  },
+  "errors": [],
+  "geometrySamples": 173,
+  "minLength": 224.27999999999997,
+  "maxLength": 224.28000000000003,
+  "maxRenderMs": 19.100000023841858
+}

@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "file": "l2-background-clean.png",
+      "key": "l2-clean",
+      "transparent": false,
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-cd52cf6d-b7cc-442b-9bde-b2566442f5a6.png"
+    },
+    {
+      "file": "l2-ground.png",
+      "key": "l2-ground",
+      "transparent": true,
+      "source": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-0ccde929-3c6f-4527-95b1-84efab8658cc.png"
+    }
+  ]
+}

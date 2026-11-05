@@ -1,0 +1,5 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Game texture asset for a hand-painted watercolor fairytale garden sewer. A SINGLE straight horizontal length of old braided hemp rope, from left edge to right edge, seamless repeating horizontally, no end caps no knots no coils. Wide 4:1 canvas. Rope centered vertically occupying middle 65 percent of image height. Genuine transparent empty margins above and below. Orthographic front view, uniform diameter, clearly readable three-strand diagonal twisting braids with fine natural fiber strokes, dark umber crevices, muted medium chestnut brown strands and restrained cool beige highlights. Subtle ink edges, watercolor paper-like pigment within the rope only. Matte weathered organic material, absolutely no glow, no yellow/gold metallic sheen, no cast shadow, no background, no text, no other objects. Left/right cross-section and weave phase must connect for repeat sampling. Texture intended for a Unity line renderer, horizontal texture U runs along the rope.",
+  "date": "2026-11-02"
+}

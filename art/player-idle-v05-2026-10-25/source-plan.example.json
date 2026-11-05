@@ -1,0 +1,22 @@
+{
+  "name": "LightHungry Player Idle v05",
+  "date": "2026-10-25",
+  "registration": {
+    "mode": "whole-character-per-frame-uniform-foot-width",
+    "neutralHeightPx": 378
+  },
+  "sources": [],
+  "clips": {
+    "idle": {
+      "durationMs": 3000,
+      "frameDurationMs": [],
+      "phases": []
+    },
+    "think": {
+      "durationMs": 6000,
+      "frameDurationMs": [],
+      "phases": []
+    }
+  },
+  "frameReuse": []
+}

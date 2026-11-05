@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "fourCanvases": true,
+    "allClipsLoaded": true,
+    "idleBefore3s": true,
+    "thinkAfter3s": true,
+    "samePixels5830and5910": true,
+    "lastRestPose": true,
+    "wheelMoving": true,
+    "wheelReverseKeepsPose": true,
+    "leverStopsAtRight": true,
+    "leverReturnsLeft": true,
+    "mirrorStopsAtLeft": true,
+    "mirrorReturnsRight": true,
+    "slowMotion": true,
+    "pauseStable": true,
+    "noMobileOverflow": true,
+    "noScriptErrors": true
+  },
+  "errors": [],
+  "reportedPairFrames": [
+    "77",
+    "77"
+  ],
+  "slowMotionDeltaMs": 200.1500000000001,
+  "stats": {
+    "draws": 241,
+    "maxRenderMs": 0.5999999940395355
+  }
+}

@@ -1,0 +1,155 @@
+[
+  {
+    "clip": "Idle_01",
+    "bones": 22,
+    "vertices": 49725,
+    "actions": [
+      "WickSpirit_Rig|Scene"
+    ],
+    "frameRange": [
+      2.0,
+      892.0
+    ],
+    "finiteMesh": true,
+    "minimumSampledZ": -1.6562095197514282e-06,
+    "maximumSampledClearance": 4.9758359210727576e-08,
+    "unweighted": 0,
+    "textures": 1
+  },
+  {
+    "clip": "Idle_02",
+    "bones": 22,
+    "vertices": 49725,
+    "actions": [
+      "WickSpirit_Rig|Scene"
+    ],
+    "frameRange": [
+      2.0,
+      310.0
+    ],
+    "finiteMesh": true,
+    "minimumSampledZ": -8.43893644741911e-07,
+    "maximumSampledClearance": -1.1510108421930454e-08,
+    "unweighted": 0,
+    "textures": 1
+  },
+  {
+    "clip": "Idle_03",
+    "bones": 22,
+    "vertices": 49725,
+    "actions": [
+      "WickSpirit_Rig|Scene"
+    ],
+    "frameRange": [
+      2.0,
+      236.0
+    ],
+    "finiteMesh": true,
+    "minimumSampledZ": -1.0315255167370196e-05,
+    "maximumSampledClearance": 8.368960635607436e-08,
+    "unweighted": 0,
+    "textures": 1
+  },
+  {
+    "clip": "Jump_01",
+    "bones": 22,
+    "vertices": 49725,
+    "actions": [
+      "WickSpirit_Rig|Scene"
+    ],
+    "frameRange": [
+      2.0,
+      86.0
+    ],
+    "finiteMesh": true,
+    "minimumSampledZ": 0.0005411828751675785,
+    "maximumSampledClearance": 0.013720751740038395,
+    "unweighted": 0,
+    "textures": 1
+  },
+  {
+    "clip": "Jump_02",
+    "bones": 22,
+    "vertices": 49725,
+    "actions": [
+      "WickSpirit_Rig|Scene"
+    ],
+    "frameRange": [
+      2.0,
+      100.0
+    ],
+    "finiteMesh": true,
+    "minimumSampledZ": 4.8442281695315614e-05,
+    "maximumSampledClearance": 0.027711523696780205,
+    "unweighted": 0,
+    "textures": 1
+  },
+  {
+    "clip": "Jump_03",
+    "bones": 22,
+    "vertices": 49725,
+    "actions": [
+      "WickSpirit_Rig|Scene"
+    ],
+    "frameRange": [
+      2.0,
+      141.0
+    ],
+    "finiteMesh": true,
+    "minimumSampledZ": 0.00046498977462761104,
+    "maximumSampledClearance": 0.015357637777924538,
+    "unweighted": 0,
+    "textures": 1
+  },
+  {
+    "clip": "Push_01",
+    "bones": 22,
+    "vertices": 49725,
+    "actions": [
+      "WickSpirit_Rig|Scene"
+    ],
+    "frameRange": [
+      2.0,
+      342.0
+    ],
+    "finiteMesh": true,
+    "minimumSampledZ": -0.0002070524642476812,
+    "maximumSampledClearance": 7.214576669412054e-08,
+    "unweighted": 0,
+    "textures": 1
+  },
+  {
+    "clip": "Push_02",
+    "bones": 22,
+    "vertices": 49725,
+    "actions": [
+      "WickSpirit_Rig|Scene"
+    ],
+    "frameRange": [
+      2.0,
+      320.0
+    ],
+    "finiteMesh": true,
+    "minimumSampledZ": -4.803850606549531e-05,
+    "maximumSampledClearance": 3.384175784049148e-08,
+    "unweighted": 0,
+    "textures": 1
+  },
+  {
+    "clip": "Push_03",
+    "bones": 22,
+    "vertices": 49725,
+    "actions": [
+      "WickSpirit_Rig|Scene"
+    ],
+    "frameRange": [
+      2.0,
+      274.0
+    ],
+    "finiteMesh": true,
+    "minimumSampledZ": -1.1097932883785688e-07,
+    "maximumSampledClearance": 1.7520667938697443e-07,
+    "unweighted": 0,
+    "textures": 1
+  }
+]

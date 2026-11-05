@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="850" viewBox="0 0 1480 850"><defs><pattern id="earth" width="22" height="22" patternUnits="userSpaceOnUse"><rect width="22" height="22" fill="#e3d7bf"/><path d="M-2 8L8-2M2 24L24 2M18 26L26 18" stroke="#cabfa8" stroke-width=".7"/></pattern><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#368390"/></marker></defs><rect width="1480" height="850" fill="#f7f3e8"/><g font-family="Microsoft YaHei,Microsoft YaHei UI,Arial,sans-serif">
+<text x="52" y="54" font-size="30" fill="#334441" text-anchor="start">02 → 03  陶盆 · 集水口 · 排水暗渠</text>
+<text x="53" y="86" font-size="16" fill="#727b70" text-anchor="start">连续纵剖面 / 同一世界坐标     H = 主角高度     概念灰盒尺寸，尚未进行 Unity 碰撞验证</text>
+<rect x="52" y="112" width="1376" height="600" rx="12" fill="#eeeadc"/>
+<path d="M54.00,445.00H1354V689.4H54Z" fill="url(#earth)"/>
+<polygon points="532.40,445.00 662.40,445.00 743.00,494.40 834.00,494.40 990.00,551.60 990.00,460.60 1328.00,460.60 1328.00,642.60 990.00,642.60 834.00,585.40 743.00,585.40 743.00,577.60 731.30,577.60 731.30,569.80 719.60,569.80 719.60,562.00 707.90,562.00 707.90,554.20 696.20,554.20 696.20,546.40 684.50,546.40 684.50,538.60 672.80,538.60 672.80,530.80 661.10,530.80 661.10,523.00 649.40,523.00 649.40,515.20 637.70,515.20 637.70,507.40 626.00,507.40 626.00,499.60 614.30,499.60 614.30,491.80 602.60,491.80 602.60,484.00 590.90,484.00 590.90,476.20 579.20,476.20 579.20,468.40 567.50,468.40 567.50,460.60 555.80,460.60 555.80,452.80 544.10,452.80 544.10,445.00 532.40,445.00" fill="#283d43" stroke="#71827d" stroke-width="5"/>
+<path d="M80.00,471.00 L251.60,185.00 L395.90,185.00 L395.90,195.40 L259.40,195.40 L94.30,460.60 Z M419.30,185.00L563.60,185.00L735.20,471.00L720.90,460.60L555.80,195.40L419.30,195.40Z" fill="#bf7449" stroke="#825032" stroke-width="2"/>
+<path d="M95.60,460.60L259.40,195.40L555.80,195.40L719.60,460.60L662.40,445.00L95.60,445.00Z" fill="#bc9b70" opacity=".2"/>
+<line x1="74.8" y1="471" x2="106" y2="471" stroke="#825032" stroke-width="7" />
+<line x1="709.1999999999999" y1="471" x2="743" y2="471" stroke="#825032" stroke-width="7" />
+<path d="M314.00,445.00Q301.00,351.40 366.00,330.60" fill="none" stroke="#6d8059" stroke-width="5"/><path d="M327.00,338.40Q366.00,289.00 470.00,315.00Q392.00,356.60 327.00,338.40Z" fill="#86945b" stroke="#66744b"/>
+<path d="M470.00,416.40Q548.00,419.00 626.00,335.80L683.20,385.20Q584.40,442.40 470.00,416.40Z" fill="#d6d0b5" stroke="#9a9c87" stroke-width="2"/>
+<line x1="407.59999999999997" y1="195.4" x2="392" y2="328" stroke="#d0a044" stroke-width="2" stroke-dasharray="6 5"/>
+<line x1="392" y1="328" x2="548" y2="385.2" stroke="#d0a044" stroke-width="2" stroke-dasharray="6 5"/>
+<polyline points="132.00,445.00 532.40,445.00 544.10,445.00 544.10,452.80 555.80,452.80 555.80,460.60 567.50,460.60 567.50,468.40 579.20,468.40 579.20,476.20 590.90,476.20 590.90,484.00 602.60,484.00 602.60,491.80 614.30,491.80 614.30,499.60 626.00,499.60 626.00,507.40 637.70,507.40 637.70,515.20 649.40,515.20 649.40,523.00 661.10,523.00 661.10,530.80 672.80,530.80 672.80,538.60 684.50,538.60 684.50,546.40 696.20,546.40 696.20,554.20 707.90,554.20 707.90,562.00 719.60,562.00 719.60,569.80 731.30,569.80 731.30,577.60 743.00,577.60 743.00,585.40 834.00,585.40 990.00,642.60 1328.00,642.60" fill="none" stroke="#d7c29b" stroke-width="6" stroke-linejoin="round"/>
+<line x1="990" y1="642.6" x2="990" y2="655.6" stroke="#70898a" stroke-width="1" />
+<line x1="1026.4" y1="642.6" x2="1026.4" y2="655.6" stroke="#70898a" stroke-width="1" />
+<line x1="1062.8" y1="642.6" x2="1062.8" y2="655.6" stroke="#70898a" stroke-width="1" />
+<line x1="1099.1999999999998" y1="642.6" x2="1099.1999999999998" y2="655.6" stroke="#70898a" stroke-width="1" />
+<line x1="1135.6" y1="642.6" x2="1135.6" y2="655.6" stroke="#70898a" stroke-width="1" />
+<line x1="1171.9999999999998" y1="642.6" x2="1171.9999999999998" y2="655.6" stroke="#70898a" stroke-width="1" />
+<line x1="1208.3999999999999" y1="642.6" x2="1208.3999999999999" y2="655.6" stroke="#70898a" stroke-width="1" />
+<line x1="1244.7999999999997" y1="642.6" x2="1244.7999999999997" y2="655.6" stroke="#70898a" stroke-width="1" />
+<line x1="1281.1999999999998" y1="642.6" x2="1281.1999999999998" y2="655.6" stroke="#70898a" stroke-width="1" />
+<line x1="1317.5999999999997" y1="642.6" x2="1317.5999999999997" y2="655.6" stroke="#70898a" stroke-width="1" />
+<rect x="990" y="659.5" width="338" height="6.5" fill="#77a6ae"/><path d="M990.00,659.50Q1068.00,656.90 1120.00,659.50T1328.00,659.50" fill="none" stroke="#b6d5d6" stroke-width="2"/>
+<line x1="990" y1="460.6" x2="1328" y2="460.6" stroke="#506368" stroke-width="1" stroke-dasharray="26 4"/>
+<line x1="990" y1="486.6" x2="1328" y2="486.6" stroke="#506368" stroke-width="1" stroke-dasharray="26 4"/>
+<line x1="990" y1="512.6" x2="1328" y2="512.6" stroke="#506368" stroke-width="1" stroke-dasharray="26 4"/>
+<line x1="990" y1="538.6" x2="1328" y2="538.6" stroke="#506368" stroke-width="1" stroke-dasharray="26 4"/>
+<line x1="990" y1="564.6" x2="1328" y2="564.6" stroke="#506368" stroke-width="1" stroke-dasharray="26 4"/>
+<line x1="990" y1="590.6" x2="1328" y2="590.6" stroke="#506368" stroke-width="1" stroke-dasharray="26 4"/>
+<line x1="990" y1="616.6" x2="1328" y2="616.6" stroke="#506368" stroke-width="1" stroke-dasharray="26 4"/>
+<rect x="1237" y="460.6" width="15.6" height="182" fill="#5c6c6c" opacity=".6"/>
+<ellipse cx="1107" cy="595.8" rx="10" ry="19" fill="#b0c1ba" stroke="#c6a668" stroke-width="3"/>
+<line x1="1107" y1="614" x2="1107" y2="642.6" stroke="#c6a668" stroke-width="3" />
+<g transform="translate(223,445) scale(26)" fill="#fff2b6" stroke="#74552e" stroke-width=".045"><path d="M-.18,-.31 L-.23,0 L-.08,0 L0,-.17 L.09,0 L.22,0 L.17,-.31 Z"/><path d="M-.29,-.32 Q-.49,-.58 -.28,-.92 L-.11,-.77 L-.05,-1 L.16,-.84 Q.4,-.69 .3,-.41 Q.07,-.22 -.29,-.32Z"/><ellipse cx=".18" cy="-.54" rx=".027" ry=".055" fill="#4f4032"/></g>
+<g transform="translate(789.8000000000001,585.4) scale(26)" fill="#fff2b6" stroke="#74552e" stroke-width=".045"><path d="M-.18,-.31 L-.23,0 L-.08,0 L0,-.17 L.09,0 L.22,0 L.17,-.31 Z"/><path d="M-.29,-.32 Q-.49,-.58 -.28,-.92 L-.11,-.77 L-.05,-1 L.16,-.84 Q.4,-.69 .3,-.41 Q.07,-.22 -.29,-.32Z"/><ellipse cx=".18" cy="-.54" rx=".027" ry=".055" fill="#4f4032"/></g>
+<g transform="translate(1044.6,642.6) scale(26)" fill="#fff2b6" stroke="#74552e" stroke-width=".045"><path d="M-.18,-.31 L-.23,0 L-.08,0 L0,-.17 L.09,0 L.22,0 L.17,-.31 Z"/><path d="M-.29,-.32 Q-.49,-.58 -.28,-.92 L-.11,-.77 L-.05,-1 L.16,-.84 Q.4,-.69 .3,-.41 Q.07,-.22 -.29,-.32Z"/><ellipse cx=".18" cy="-.54" rx=".027" ry=".055" fill="#4f4032"/></g>
+<path d="M210.00,426.80H511.6L719.60,554.20L826.20,554.20L995.20,619.20H1320.2" fill="none" stroke="#368390" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#arrow)"/>
+<text x="314" y="128" font-size="21" fill="#825032" text-anchor="middle">第二关：陶盆内部</text>
+<text x="1094" y="394" font-size="20" fill="#334441" text-anchor="middle">第三关：原砖砌主渠 A 段</text>
+<text x="106" y="281.20000000000005" font-size="15" fill="#334441" text-anchor="start">盆沿贴地，顶部为原盆底</text>
+<text x="106" y="307.20000000000005" font-size="15" fill="#727b70" text-anchor="start">外形沿用第一关</text>
+<line x1="80" y1="156.40000000000003" x2="735.1999999999999" y2="156.40000000000003" stroke="#507e88" stroke-width="1.5" />
+<line x1="80" y1="160.3" x2="80" y2="152.5" stroke="#507e88" stroke-width="1.5" />
+<line x1="735.1999999999999" y1="160.3" x2="735.1999999999999" y2="152.5" stroke="#507e88" stroke-width="1.5" />
+<text x="407.59999999999997" y="146.40000000000003" font-size="15" fill="#507e88" text-anchor="middle">陶盆宽 25.2H</text>
+<line x1="532.4" y1="416.4" x2="662.4" y2="416.4" stroke="#507e88" stroke-width="1.5" />
+<line x1="532.4" y1="420.3" x2="532.4" y2="412.5" stroke="#507e88" stroke-width="1.5" />
+<line x1="662.4" y1="420.3" x2="662.4" y2="412.5" stroke="#507e88" stroke-width="1.5" />
+<text x="597.4" y="406.4" font-size="15" fill="#507e88" text-anchor="middle">地面集水口 5H</text>
+<line x1="808" y1="585.4" x2="808" y2="494.4" stroke="#507e88" stroke-width="1.5" />
+<line x1="804.1" y1="585.4" x2="811.9" y2="585.4" stroke="#507e88" stroke-width="1.5" />
+<line x1="804.1" y1="494.4" x2="811.9" y2="494.4" stroke="#507e88" stroke-width="1.5" />
+<text x="818" y="544.9" font-size="15" fill="#507e88" text-anchor="start">3.5H</text>
+<line x1="1276" y1="642.6" x2="1276" y2="460.6" stroke="#507e88" stroke-width="1.5" />
+<line x1="1272.1000000000001" y1="642.6" x2="1279.8999999999999" y2="642.6" stroke="#507e88" stroke-width="1.5" />
+<line x1="1272.1000000000001" y1="460.6" x2="1279.8999999999999" y2="460.6" stroke="#507e88" stroke-width="1.5" />
+<text x="1286" y="556.6" font-size="15" fill="#507e88" text-anchor="start">7H</text>
+<text x="672.8000000000001" y="341" font-size="16" fill="#825032" text-anchor="start">右侧盆壁保持完整</text>
+<line x1="704" y1="351.4" x2="724.8000000000001" y2="460.6" stroke="#825032" stroke-width="1.5" />
+<text x="496" y="533.4" font-size="16" fill="#334441" text-anchor="start">低石阶向下</text>
+<text x="496" y="555.5" font-size="14" fill="#727b70" text-anchor="start">单级 0.3H</text>
+<text x="808" y="456.7" font-size="16" fill="#334441" text-anchor="start">盆沿下面的砖砌通道</text>
+<text x="1016" y="497" font-size="14" fill="#cbd9d4" text-anchor="start">从较低的支渠进入更高的主渠</text>
+<text x="1140.8" y="619.2" font-size="14" fill="#d7e5df" text-anchor="start">接原转角 → B</text>
+<text x="68" y="748" font-size="17" fill="#334441" text-anchor="start">空间关系</text>
+<text x="165" y="748" font-size="18" fill="#334441" text-anchor="start">盆内地面 → 下行短阶 → 盆沿下方连接段 → 主渠干燥渠沿 → 原第三关转角</text>
+<text x="68" y="782" font-size="17" fill="#334441" text-anchor="start">镜头关系</text>
+<text x="165" y="782" font-size="16" fill="#5e6e65" text-anchor="start">游玩时保持 16H 画面高度，随角色向右、向下跟随；此展开图用于说明空间，不是单屏游戏构图。</text>
+<text x="68" y="815" font-size="15" fill="#69766b" text-anchor="start">同高的三个小精灵表示同一角色在不同位置；背景中的尾部不占用前景行走线。水面比主渠步道低 0.65H。</text>
+</g></svg>

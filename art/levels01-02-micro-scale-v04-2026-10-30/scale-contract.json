@@ -1,0 +1,42 @@
+{
+  "version": "candidate-v04",
+  "world_unit": "H",
+  "character": {
+    "height": 1,
+    "includes": "visible hair crest and feet",
+    "same_asset_both_levels": "spirit.png"
+  },
+  "camera": {
+    "aspect": 2,
+    "level1_opening_height": 48,
+    "level1_gameplay_height": 16,
+    "level2_gameplay_height": 16,
+    "opening_to_gameplay_zoom": 3,
+    "opening_character_screen_height_percent": 2.0833333333333335,
+    "gameplay_character_screen_height_percent": 6.25
+  },
+  "targets": {
+    "pot_outer_width_H": [
+      24,
+      25.2
+    ],
+    "pot_outer_height_H": [
+      11,
+      12
+    ],
+    "pot_entry_height_H": 1.6,
+    "drain_inner_diameter_H": 2.4,
+    "water_depth_H": 0.25,
+    "grip_height_H": [
+      0.3,
+      0.45
+    ],
+    "reflector_height_H": 1.5
+  },
+  "status": "proposed scale contract; painted portal shapes approximate",
+  "not_yet_verified": [
+    "Unity collision geometry",
+    "3D optical solution",
+    "animation and player reach playtest"
+  ]
+}

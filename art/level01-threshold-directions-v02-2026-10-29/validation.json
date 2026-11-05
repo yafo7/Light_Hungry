@@ -1,0 +1,109 @@
+{
+  "file_count": 9,
+  "all_source_identical": true,
+  "images": [
+    {
+      "file": "A-scene.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "Format24bppRgb",
+      "sha256": "D15A0F56693364029C09D8DADF70FDD4772BE15D51852DB12405F65BC4B2C9FD",
+      "source_identical": true,
+      "bytes": 2914413
+    },
+    {
+      "file": "B-scene.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "Format24bppRgb",
+      "sha256": "706E77ADB2EC196ACF8922068FBAAAB5E1343857987B32441BE86D8B737BAA1D",
+      "source_identical": true,
+      "bytes": 3259201
+    },
+    {
+      "file": "C-scene.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "Format24bppRgb",
+      "sha256": "177F12ABCCFE735A38254A501186E3C66E8ECBEBEC182D4D6C8D2D133E62F0D8",
+      "source_identical": true,
+      "bytes": 3071622
+    },
+    {
+      "file": "A-background.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "Format24bppRgb",
+      "sha256": "19FA8375F715904973870766F8BB36EBD402785CEB51E1F409AFE1A54B97A547",
+      "source_identical": true,
+      "bytes": 2869394
+    },
+    {
+      "file": "A-foreground-design.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "Format32bppArgb",
+      "sha256": "4A80DB42BA8146147CEA5ED9886935BFC2CE064F272CBA4F43DB287178774F58",
+      "source_identical": true,
+      "bytes": 2850065,
+      "alpha": {
+        "fully_transparent": 727761,
+        "partial": 845103,
+        "opaque": 0,
+        "transparent_percent": 46.27
+      }
+    },
+    {
+      "file": "B-background.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "Format24bppRgb",
+      "sha256": "172A19F2B08E020BE87B4F1BB1EC279E51571D04DE5B32C2D5E3E8286C60C99E",
+      "source_identical": true,
+      "bytes": 3121533
+    },
+    {
+      "file": "B-foreground-design.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "Format32bppArgb",
+      "sha256": "AD127F7C67AE150ABB9658F502F21693EE89C8467346D63CB0889C178768F5B5",
+      "source_identical": true,
+      "bytes": 3019643,
+      "alpha": {
+        "fully_transparent": 643145,
+        "partial": 929719,
+        "opaque": 0,
+        "transparent_percent": 40.89
+      }
+    },
+    {
+      "file": "C-background.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "Format24bppRgb",
+      "sha256": "50EA10F99E78ACDCB2274864399AE4D25461AE47E1D6D32A194FDF284402156A",
+      "source_identical": true,
+      "bytes": 3116538
+    },
+    {
+      "file": "C-foreground-design.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "Format32bppArgb",
+      "sha256": "DD5DE6BC685FDACE9A284E4482A9BE6BE589A8C6BB0D98B3D303C7CEF4BDEACE",
+      "source_identical": true,
+      "bytes": 2955325,
+      "alpha": {
+        "fully_transparent": 601331,
+        "partial": 971533,
+        "opaque": 0,
+        "transparent_percent": 38.23
+      }
+    }
+  ],
+  "validation_limits": [
+    "Visual concept inspection only; no Unity runtime or collision test.",
+    "No claim of pixel-aligned compositing."
+  ]
+}

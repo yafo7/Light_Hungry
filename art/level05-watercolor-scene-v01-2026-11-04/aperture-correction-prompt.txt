@@ -1,0 +1,11 @@
+Use case: precise-object-edit.
+Edit input 1 with ONE very small local correction only. Preserve this entire approved watercolor scene exactly: framing, colors, all mirrors and the single continuous beam, all platforms, shaft/cable routes outside this small area, the little spirit, open exit and beast. No redesign.
+
+TARGET: the lower-right corner of the rectangular inspection chamber on the LEFT (the chamber occupies approximately x265..586, y330..543 in the 1536x1024 picture).
+The existing tiny black rectangle near x518..541,y512 is only on the INNER panel. It must instead be an actual passage THROUGH the thick RIGHT vertical bronze frame of the chamber.
+
+Make an unmistakable small HORIZONTAL slit at x565..588, y512..526 that cuts completely across the right bronze frame and opens into the empty shaft to its RIGHT. Break the bronze vertical edge in this tiny 14-pixel-high section: draw a black recessed opening/tunnel with a thin upper and lower metal lip, visible through the side-wall thickness. Leave the rest of the right frame above and below intact. No metal remains crossing the opening. This is a very small optical aperture, far too short for the spirit's full body. Connect the inner floor-side space to this opening; remove the old isolated black slot farther left so there is ONE true side-wall aperture, not two painted marks. Do NOT add any light beam to the slit: this chamber is unlit in the illustrated final state.
+
+The chamber's mechanical shaft currently emerges around x584,y508, too close to this aperture. Move ONLY this short horizontal segment about 30 pixels UP, so it exits the right side around x584,y478 and runs to the existing vertical shaft at x635,y478. Shorten the bottom of that existing vertical shaft to join at y478 instead of y508. The mechanical shaft now runs ABOVE the optical slit without blocking it. Keep the big existing route up to y295 and along the upper wall unchanged. Use the same small matte bronze couplings. Leave the chamber wheel in place; a subtle interior spindle can align to this raised shaft.
+
+Everything outside this tiny chamber/short-shaft region must be unchanged. No text, arrows, labels, new glow or new objects.

@@ -1,0 +1,127 @@
+{
+  "mode": "built-in image_gen",
+  "initial": {
+    "date": "2026-10-30",
+    "mode": "built-in image_gen",
+    "reference_roles": "L1 layout/style; L1 crop as camera-intent; L2 pot layout; approved character identity",
+    "scale_proposal": {
+      "unit": "H = full solid character height including pointed hair",
+      "character": 1,
+      "level1_full_view_height": 48,
+      "level1_play_view_height": 16,
+      "level2_view_height": 16,
+      "zoom": 3,
+      "pot_outer_width": 24,
+      "pot_outer_height": 12,
+      "pot_inner_height": 10,
+      "pot_entry_height": 1.6,
+      "drain_inner_diameter": 2.4,
+      "water_depth": 0.25,
+      "control_grip_height": 0.35
+    },
+    "jobs": [
+      {
+        "key": "background",
+        "file": "l1-background.png",
+        "transparent": false,
+        "refs": [
+          "C:/Users/10029/AppData/Local/Temp/codex-clipboard-4ca35c70-8f7a-49d4-84e9-cbdb54b5f459.png"
+        ],
+        "prompt": "Use case: precise-object-edit. Edit the reference garden into a clean BACKGROUND PLATE only. Preserve its warm watercolor style, immense canopy, red brick and plaster boundary wall, front-facing iron gate on left and building sliver far right. Wide 2:1 landscape, camera absolutely perpendicular to the wall. Remove ALL foreground ground platform and front cliff/roots, entry steps, character, lantern and reflector mechanism, broken pots and fragments, giant tail and its stone stair/rubble, exit pot, rays and luminous effects. Fill behind removed items naturally with the existing wall or softly receding garden dirt. The low brick flowerbed remains as fixed scenery at x=15-44% of canvas, its top around y=58%, its lower face to y=87%; small orange flowers and vines. Bottom quarter is a quiet dark mossy-earth scenic strip with NO hard walkable platform edge: later foreground goes on top. There should be ample quiet negative space on lower center/right for separate interactable assets. Put one narrow jagged daylight opening in wall at x=48%, y=33%, bounded by masonry so the light source is identifiable; no light beam painted into the plate. Do not reintroduce any removed foreground objects. Warm, poetic watercolor and delicate dark umber ink, granular paper texture within painted surfaces, terracotta masonry, sage moss and honey sunlight matching reference. Strict front/side elevation for 2D platform game; camera perpendicular to the wall, no isometric view, no 3D toy rendering. No text, labels, UI, arrows, grids or watermark."
+      },
+      {
+        "key": "ground",
+        "file": "l1-ground.png",
+        "transparent": true,
+        "refs": [
+          "C:/Users/10029/AppData/Local/Temp/codex-clipboard-4ca35c70-8f7a-49d4-84e9-cbdb54b5f459.png"
+        ],
+        "prompt": "Use case: background-extraction. Reference is the garden platform art. Generate ONE continuous horizontal foreground GROUND STRIP as an isolated transparent PNG. Flat side elevation; the width is approximately SIXTEEN times its visible vertical thickness. Full long silhouette entirely in frame with transparent margins; a very clean approximately level mossy top walking lip, dark ink outline, warm grey/brown stone-and-earth cut-face below with a few small roots. Tiny dips/chips acceptable, NO tall bushes or protruding objects. Top surface must be a thin side-on line rather than a broad tilted tabletop. The strip ends vertically at left/right so another could be placed beside it. Nothing on the ground: no character, steps standing on it, lantern, tail, pot, wall, sky, tree or extra props. No detached shadows or painted solid background; genuinely TRANSPARENT alpha all around. Preserve reference materials and restrained warm light. Warm, poetic watercolor and delicate dark umber ink, granular paper texture within painted surfaces, terracotta masonry, sage moss and honey sunlight matching reference. Strict front/side elevation for 2D platform game; camera perpendicular to the wall, no isometric view, no 3D toy rendering. No text, labels, UI, arrows, grids or watermark."
+      },
+      {
+        "key": "spirit",
+        "file": "spirit.png",
+        "transparent": true,
+        "refs": [
+          "C:/Users/10029/Documents/ChatGPT/食光兽/art/stardust-spirit-body80-v01-2026-10-29/stardust-spirit-body80.png"
+        ],
+        "prompt": "Use case: background-extraction / identity-preserve. Create a single clean isolated CHARACTER SPRITE on true transparent background, taking the attached approved light-spirit design as exact identity reference. Full body, side view facing RIGHT, neutral standing pose with feet on same level, entire pointed hair tips inside frame. Preserve extremely large flame-shaped head swept up/back, tiny oval dark eye(s), extremely short tiny body, short mitten hands, little droplet feet and a warm gold chest light. Head plus hair around 72 percent of overall solid silhouette height; body and legs around 28 percent. Cream-white and cool pale blue watercolor surfaces, gold luminous edges, no clothing or accessories. Very restrained glow hugs silhouette so it remains readable at only 30-60 pixels tall in game; do NOT add floating particles far away, extended streamers, starbursts, floor shadows, ground or backdrop. Do not enlarge the torso or make realistic human arms. One full figure only, right-facing strict profile, no front/back sheets. Authentic transparent alpha background, no solid white/black/color matte. Watercolor ink fairytale style of the reference."
+      },
+      {
+        "key": "reflector",
+        "file": "reflector.png",
+        "transparent": true,
+        "refs": [
+          "C:/Users/10029/AppData/Local/Temp/codex-clipboard-4ca35c70-8f7a-49d4-84e9-cbdb54b5f459.png"
+        ],
+        "prompt": "Use case: background-extraction. Extract/redesign just the garden's FLOWERBED-MOUNTED DAMAGED LANTERN REFLECTOR as ONE standalone transparent foreground prop. Tiny iron lantern cage with broken/missing glass and no flame/bulb, rusty bracket visibly attached to a small irregular patch of warm red flowerbed bricks with a little moss; nothing else from scene. A single SMALL flat silvered backplate/shard partly opens at its VERTICAL hinge beside the cage, fixed mounting tilt. A narrow connected bent control rod extends down to a little horizontal rounded brass grip near the bottom of the bracket. Scale specification: the eventual tiny player is height H; full assembly from floor/brick bottom to hood is about 3.5H, silver reflective panel is 1.5H tall, the hand grip should be only 0.35-0.45H above the bottom standing level (near tiny short arms, not head height). Do not draw a character or scale ruler. Make the low grip and connection legible. The masonry patch supports the fixture and will visually sit against the flowerbed wall; NO freestanding pedestal or new machine. Front side elevation matching scene camera, reflector slightly yawed to show its face. One prop, no surrounding scene, no rays, no distant glows, no cast floor shadow. Transparent background all around. Warm, poetic watercolor and delicate dark umber ink, granular paper texture within painted surfaces, terracotta masonry, sage moss and honey sunlight matching reference. Strict front/side elevation for 2D platform game; camera perpendicular to the wall, no isometric view, no 3D toy rendering. No text, labels, UI, arrows, grids or watermark."
+      },
+      {
+        "key": "tail",
+        "file": "tail-rubble.png",
+        "transparent": true,
+        "refs": [
+          "C:/Users/10029/AppData/Local/Temp/codex-clipboard-4ca35c70-8f7a-49d4-84e9-cbdb54b5f459.png"
+        ],
+        "prompt": "Use case: background-extraction. Isolate ONE foreground grouping of the reference's collapsed mossy stone stair and ACTUAL TAPERING CREATURE TAIL TIP on true transparent background. Broad horizontal group, about 3:1 width to height. On RIGHT a low broken stone stair and several irregular grey/ochre blocks overlap the thick tail base, which continues unseen into the rubble. Tail extends LEFT horizontally, gently curved, gradually narrowing to a soft pointed end. Grey ivory/pale blue leaf-shaped overlapping scales, same creature as the reference. Only ONE flush scale close to the tip has very faint pale gold veins, no big painted emission/glow and no light beam. This is a short exposed part of a colossal beast, NOT an egg, stone, separate gemstone, reptile head, leg or full animal. Clear outlined silhouette, level lower contact edge. No ground strip beyond the grouping, no building wall, no pot, lamp or character. Do not turn into a three-quarter diorama; side-on game sprite. Keep minimal moss at base and genuine transparent pixels everywhere outside the grouping. Warm, poetic watercolor and delicate dark umber ink, granular paper texture within painted surfaces, terracotta masonry, sage moss and honey sunlight matching reference. Strict front/side elevation for 2D platform game; camera perpendicular to the wall, no isometric view, no 3D toy rendering. No text, labels, UI, arrows, grids or watermark."
+      },
+      {
+        "key": "pot",
+        "file": "pot.png",
+        "transparent": true,
+        "refs": [
+          "C:/Users/10029/AppData/Local/Temp/codex-clipboard-4ca35c70-8f7a-49d4-84e9-cbdb54b5f459.png",
+          "C:/Users/10029/AppData/Local/Temp/codex-clipboard-81114bb9-5693-44fd-a49f-f2e7474fe7a6.png"
+        ],
+        "prompt": "Use case: background-extraction / precise-object-edit. Generate ONE large overturned garden FLOWERPOT isolated on genuine transparent background. Reference 1 supplies warm weathered terracotta watercolor material and side-on external design; Reference 2 supplies the idea of this being a miniature cavern inside. We need EXTERIOR only, no cutaway or interior chamber. Broad, low upside-down planter: silhouette outer WIDTH exactly about TWO times outer HEIGHT, largest circular mouth/rim rests on the ground, tapered sides narrow upward to a smaller CLOSED flat base at TOP. Small actual drainage hole centered in top. Sparse fine ivy/moss at outer edges, restrained texture; no detached ground or shadows.\nCritical relative sizes: if total pot exterior height=12H and width=24H, the little broken arched entry at its LOWER LEFT rim is only 1.6H high and 1.8H wide (about 13 percent of pot height, 7.5 percent of pot width). The top drainage hole is only 1.2H across (5 percent of pot width). Entry is a dark chipped irregular hole, not a round entire pot mouth. Do not make an enormous doorway. No player, labels or ruler. Front side elevation perpendicular to garden wall, slight painted indication of flat top only. This should read as a very large pot relative to a tiny future character, not a little hut prop. One intact exterior silhouette, complete edges visible, transparent negative space. Warm, poetic watercolor and delicate dark umber ink, granular paper texture within painted surfaces, terracotta masonry, sage moss and honey sunlight matching reference. Strict front/side elevation for 2D platform game; camera perpendicular to the wall, no isometric view, no 3D toy rendering. No text, labels, UI, arrows, grids or watermark."
+      },
+      {
+        "key": "level2",
+        "file": "l2-background.png",
+        "transparent": false,
+        "refs": [
+          "C:/Users/10029/AppData/Local/Temp/codex-clipboard-81114bb9-5693-44fd-a49f-f2e7474fe7a6.png",
+          "C:/Users/10029/AppData/Local/Temp/codex-clipboard-4ca35c70-8f7a-49d4-84e9-cbdb54b5f459.png"
+        ],
+        "prompt": "Use case: sketch-to-render. Create a corrected SECOND LEVEL concept/backdrop WITHOUT ANY CHARACTER, using Reference 1 (the pot interior cutaway) for composition and microscopic feeling, and Reference 2 (warm garden) for the precise refined watercolor/ink rendering and coherent terracotta materials. One complete side-on 2D platform scene, no headers/captions, a wide 2:1 landscape canvas. A future SAME-SIZE sprite will be placed later to keep scale exact: leave the left ground clear.\nWORLD SCALE GRID, do NOT draw the grid: whole canvas 32H wide and 16H high, bottom-left is (0,0), protagonist later height=1H. Walkable dirt/stone foreground lip is exactly y=3H (about 81.25 percent down from top), extends horizontally from left to right. Ground cut-face and roots fill y=0..3H. Wide overturned terracotta pot exterior spans approximately x=4..28H, from ground y=3H to top y=15H; outside width24H, outside height12H. Interior widest span about22H, interior height10H. This is a dry warm small pot-sized micro habitat, not a human cathedral or giant cave. Front wall is removed ONLY for the illustration's cutaway view; the shell thickness is visible as an arch.\nKeep the reference layout: curving reddish ceramic shell roof, branching fine roots hanging inward, a small beam through the pot's real former bottom drainage hole at roof center around x=16,y=14.5 (hole diameter1.2H, NOT a skylight the size of a person-house), a large leaf on a thin curved stem left-middle around x=11,y=8, sparse delicate seedlings along floor, a partial grey-white scaled tail side embedded through a separate dark rear fracture on right around x=24,y=7. Only local tail surface visible; base continues behind rear ceramic/roots, not a snake/head or entire creature.\nLEFT ENTRY is a chipped rim gap at x=4, floor y=3, clear opening only1.6H tall and1.8H wide. RIGHT EXIT is a small old circular drainage pipe/tunnel at x=28, lower opening at ground y=3, internal diameter only2.4H (15 percent of canvas height), no more. The pipe ring is slim and its crown must be much lower than leaf height; it must not become a massive human-scale arched door. A very shallow stream at bottom about0.25H deep with a dry ledge along the edge; no deep drop or platforming precision hazard. Foreground continuous walkable route stays clearly outlined.\nMICRO DETAIL: small roots feel tall compared to future character but remain finer than pipe diameter. Leaf width about7H, a small dew bead diameter0.55H. The dew is decorative; a separate very thin FLAT silvery mica flake resting on the leaf receives the top shaft and reflects one fine ray to the tail patch. Reflective contact is on mica, NOT on the water drop; don't portray a spherical drop as a 90-degree mirror. Gentle gold vein response on a single tail scale. One incoming and one reflected beam, no extra puzzle devices. NO person, black silhouette, humanoid, ruler, arrows or numbers. Preserve warm earthy intimacy with cool dim interior, light from top and tiny left/right gaps. Warm, poetic watercolor and delicate dark umber ink, granular paper texture within painted surfaces, terracotta masonry, sage moss and honey sunlight matching reference. Strict front/side elevation for 2D platform game; camera perpendicular to the wall, no isometric view, no 3D toy rendering. No text, labels, UI, arrows, grids or watermark."
+      }
+    ]
+  },
+  "scale_refinements": {
+    "mode": "built-in image_gen",
+    "jobs": [
+      {
+        "key": "pot",
+        "file": "pot.png",
+        "ref": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-c59262e8-7b2a-4667-840d-86cf1368e746.png",
+        "transparent": true,
+        "prompt": "Use case: precise-object-edit. This is an edit of the attached isolated terracotta planter, which has a transparent background: preserve actual alpha transparency. Keep its watercolor style, warm ceramic material, moss, upside-down orientation, pointed chipped rim, whole external silhouette and top drainage hole. Make ONLY its lower-left arched ENTRY much smaller: reduce both height and width of the DARK OPENING to approximately HALF of the current opening dimensions, with its bottom anchored exactly at the same pot-rim ground line. Fill the removed upper and side opening area with matching warm terracotta shell, organically chipped around the remaining tiny opening. The final opening should be about 13-15 percent of the total pot height, and about 7-8 percent of total pot width. It should admit a very tiny spirit, not look like a large doorway. Keep the doorway at the same lower-left region. Do not shrink the entire pot, do not move the opening off the ground. One isolated prop, transparent background, no character or text."
+      },
+      {
+        "key": "level2",
+        "file": "l2-background.png",
+        "ref": "C:/Users/10029/.codex/generated_images/01a178c4-f6ba-7bb0-9c25-d45225bbf2bd/exec-2ffb75cb-e2ca-4f96-afc7-9a809c37a02e.png",
+        "transparent": false,
+        "prompt": "Use case: precise-object-edit. Revise the geometry/proportions of this watercolor pot-interior cutaway scene while preserving its refined style, warm garden atmosphere, roots, left leaf with separate flat mica reflector and decorative droplet, right local beast tail patch, and one reflected light ray. Do not add any characters.\nThe essential edit is a NARROWER and TALLER POT CHAMBER, lower continuous foreground floor, and corrected SMALL PORTALS. Use a wide exact 2:1 composition. The pot itself should occupy only the central THREE QUARTERS of the canvas WIDTH, with slim planted garden margins outside on both sides. Its outer silhouette edges are at 12.5 percent and87.5 percent of image width, the roof top at6.25 percent of image height. The continuous floor walking lip must be LOW, at81.25 percent of image height. The exposed earth cut-face is then the lower18.75 percent. From this lip to roof top the pot is75 percent of canvas height. These proportions produce one large broad garden flowerpot 24 units wide and12 units tall in a32-by16-unit picture; not an enormous wide hangar dome.\nThe LEFT rim entry must be much SMALLER than in the reference: only10 percent of canvas height,5.6 percent of canvas width, bottom anchored at81.25 percent down. Organic chipped ceramic, tiny opening, no masonry door.\nThe RIGHT drainage pipe hole must be a simple small circular pipe, internal diameter15 percent of canvas HEIGHT (=7.5 percent canvas width), about 1.5 times the left entry HEIGHT. Bottom at same floor level, very shallow flowing water, dry walkable ledge along its side. No giant tunnel, no large arched building portal.\nRoof drainage hole is SMALL:3.75 percent canvas WIDTH, only1.2 world units. Leaf at about40 percent width /50 percent height; tail side at about75 percent width /57 percent height. Keep leaf, mica, dew and tail sized in relation to the new narrower pot, and leave a clear flat place inside the left entrance for a future tiny sprite. Clay shell not brick arch; shell thickness visible in cross-section. No massive trees INSIDE the pot. No black character silhouettes, labels, UI, arrows or visible dimensions. One complete game concept scene. Critical priority: floor at81.25 percent down, narrower/taller pot silhouette, left opening noticeably smaller than right pipe."
+      }
+    ]
+  },
+  "level2_layers": {
+    "mode": "built-in image_gen",
+    "reference": "C:/Users/10029/Documents/ChatGPT/食光兽/art/levels01-02-micro-scale-v04-2026-10-30/l2-background.png",
+    "jobs": [
+      {
+        "key": "l2-clean",
+        "file": "l2-background-clean.png",
+        "transparent": false,
+        "prompt": "Use case: precise-object-edit. The attached pot-interior watercolor scene is the edit target. Create its BACKGROUND LAYER ONLY, preserving the exact whole 2:1 canvas, camera, scale, roof, hanging roots, leaf/mica/dew optical prop, tail side, left entry gap and right drainage tunnel exactly in place. Do not reframe, zoom or recenter.\nRemove ONLY the foreground horizontal walking lip and the large earth/stone cut-face below it (currently in lower about27 percent of canvas). Also remove the low freestanding rectangular dirt/stone stump near middle-left at floor level (below the leaf); that stump belongs to the ground layer. Keep the walls, rear floor moss and rear plants where they are. Fill the vacated lower strip with a quiet dark brown low-detail earth background wash, with no hard horizontal platform contour, no foreground block texture or prominent roots, so a separate ground layer can be laid over it. Preserve the right tunnel opening and the glimpse of shallow water behind the removed foreground edge. Preserve everything above the walking region, including light. No character or text. This is an in-place background clean plate, NOT a new composition."
+      },
+      {
+        "key": "l2-ground",
+        "file": "l2-ground.png",
+        "transparent": true,
+        "prompt": "Use case: background-extraction. Extract just the FOREGROUND GROUND LAYER from the attached pot-interior watercolor scene. Critical: retain the ORIGINAL ENTIRE 2:1 canvas and the ORIGINAL PIXEL PLACEMENT of the ground across its lower roughly27 percent; everything else becomes truly transparent. DO NOT CENTER or enlarge the ground or change camera. The top edge of the walking path stays around72.8 percent down from the top, with roots/stone/soil front cut-face continuing to the bottom about95 percent. Preserve its long level horizontal contour and clear ink edge. Include the little freestanding rectangular moss/earth block on the path around center-left (below the leaf) and tiny plants rooted on the platform. Include the shallow water notch at far right under the drainage exit, but NO pipe or tunnel shell.\nRemove ALL background: pot shell, high hanging roots, trees, walls, leaf/mica/dew mechanism, body/tail scales, tunnel mouth, gates, sky and sun beams. No character, no detached painted shadows, no text. Exactly ONE connected ground/platform silhouette with an isolated little low raised stump integrated to its top; transparent empty area above; wide strip spans essentially full original image width. Match watercolor edges/material colors exactly. Preserve original image coordinates to allow overlay with a background clean plate."
+      }
+    ]
+  }
+}

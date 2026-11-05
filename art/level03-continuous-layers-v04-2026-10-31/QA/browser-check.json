@@ -1,0 +1,87 @@
+{
+  "errors": [],
+  "assets": [
+    {
+      "file": "References/continuous-master.png",
+      "ok": true,
+      "width": 2203,
+      "height": 714
+    },
+    {
+      "file": "Layers/00-background.png",
+      "ok": true,
+      "width": 2170,
+      "height": 725
+    },
+    {
+      "file": "Layers/10-platforms.png",
+      "ok": true,
+      "width": 2170,
+      "height": 725
+    },
+    {
+      "file": "Layers/20-water.png",
+      "ok": true,
+      "width": 2170,
+      "height": 725
+    },
+    {
+      "file": "Layers/90-camera-roots.png",
+      "ok": true,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "Props/props-atlas.png",
+      "ok": true,
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "toggles": {
+    "background": true,
+    "platforms": true,
+    "water": true,
+    "props": true,
+    "light": true,
+    "route": true
+  },
+  "rootToggle": true,
+  "fixedRootPositions": [
+    {
+      "x": 91,
+      "y": 607.9375,
+      "width": 1054,
+      "height": 592
+    },
+    {
+      "x": 91,
+      "y": 607.9375,
+      "width": 1054,
+      "height": 592
+    },
+    {
+      "x": 91,
+      "y": 607.9375,
+      "width": 1054,
+      "height": 592
+    }
+  ],
+  "rootsFixed": true,
+  "worldMoves": true,
+  "mechanism": {
+    "middle": {
+      "mirror": 250,
+      "counterweight": 392,
+      "beam": "M736 112 V295 H1153"
+    },
+    "high": {
+      "mirror": 170,
+      "counterweight": 472,
+      "beam": "M736 112 V215 H2075"
+    },
+    "oppositeTravel": true,
+    "constantYSum": true
+  },
+  "scope": "Browser composition only, no Unity or jump/collision tests"
+}

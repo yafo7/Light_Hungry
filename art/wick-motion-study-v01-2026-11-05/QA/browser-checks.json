@@ -1,0 +1,56 @@
+{
+  "clips": [
+    {
+      "name": "Jump_01",
+      "duration": 2.8333332538604736,
+      "tracks": 66
+    },
+    {
+      "name": "Jump_02",
+      "duration": 3.299999952316284,
+      "tracks": 66
+    },
+    {
+      "name": "Jump_03",
+      "duration": 4.666666507720947,
+      "tracks": 66
+    },
+    {
+      "name": "Push_01",
+      "duration": 11.366666793823242,
+      "tracks": 66
+    },
+    {
+      "name": "Push_02",
+      "duration": 10.633333206176758,
+      "tracks": 66
+    },
+    {
+      "name": "Push_03",
+      "duration": 9.100000381469727,
+      "tracks": 66
+    },
+    {
+      "name": "Idle_01",
+      "duration": 29.700000762939453,
+      "tracks": 66
+    },
+    {
+      "name": "Idle_02",
+      "duration": 10.300000190734863,
+      "tracks": 66
+    },
+    {
+      "name": "Idle_03",
+      "duration": 7.833333492279053,
+      "tracks": 66
+    }
+  ],
+  "checks": {
+    "nineClips": true,
+    "allAnimated": true,
+    "allHaveTracks": true,
+    "noBrowserErrors": true
+  },
+  "errors": []
+}

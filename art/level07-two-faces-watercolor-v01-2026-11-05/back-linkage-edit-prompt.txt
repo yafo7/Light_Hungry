@@ -1,0 +1,16 @@
+Use case: precise-object-edit.
+Edit this BACK FACE greenhouse game concept with a strictly local correction to MECHANICAL CONNECTIONS. Preserve the existing watercolor composition, all four raised platforms, their heights and widths, all main upright positions, the bottom walkway and rail bridge, the SINGLE mirror cart at R1, Q, the continuous horizontal golden beam, the rolled-up leaf screen and the tiny character. Do not rebuild the scene.
+
+CRUCIAL PUZZLE LOGIC:
+The raised lever near (1000,420) is K-BACK. It controls the shelves on the OPPOSITE FRONT face. It DOES NOT control the rear rail bridge or the rolled-up rear leaf screen seen in this painting.
+The rear rail bridge and rear leaf screen are controlled by a different lever on the FRONT face, via a passive shaft coming through the backboard near (1210,435).
+
+MAKE THESE TARGETED CHANGES:
+1. Remove every rope currently extending RIGHTWARD from the raised K-BACK lever near (1000,420) toward the big central upright/roller. Repaint the exposed background in the same pale watercolor.
+2. Give K-BACK a compact three-groove spindle with THREE thin dark brown braided cords routed LEFTWARD behind the rear climbing shelves. These cords each end in a small brass shaft/grommet that goes INTO the trellis depth at separate horizontal positions approximately x=650,800,940. The ports are on the trellis rails BETWEEN the existing rear shelf supports, not on the rear shelf brackets themselves. Small leaf-shaped engraving on the three ports indicates they operate the opposite-side folding shelves. No new levers, no extra platform and no colored diagram lines.
+3. At the large upright near (1210,435), show ONE small passive bronze axle coupling penetrating the trellis from the front; NO handle on this coupling. From this coupling, route two thin clearly dark brown cords with small fixed guide rings: one goes UP to the existing rolled leaf-screen spool around (1160,130), the other DOWN to the hinge mechanism of the already-lowered rail bridge around (1000,730). These two routes should visibly share only that passive coupling, and have NO connection to K-BACK. Keep the golden horizontal light ray clear and unchanged.
+4. The decorative masonry arch at the extreme LEFT and the large brick arch at the extreme RIGHT look like extra level exits. Replace ONLY these two end archways with weathered trellis feet, mossy solid nursery masonry and soft giant fern leaves behind the walkway. Do NOT remove the small rear mirror-window recesses near the R0 / R1 rail docking locations. No traversable doorway on this rear face.
+5. R0 must read as an EMPTY mirror-cart dock approximately x=480, with two small rail stops close together and a dark depth window behind it, corresponding to the front return window. No second cart.
+6. Keep the micro character and small mirror scale. The hero on the left is roughly45px tall, the mirror/window assemblies are at its torso/head height. Maintain clear horizontal top edges and delicate foreground outlines.
+
+Everything else should remain invariant: single wheeled mirror at R1, rail bridge OPEN over real gap, rear screen ROLLED UP, no beast body on the rear, no new sun/source, no labels, arrows, letters, numbers or UI. All new connectors must look like actual tiny antique garden fittings, painted in watercolor, not schematic or neon overlays.

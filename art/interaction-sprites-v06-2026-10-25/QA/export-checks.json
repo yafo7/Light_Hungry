@@ -1,0 +1,3226 @@
+{
+  "checks": {
+    "allFrames512": true,
+    "allHaveTransparency": true,
+    "noEdgeClipping": true,
+    "reportedTimePairFixed": true,
+    "finalStepReducedMoreThanHalf": true,
+    "thinkStill6Seconds": true,
+    "leverEndpointsMatchReverse": true,
+    "mirrorEndpointsMatchReverse": true,
+    "atlasMax4096": true,
+    "idleMedia3Seconds": true,
+    "thinkMedia6Seconds": true,
+    "wheelMediaMatches": true
+  },
+  "clips": {
+    "idle": {
+      "frameCount": 36,
+      "durationMs": 3000,
+      "uniqueImageCount": 35
+    },
+    "think": {
+      "frameCount": 78,
+      "durationMs": 6000,
+      "uniqueImageCount": 63
+    },
+    "wheel_ccw": {
+      "frameCount": 15,
+      "durationMs": 900,
+      "uniqueImageCount": 15
+    },
+    "wheel_cw": {
+      "frameCount": 15,
+      "durationMs": 900,
+      "uniqueImageCount": 15
+    },
+    "lever_on": {
+      "frameCount": 16,
+      "durationMs": 560,
+      "uniqueImageCount": 16
+    },
+    "lever_off": {
+      "frameCount": 16,
+      "durationMs": 560,
+      "uniqueImageCount": 16
+    },
+    "mirror_left": {
+      "frameCount": 16,
+      "durationMs": 800,
+      "uniqueImageCount": 16
+    },
+    "mirror_right": {
+      "frameCount": 16,
+      "durationMs": 800,
+      "uniqueImageCount": 16
+    }
+  },
+  "uniqueSpriteFiles": 161,
+  "reports": [
+    {
+      "file": "Sprites/idle/idle_000.png",
+      "sha256": "aab1488a57073b5560f9a1c33ed82372280b93eaed0671791601df605a372be9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157688,
+      "alphaNonzero": 104456,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_001.png",
+      "sha256": "ec43719e6fbf1c7d34953ac6c84a38cd0e6fc99f55d2833714b918544d35701f",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 158317,
+      "alphaNonzero": 103827,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        435,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_002.png",
+      "sha256": "5d71def5e02bb730fdb18f1cdcc3e65dded90de344ad62687f2bff02d9968669",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157406,
+      "alphaNonzero": 104738,
+      "edgeNontransparent": 0,
+      "bbox": [
+        71,
+        102,
+        435,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_003.png",
+      "sha256": "56e022a104a30d79325c039f642ddee29b24750baf51d23e6b8129c5427494d4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 158502,
+      "alphaNonzero": 103642,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        436,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_004.png",
+      "sha256": "76caf3a420cf1e13f5c8a8edcd8e1e58408759c07705b82342cebf3ed6595574",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157667,
+      "alphaNonzero": 104477,
+      "edgeNontransparent": 0,
+      "bbox": [
+        71,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_005.png",
+      "sha256": "2e2dc70c86543b708607ab08d315ab5ab1be64f19372625b0713f640338bf719",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157163,
+      "alphaNonzero": 104981,
+      "edgeNontransparent": 0,
+      "bbox": [
+        71,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_006.png",
+      "sha256": "b8eb31fd20f4eb3d56f0a4dcd9938b27a79989ca6ddfbbe9a912565c33b2dee5",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156606,
+      "alphaNonzero": 105538,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        439,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_007.png",
+      "sha256": "856b4b3524167283cd39057d571debc6e65fe7cc479bf23c5d36c79029b32d8e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156701,
+      "alphaNonzero": 105443,
+      "edgeNontransparent": 0,
+      "bbox": [
+        70,
+        102,
+        439,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_008.png",
+      "sha256": "8f718adb73fe34bb75a7674ccbee690f9e576d0bb638c693720dc0f1f0de14af",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156810,
+      "alphaNonzero": 105334,
+      "edgeNontransparent": 0,
+      "bbox": [
+        69,
+        102,
+        441,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_009.png",
+      "sha256": "d90471227790661e77934c3fb0c9b96dd30d4fa3a544db2ff05d8e93af4ebade",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157234,
+      "alphaNonzero": 104910,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_010.png",
+      "sha256": "21fa52186a8d4482150c042afead9fb1603473d6adf634e809411ce8ee1b878e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157589,
+      "alphaNonzero": 104555,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_011.png",
+      "sha256": "f74d25d9ee6319ecfdb62fa562238285ebf33d63fdd35ec4522766dfa1b26142",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157337,
+      "alphaNonzero": 104807,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_012.png",
+      "sha256": "1de26e441fcae08ec16fe0c6fcfc4797b7baaa35720419fcc56de5bec06353dd",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156325,
+      "alphaNonzero": 105819,
+      "edgeNontransparent": 0,
+      "bbox": [
+        62,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_013.png",
+      "sha256": "9809cd8a85b74df480d45708d17b98a4f173273a673fd40cbd1e579829abf1e6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156287,
+      "alphaNonzero": 105857,
+      "edgeNontransparent": 0,
+      "bbox": [
+        63,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_014.png",
+      "sha256": "5cb8ca4eb92bc779b4b9f293a1a1c8a23825433e083cfc6b09d81044f16ee9e8",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156666,
+      "alphaNonzero": 105478,
+      "edgeNontransparent": 0,
+      "bbox": [
+        63,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_015.png",
+      "sha256": "caf9a8eac7adb59bc3097c6286462e9e1594074b3064de95b06ae37a5d36ff4e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156914,
+      "alphaNonzero": 105230,
+      "edgeNontransparent": 0,
+      "bbox": [
+        63,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_016.png",
+      "sha256": "3e9d58f932edffa7939e291a43cc4ea2cfe88c8a3a33206747cf85fbe216ed3c",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156482,
+      "alphaNonzero": 105662,
+      "edgeNontransparent": 0,
+      "bbox": [
+        64,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_017.png",
+      "sha256": "cf288aa30ccd47aedf38f487e921007faac52afcc6b5f8565c51ff1046bc945b",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156728,
+      "alphaNonzero": 105416,
+      "edgeNontransparent": 0,
+      "bbox": [
+        63,
+        102,
+        439,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_018.png",
+      "sha256": "905721ed8c04f7d2bb79e96154e60f749a019ea2af204e33155cef0055c939ec",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156786,
+      "alphaNonzero": 105358,
+      "edgeNontransparent": 0,
+      "bbox": [
+        64,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_019.png",
+      "sha256": "25b0274f9a8860375da33d4fe027f7a4e78d32fea7e84387ba8355ebf424aa37",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156920,
+      "alphaNonzero": 105224,
+      "edgeNontransparent": 0,
+      "bbox": [
+        63,
+        102,
+        439,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_020.png",
+      "sha256": "e037ead31d2cb247f374f73f467bc4cbaa7f2223e141b9d2e54ef9fe859fba54",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 155580,
+      "alphaNonzero": 106564,
+      "edgeNontransparent": 0,
+      "bbox": [
+        62,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_021.png",
+      "sha256": "019d92e71ec4832e58657c4a4149ad6aa84a8a9d0bbe94a1b2a6fad8e5f62b50",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 155971,
+      "alphaNonzero": 106173,
+      "edgeNontransparent": 0,
+      "bbox": [
+        62,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_022.png",
+      "sha256": "8b15f1e70b8743a229929c8675e8c68ae3d795064a55108aac7cc1d3b269c48a",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156162,
+      "alphaNonzero": 105982,
+      "edgeNontransparent": 0,
+      "bbox": [
+        62,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_023.png",
+      "sha256": "fcc007e1b6b783ad37212cc62e06fe3ca7a514f6d6efc732cb6797642024ac4e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 155876,
+      "alphaNonzero": 106268,
+      "edgeNontransparent": 0,
+      "bbox": [
+        63,
+        102,
+        441,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_024.png",
+      "sha256": "76750e07cc8af376bba6f8bf63310ceb6b776446c7950aa3eef3b7a02986fa4f",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157505,
+      "alphaNonzero": 104639,
+      "edgeNontransparent": 0,
+      "bbox": [
+        65,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_025.png",
+      "sha256": "a191f4b12237ddd43a7505339f00b3a4e4544cb267b97109c1e126a9cd1a57c6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156714,
+      "alphaNonzero": 105430,
+      "edgeNontransparent": 0,
+      "bbox": [
+        63,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_026.png",
+      "sha256": "36a9723418be00aefdaf662c1863bff124bad91dd04a548bec648173fa6c4591",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156557,
+      "alphaNonzero": 105587,
+      "edgeNontransparent": 0,
+      "bbox": [
+        63,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_027.png",
+      "sha256": "fb08086f181c8e62589f34c1b982a1a977ee0371a84664357aedf0f8887f6746",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156446,
+      "alphaNonzero": 105698,
+      "edgeNontransparent": 0,
+      "bbox": [
+        65,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_028.png",
+      "sha256": "be09b10a2dcf7d5faa1853baded67b2569574d32c86a8d92d9ad2379acc3b159",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156180,
+      "alphaNonzero": 105964,
+      "edgeNontransparent": 0,
+      "bbox": [
+        64,
+        102,
+        439,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_029.png",
+      "sha256": "90f71c5506e1de735b6627e52083146bee5951edeef2faad51f886033a8465fc",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 155989,
+      "alphaNonzero": 106155,
+      "edgeNontransparent": 0,
+      "bbox": [
+        65,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_030.png",
+      "sha256": "64d9328fc7dcf91316d7729815f15c2f2354ec8e43d498a651a53e42029c172b",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156694,
+      "alphaNonzero": 105450,
+      "edgeNontransparent": 0,
+      "bbox": [
+        65,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_031.png",
+      "sha256": "9ddbcfd0538bc9b2cc0f67eeee5896556a98ab1bb0559295bf579042af489113",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156207,
+      "alphaNonzero": 105937,
+      "edgeNontransparent": 0,
+      "bbox": [
+        65,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_032.png",
+      "sha256": "925cf6d9926684523f63cf1ad8ae37efec2002ff0a10512d86f964ed5c2125d2",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156522,
+      "alphaNonzero": 105622,
+      "edgeNontransparent": 0,
+      "bbox": [
+        64,
+        102,
+        436,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_033.png",
+      "sha256": "0f74bfbeae37f5edfd262c741130aaf1e51f8887c3183bed7d064ea70601ce63",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156902,
+      "alphaNonzero": 105242,
+      "edgeNontransparent": 0,
+      "bbox": [
+        67,
+        102,
+        436,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_034.png",
+      "sha256": "359df7b481a34d795af16a43aa8e59a2fe94701f94911494f69b145009d459ac",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156802,
+      "alphaNonzero": 105342,
+      "edgeNontransparent": 0,
+      "bbox": [
+        65,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/idle/idle_035.png",
+      "sha256": "aab1488a57073b5560f9a1c33ed82372280b93eaed0671791601df605a372be9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157688,
+      "alphaNonzero": 104456,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_000.png",
+      "sha256": "aab1488a57073b5560f9a1c33ed82372280b93eaed0671791601df605a372be9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157688,
+      "alphaNonzero": 104456,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_001.png",
+      "sha256": "29e5fd66153c5c0f0560c5cfdc801c24da6a4be93bc97fe03713085cdf4d6567",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162410,
+      "alphaNonzero": 99734,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        432,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_002.png",
+      "sha256": "9d7d0f71b67ff701776a483f9a61a2e1a4ea41047a3e854904a615c293797ae2",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162471,
+      "alphaNonzero": 99673,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        432,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_003.png",
+      "sha256": "00fd0137ebb41f4aab0461084039e74b0c5a90c91b17e61b300b6763cd998f3c",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162380,
+      "alphaNonzero": 99764,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        431,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_004.png",
+      "sha256": "d782da15d22bb13fa66a6968f69541ff6fe2fe51ec4f115584b9ea375855bfba",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162335,
+      "alphaNonzero": 99809,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        430,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_005.png",
+      "sha256": "a87bf7388abd136debdb7f5da26a5f1b0255296902898944d02ba88d557a07a9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162637,
+      "alphaNonzero": 99507,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        432,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_006.png",
+      "sha256": "2029773a16543928299b1bf43367a63f06ca621503b36b007fe15c09558419de",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162853,
+      "alphaNonzero": 99291,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        430,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_007.png",
+      "sha256": "6c994deb2ba73f4fdbfe025a83ab9ed694fdf3dd01ee0f5791f9273348a962c6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162525,
+      "alphaNonzero": 99619,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        432,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_008.png",
+      "sha256": "ef6b92f7c300247d10480f1b9721fd576ee7a6e6e6270cdf1ceed591e4cb2531",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161953,
+      "alphaNonzero": 100191,
+      "edgeNontransparent": 0,
+      "bbox": [
+        77,
+        102,
+        431,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_009.png",
+      "sha256": "7b20a9606a8cc3d1c05c7301333b2b3214221cf6a79e4e2a43955770226d48c6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161253,
+      "alphaNonzero": 100891,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        432,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_010.png",
+      "sha256": "2e452ef3f564fefcda0f8702e2def0ae6cfd762e449dab4986bf55e6f69499d1",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161140,
+      "alphaNonzero": 101004,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        432,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_011.png",
+      "sha256": "2dfa1057a7d4b5972e7f895f9f0304bd92d540908a95abfaf7ea98730fcf6d15",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161696,
+      "alphaNonzero": 100448,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        431,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_012.png",
+      "sha256": "38a2920955cf08193beb17150ba70af7c09da1c68b31e8899a8ee96c143de9e9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162346,
+      "alphaNonzero": 99798,
+      "edgeNontransparent": 0,
+      "bbox": [
+        77,
+        102,
+        429,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_013.png",
+      "sha256": "da8ac7b37bb062b25b0b2b8cae70e6f52c5a79d2a6aa234ecbe3853fb842f710",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163387,
+      "alphaNonzero": 98757,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        427,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_014.png",
+      "sha256": "9c151732c5a4092e0406e48b2f1bc5b0fe7e8dd8c128ad77786a74402b8f2e04",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162634,
+      "alphaNonzero": 99510,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        427,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_015.png",
+      "sha256": "60911beb14b2c6c655e81b76e4bb01a709ad6d9a98a80a14ebbede07cff089f6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163989,
+      "alphaNonzero": 98155,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        428,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_016.png",
+      "sha256": "60911beb14b2c6c655e81b76e4bb01a709ad6d9a98a80a14ebbede07cff089f6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163989,
+      "alphaNonzero": 98155,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        428,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_017.png",
+      "sha256": "60911beb14b2c6c655e81b76e4bb01a709ad6d9a98a80a14ebbede07cff089f6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163989,
+      "alphaNonzero": 98155,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        428,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_018.png",
+      "sha256": "60911beb14b2c6c655e81b76e4bb01a709ad6d9a98a80a14ebbede07cff089f6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163989,
+      "alphaNonzero": 98155,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        428,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_019.png",
+      "sha256": "60911beb14b2c6c655e81b76e4bb01a709ad6d9a98a80a14ebbede07cff089f6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163989,
+      "alphaNonzero": 98155,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        428,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_020.png",
+      "sha256": "60911beb14b2c6c655e81b76e4bb01a709ad6d9a98a80a14ebbede07cff089f6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163989,
+      "alphaNonzero": 98155,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        428,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_021.png",
+      "sha256": "d3201a3282eca1fdf05563d7ef1575c3432c59190efde5b659b9fe99440068dc",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163315,
+      "alphaNonzero": 98829,
+      "edgeNontransparent": 0,
+      "bbox": [
+        81,
+        102,
+        427,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_022.png",
+      "sha256": "1100950515762d01c3bf9ef319caef3127974c1661d015c956a32c36dcec1787",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163259,
+      "alphaNonzero": 98885,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        427,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_023.png",
+      "sha256": "7dd8590048bb799e6717eb8f23826dd2d30a0a052cc5eeeef21f5b0353e98f42",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163560,
+      "alphaNonzero": 98584,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        427,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_024.png",
+      "sha256": "0e5cb1baf2ed4f1b292a7f236399f7751a5288789a91ed3e478cee642e037895",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 164481,
+      "alphaNonzero": 97663,
+      "edgeNontransparent": 0,
+      "bbox": [
+        81,
+        102,
+        425,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_025.png",
+      "sha256": "1dc93bcdfd27be15dc1cc0732e8a68393b61fc12ab0cb8f11b06bf5ff989d8f1",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163640,
+      "alphaNonzero": 98504,
+      "edgeNontransparent": 0,
+      "bbox": [
+        81,
+        102,
+        425,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_026.png",
+      "sha256": "5a1c9b155842ed55f21567ceeacab14c5ca913f3b3252081b3122e8a825375b8",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163982,
+      "alphaNonzero": 98162,
+      "edgeNontransparent": 0,
+      "bbox": [
+        81,
+        102,
+        425,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_027.png",
+      "sha256": "e5f91f845ab6cef5a5a603126ac25338d6900f3ef29abb530e1a0d1dfa5116ca",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 164077,
+      "alphaNonzero": 98067,
+      "edgeNontransparent": 0,
+      "bbox": [
+        82,
+        102,
+        425,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_028.png",
+      "sha256": "804aaf08872c51aeefa82c2b9c19f8f7b21282484929a55e33a3556e776ec04a",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163045,
+      "alphaNonzero": 99099,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        426,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_029.png",
+      "sha256": "1a9c7c39c6183cd4bc039407101b9dc2526e67cfdb6e3b005f934f9f135a91d7",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163548,
+      "alphaNonzero": 98596,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        424,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_030.png",
+      "sha256": "4f655ecf7f171ac2745fe7a3915464b90e19535242d447b72775ea0bed1f8f5b",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163535,
+      "alphaNonzero": 98609,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        425,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_031.png",
+      "sha256": "7fe56516c814fa6d232f2e07be9a5e8950f6cd87eaaf6106b59be58f0b74a5a9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163999,
+      "alphaNonzero": 98145,
+      "edgeNontransparent": 0,
+      "bbox": [
+        82,
+        102,
+        425,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_032.png",
+      "sha256": "2bb956744e03ca717ae2cbebd0a879455f39e164c31eb5a53076ea02af95421f",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163999,
+      "alphaNonzero": 98145,
+      "edgeNontransparent": 0,
+      "bbox": [
+        81,
+        102,
+        428,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_033.png",
+      "sha256": "2b4b4b42ab1176a22cda14f995fd0037aead19a2bb8280ff8d1d686f3807a2b1",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163238,
+      "alphaNonzero": 98906,
+      "edgeNontransparent": 0,
+      "bbox": [
+        82,
+        102,
+        432,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_034.png",
+      "sha256": "ac6efc5ca9d105a83ce07b3da9d0188a43888ac324b1dc91c3f46a04ced03147",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162621,
+      "alphaNonzero": 99523,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        433,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_035.png",
+      "sha256": "b94e901c9df3d0ba58ad72581e57431964052bd1fa00f3f8f4bcf588f47830d5",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161034,
+      "alphaNonzero": 101110,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        101,
+        434,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_036.png",
+      "sha256": "b1b5c56ac166208af28932b02eeb2f590b4d6d7de80c059c969bd5272ca5ddca",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161585,
+      "alphaNonzero": 100559,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_037.png",
+      "sha256": "b1b5c56ac166208af28932b02eeb2f590b4d6d7de80c059c969bd5272ca5ddca",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161585,
+      "alphaNonzero": 100559,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_038.png",
+      "sha256": "cb420b5ab9bc908efec9b1ce185d536cb41ca777f4573a04472f0dfca75322d2",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161049,
+      "alphaNonzero": 101095,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_039.png",
+      "sha256": "bd3274b57d7c8ba28ebab937fc9003a4f247abf4d7590896fe227177d907b256",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 160813,
+      "alphaNonzero": 101331,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        439,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_040.png",
+      "sha256": "cb420b5ab9bc908efec9b1ce185d536cb41ca777f4573a04472f0dfca75322d2",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161049,
+      "alphaNonzero": 101095,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_041.png",
+      "sha256": "b1b5c56ac166208af28932b02eeb2f590b4d6d7de80c059c969bd5272ca5ddca",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161585,
+      "alphaNonzero": 100559,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_042.png",
+      "sha256": "cb420b5ab9bc908efec9b1ce185d536cb41ca777f4573a04472f0dfca75322d2",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161049,
+      "alphaNonzero": 101095,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_043.png",
+      "sha256": "bd3274b57d7c8ba28ebab937fc9003a4f247abf4d7590896fe227177d907b256",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 160813,
+      "alphaNonzero": 101331,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        439,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_044.png",
+      "sha256": "cb420b5ab9bc908efec9b1ce185d536cb41ca777f4573a04472f0dfca75322d2",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161049,
+      "alphaNonzero": 101095,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_045.png",
+      "sha256": "b1b5c56ac166208af28932b02eeb2f590b4d6d7de80c059c969bd5272ca5ddca",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161585,
+      "alphaNonzero": 100559,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_046.png",
+      "sha256": "b1b5c56ac166208af28932b02eeb2f590b4d6d7de80c059c969bd5272ca5ddca",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161585,
+      "alphaNonzero": 100559,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_047.png",
+      "sha256": "b1b5c56ac166208af28932b02eeb2f590b4d6d7de80c059c969bd5272ca5ddca",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161585,
+      "alphaNonzero": 100559,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_048.png",
+      "sha256": "61f28d843b02acff97fbd6f4677030b5b887774d5194f5d52ee9ac8cb7d81a3a",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 160348,
+      "alphaNonzero": 101796,
+      "edgeNontransparent": 0,
+      "bbox": [
+        76,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_049.png",
+      "sha256": "1eb36ffb38945f5a4d0e26b83d9f78def7c29f3095853fadd6c562f32fb577cd",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161224,
+      "alphaNonzero": 100920,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_050.png",
+      "sha256": "b172061084c9b3874c29a30f3075bb5e20d9482034af4bc22ea893ca8feee50a",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 160420,
+      "alphaNonzero": 101724,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_051.png",
+      "sha256": "3dbe857099d722c465641c1404bbddd249fc9b3ad821de70ac7ba78c68367c0e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162037,
+      "alphaNonzero": 100107,
+      "edgeNontransparent": 0,
+      "bbox": [
+        82,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_052.png",
+      "sha256": "c25e3746e527f79398b8afa667483ce9a90b7b6516a8ec082cd0b32e1f10d1b6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163802,
+      "alphaNonzero": 98342,
+      "edgeNontransparent": 0,
+      "bbox": [
+        82,
+        102,
+        425,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_053.png",
+      "sha256": "47653123920f1877db0d694638000d79c1afea7b0427319eaee8e7230fd5b4c6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162018,
+      "alphaNonzero": 100126,
+      "edgeNontransparent": 0,
+      "bbox": [
+        82,
+        102,
+        428,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_054.png",
+      "sha256": "a0587e6a6c906285f4c89936c4a608caa1276a8d42be25d53b8e71bbc8203736",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163046,
+      "alphaNonzero": 99098,
+      "edgeNontransparent": 0,
+      "bbox": [
+        83,
+        102,
+        429,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_055.png",
+      "sha256": "aa8bf0261e9495029e49e19602179d628bcf22deb592402048abce0ddff520ac",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 163325,
+      "alphaNonzero": 98819,
+      "edgeNontransparent": 0,
+      "bbox": [
+        84,
+        102,
+        425,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_056.png",
+      "sha256": "d9575257b8eaa4c38fac6b6524c149ca89f8ffee817fc55cb28571305f08aacd",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162175,
+      "alphaNonzero": 99969,
+      "edgeNontransparent": 0,
+      "bbox": [
+        82,
+        102,
+        426,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_057.png",
+      "sha256": "4cb70749f658c5f78e742ac4beebf597e671e6aa7001b3f53d8da041a737c166",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161836,
+      "alphaNonzero": 100308,
+      "edgeNontransparent": 0,
+      "bbox": [
+        81,
+        102,
+        428,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_058.png",
+      "sha256": "328568f71f69c31f7fc49f983ef75fc5d8920f1501955de1c68461243de60c2d",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 161995,
+      "alphaNonzero": 100149,
+      "edgeNontransparent": 0,
+      "bbox": [
+        82,
+        102,
+        430,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_059.png",
+      "sha256": "30081acf0db24e42ddaeb14c1a642d890e79c120b0e6c1e0b8c9147c1fa96fec",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 162770,
+      "alphaNonzero": 99374,
+      "edgeNontransparent": 0,
+      "bbox": [
+        86,
+        102,
+        428,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_060.png",
+      "sha256": "d25a3d2dd94186950dec390d53062a709cdf0c2d1c83548f0dc49b4d838958c8",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 159309,
+      "alphaNonzero": 102835,
+      "edgeNontransparent": 0,
+      "bbox": [
+        81,
+        102,
+        436,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_061.png",
+      "sha256": "5ec96cf5623806dcaf9aec76eb5034ff0977e644a79a861feab2b16a51302a16",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 158491,
+      "alphaNonzero": 103653,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        436,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_062.png",
+      "sha256": "844884e4d87dd8ef0a0ed559822c81f9e32bb5e810529cc77546b5c85931c15e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 158802,
+      "alphaNonzero": 103342,
+      "edgeNontransparent": 0,
+      "bbox": [
+        81,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_063.png",
+      "sha256": "86cf37eead88901f328b16bfe99eca1b62b4f25584a00ff429e6fe45199a54a4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 158996,
+      "alphaNonzero": 103148,
+      "edgeNontransparent": 0,
+      "bbox": [
+        81,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_064.png",
+      "sha256": "960565fa8c2950f642f076730835e0ff701eb2a81fde14e63c54719b7a2cb82d",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 158343,
+      "alphaNonzero": 103801,
+      "edgeNontransparent": 0,
+      "bbox": [
+        80,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_065.png",
+      "sha256": "2c864424c0ef39c18b30c9fa376e461b125b6728ba0f82717d38d198d85388a9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157666,
+      "alphaNonzero": 104478,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        102,
+        438,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_066.png",
+      "sha256": "371102b7799b62b682463b094a91de936b40de24f8bd87a1871bd95621fc185a",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156017,
+      "alphaNonzero": 106127,
+      "edgeNontransparent": 0,
+      "bbox": [
+        76,
+        101,
+        443,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_067.png",
+      "sha256": "cb4ccabe0b23c8850376250832cb38992c608bf8247e152c70250014da60a82c",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157387,
+      "alphaNonzero": 104757,
+      "edgeNontransparent": 0,
+      "bbox": [
+        74,
+        102,
+        442,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_068.png",
+      "sha256": "2e7d55adf5f00c22997f3e69f33a77bfd49b4bdd1038184c99c0445e096ba57b",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157009,
+      "alphaNonzero": 105135,
+      "edgeNontransparent": 0,
+      "bbox": [
+        74,
+        102,
+        440,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_069.png",
+      "sha256": "719cdb762f2ddeeab59778608ee3842660383db1c0377f4547b239a1d5cb7ac5",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 156191,
+      "alphaNonzero": 105953,
+      "edgeNontransparent": 0,
+      "bbox": [
+        75,
+        102,
+        443,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_070.png",
+      "sha256": "ccd97906805755d40786d8dc987953d534d082f16789780f456178f5777566f9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 155134,
+      "alphaNonzero": 107010,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        443,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_071.png",
+      "sha256": "5e3629bd5d760ba9b000b6b3f951be7a538570dcbd632e69164c4e05fc92126e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 159220,
+      "alphaNonzero": 102924,
+      "edgeNontransparent": 0,
+      "bbox": [
+        73,
+        102,
+        436,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_072.png",
+      "sha256": "fbf25c6e238b6466734ead680f7d76d1920a5a976f9a80e3016a976cd7aac7d1",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 159349,
+      "alphaNonzero": 102795,
+      "edgeNontransparent": 0,
+      "bbox": [
+        73,
+        102,
+        436,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_073.png",
+      "sha256": "e309d89cb355ab1538fd618ea2d350fb2fa5bdd7a127709d1f3b2f34db27899e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 159065,
+      "alphaNonzero": 103079,
+      "edgeNontransparent": 0,
+      "bbox": [
+        73,
+        102,
+        436,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_074.png",
+      "sha256": "02349f9b0d93d47884f2ed91b78f44bc9da92e5bbf0c9b66fee430641b119875",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 159353,
+      "alphaNonzero": 102791,
+      "edgeNontransparent": 0,
+      "bbox": [
+        73,
+        102,
+        435,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_075.png",
+      "sha256": "2ea7368e68f48f6fd412f54d5ab562671d7bddb39c73de98ba2e3337348508d6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 159033,
+      "alphaNonzero": 103111,
+      "edgeNontransparent": 0,
+      "bbox": [
+        73,
+        102,
+        435,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_076.png",
+      "sha256": "a5fde316169d22e588270ca539bf8ab434f2c8139fabc235bd5a2445a1c64e52",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 158999,
+      "alphaNonzero": 103145,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        436,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/think/think_077.png",
+      "sha256": "aab1488a57073b5560f9a1c33ed82372280b93eaed0671791601df605a372be9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 157688,
+      "alphaNonzero": 104456,
+      "edgeNontransparent": 0,
+      "bbox": [
+        72,
+        102,
+        437,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_000.png",
+      "sha256": "b9bab8a964b2ac5bc5371fd9595122c8c10f4f4264b9f6c48d22051feb73a8f9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 195743,
+      "alphaNonzero": 66401,
+      "edgeNontransparent": 0,
+      "bbox": [
+        77,
+        109,
+        420,
+        400
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_001.png",
+      "sha256": "682eaa71837cbe1d4b1d3a9015211639b339b500eee0f52fae83c6093df6a6a4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 196511,
+      "alphaNonzero": 65633,
+      "edgeNontransparent": 0,
+      "bbox": [
+        77,
+        105,
+        403,
+        399
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_002.png",
+      "sha256": "dfff302f4ab2c2810b59ee07b056f8513f26b9b18fd658f8516f9d86dbbd532d",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 196436,
+      "alphaNonzero": 65708,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        97,
+        348,
+        401
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_003.png",
+      "sha256": "096a094090db5b6a6fe5275bfb0841a8755736c995014679a06c657e6ad10e25",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 197678,
+      "alphaNonzero": 64466,
+      "edgeNontransparent": 0,
+      "bbox": [
+        78,
+        65,
+        338,
+        399
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_004.png",
+      "sha256": "32d30b27496caf2fd95482ed70dadfa688890de8bbca0be58760aa255ed88b0c",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 196491,
+      "alphaNonzero": 65653,
+      "edgeNontransparent": 0,
+      "bbox": [
+        76,
+        82,
+        338,
+        404
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_005.png",
+      "sha256": "41ea89f58a3c721955db80519a0221bc60b08f109ee7f592aa645a761d7dd5e8",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 195957,
+      "alphaNonzero": 66187,
+      "edgeNontransparent": 0,
+      "bbox": [
+        40,
+        108,
+        337,
+        403
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_006.png",
+      "sha256": "0e9a8071fa6f1473bceede1b29c33bbedb819475d62c24971bcff6f5ea46fe8d",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 194889,
+      "alphaNonzero": 67255,
+      "edgeNontransparent": 0,
+      "bbox": [
+        9,
+        107,
+        339,
+        402
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_007.png",
+      "sha256": "96cdcdf4cf50ec9eb5639eccae8c00d35f540fe4502f4b6231bc2eb5ab9dd650",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 197333,
+      "alphaNonzero": 64811,
+      "edgeNontransparent": 0,
+      "bbox": [
+        58,
+        106,
+        338,
+        400
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_008.png",
+      "sha256": "2eba09965f8912ed78e87e15ac99137de8fc6e73b1e3c796b8ac72cbe267acb3",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 194208,
+      "alphaNonzero": 67936,
+      "edgeNontransparent": 0,
+      "bbox": [
+        66,
+        107,
+        334,
+        403
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_009.png",
+      "sha256": "5e2f66cabd39c8ac4164453ab93208c699a852c91ce2f9b81d5da83f30d8221c",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 194193,
+      "alphaNonzero": 67951,
+      "edgeNontransparent": 0,
+      "bbox": [
+        59,
+        107,
+        327,
+        403
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_010.png",
+      "sha256": "5c12c459832e5deca5ee8c71eb750d63d377bea206b4a44e5f46e8422eaf923f",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 193253,
+      "alphaNonzero": 68891,
+      "edgeNontransparent": 0,
+      "bbox": [
+        81,
+        107,
+        349,
+        422
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_011.png",
+      "sha256": "38739c0d945470222aafadfe05e1da5b4c1287646aa655261f4f934e59247167",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 191696,
+      "alphaNonzero": 70448,
+      "edgeNontransparent": 0,
+      "bbox": [
+        75,
+        107,
+        346,
+        413
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_012.png",
+      "sha256": "b746e2857ba4b735aeef2f25a03979ebfb8f807485a3a9bdb4e2aec7e478d691",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 191535,
+      "alphaNonzero": 70609,
+      "edgeNontransparent": 0,
+      "bbox": [
+        70,
+        108,
+        348,
+        404
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_013.png",
+      "sha256": "b62ad1f1dbb8f7b4e64354c199faf806d06ace94920159823aafc98b6cec34e0",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 189548,
+      "alphaNonzero": 72596,
+      "edgeNontransparent": 0,
+      "bbox": [
+        63,
+        107,
+        376,
+        404
+      ]
+    },
+    {
+      "file": "Sprites/wheel_ccw/wheel_ccw_014.png",
+      "sha256": "d22066aaa3ba2029630ab8506bfc43d73856f91d2c10016d4f1b4948516d008e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 189627,
+      "alphaNonzero": 72517,
+      "edgeNontransparent": 0,
+      "bbox": [
+        56,
+        108,
+        386,
+        404
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_000.png",
+      "sha256": "039d1285512982f24f1ad31118c9087eac2b1a90497fe2a462ff7ad55290f45b",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 214033,
+      "alphaNonzero": 48111,
+      "edgeNontransparent": 0,
+      "bbox": [
+        59,
+        176,
+        398,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_001.png",
+      "sha256": "c07a2395882763b92b7ba0226c32c6a0806b08fba0ce879c663effdd1cc48cf3",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 211977,
+      "alphaNonzero": 50167,
+      "edgeNontransparent": 0,
+      "bbox": [
+        60,
+        178,
+        398,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_002.png",
+      "sha256": "b405b1fd9dc026090b942763c51dcbec5db088dca890ce1b4d16979589e6cef6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 212016,
+      "alphaNonzero": 50128,
+      "edgeNontransparent": 0,
+      "bbox": [
+        68,
+        177,
+        397,
+        479
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_003.png",
+      "sha256": "5d4a9203f5065bca916e28c71f989dcd70ef29e4b53144ae6ad9f8186f7e7948",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 214042,
+      "alphaNonzero": 48102,
+      "edgeNontransparent": 0,
+      "bbox": [
+        79,
+        185,
+        396,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_004.png",
+      "sha256": "bd85725d5aac74d45426283f0d418d510e511208fa57763a60561f0bb8a04655",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 214375,
+      "alphaNonzero": 47769,
+      "edgeNontransparent": 0,
+      "bbox": [
+        92,
+        170,
+        397,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_005.png",
+      "sha256": "906c3c4483e2789f947f996b5f2f6def657b2457bcd852d21a219419d9918b04",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 215239,
+      "alphaNonzero": 46905,
+      "edgeNontransparent": 0,
+      "bbox": [
+        117,
+        164,
+        398,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_006.png",
+      "sha256": "0fe08affd9c8531c04a14752ee79513380ab9f8b91f0b70241dd5f19de5f5caa",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 215743,
+      "alphaNonzero": 46401,
+      "edgeNontransparent": 0,
+      "bbox": [
+        116,
+        164,
+        398,
+        481
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_007.png",
+      "sha256": "272f44f2b01a2ac9ba73d8bd1c894bcf1fc42334fe38f7014b8d629918e08ddb",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 216625,
+      "alphaNonzero": 45519,
+      "edgeNontransparent": 0,
+      "bbox": [
+        116,
+        165,
+        397,
+        481
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_008.png",
+      "sha256": "6405c726c08fadff19ac01449b48307cb0867ec470cf4a43548363e0fd2cff81",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 217635,
+      "alphaNonzero": 44509,
+      "edgeNontransparent": 0,
+      "bbox": [
+        116,
+        168,
+        397,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_009.png",
+      "sha256": "7133969d75fbd9701ededbbcbccefc5707aab46f8913be0d5d93f81fd50b4cbc",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 217914,
+      "alphaNonzero": 44230,
+      "edgeNontransparent": 0,
+      "bbox": [
+        117,
+        170,
+        398,
+        481
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_010.png",
+      "sha256": "4b48dbe3fdf32d15096b94787a4d0f2127f8099c805e0ad797843d07fef9b598",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 217181,
+      "alphaNonzero": 44963,
+      "edgeNontransparent": 0,
+      "bbox": [
+        116,
+        168,
+        398,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_011.png",
+      "sha256": "9d94097ddca11eb32c7736e2874f3b85d90675a42450203d2ef81278b19e64c9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 218032,
+      "alphaNonzero": 44112,
+      "edgeNontransparent": 0,
+      "bbox": [
+        116,
+        173,
+        396,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_012.png",
+      "sha256": "b4e103e0010fa62e9fc39eb4e183e97e8f983ba7adc7bc385e1a03e30fa404c8",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 217411,
+      "alphaNonzero": 44733,
+      "edgeNontransparent": 0,
+      "bbox": [
+        116,
+        184,
+        409,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_013.png",
+      "sha256": "25a74dadedca084ec6cad1195a1787bab8c2a86c9fe25b32599da947e6b51ec5",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 216339,
+      "alphaNonzero": 45805,
+      "edgeNontransparent": 0,
+      "bbox": [
+        116,
+        186,
+        420,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_014.png",
+      "sha256": "c56fb2537ba7e0b97343a50305f5617f5c2504fdc1e11f2791b1313ff02d93a8",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 216722,
+      "alphaNonzero": 45422,
+      "edgeNontransparent": 0,
+      "bbox": [
+        117,
+        191,
+        423,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/lever_on/lever_on_015.png",
+      "sha256": "280f4172773b119862644782a0d2e681c5c47e7d4aee58711e9c8db7c5e53da9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 216631,
+      "alphaNonzero": 45513,
+      "edgeNontransparent": 0,
+      "bbox": [
+        117,
+        192,
+        432,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_000.png",
+      "sha256": "af3a993e0e20cb44ba1a57798496598aed40b9884dde865eb753715783c98187",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 215779,
+      "alphaNonzero": 46365,
+      "edgeNontransparent": 0,
+      "bbox": [
+        127,
+        158,
+        367,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_001.png",
+      "sha256": "261ded5f5a18c3984d9a21cc026632028e6f67fdc79a1e809a578032b929178c",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 214417,
+      "alphaNonzero": 47727,
+      "edgeNontransparent": 0,
+      "bbox": [
+        125,
+        155,
+        367,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_002.png",
+      "sha256": "aef323b944e4caf891c1c8248fee311c73143defccf95383524cf55fd7566aeb",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 216858,
+      "alphaNonzero": 45286,
+      "edgeNontransparent": 0,
+      "bbox": [
+        129,
+        160,
+        366,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_003.png",
+      "sha256": "e693fe15c610127aa5bc792b9d3f455f79e67ba887ab499a0842f039ef520b54",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 215287,
+      "alphaNonzero": 46857,
+      "edgeNontransparent": 0,
+      "bbox": [
+        128,
+        157,
+        366,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_004.png",
+      "sha256": "c80eb3af9657390e8703d12e786b649e5c74a9f9b4bbac3602b469135b4f18b6",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 215287,
+      "alphaNonzero": 46857,
+      "edgeNontransparent": 0,
+      "bbox": [
+        135,
+        153,
+        366,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_005.png",
+      "sha256": "bbb7aeefd6a52e94c5ac7914a0ac5c78680e139fb6eebfae1b3add9ce57bdffb",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 214662,
+      "alphaNonzero": 47482,
+      "edgeNontransparent": 0,
+      "bbox": [
+        137,
+        149,
+        367,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_006.png",
+      "sha256": "2eacdee0924b6964796ff9a09240a3c17fac781fc7c41accaeb29f3b93e5841a",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 215708,
+      "alphaNonzero": 46436,
+      "edgeNontransparent": 0,
+      "bbox": [
+        146,
+        148,
+        366,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_007.png",
+      "sha256": "57efebd8788412e73cd92dcdf602302fc7a6d2e3e4be5f0520a89d555bac7e8e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 215487,
+      "alphaNonzero": 46657,
+      "edgeNontransparent": 0,
+      "bbox": [
+        148,
+        146,
+        366,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_008.png",
+      "sha256": "f0b02b804f368b6600f5eae20c521789efb737d6f2bec0c1c36d40036bb86c05",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 216416,
+      "alphaNonzero": 45728,
+      "edgeNontransparent": 0,
+      "bbox": [
+        148,
+        145,
+        366,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_009.png",
+      "sha256": "0cc02804d39503ce5f9e70498a6712facdab4a5cb09a9d0b72af577466366f88",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 217240,
+      "alphaNonzero": 44904,
+      "edgeNontransparent": 0,
+      "bbox": [
+        146,
+        142,
+        366,
+        481
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_010.png",
+      "sha256": "53504b9aac1cbbf72ed0239d9ba620bc85b6720102071d6fde045eb220109019",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 218765,
+      "alphaNonzero": 43379,
+      "edgeNontransparent": 0,
+      "bbox": [
+        148,
+        145,
+        366,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_011.png",
+      "sha256": "f194ec51abb6662087ef6b18db044aba04bfb7df5d4c963e8eb9a66267576208",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 219524,
+      "alphaNonzero": 42620,
+      "edgeNontransparent": 0,
+      "bbox": [
+        146,
+        146,
+        366,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_012.png",
+      "sha256": "6eb8aecf7b935fcf51417c380f27d78f392d42927efc77aa66112042f44cb5b8",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 219772,
+      "alphaNonzero": 42372,
+      "edgeNontransparent": 0,
+      "bbox": [
+        148,
+        152,
+        366,
+        481
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_013.png",
+      "sha256": "4e2b0e690038e452d3fb93ba8647e9af64eae78e086cdb9701741005d2af7560",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 218085,
+      "alphaNonzero": 44059,
+      "edgeNontransparent": 0,
+      "bbox": [
+        146,
+        147,
+        367,
+        480
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_014.png",
+      "sha256": "438f304b868de7b83c04739640a04239722b94c4876047de71d0d2b57f1a8396",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 218535,
+      "alphaNonzero": 43609,
+      "edgeNontransparent": 0,
+      "bbox": [
+        148,
+        152,
+        366,
+        481
+      ]
+    },
+    {
+      "file": "Sprites/mirror_left/mirror_left_015.png",
+      "sha256": "1c1a1a365c8e91b91dd832477c9044271dc4235089f0e006eb1f752b170b34db",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alphaZero": 217182,
+      "alphaNonzero": 44962,
+      "edgeNontransparent": 0,
+      "bbox": [
+        146,
+        146,
+        366,
+        480
+      ]
+    }
+  ],
+  "media": {
+    "idle.webp": {
+      "pages": 36,
+      "durationMs": 3000,
+      "delays": [
+        85,
+        85,
+        85,
+        85,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        40,
+        40,
+        40,
+        40,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        85,
+        85,
+        85,
+        85
+      ]
+    },
+    "idle.gif": {
+      "pages": 36,
+      "durationMs": 3000,
+      "delays": [
+        90,
+        80,
+        90,
+        80,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        40,
+        40,
+        40,
+        40,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        80,
+        90,
+        80
+      ]
+    },
+    "think.webp": {
+      "pages": 70,
+      "durationMs": 6000,
+      "delays": [
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        500,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        290,
+        42,
+        42,
+        42,
+        84,
+        42,
+        42,
+        42,
+        374,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        30,
+        30,
+        30,
+        30,
+        30,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        200
+      ]
+    },
+    "think.gif": {
+      "pages": 70,
+      "durationMs": 6000,
+      "delays": [
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        500,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        290,
+        40,
+        40,
+        50,
+        80,
+        40,
+        40,
+        50,
+        370,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        80,
+        80,
+        90,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        20,
+        30,
+        20,
+        30,
+        20,
+        200
+      ]
+    },
+    "wheel.webp": {
+      "pages": 15,
+      "durationMs": 900,
+      "delays": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    "wheel.gif": {
+      "pages": 15,
+      "durationMs": 900,
+      "delays": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    "lever.webp": {
+      "pages": 31,
+      "durationMs": 1820,
+      "delays": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        420,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        385
+      ]
+    },
+    "lever.gif": {
+      "pages": 31,
+      "durationMs": 1820,
+      "delays": [
+        40,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        420,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        380
+      ]
+    },
+    "mirror.webp": {
+      "pages": 31,
+      "durationMs": 2300,
+      "delays": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        450,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        400
+      ]
+    },
+    "mirror.gif": {
+      "pages": 31,
+      "durationMs": 2300,
+      "delays": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        450,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        400
+      ]
+    }
+  }
+}

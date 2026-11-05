@@ -1,0 +1,15 @@
+const fs=require('fs'),path=require('path'),{pathToFileURL}=require('url');
+const {chromium}=require('C:/Users/10029/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const root=path.resolve(__dirname,'../art/level02-dew-layers-v08-2026-10-30');
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',args:['--allow-file-access-from-files']});
+const page=await browser.newPage({viewport:{width:1920,height:1180},deviceScaleFactor:1});const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('requestfailed',r=>errors.push(r.url()+': '+r.failure().errorText));
+await page.goto(pathToFileURL(path.join(root,'index.html')).href);await page.waitForLoadState('networkidle');
+const loads=await page.evaluate(async()=>await Promise.all(window.LAYER_MANIFEST.layers.map(l=>new Promise(resolve=>{const img=new Image();img.onload=()=>resolve({file:l.file,ok:true,w:img.naturalWidth,h:img.naturalHeight});img.onerror=()=>resolve({file:l.file,ok:false});img.src=l.file}))));
+await page.screenshot({path:path.join(root,'分层总览.png'),fullPage:true});
+await page.locator('#stage').screenshot({path:path.join(root,'叠层预览.png')});
+await page.click('#bg');const bg=await page.locator('#layer-ground').evaluate(e=>e.style.display==='none');
+await page.click('#fg');const fg=await page.locator('#layer-background').evaluate(e=>e.style.display==='none');
+await page.locator('#stage').screenshot({path:path.join(root,'QA/前景透明叠合.png')});
+await page.click('#all');await page.click('#near');const zoom=await page.locator('#stage').getAttribute('viewBox');await page.click('#guides');await page.locator('#stage').screenshot({path:path.join(root,'QA/尺度与缝口.png')});
+await page.locator('#intensity').evaluate(e=>{e.value='25';e.dispatchEvent(new Event('input',{bubbles:true}))});const dim=await page.locator('#layer-light').evaluate(e=>e.style.opacity==='0.25');
+const result={errors,assets:loads,backgroundToggle:bg,foregroundToggle:fg,nearViewBox:zoom,lightSlider:dim};fs.writeFileSync(path.join(root,'QA/browser-check.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));await browser.close();})();

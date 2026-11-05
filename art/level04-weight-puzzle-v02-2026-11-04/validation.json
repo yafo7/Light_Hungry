@@ -1,0 +1,12 @@
+{
+  "boards": 2,
+  "size": [
+    1600,
+    1100
+  ],
+  "svg_xml": "pass",
+  "unique_ids": true,
+  "elements": 370,
+  "unity_validation": "not performed",
+  "new_rule": "proposal: light form has no weight"
+}
