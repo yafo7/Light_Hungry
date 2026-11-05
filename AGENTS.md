@@ -2,6 +2,8 @@
 
 ## 2026-11-05 编辑器交互修复与开场剧情（最新）
 
+- 用户要求完整上传并说明相对 main 的合并范围。本次补齐本机编辑器自动完成的 URP 14 配置序列化（Pipeline 噪声纹理引用、UniversalRenderPipelineGlobalSettings v3 与 URPProjectSettings 材质版本）；这些配置已用于前述成功构建和运行检查。合并必须同时带上 Packages／ProjectSettings 和 .meta，使用 Unity 2022.3.62f3c1。main 的原七个 Scene、原 prefab、美术素材未改动；不要通过全量重建关卡来处理合并。
+
 - 用户在真正的 Editor Play 中发现 Main.Start 缺失 CanvasRenderer，导致 GraphicRaycaster 持续异常、按钮不可点击。此前仅打包版检查通过不能代表编辑器可用，不能再将该结果作为完整验收。JourneyGraphic、JourneyRouteGraphic 和剧情图形明确 RequireComponent(CanvasRenderer)；UI 先创建 CanvasRenderer 再添加 Graphic，避免依赖 UGUI 延迟补件。
 - JourneyValidation 从 BeforeSceneLoad 开始收集错误，在强制绘制截图之前检查组件；点击必须命中最上层目标，否则终止并失败，不能绕过射线错误强行触发按钮后报通过。新增 JourneyEditorAcceptance.Run 在真实 Editor Play 中运行整套验收，跨域重载后仍保留验证状态。
 - 暂停、设置、完成和剧情的遮罩伸展到整个 Canvas，而非固定 1600×900 内容区；覆盖 4:3 上下和宽屏边缘。编辑器的“退出游戏”停止 Play，构建版退出程序。
