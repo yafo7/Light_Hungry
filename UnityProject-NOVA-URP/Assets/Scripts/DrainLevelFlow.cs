@@ -10,6 +10,8 @@ public class DrainLevelFlow : MonoBehaviour {
  void Start(){Application.targetFrameRate=60;QualitySettings.vSyncCount=0;}
  public void Respawn(){Deaths++;Adjusting=false;cameraRig.FocusMechanism=false;mechanism.WinchInput=0;ability.ResetAt(checkpoints[Checkpoint].position);respawnAt=Time.time;}
  void Update(){
+  if(GameSession.InputBlocked){player.Drive(0,false);if(ability)ability.Control(0,false);return;}
+
   var i=Testing?testInput:new DrainInput{move=Input.GetAxisRaw("Horizontal"),winch=Input.GetAxisRaw("Vertical"),jump=Input.GetKeyDown(KeyCode.Space),interact=Input.GetKeyDown(KeyCode.E),skip=Input.GetKeyDown(KeyCode.Space),overview=Input.GetKeyDown(KeyCode.Tab),restart=Input.GetKeyDown(KeyCode.R)};testInput=new DrainInput();
   if(i.restart&&!SceneFade.Busy){SceneFade.Load("ThirdDrain");return;}if(i.overview)cameraRig.Toggle();if(i.skip&&!cameraRig.IntroFinished){cameraRig.Skip();i.jump=false;}
   if(Completed&&i.interact&&!SceneFade.Busy&&UnityEngine.SceneManagement.SceneManager.GetSceneByName("FourthReservoir").name!="FourthReservoir"&&Application.CanStreamedLevelBeLoaded("FourthReservoir")){SceneFade.Load("FourthReservoir");return;}
@@ -23,7 +25,7 @@ public class DrainLevelFlow : MonoBehaviour {
    else if(mechanism.Powered&&Near(mechanism.leftWinch,1.6f)){Adjusting=true;winch=0;}
    else if(mechanism.Powered&&Near(mechanism.rightWinch,1.6f)){Adjusting=true;winch=1;}
   }
-  if(Adjusting&&(!player.Grounded||!Near(winch==0?mechanism.leftWinch:mechanism.rightWinch,2)||(!Testing&&Input.GetKeyDown(KeyCode.Escape))))Adjusting=false;
+  if(Adjusting&&(!player.Grounded||!Near(winch==0?mechanism.leftWinch:mechanism.rightWinch,2)||(!Testing&&(!GameSession.Instance&&Input.GetKeyDown(KeyCode.Escape)))))Adjusting=false;
   player.Drive(Adjusting?0:i.move,!Adjusting&&i.jump);ability.Control(Adjusting?0:i.move,!Adjusting);
   mechanism.WinchInput=Adjusting?i.winch:0;
   cameraRig.FocusMechanism=Adjusting;
@@ -31,7 +33,7 @@ public class DrainLevelFlow : MonoBehaviour {
   if(mechanism.Awakened&&mechanism.Aligned&&player.Grounded&&Near(finish,1.1f)){Completed=true;player.Drive(0,false);mechanism.WinchInput=0;}
  }
  bool Near(Transform t,float radius){return t&&Vector2.Distance(player.transform.position,t.position)<radius;}
- string Hint(){
+ public string Hint(){
   if(!cameraRig.IntroFinished)return "水声引你走入根须深处……   空格跳过开场";
   if(cameraRig.Overview)return "Tab 返回游玩镜头";
   if(ability.IsLight)return "A / D 沿光前后移动 · 松键停留 · E 安全恢复";
@@ -46,7 +48,7 @@ public class DrainLevelFlow : MonoBehaviour {
  }
  void Styles(){if(font)return;font=Font.CreateDynamicFontFromOSFont(new[]{"Microsoft YaHei UI","Microsoft YaHei","Arial"},24);title=new GUIStyle{font=font,fontSize=24,normal={textColor=new Color(.96f,.92f,.76f)}};small=new GUIStyle(title){fontSize=13};hint=new GUIStyle(title){fontSize=16,alignment=TextAnchor.MiddleCenter,wordWrap=true};}
  void Panel(Rect r){var old=GUI.color;GUI.color=new Color(.025f,.047f,.05f,.82f);GUI.DrawTexture(r,Texture2D.whiteTexture);GUI.color=old;}
- void OnGUI(){Styles();var old=GUI.matrix;float k=Mathf.Min(Screen.width/1280f,Screen.height/720f);GUI.matrix=Matrix4x4.Scale(new Vector3(k,k,1));float w=Screen.width/k,h=Screen.height/k;
+ void OnGUI(){if(GameSession.Instance)return;Styles();var old=GUI.matrix;float k=Mathf.Min(Screen.width/1280f,Screen.height/720f);GUI.matrix=Matrix4x4.Scale(new Vector3(k,k,1));float w=Screen.width/k,h=Screen.height/k;
   Panel(new Rect(24,22,290,64));GUI.Label(new Rect(40,28,270,32),"03  排水暗渠",title);GUI.Label(new Rect(41,61,270,22),mechanism.Awakened?"光沿鳞片，重新流动起来":"把沉睡的光，送往水声深处",small);
   Panel(new Rect(w-357,24,333,28));GUI.Label(new Rect(w-343,29,320,22),"A / D 移动  空格跳跃  E 交互  Tab 全景  R 重来",small);
   if(Completed){Panel(new Rect(w/2-240,h/2-95,480,190));GUI.Label(new Rect(w/2-220,h/2-64,440,42),"一条光的河流，在它体内醒来。",hint);GUI.Label(new Rect(w/2-210,h/2-8,420,42),"第三关完成\n光已越过暗渠，继续流向花园深处。",hint);GUI.Label(new Rect(w/2-210,h/2+58,420,24),Application.CanStreamedLevelBeLoaded("FourthReservoir")?"E 前往第四关 · 蓄水浅池       R 重新游玩":"R 重新游玩",small);}

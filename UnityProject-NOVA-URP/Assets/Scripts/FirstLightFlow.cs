@@ -9,6 +9,8 @@ public class FirstLightFlow : MonoBehaviour {
  public bool HasTouchedMirror {get;private set;}float solvedAt=-1,completedAt;GUIStyle titleStyle,smallStyle,hintStyle,bodyStyle;Font font;AudioSource sound;bool announced;
  void Awake(){Application.targetFrameRate=60;QualitySettings.vSyncCount=0;sound=gameObject.AddComponent<AudioSource>();sound.volume=.22f;Testing=Array.IndexOf(Environment.GetCommandLineArgs(),"--validate")>=0;}
  void Update(){
+  if(GameSession.InputBlocked){player.Drive(0,false);if(ability)ability.Control(0,false);return;}
+
   GardenInput i=Testing?testInput:new GardenInput{move=Input.GetAxisRaw("Horizontal"),jump=Input.GetKeyDown(KeyCode.Space),interact=Input.GetKeyDown(KeyCode.E),overview=Input.GetKeyDown(KeyCode.Tab),skip=Input.GetKeyDown(KeyCode.Space)};
   if(Testing)testInput=new GardenInput();
   if(!Testing&&Input.GetKeyDown(KeyCode.R)){SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);return;}
@@ -18,19 +20,19 @@ public class FirstLightFlow : MonoBehaviour {
   if(i.interact){
    if(Adjusting)Adjusting=false;
    else if(Mathf.Abs(player.transform.position.x-grip.position.x)<1.4f){Adjusting=true;HasTouchedMirror=true;PlayNote(440,.08f);}
-   else if(puzzle.Solved&&Mathf.Abs(player.transform.position.x-entrance.position.x)<1.35f){Completed=true;completedAt=Time.time;PlayNote(660,.5f);if(Array.IndexOf(Environment.GetCommandLineArgs(),"--validate")<0)SceneFade.Load("SecondLight");}
+   else if(puzzle.Solved&&Mathf.Abs(player.transform.position.x-entrance.position.x)<1.35f){Completed=true;completedAt=Time.time;PlayNote(660,.5f);if(!GameSession.Instance&&Array.IndexOf(Environment.GetCommandLineArgs(),"--validate")<0)SceneFade.Load("SecondLight");}
   }
-  if(!Testing&&Input.GetKeyDown(KeyCode.Escape))Adjusting=false;
+  if(!Testing&&(!GameSession.Instance&&Input.GetKeyDown(KeyCode.Escape)))Adjusting=false;
   if(Adjusting){player.Drive(0,false);puzzle.Turn(i.move);}else player.Drive(i.move,i.jump);
   if(ability)ability.Control(Adjusting?0:i.move,!Adjusting);
   if(puzzle.Solved&&!announced){announced=true;solvedAt=Time.time;PlayNote(523.25f,1.1f);}
  }
- void PlayNote(float frequency,float duration){int n=(int)(44100*duration);float[] a=new float[n];for(int i=0;i<n;i++){float t=i/44100f;a[i]=Mathf.Sin(t*frequency*Mathf.PI*2)*Mathf.Exp(-t*5)*Mathf.Min(1,t*80)*.28f+Mathf.Sin(t*frequency*2*Mathf.PI*2)*Mathf.Exp(-t*9)*.06f;}var clip=AudioClip.Create("Glass light",n,1,44100,false);clip.SetData(a,0);sound.PlayOneShot(clip);Destroy(clip,duration+1);}
+ void PlayNote(float frequency,float duration){if(GameSession.Instance)sound.volume=.22f*GameSession.Instance.Audio.EffectsVolume;int n=(int)(44100*duration);float[] a=new float[n];for(int i=0;i<n;i++){float t=i/44100f;a[i]=Mathf.Sin(t*frequency*Mathf.PI*2)*Mathf.Exp(-t*5)*Mathf.Min(1,t*80)*.28f+Mathf.Sin(t*frequency*2*Mathf.PI*2)*Mathf.Exp(-t*9)*.06f;}var clip=AudioClip.Create("Glass light",n,1,44100,false);clip.SetData(a,0);sound.PlayOneShot(clip);Destroy(clip,duration+1);}
  void Styles(){if(font)return;font=Font.CreateDynamicFontFromOSFont(new[]{"Microsoft YaHei UI","Microsoft YaHei","Arial"},24);
   titleStyle=new GUIStyle{font=font,fontSize=24,normal={textColor=new Color(.98f,.92f,.76f)},alignment=TextAnchor.MiddleLeft};
   smallStyle=new GUIStyle(titleStyle){fontSize=13};hintStyle=new GUIStyle(titleStyle){fontSize=17,alignment=TextAnchor.MiddleCenter};bodyStyle=new GUIStyle(hintStyle){fontSize=14,wordWrap=true};}
  void Panel(Rect r,float opacity=.7f){Color c=GUI.color;GUI.color=new Color(.055f,.075f,.065f,opacity);GUI.DrawTexture(r,Texture2D.whiteTexture);GUI.color=c;}
- void OnGUI(){Styles();float k=Mathf.Min(Screen.width/1280f,Screen.height/720f);GUI.matrix=Matrix4x4.Scale(new Vector3(k,k,1));float w=Screen.width/k,h=Screen.height/k;
+ void OnGUI(){if(GameSession.Instance)return;Styles();float k=Mathf.Min(Screen.width/1280f,Screen.height/720f);GUI.matrix=Matrix4x4.Scale(new Vector3(k,k,1));float w=Screen.width/k,h=Screen.height/k;
   Panel(new Rect(24,22,272,66),.68f);GUI.Label(new Rect(40,28,252,31),"01  门槛苔地",titleStyle);GUI.Label(new Rect(41,60,240,20),puzzle.Solved?"光正在石阶下呼吸":"把一缕阳光，送到沉睡之处",smallStyle);
   Panel(new Rect(w-325,24,301,28),.55f);GUI.Label(new Rect(w-311,28,285,22),"A / D 移动    空格 跳跃    Tab 全景",smallStyle);
   string hint="";

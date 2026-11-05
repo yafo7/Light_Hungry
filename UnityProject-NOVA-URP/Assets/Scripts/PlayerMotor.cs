@@ -10,6 +10,7 @@ public class PlayerMotor : MonoBehaviour {
  Renderer[] renderers;bool rigged;
  void Awake(){Body=GetComponent<Rigidbody2D>();props=new MaterialPropertyBlock();renderers=visual.GetComponentsInChildren<Renderer>();rigged=visual.GetComponent<WickRigAnimation>()!=null;MaximumY=transform.position.y;if(hairEmitter)hairEmitter.gameObject.AddComponent<WickFlameTrail>().Initialize(this);}
  public void Drive(float horizontal,bool jump){axis=horizontal;if(jump)jumpQueued=Time.time;}
+ public void SuspendInput(){axis=0;jumpQueued=-10;}
  public void WarpTo(Vector3 p){axis=0;jumpQueued=lastGround=-10;Grounded=false;Body.position=p;transform.position=p;Body.velocity=Vector2.zero;}
  void FixedUpdate(){
   if(ExternalMotion){Grounded=false;jumpQueued=-10;lastGround=-10;return;}

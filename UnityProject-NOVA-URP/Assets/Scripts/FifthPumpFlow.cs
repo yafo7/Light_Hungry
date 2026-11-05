@@ -34,6 +34,8 @@ public class FifthPumpFlow : MonoBehaviour {
  void Start(){RefreshOptics();Application.targetFrameRate=60;}
  public void Respawn(){Deaths++;Adjusting=-1;ability.ResetAt(landings[Checkpoint].position);}
  void Update(){
+  if(GameSession.InputBlocked){player.Drive(0,false);if(ability)ability.Control(0,false);return;}
+
   var i=Testing?testInput:new ReservoirInput{move=Input.GetAxisRaw("Horizontal"),adjust=Input.GetAxisRaw("Vertical"),jump=Input.GetKeyDown(KeyCode.Space),interact=Input.GetKeyDown(KeyCode.E),overview=Input.GetKeyDown(KeyCode.Tab),restart=Input.GetKeyDown(KeyCode.R)};testInput=new ReservoirInput();
   if(i.restart){SceneFade.Load("FifthPumpHouse");return;}
   if(i.overview)cameraRig.Toggle();if(i.jump&&!cameraRig.IntroFinished){cameraRig.Skip();i.jump=false;}
@@ -67,7 +69,7 @@ public class FifthPumpFlow : MonoBehaviour {
   if(Awakened&&player.Grounded&&player.transform.position.x>18.2f)Completed=true;
  }
  bool Near(Transform t,float r)=>Vector2.Distance(player.transform.position,t.position)<r;
- string Hint(){
+ public string Hint(){
   if(!cameraRig.IntroFinished)return "空格跳过开场 · 一束光，将旧泵房重新连接。";
   if(Completed)return Application.CanStreamedLevelBeLoaded("SixthGreenhouse")?"第五关完成 · 按 E 进入第六关温室苗床。":"第五关完成 · 温室的风从前方吹来。";
   if(ability.IsLight)return "A / D 沿光线前后移动 · E 在落脚面恢复实体";
@@ -78,5 +80,5 @@ public class FifthPumpFlow : MonoBehaviour {
   if(Checkpoint<4)return "回到 A，在光中静止三秒，化光经过悬镜进入玻璃观察廊。";
   return "E 握住末镜手轮，W 调整，让光照到灰暗的侧腹光鳞。";
  }
- void OnGUI(){if(!uiFont)uiFont=Font.CreateDynamicFontFromOSFont(new[]{"Microsoft YaHei UI","Microsoft YaHei","Arial"},20);var style=new GUIStyle(GUI.skin.box){font=uiFont,fontSize=18,wordWrap=true};GUI.Box(new Rect(20,16,420,38),"05  废弃泵房 · 一束光，多次改道",style);GUI.Box(new Rect(20,Screen.height-78,Screen.width-40,60),Hint()+"\nA/D 移动  空格跳跃  E 交互  Tab 全景  R 重来",style);}
+ void OnGUI(){if(GameSession.Instance)return;if(!uiFont)uiFont=Font.CreateDynamicFontFromOSFont(new[]{"Microsoft YaHei UI","Microsoft YaHei","Arial"},20);var style=new GUIStyle(GUI.skin.box){font=uiFont,fontSize=18,wordWrap=true};GUI.Box(new Rect(20,16,420,38),"05  废弃泵房 · 一束光，多次改道",style);GUI.Box(new Rect(20,Screen.height-78,Screen.width-40,60),Hint()+"\nA/D 移动  空格跳跃  E 交互  Tab 全景  R 重来",style);}
 }

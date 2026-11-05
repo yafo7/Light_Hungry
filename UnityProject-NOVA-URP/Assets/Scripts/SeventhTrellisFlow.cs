@@ -83,6 +83,8 @@ public class SeventhTrellisFlow:MonoBehaviour {
   EndGrip();Deaths++;ability.ResetAt(Px(ActiveFace==0?285:340,709,-1));SetVisibleFace(ActiveFace);RefreshOptics();
  }
  void Update(){
+  if(GameSession.InputBlocked){player.Drive(0,false);if(ability)ability.Control(0,false);return;}
+
   var i=Testing?testInput:new ReservoirInput{move=Input.GetAxisRaw("Horizontal"),jump=Input.GetKeyDown(KeyCode.Space),interact=Input.GetKeyDown(KeyCode.E),overview=Input.GetKeyDown(KeyCode.Tab),restart=Input.GetKeyDown(KeyCode.R)};testInput=new ReservoirInput();
   if(i.restart){SceneFade.Load("SeventhTrellis");return;}
   AnimateMechanisms();if(i.overview&&!TransitionBusy&&!PreviewBusy)cameraRig.Toggle();
@@ -100,7 +102,7 @@ public class SeventhTrellisFlow:MonoBehaviour {
   bool free=MechanismsSettled;player.Drive(free?i.move:0,free&&i.jump);ability.Control(i.move,free);
   if(ActiveFace==0&&Awakened&&player.Grounded&&PixelX>1710&&Mathf.Abs(PixelY-710)<12)Completed=true;
  }
- string Hint(){
+ public string Hint(){
   if(!cameraRig.IntroFinished)return "沿用一束光，在藤架前后寻找彼此相连的路。空格跳过全景。";
   if(Completed)return "第七关完成 · 通往雨槽屋脊的叶幕已舒展。";
   if(TransitionBusy)return "沿镜窗穿过藤架纵深……";
@@ -112,7 +114,7 @@ public class SeventhTrellisFlow:MonoBehaviour {
   if(ActiveFace==0&&StepsOpen&&!BridgeOpen&&Near(switches[0]))return "E 转动正面轴轮；连杆穿过叶墙，连接背面的断轨。";
   return ActiveFace==0?"正面 · 叶幕走廊。实体攀上搁板，光核沿镜窗穿行。":"背面 · 藤架检修侧。观察轨道、镜窗与穿架的机关连杆。";
  }
- void OnGUI(){
+ void OnGUI(){if(GameSession.Instance)return;
   if(!uiFont)uiFont=Font.CreateDynamicFontFromOSFont(new[]{"Microsoft YaHei UI","Microsoft YaHei","Arial"},20);
   var style=new GUIStyle(GUI.skin.box){font=uiFont,fontSize=18,wordWrap=true};
   GUI.Box(new Rect(20,16,500,38),"07  叶幕走廊 · "+(VisibleFace==0?"正面":"背面")+" · 两面互相开路",style);

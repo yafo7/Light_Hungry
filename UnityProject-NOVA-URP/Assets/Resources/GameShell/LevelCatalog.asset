@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8d54d1eb094a8f9ad34eecaf03538a, type: 3}
+  m_Name: LevelCatalog
+  m_EditorClassIdentifier:
+  font: {fileID: 12800000, guid: 9b9be462a43284b488e19d96581e32d4, type: 3}
+  menuBackground: {fileID: 2800000, guid: 14e9f0f10059b80488a285acbc209884, type: 3}
+  mapBackground: {fileID: 2800000, guid: 8111fde22d230fb4c86bc8d096a5854a, type: 3}
+  music: {fileID: 8300000, guid: d5672321d987b8c47834655a74540aee, type: 3}
+  hover: {fileID: 8300000, guid: 48545159511525e43ac39f4a62bb958d, type: 3}
+  click: {fileID: 8300000, guid: 15b63755ed3cf564fbb982939a23bafa, type: 3}
+  dissolve: {fileID: 8300000, guid: 962b3dc7f98d2fe48852a481f65f9782, type: 3}
+  restore: {fileID: 8300000, guid: c89e6b3067a654e48b48ab216a9f604a, type: 3}
+  mechanism: {fileID: 8300000, guid: d6d97e353225bfb44a56171b2eba528f, type: 3}
+  crossing: {fileID: 8300000, guid: 1e3274e061323d04ea4c54ec19b37f13, type: 3}
+  complete: {fileID: 8300000, guid: 3e9f3bb0ba1dc6e489dd0f045743654d, type: 3}
+  levels:
+  - id: level01
+    sceneName: FirstLight
+    title: "\u95E8\u69DB\u82D4\u5730"
+    subtitle: "\u7B2C\u4E00\u7F15\u5149"
+    description: "\u8D8A\u8FC7\u82B1\u56ED\u7684\u95E8\u69DB\uFF0C\u8F6C\u52A8\u56ED\u706F\uFF0C\u8BA9\u4E00\u7F15\u9633\u5149\u5524\u9192\u6C89\u7761\u7684\u5C3E\u9CDE\u3002"
+    available: 1
+    preview: {fileID: 2800000, guid: 50e2eef54902dab4999f4f374e821c92, type: 3}
+    mapPosition: {x: 0.06, y: 0.61}
+  - id: level02
+    sceneName: SecondLight
+    title: "\u5012\u6263\u9676\u76C6"
+    subtitle: "\u9732\u73E0\u4E4B\u95F4"
+    description: "\u5728\u9732\u73E0\u7559\u4E0B\u7684\u5149\u4E2D\u505C\u7559\uFF0C\u5316\u4F5C\u5149\u6838\uFF0C\u7A7F\u8FC7\u9676\u76C6\u4E0B\u7684\u7EC6\u5C0F\u77F3\u7F1D\u3002"
+    available: 1
+    preview: {fileID: 2800000, guid: e9cca7b921b6b7140bf050f662920476, type: 3}
+    mapPosition: {x: 0.23, y: 0.36}
+  - id: level03
+    sceneName: ThirdDrain
+    title: "\u6392\u6C34\u6697\u6E20"
+    subtitle: "\u5730\u4E0B\u7684\u56DE\u58F0"
+    description: "\u6CBF\u7740\u5730\u4E0B\u6C34\u58F0\u524D\u884C\uFF0C\u7528\u914D\u91CD\u3001\u955C\u67B6\u4E0E\u6C34\u8F6E\uFF0C\u91CD\u65B0\u8FDE\u63A5\u6697\u6E20\u4E2D\u7684\u5149\u3002"
+    available: 1
+    preview: {fileID: 2800000, guid: fb818ab2bf870fd42af030652052de78, type: 3}
+    mapPosition: {x: 0.36, y: 0.75}
+  - id: level04
+    sceneName: FourthReservoir
+    title: "\u84C4\u6C34\u6D45\u6C60"
+    subtitle: "\u6C34\u9762\u4E0A\u7684\u8DEF"
+    description: "\u5728\u6D45\u6C60\u4E24\u5CB8\u5BFB\u627E\u843D\u811A\u5904\uFF0C\u8BA9\u53CD\u5149\u7247\u4E0E\u79CD\u835A\u4E3A\u4F60\u642D\u8D77\u524D\u884C\u7684\u8DEF\u3002"
+    available: 1
+    preview: {fileID: 2800000, guid: cfd2b21be76bc644b9db7b8615cdde16, type: 3}
+    mapPosition: {x: 0.5, y: 0.52}
+  - id: level05
+    sceneName: FifthPumpHouse
+    title: "\u5E9F\u5F03\u6CF5\u623F"
+    subtitle: "\u65E7\u65E5\u7684\u673A\u5173"
+    description: "\u8D70\u5165\u5E9F\u5F03\u7684\u6CF5\u623F\uFF0C\u7528\u540C\u4E00\u675F\u5149\uFF0C\u5524\u9192\u5C42\u5C42\u76F8\u8FDE\u7684\u65E7\u673A\u5173\u3002"
+    available: 1
+    preview: {fileID: 2800000, guid: d979e2ed035e4e64e8c1517b52ef1063, type: 3}
+    mapPosition: {x: 0.6, y: 0.18}
+  - id: level06
+    sceneName: SixthGreenhouse
+    title: "\u6E29\u5BA4\u82D7\u5E8A"
+    subtitle: "\u5F80\u8FD4\u6362\u4F4D"
+    description: "\u8BA9\u82D7\u5E8A\u4E0E\u53F6\u5E55\u6539\u53D8\u4F4D\u7F6E\uFF0C\u5728\u5149\u4E0E\u5B9E\u4F53\u4E4B\u95F4\uFF0C\u627E\u5230\u5F80\u8FD4\u7684\u65F6\u673A\u3002"
+    available: 1
+    preview: {fileID: 2800000, guid: 557d8dab4ff506747b979dff52bcb205, type: 3}
+    mapPosition: {x: 0.78, y: 0.4}
+  - id: level07
+    sceneName: SeventhTrellis
+    title: "\u53F6\u5E55\u8D70\u5ECA"
+    subtitle: "\u4E16\u754C\u7684\u53E6\u4E00\u9762"
+    description: "\u8DDF\u968F\u540C\u4E00\u675F\u5149\u7A7F\u8FC7\u955C\u7A97\uFF0C\u8BA9\u85E4\u67B6\u7684\u4E24\u9762\uFF0C\u4E3A\u5F7C\u6B64\u6253\u5F00\u4E00\u6761\u8DEF\u3002"
+    available: 1
+    preview: {fileID: 2800000, guid: 261e31b6a5cbeed48b3622375eb73ef7, type: 3}
+    mapPosition: {x: 0.93, y: 0.17}

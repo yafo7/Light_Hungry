@@ -68,6 +68,8 @@ public class SixthGreenhouseFlow:MonoBehaviour {
  }
  bool Near(Transform t,float r=1.25f)=>t&&Vector2.Distance(player.transform.position,t.position)<r;
  void Update(){
+  if(GameSession.InputBlocked){player.Drive(0,false);if(ability)ability.Control(0,false);return;}
+
   var i=Testing?testInput:new ReservoirInput{move=Input.GetAxisRaw("Horizontal"),adjust=Input.GetAxisRaw("Vertical"),jump=Input.GetKeyDown(KeyCode.Space),interact=Input.GetKeyDown(KeyCode.E),overview=Input.GetKeyDown(KeyCode.Tab),restart=Input.GetKeyDown(KeyCode.R)};testInput=new ReservoirInput();
   if(i.restart){SceneFade.Load("SixthGreenhouse");return;}
   if(i.overview)cameraRig.Toggle();if(i.jump&&!cameraRig.IntroFinished){cameraRig.Skip();i.jump=false;}
@@ -97,7 +99,7 @@ public class SixthGreenhouseFlow:MonoBehaviour {
   bool free=Adjusting<0&&TraySettled;player.Drive(free?i.move:0,free&&i.jump);ability.Control(i.move,free);
   if(Awakened&&player.Grounded&&PixelY<300&&PixelX>1710)Completed=true;
  }
- string Hint(){
+ public string Hint(){
   if(!cameraRig.IntroFinished)return "温室苗床 · 先借光落脚，再让托盘接光。空格跳过开场";
   if(Completed)return Application.CanStreamedLevelBeLoaded("SeventhTrellis")?"第六关完成 · 按 E 进入第七关叶幕走廊。":"第六关完成 · 叶幕后的两面走廊等待下一次探索。";
   if(ability.IsLight)return "A / D 沿光前后移动 · E 在安全落脚面上方恢复实体并短落";
@@ -109,5 +111,5 @@ public class SixthGreenhouseFlow:MonoBehaviour {
   if(aimC!=1)return "在 C 平台调镜；只有穿过遮光板窄缝，光才能交给高位托盘。";
   return "沿上层光路抵达 D，调整末镜，让灰暗肋鳞重新发亮。";
  }
- void OnGUI(){if(!uiFont)uiFont=Font.CreateDynamicFontFromOSFont(new[]{"Microsoft YaHei UI","Microsoft YaHei","Arial"},20);var style=new GUIStyle(GUI.skin.box){font=uiFont,fontSize=18,wordWrap=true};GUI.Box(new Rect(20,16,430,38),"06  温室苗床 · 途中落脚，往返换位",style);GUI.Box(new Rect(20,Screen.height-78,Screen.width-40,60),Hint()+"\nA/D 移动  空格跳跃  E 交互  Tab 全景  R 重来",style);}
+ void OnGUI(){if(GameSession.Instance)return;if(!uiFont)uiFont=Font.CreateDynamicFontFromOSFont(new[]{"Microsoft YaHei UI","Microsoft YaHei","Arial"},20);var style=new GUIStyle(GUI.skin.box){font=uiFont,fontSize=18,wordWrap=true};GUI.Box(new Rect(20,16,430,38),"06  温室苗床 · 途中落脚，往返换位",style);GUI.Box(new Rect(20,Screen.height-78,Screen.width-40,60),Hint()+"\nA/D 移动  空格跳跃  E 交互  Tab 全景  R 重来",style);}
 }

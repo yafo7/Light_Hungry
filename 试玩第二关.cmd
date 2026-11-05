@@ -1,2 +1,2 @@
 @echo off
-start "" "%~dp0Builds\Windows-Level07-NOVA\LightFeast.exe" --level02
+start "" "%~dp0Builds\LightHungry-Complete\LightHungry.exe" --level02

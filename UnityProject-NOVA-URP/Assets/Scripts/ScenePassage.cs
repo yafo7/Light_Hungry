@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class ScenePassage : MonoBehaviour {
  public string destination="ThirdDrain";public bool Activated {get;private set;}
  void OnTriggerEnter2D(Collider2D other){Touch(other);}void OnTriggerStay2D(Collider2D other){Touch(other);}
- void Touch(Collider2D other){if(Activated||!other.GetComponentInParent<PlayerMotor>())return;Activated=true;SceneFade.Load(destination);}
+ void Touch(Collider2D other){if(Activated||GameSession.InputBlocked||!other.GetComponentInParent<PlayerMotor>())return;Activated=true;if(GameSession.Instance)GameSession.Instance.CompleteLevel();else SceneFade.Load(destination);}
 }
 public class SceneFade : MonoBehaviour {
  public static bool Busy {get;private set;}float alpha;static SceneFade instance;

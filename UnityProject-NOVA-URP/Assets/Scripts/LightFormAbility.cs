@@ -26,6 +26,7 @@ public class LightFormAbility : MonoBehaviour {
   sparks=motor.visual?GetComponentsInChildren<ParticleSystem>():new ParticleSystem[0];
  }
  public void Control(float direction,bool canCharge=true,bool reform=false){input=Mathf.Clamp(direction,-1,1);allowCharge=canCharge;reformRequested|=reform;}
+ public void SuspendInput(){input=0;allowCharge=false;reformRequested=false;}
  public void ResetAt(Vector3 feet){anchor=feet;if(IsLight)Restore(feet);Charge=0;CurrentPath=null;rearm=true;reformRequested=false;input=0;motor.LightCharge=0;motor.WarpTo(feet);UpdateGlow();}
  void FixedUpdate(){
   if(IsLight){if(!CurrentPath||!CurrentPath.isActiveAndEnabled){Restore(anchor);return;}

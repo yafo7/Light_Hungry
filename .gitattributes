@@ -61,6 +61,7 @@ UnityProject-NOVA-URP/**/*.wav filter=lfs diff=lfs merge=lfs -text
 UnityProject-NOVA-URP/**/*.ogg filter=lfs diff=lfs merge=lfs -text
 UnityProject-NOVA-URP/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
 UnityProject-NOVA-URP/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+UnityProject-NOVA-URP/Assets/Fonts/*.otf filter=lfs diff=lfs merge=lfs -text
 *_basecolor.jpg filter=lfs diff=lfs merge=lfs -text
 *.cmd text eol=crlf
 *.ps1 text eol=crlf

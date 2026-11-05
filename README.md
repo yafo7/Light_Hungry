@@ -8,11 +8,15 @@
 
 | 目录 | Unity 版本 | 用途 |
 | --- | --- | --- |
-| [`UnityProject-NOVA-URP/`](UnityProject-NOVA-URP/) | **2021.3.42f1c1**，URP 12.1.15 | 当前七关水彩原型，含骨骼灯芯精灵和 NOVA 2.0.0 火焰 |
+| [`UnityProject-NOVA-URP/`](UnityProject-NOVA-URP/) | **2022.3.62f3c1**，URP 14.0.12 | 当前七关水彩原型及主菜单、地图选关、暂停与声音设置 |
 | [`UnityProject/`](UnityProject/) | 2021.3.42f1c1，内置管线 | 保留的原版工程 |
 | 仓库根目录的 `Assets/`、`Packages/`、`ProjectSettings/` | **2022.3.62f3c1** | 原有程序实验工程，保留原目录和历史 |
 
-两套运行逻辑在本次同步中保持独立。打开七关版本：Unity Hub → Add project from disk → 选择 **`UnityProject-NOVA-URP`**，打开 `Assets/Scenes/SeventhTrellis.unity` 后 Play。第一至第七关均已列入该工程构建设置。
+两套运行逻辑保持独立。打开七关版本：Unity Hub → Add project from disk → 选择 **`UnityProject-NOVA-URP`**，使用已安装的 Unity **2022.3.62f3c1**。打开 `Assets/Scenes/GameMenu.unity` 后 Play 可进入完整菜单流程，也可直接 Play 任意独立关卡。构建设置以 GameMenu 为入口，随后为第一至第七关。
+
+本地完整试玩程序为 `Builds/LightHungry-Complete/LightHungry.exe`，根目录 `开始试玩.cmd` 指向此版本。分享时须复制整个 `LightHungry-Complete` 文件夹。菜单 `Light Hungry/界面与流程/构建完整 Windows 游戏` 只更新流程配置并构建，不重建七关布局。
+
+关卡目录位于 `Assets/Resources/GameShell/LevelCatalog.asset`，可配置名称、独立 Scene、缩略图、地图位置与可用状态。新增关卡后运行菜单中的“安装或更新游戏界面”将对应 Scene 纳入构建。新关卡的完成事件调用 `GameSession.Instance.CompleteLevel()`；现有七关由适配层和出口组件接入。菜单、音量和通关记录独立于各关布局。
 
 ### 下载源文件
 
@@ -27,11 +31,11 @@ git lfs pull
 
 不要把 LFS 指针文件当成真实图片或模型导入 Unity。GitHub 的源代码 ZIP 是否包含实际 LFS 文件取决于仓库设置，建议使用上述克隆流程。
 
-美术源文件位于 [`art/`](art/)，第七关的拆分与复用说明见 [分层素材说明](art/level07-unity-assets-v01-2026-11-05/README.md)。源码与全部对应 `.meta` 已纳入管理；Unity 缓存、构建程序、自动验证产物和重复 ZIP 保留在本地。本次没有上传新的 Windows 安装包，根目录试玩脚本需先构建出本地程序才能运行。
+美术源文件位于 [`art/`](art/)，第七关的拆分与复用说明见 [分层素材说明](art/level07-unity-assets-v01-2026-11-05/README.md)。源码与全部对应 `.meta` 纳入管理；Unity 缓存、构建程序、自动验证产物和重复 ZIP 保留在本地。Git 克隆后需自行构建试玩程序。
 
-在七关工程中用 `SeventhLevelBuilder.BuildPlayer` 构建现有场景，避免重新生成已经手工调整的布局。根目录 `Tools` 中的 Windows 脚本保留了本机工具路径，换电脑时应调整路径或直接使用 Unity 编辑器菜单。
+在七关工程中用 `JourneyBuilder.Build` 构建完整流程，避免重新生成已经手工调整的布局。根目录 Windows 快捷脚本使用本机 Unity 2022 路径，换电脑时应调整路径或直接使用 Unity 编辑器菜单。
 
-第七关在本地输入驱动验证中通过 **121/121** 条断言，第六关独立回归 **123/123**；这不是对所有玩法组合或人工手感的验收。上述验证发生在本次版本号元数据调整前，本轮没有改动玩法，也没有重新构建可执行文件。
+Unity 2022 完整流程构建成功，第七关输入驱动回归 **121/121**，第六关 **123/123**。界面验证入口为 `--journey-qa`，覆盖菜单、鼠标命中、选关、暂停、设置、记录与场景切换，使用独立 QA 存档键。自动检查不代替玩家对所有玩法组合和手感的验收。
 
 ## 原有程序实验工程说明（Unity 2022.3）
 

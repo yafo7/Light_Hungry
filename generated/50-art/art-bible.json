@@ -50,5 +50,26 @@
   ],
   "unresolved": [
     "Human approval of style and animation consistency"
-  ]
+  ],
+  "journeyUI": {
+    "medium": "watercolor botanical conservatory",
+    "palette": [
+      "forest olive",
+      "sage",
+      "warm ivory",
+      "muted honey"
+    ],
+    "composition": "main menu left aligned with generous space; map has connected chapter medallions and a preview card",
+    "typography": "Noto Serif CJK SC",
+    "motion": "slow light motes and short unscaled fades",
+    "references": [
+      "https://rhawkes.artstation.com/projects/8Bb636",
+      "https://www.mobygames.com/game/78427/ori-and-the-blind-forest-definitive-edition/screenshots/windows/848841/"
+    ],
+    "constraints": [
+      "clear text contrast",
+      "no new ending design",
+      "all enabled scenes independently accessible"
+    ]
+  }
 }

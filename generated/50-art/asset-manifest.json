@@ -277,6 +277,91 @@
         "Unity import",
         "Four-face template reference checks"
       ]
+    },
+    {
+      "id": "journey_menu",
+      "kind": "ui-background",
+      "ownerId": "light-hungry-journey",
+      "state": "current",
+      "path": "UnityProject-NOVA-URP/Assets/Resources/GameShell/menu-background.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false,
+      "generationMethod": "built-in image_gen reference-based generation",
+      "referenceAssetIds": [
+        "UnityProject-NOVA-URP/Assets/Art/BackgroundWatercolor/level01-background.png"
+      ],
+      "promptOrBrief": "Original restrained watercolor greenhouse at dusk, dark spacious left text area, ivory glass arch and warm sunbeam on right, sage plants, no baked lettering.",
+      "source": "Codex built-in image generation 2026-11-05",
+      "author": "AI-generated for Light Hungry",
+      "license": "project-generated",
+      "attribution": "",
+      "status": "runtime-verified-awaiting-user-review",
+      "qaEvidence": [
+        "Unity 2022.3.62f3c1 Windows build succeeded",
+        "Journey UI acceptance 95/95; runtime error log empty",
+        "Actual URP interface screenshots visually inspected at 16:9 and 4:3"
+      ]
+    },
+    {
+      "id": "journey_map",
+      "kind": "ui-background",
+      "ownerId": "light-hungry-journey",
+      "state": "current",
+      "path": "UnityProject-NOVA-URP/Assets/Resources/GameShell/map-background.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false,
+      "generationMethod": "built-in image_gen reference-based generation",
+      "referenceAssetIds": [
+        "UnityProject-NOVA-URP/Assets/Art/BackgroundWatercolor/level01-background.png"
+      ],
+      "promptOrBrief": "Original watercolor greenhouse garden atlas, winding path with seven open clearings, sage plants, ivory paper and softly washed right preview area, no baked labels.",
+      "source": "Codex built-in image generation 2026-11-05",
+      "author": "AI-generated for Light Hungry",
+      "license": "project-generated",
+      "attribution": "",
+      "status": "runtime-verified-awaiting-user-review",
+      "qaEvidence": [
+        "Unity 2022.3.62f3c1 Windows build succeeded",
+        "Journey UI acceptance 95/95; runtime error log empty",
+        "Actual URP interface screenshots visually inspected at 16:9 and 4:3"
+      ]
+    },
+    {
+      "id": "journey_font",
+      "kind": "font",
+      "ownerId": "light-hungry-journey",
+      "path": "UnityProject-NOVA-URP/Assets/Fonts/NotoSerifCJKsc-Regular.otf",
+      "source": "https://github.com/notofonts/noto-cjk/tree/main/Serif",
+      "author": "Noto project contributors",
+      "license": "SIL Open Font License 1.1",
+      "attribution": "Assets/Fonts/NotoSerif-OFL.txt",
+      "status": "runtime-verified-awaiting-user-review",
+      "qaEvidence": [
+        "Unity 2022.3.62f3c1 Windows build succeeded",
+        "Journey UI acceptance 95/95; runtime error log empty"
+      ]
+    },
+    {
+      "id": "journey_audio",
+      "kind": "music-and-event-sounds",
+      "ownerId": "light-hungry-journey",
+      "path": "UnityProject-NOVA-URP/Assets/Resources/GameShell",
+      "generationMethod": "original procedural composition and additive synthesis",
+      "source": "Created locally for Light Hungry on 2026-11-05",
+      "author": "Light Hungry project",
+      "license": "project-original",
+      "promptOrBrief": "64-second seamless quiet greenhouse theme, eight 8-second C/Am/F/G-based pads, soft bell arpeggios, stereo echoes, and seven related event cues. 22050 Hz stereo PCM.",
+      "status": "runtime-verified-awaiting-user-review",
+      "qaEvidence": [
+        "Unity 2022.3.62f3c1 Windows build succeeded",
+        "Journey UI acceptance 95/95; runtime error log empty"
+      ]
     }
   ],
   "unresolved": [
