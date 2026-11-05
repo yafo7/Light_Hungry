@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public enum JourneyShape { Disc, Ring, Panel }
 
+[RequireComponent(typeof(CanvasRenderer))]
 public sealed class JourneyGraphic : MaskableGraphic {
     public JourneyShape shape;
     public float radius = 12, thickness = 2;
@@ -41,6 +42,7 @@ public sealed class JourneyGraphic : MaskableGraphic {
     }
 }
 
+[RequireComponent(typeof(CanvasRenderer))]
 public sealed class JourneyRouteGraphic : MaskableGraphic {
     public Vector2[] points;
     protected override void OnPopulateMesh(VertexHelper helper) {

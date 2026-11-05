@@ -362,6 +362,46 @@
         "Unity 2022.3.62f3c1 Windows build succeeded",
         "Journey UI acceptance 95/95; runtime error log empty"
       ]
+    },
+    {
+      "id": "opening_comic_page01",
+      "kind": "opening-storyboard",
+      "ownerId": "light-hungry-journey",
+      "path": "UnityProject-NOVA-URP/Assets/Resources/GameShell/Opening/page01.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false,
+      "source": "User-supplied storyboard image in chat, 2026-11-05",
+      "author": "User-provided; original creator not specified",
+      "license": "User-supplied for project integration; underlying license not specified",
+      "generationMethod": "Original PNG preserved intact; convex polygon UV selection at runtime for five sequential panels per page",
+      "status": "runtime-verified-awaiting-user-review",
+      "qaEvidence": [
+        "Editor Play 194/194; Windows Player 194/194; both error logs empty",
+        "Ten ordered panels; original artwork UV coordinates; actual URP screenshots inspected"
+      ]
+    },
+    {
+      "id": "opening_comic_page02",
+      "kind": "opening-storyboard",
+      "ownerId": "light-hungry-journey",
+      "path": "UnityProject-NOVA-URP/Assets/Resources/GameShell/Opening/page02.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false,
+      "source": "User-supplied storyboard image in chat, 2026-11-05",
+      "author": "User-provided; original creator not specified",
+      "license": "User-supplied for project integration; underlying license not specified",
+      "generationMethod": "Original PNG preserved intact; convex polygon UV selection at runtime for five sequential panels per page",
+      "status": "runtime-verified-awaiting-user-review",
+      "qaEvidence": [
+        "Editor Play 194/194; Windows Player 194/194; both error logs empty",
+        "Ten ordered panels; original artwork UV coordinates; actual URP screenshots inspected"
+      ]
     }
   ],
   "unresolved": [

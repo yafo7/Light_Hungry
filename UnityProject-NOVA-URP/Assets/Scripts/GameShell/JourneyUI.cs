@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public sealed class JourneyUI : MonoBehaviour {
+public sealed partial class JourneyUI : MonoBehaviour {
     static readonly Color Ink = new Color(.18f, .27f, .23f);
     static readonly Color Paper = new Color(.96f, .94f, .86f);
     static readonly Color Muted = new Color(.41f, .48f, .40f);
@@ -16,6 +16,7 @@ public sealed class JourneyUI : MonoBehaviour {
     RawImage backdrop, preview;
     Text previewTitle, context;
     JourneyGraphic charge;
+    JourneyGraphic shade;
     readonly List<JourneyGraphic> markers = new List<JourneyGraphic>();
     readonly List<RectTransform> motes = new List<RectTransform>();
     List<JourneyLevel> levels;
@@ -66,6 +67,7 @@ public sealed class JourneyUI : MonoBehaviour {
     public void Show(JourneyScreen state) {
         if (EventSystem.current) EventSystem.current.SetSelectedGameObject(null);
         if (page) { page.gameObject.SetActive(false); Destroy(page.gameObject); }
+        if (shade) { shade.gameObject.SetActive(false); Destroy(shade.gameObject); shade = null; }
         motes.Clear(); markers.Clear(); context = null; charge = null;
         page = Rect(design, "Page " + state, 0, 0, 1600, 900);
         bool illustrated = state == JourneyScreen.Menu || state == JourneyScreen.Map || state == JourneyScreen.Settings && session.Current == null;
@@ -81,6 +83,7 @@ public sealed class JourneyUI : MonoBehaviour {
             case JourneyScreen.Playing: Hud(); break;
             case JourneyScreen.Paused: PausePage(); break;
             case JourneyScreen.Completed: CompletionPage(); break;
+            case JourneyScreen.Opening: OpeningPage(); break;
         }
     }
 
@@ -99,11 +102,19 @@ public sealed class JourneyUI : MonoBehaviour {
         Action(page, "Main.Start", session.HasProgress ? "继续游戏" : "开始游戏", 126, 456, 320, session.StartJourney, true);
         Action(page, "Main.Map", "选择关卡", 126, 532, 320, session.ShowMap, false, true);
         Action(page, "Main.Settings", "设置", 126, 601, 320, session.ShowSettings, false, true);
-        Action(page, "Main.Quit", "退出游戏", 126, 670, 320, () => Application.Quit(), false, true);
+        Action(page, "Main.Quit", "退出游戏", 126, 670, 320, QuitGame, false, true);
         for (int i = 0; i < 12; i++) {
             var mote = Shape(page, "Floating light", 820 + i * 47 % 650, 330 + i * 83 % 480, 3 + i % 3, 3 + i % 3, new Color(1, .94f, .72f, .3f), JourneyShape.Disc);
             motes.Add(mote.rectTransform);
         }
+    }
+
+    static void QuitGame() {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 
     void MapPage() {
@@ -153,7 +164,13 @@ public sealed class JourneyUI : MonoBehaviour {
         for (int i = 0; i < markers.Count; i++) markers[i].color = i == selected ? new Color(.91f, .76f, .44f) : Paper;
     }
 
-    void Shade() { Shape(page, "Shade", 0, 0, 1600, 900, new Color(.035f, .08f, .06f, .78f), JourneyShape.Panel).radius = 0; }
+    void Shade() {
+        shade = Shape(canvas.transform, "Shade", 0, 0, 1600, 900, new Color(.035f, .08f, .06f, .78f), JourneyShape.Panel);
+        shade.radius = 0;
+        shade.rectTransform.anchorMin = Vector2.zero; shade.rectTransform.anchorMax = Vector2.one;
+        shade.rectTransform.offsetMin = shade.rectTransform.offsetMax = Vector2.zero;
+        shade.transform.SetSiblingIndex(background.GetSiblingIndex() + 1);
+    }
     void PausePage() {
         Shade();
         Label(page, "暂停", 510, 206, 580, 90, 43, Paper, TextAnchor.MiddleCenter);
@@ -184,7 +201,8 @@ public sealed class JourneyUI : MonoBehaviour {
             fullscreen = !fullscreen; Screen.fullScreenMode = fullscreen ? FullScreenMode.FullScreenWindow : FullScreenMode.Windowed;
             PlayerPrefs.SetInt(GameSession.PrefsPrefix + "Fullscreen", fullscreen ? 1 : 0); Show(JourneyScreen.Settings);
         });
-        Label(page, "A / D  移动与随光前后行进\n空格  跳跃     E  交互     Esc  暂停", 486, 603, 630, 65, 18, Muted);
+        Label(page, "A / D  移动     空格  跳跃\nE  交互     Esc  暂停", 486, 232, 630, 65, 18, Muted);
+        Action(page, "Settings.Opening", "重看开场", 486, 603, 628, session.ReplayOpening);
         Action(page, "Settings.Back", "返回", 486, 710, 628, session.Back, true);
     }
 
@@ -235,7 +253,8 @@ public sealed class JourneyUI : MonoBehaviour {
     }
 
     RectTransform Rect(Transform parent, string name, float x, float y, float width, float height) {
-        var element = new GameObject(name, typeof(RectTransform)); element.transform.SetParent(parent, false);
+        // Supply renderers before Graphic.OnEnable, including in Editor Play mode.
+        var element = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer)); element.transform.SetParent(parent, false);
         var rect = element.GetComponent<RectTransform>(); rect.anchorMin = rect.anchorMax = new Vector2(0, 1); rect.pivot = new Vector2(0, 1);
         rect.anchoredPosition = new Vector2(x, -y); rect.sizeDelta = new Vector2(width, height); return rect;
     }

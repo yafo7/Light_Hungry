@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum JourneyScreen { Menu, Map, Settings, Playing, Paused, Completed, Loading }
+public enum JourneyScreen { Menu, Map, Settings, Playing, Paused, Completed, Loading, Opening }
 
 [DefaultExecutionOrder(-10000)]
 public sealed class GameSession : MonoBehaviour {
@@ -18,6 +18,9 @@ public sealed class GameSession : MonoBehaviour {
     public string LastScene => PlayerPrefs.GetString(PrefsPrefix + "LastScene", "");
     public bool HasProgress => Catalog.Find(LastScene) != null;
     public bool Transitioning { get; private set; }
+    public int OpeningIndex { get; private set; }
+    public bool OpeningPreview { get; private set; }
+    JourneyScreen openingReturn;
     JourneyScreen mapReturn, settingsReturn;
     LevelProgressBridge bridge;
 
@@ -80,8 +83,29 @@ public sealed class GameSession : MonoBehaviour {
         if (level == null || !level.available) level = Catalog.Available.Find(item => true);
         if (level != null) LoadLevel(level);
     }
+    public void BeginOpening() { OpenStory(false); }
+    public void ReplayOpening() { OpenStory(true); }
+    void OpenStory(bool preview) {
+        if (Transitioning || SceneFade.Busy) return;
+        openingReturn = State; OpeningPreview = preview;
+        OpeningIndex = 0;
+        if (Catalog.opening.Count == 0) { var first = Catalog.Available.Find(item => true); if (first != null) StartCoroutine(Load(first.sceneName)); return; }
+        SetScreen(JourneyScreen.Opening);
+    }
+    public void AdvanceOpening() {
+        if (State != JourneyScreen.Opening || Transitioning) return;
+        if (OpeningIndex + 1 >= Catalog.opening.Count) { FinishOpening(); return; }
+        OpeningIndex++; SetScreen(JourneyScreen.Opening);
+    }
+    public void FinishOpening() {
+        if (State != JourneyScreen.Opening || Transitioning) return;
+        if (OpeningPreview) { SetScreen(openingReturn); return; }
+        var first = Catalog.Available.Find(item => true);
+        if (first != null) StartCoroutine(Load(first.sceneName)); else SetScreen(JourneyScreen.Menu);
+    }
     public void LoadLevel(JourneyLevel level) {
         if (level == null || !level.available || !Application.CanStreamedLevelBeLoaded(level.sceneName) || Transitioning || SceneFade.Busy) return;
+        if (!HasProgress && Catalog.Available.IndexOf(level) == 0 && State != JourneyScreen.Opening) { BeginOpening(); return; }
         StartCoroutine(Load(level.sceneName));
     }
     public void Restart() { LoadLevel(Current); }

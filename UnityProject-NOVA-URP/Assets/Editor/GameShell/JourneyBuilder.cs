@@ -24,7 +24,7 @@ public static class JourneyBuilder {
     [MenuItem("Light Hungry/界面与流程/安装或更新游戏界面")]
     public static void Install() {
         AssetDatabase.Refresh();
-        foreach (string path in new[] { Folder + "menu-background.png", Folder + "map-background.png" }) {
+        foreach (string path in new[] { Folder + "menu-background.png", Folder + "map-background.png", Folder + "Opening/page01.png", Folder + "Opening/page02.png" }) {
             var importer = AssetImporter.GetAtPath(path) as TextureImporter;
             if (!importer) throw new Exception("Missing UI artwork: " + path);
             importer.textureType = TextureImporterType.Default;
@@ -42,6 +42,7 @@ public static class JourneyBuilder {
         catalog.music = Clip("greenhouse-loop"); catalog.hover = Clip("hover"); catalog.click = Clip("click");
         catalog.dissolve = Clip("dissolve"); catalog.restore = Clip("restore"); catalog.mechanism = Clip("mechanism");
         catalog.crossing = Clip("crossing"); catalog.complete = Clip("complete");
+        InstallOpening(catalog);
         string[] pictures = { "BackgroundWatercolor/level01-background.png", "BackgroundWatercolor/level02-background.png", "BackgroundWatercolor/level03-background.png", "Level04/clean-scene.png", "Level05/background.png", "Level06/background.png", "Level07/background-front.png" };
         Vector2[] positions = { new Vector2(.06f, .61f), new Vector2(.23f, .36f), new Vector2(.36f, .75f), new Vector2(.50f, .52f), new Vector2(.60f, .18f), new Vector2(.78f, .40f), new Vector2(.93f, .17f) };
         for (int i = 0; i < Scenes.Length; i++) {
@@ -69,6 +70,27 @@ public static class JourneyBuilder {
     }
 
     static AudioClip Clip(string name) => AssetDatabase.LoadAssetAtPath<AudioClip>(Folder + name + ".wav");
+
+    static void InstallOpening(LevelCatalog catalog) {
+        if (catalog.opening.Count > 0) return;
+        var first = AssetDatabase.LoadAssetAtPath<Texture2D>(Folder + "Opening/page01.png");
+        var second = AssetDatabase.LoadAssetAtPath<Texture2D>(Folder + "Opening/page02.png");
+        AddBeat(catalog, first, "很久以前，我住在一盏灯里。", 40,28, 1634,28, 1634,309, 40,320);
+        AddBeat(catalog, first, "灯火，是我的食物，也是我的整个世界。", 40,350, 682,329, 586,645, 40,645);
+        AddBeat(catalog, first, "直到有一天，灯被带走了。", 719,334, 1090,369, 1010,636, 622,643);
+        AddBeat(catalog, first, "灯碎了。门外，还有光。", 1124,359, 1633,338, 1633,601, 1040,638);
+        AddBeat(catalog, first, "于是，我第一次走出了那扇门。", 40,676, 1632,633, 1632,911, 40,911);
+        AddBeat(catalog, second, "沿着微光，我来到一座陌生的花园。", 43,37, 988,37, 849,408, 43,417);
+        AddBeat(catalog, second, "远处的温室，像藏着另一个太阳。", 1034,37, 1631,37, 1631,387, 866,404);
+        AddBeat(catalog, second, "一扇紧闭的门，挡住了去路。", 43,476, 435,461, 322,902, 43,902);
+        AddBeat(catalog, second, "可光能穿过的地方，也许我也可以。", 478,460, 709,454, 584,902, 343,902);
+        AddBeat(catalog, second, "我的旅程，就从这一缕光开始。", 749,454, 1631,426, 1631,902, 634,902);
+    }
+    static void AddBeat(LevelCatalog catalog, Texture2D image, string caption, params float[] coordinates) {
+        var polygon = new Vector2[coordinates.Length / 2];
+        for (int i = 0; i < polygon.Length; i++) polygon[i] = new Vector2(coordinates[i * 2], coordinates[i * 2 + 1]);
+        catalog.opening.Add(new OpeningBeat { image = image, caption = caption, polygon = polygon, seconds = 6 });
+    }
 
     [MenuItem("Light Hungry/界面与流程/构建完整 Windows 游戏")]
     public static void Build() {

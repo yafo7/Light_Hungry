@@ -17,6 +17,7 @@ public sealed class LevelCatalog : ScriptableObject {
     public Texture2D menuBackground, mapBackground;
     public AudioClip music, hover, click, dissolve, restore, mechanism, crossing, complete;
     public List<JourneyLevel> levels = new List<JourneyLevel>();
+    public List<OpeningBeat> opening = new List<OpeningBeat>();
 
     public JourneyLevel Find(string scene) => levels.Find(level => level.sceneName == scene);
     public List<JourneyLevel> Available => levels.FindAll(level => level.available && Application.CanStreamedLevelBeLoaded(level.sceneName));
@@ -25,4 +26,13 @@ public sealed class LevelCatalog : ScriptableObject {
         int index = list.FindIndex(level => level.sceneName == scene);
         return index >= 0 && index + 1 < list.Count ? list[index + 1] : null;
     }
+}
+
+[Serializable]
+public sealed class OpeningBeat {
+    public Texture2D image;
+    public Vector2 sourceSize = new Vector2(1672, 941);
+    [TextArea] public string caption;
+    public Vector2[] polygon;
+    public float seconds = 6;
 }
